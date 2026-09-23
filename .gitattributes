@@ -1,0 +1,7 @@
+# LF everywhere, so rebuilding testcase/ gives identical bytes on every OS.
+* text=auto eol=lf
+
+*.pfd binary
+*.pptx binary
+*.png binary
+*.zip binary
