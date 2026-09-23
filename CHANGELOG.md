@@ -32,6 +32,8 @@ scenario or file, PATCH for corrected values.
 - Four bidding zones for `tx-full` (IEEE 14 and the three classic IEEE 39 areas):
   bus and element mappings, interconnections with capacities, and scheduled zone
   balances per scenario, in `testcase/tx-full/zones/`.
+- Two batteries for adequacy studies in `testcase/tx-full/storage/batteries.csv`:
+  100 MW / 200 MWh at bus 6 (Z3) and 10 MW / 20 MWh at bus 106 (Z0).
 
 ### Changed
 

@@ -104,6 +104,22 @@ Scheduled balance of each zone, from the scenario set points (before losses).
 | `load_mw`       | number | MW   | Sum of load active power                    |
 | `balance_mw`    | number | MW   | Generation minus load (positive: exporting) |
 
+## `testcase/<variant>/storage/batteries.csv`
+
+Batteries for adequacy studies. They are not part of the network models.
+
+| Column                 | Type   | Unit | Description                                           |
+|------------------------|--------|------|-------------------------------------------------------|
+| `battery_id`           | text   | —    | Battery id                                            |
+| `bus_id`               | text   | —    | Connection bus (IIDM bus-breaker bus id)              |
+| `zone_id`              | text   | —    | Zone of the connection bus                            |
+| `power_mw`             | number | MW   | Maximum charging and discharging power                |
+| `energy_mwh`           | number | MWh  | Energy capacity                                       |
+| `charge_efficiency`    | number | —    | Fraction of the absorbed energy that is stored        |
+| `discharge_efficiency` | number | —    | Fraction of the released stored energy that is delivered |
+| `initial_soc`          | number | —    | State of charge at the start, fraction of `energy_mwh` |
+| `final_soc`            | number | —    | Required state of charge at the end, fraction of `energy_mwh` |
+
 ## `testcase/<variant>/**/cgmes/id_mapping.csv`
 
 Correspondence between IIDM ids and the CGMES identifiers of the files in the same
@@ -137,6 +153,13 @@ and sets every generator, load and HVDC line of the network exactly once.
 Zone of every bus-breaker bus, with the same columns as the shipped `bus_zones.csv`.
 The build stops if a bus is missing, unknown or listed twice, or if a zone is not
 connected through its own branches.
+
+### `storage/<variant>_batteries.csv`
+
+Same columns as the shipped `batteries.csv`, without `zone_id`, which the build derives
+from the zone mapping. The build stops if a bus is unknown, an id is repeated, power or
+energy is not positive, an efficiency is outside (0, 1] or a state of charge outside
+[0, 1].
 
 ### `network/<variant>_thermal_limits.csv`
 

@@ -12,8 +12,8 @@ in [model-changes.md](model-changes.md).
 |-----------|----------------------------------------------|-----------|
 | `tx-full` | IEEE 39-bus + VSC HVDC link + IEEE 14-bus    | Available |
 
-Planned: economic assumptions, contingencies, storage, a `reinforced` network case,
-a reduced variant (`tx-reduced`) and a distribution variant (`dx-33`).
+Planned: economic assumptions, contingencies, a `reinforced` network case, a reduced
+variant (`tx-reduced`) and a distribution variant (`dx-33`).
 
 ### `tx-full`
 
@@ -49,6 +49,20 @@ Each zone is connected through its own branches. Zones are linked by:
 AC capacities are the apparent power matching each line's permanent current limit at
 nominal voltage; a zonal model may use them as transfer limits. `zones/zone_balance.csv`
 gives the scheduled generation, load and balance of each zone in each scenario.
+
+## Storage
+
+Two batteries are provided for adequacy studies (Tool#3 and Tool#4):
+
+| Battery      | Bus  | Zone | Power  | Energy  | Charge / discharge efficiency | Initial and final SoC |
+|--------------|------|------|--------|---------|-------------------------------|-----------------------|
+| `BAT-B6-1`   | B6   | Z3   | 100 MW | 200 MWh | 0.95 / 0.95                   | 50 %                  |
+| `BAT-B106-1` | B106 | Z0   | 10 MW  | 20 MWh  | 0.95 / 0.95                   | 50 %                  |
+
+Each has a two-hour duration and about 10 % of the renewable capacity near it: bus 6
+is next to the 570 MW solar unit at bus 31, bus 106 hosts the 30 MW solar unit of
+IEEE 14. The batteries are data only: they are not in the network files, so load
+flows, security and dynamic studies are unaffected.
 
 ## Scenarios
 
@@ -142,6 +156,8 @@ testcase/tx-full/
 │   └── pfd/TestCase.pfd
 ├── zones/
 │   └── bus_zones.csv, element_zones.csv, interconnections.csv, zone_balance.csv
+├── storage/
+│   └── batteries.csv
 └── scenarios/
     ├── generation.csv, loads.csv, hvdc.csv, generators.csv
     └── snapshots/S1..S3/

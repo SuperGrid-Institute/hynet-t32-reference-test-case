@@ -21,6 +21,7 @@ from hynet_testcase.network.zones import ZoneMapping
 from hynet_testcase.paths import RepoPaths
 from hynet_testcase.scenarios.inputs import ScenarioInputs
 from hynet_testcase.scenarios.report import StateReport
+from hynet_testcase.storage.batteries import Batteries
 
 logger = logging.getLogger(__name__)
 
@@ -97,8 +98,10 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
     network = builder.build()
     inputs = ScenarioInputs.load(paths.inputs / "scenarios")
     inputs.check_ids(network)
-    zones = ZoneMapping.load(paths.inputs / "zones" / f"{builder.variant}_bus_zones.csv")
-    data = VariantData(scenarios=inputs, zones=zones.resolve(network))
+    zones = ZoneMapping.load(
+        paths.inputs / "zones" / f"{builder.variant}_bus_zones.csv").resolve(network)
+    batteries = Batteries.load(paths.inputs / "storage" / f"{builder.variant}_batteries.csv")
+    data = VariantData(scenarios=inputs, zones=zones, batteries=batteries.with_zones(zones))
     unchanged = builder.unchanged_files()
     states = _solve_states(network, builder.variant, inputs)
 

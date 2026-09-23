@@ -20,10 +20,12 @@ class VariantData:
     Attributes:
         scenarios: Scenario inputs.
         zones: Zone tables.
+        batteries: Batteries with the zone of their bus.
     """
 
     scenarios: ScenarioInputs
     zones: ZoneData
+    batteries: pd.DataFrame
 
 
 class CsvWriter(ABC):
@@ -149,7 +151,19 @@ class ZoneBalanceWriter(CsvWriter):
         return pd.concat(rows, ignore_index=True).round(3)
 
 
+class BatteryWriter(CsvWriter):
+    """Batteries for adequacy studies."""
+
+    directory = "storage"
+    filename = "batteries.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the batteries with their zone."""
+        return data.batteries
+
+
 CSV_WRITERS: list[CsvWriter] = [
     GenerationWriter(), LoadWriter(), HvdcWriter(), GeneratorWriter(),
     BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(), ZoneBalanceWriter(),
+    BatteryWriter(),
 ]
