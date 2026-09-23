@@ -1,0 +1,3150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:entsoe="http://entsoe.eu/CIM/SchemaExtension/3/1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2013/CIM-schema-cim16#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#">
+    <md:FullModel rdf:about="urn:uuid:Default+IEEE 14 bus+IEEE 39 bus_N_EQUIPMENT_2025-11-26T13:35:09Z_1_1D__FM">
+        <md:Model.scenarioTime>2025-11-26T13:35:09Z</md:Model.scenarioTime>
+        <md:Model.created>2025-11-26T13:35:12Z</md:Model.created>
+        <md:Model.description>EQ Model</md:Model.description>
+        <md:Model.version>1</md:Model.version>
+        <md:Model.profile>http://entsoe.eu/CIM/EquipmentCore/3/1</md:Model.profile>
+        <md:Model.modelingAuthoritySet>powsybl.org</md:Model.modelingAuthoritySet>
+    </md:FullModel>
+    <cim:Terminal rdf:ID="_T-104-107-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-104-107-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-104-107-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-104-107-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-104-107-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-104-107-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B112-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B112-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B112-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B35-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B35-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B35-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-24-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-16-24-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-24-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-24-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-16-24-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-24-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-2-30-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-2-30-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-2-30-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-2-30-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-2-30-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-2-30-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-9-39-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-9-39-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-9-39-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-9-39-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-9-39-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-9-39-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-23-24-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-23-24-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-23-24-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-23-24-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-23-24-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-23-24-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-25-37-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-25-37-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-25-37-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-25-37-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-25-37-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-25-37-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-102-105-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-102-105-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-102-105-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-102-105-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-102-105-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-102-105-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-22-35-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-22-35-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-22-35-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-22-35-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-22-35-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-22-35-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B106-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B106-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B106-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-26-27-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-26-27-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-26-27-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-26-27-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-26-27-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-26-27-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B13-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B13-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B13-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-106-111-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-106-111-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-106-111-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-106-111-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-106-111-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-106-111-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-101-102-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-101-102-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-101-102-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-101-102-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-101-102-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-101-102-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B3-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B3-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B3-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B25-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B25-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B25-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B31-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B31-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B31-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-8-9-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-8-9-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-8-9-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-8-9-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-8-9-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-8-9-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B103-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B103-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B103-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-107-109-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-107-109-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-107-109-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-107-109-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-107-109-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-107-109-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-106-112-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-106-112-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-106-112-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-106-112-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-106-112-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-106-112-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-104-105-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-104-105-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-104-105-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-104-105-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-104-105-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-104-105-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-10-13-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-10-13-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-10-13-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-10-13-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-10-13-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-10-13-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-5-6-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-5-6-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-5-6-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-5-6-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-5-6-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-5-6-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-109-114-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-109-114-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-109-114-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-109-114-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-109-114-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-109-114-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-19-20-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-19-20-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-19-20-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-19-20-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-19-20-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-19-20-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B29-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B29-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B29-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B16-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B16-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B16-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-2-3-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-2-3-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-2-3-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-2-3-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-2-3-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-2-3-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B38-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B38-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B38-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-2-25-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-2-25-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-2-25-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-2-25-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-2-25-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-2-25-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B7-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B7-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B7-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-3-18-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-3-18-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-3-18-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-3-18-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-3-18-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-3-18-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-12-13-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-12-13-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-12-13-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-12-13-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-12-13-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-12-13-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-102-104-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-102-104-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-102-104-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-102-104-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-102-104-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-102-104-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-26-28-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-26-28-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-26-28-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-26-28-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-26-28-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-26-28-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B8-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B8-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B8-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B22-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B22-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B22-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B14-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B14-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B14-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-19-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-16-19-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-19-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-19-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-16-19-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-19-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-10-11-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-10-11-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-10-11-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-10-11-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-10-11-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-10-11-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B26-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B26-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B26-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-3-4-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-3-4-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-3-4-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-3-4-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-3-4-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-3-4-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-5-8-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-5-8-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-5-8-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-5-8-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-5-8-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-5-8-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-112-113-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-112-113-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-112-113-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-112-113-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-112-113-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-112-113-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B34-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B34-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B34-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-28-29-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-28-29-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-28-29-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-28-29-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-28-29-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-28-29-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B113-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B113-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B113-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-14-15-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-14-15-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-14-15-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-14-15-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-14-15-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-14-15-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B19-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B19-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B19-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B4-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B4-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B4-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B10-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B10-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B10-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-26-29-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-26-29-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-26-29-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-26-29-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-26-29-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-26-29-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B39-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B39-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B39-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B5-SH+1_SC_T_1">
+        <cim:IdentifiedObject.name>B5-SH 1</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B5-SH+1"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-20-34-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-20-34-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-20-34-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-20-34-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-20-34-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-20-34-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-106-113-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-106-113-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-106-113-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-106-113-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-106-113-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-106-113-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B30-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B30-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B30-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-110-111-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-110-111-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-110-111-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-110-111-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-110-111-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-110-111-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B21-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B21-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B21-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B23-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B23-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B23-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-15-16-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-15-16-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-15-16-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-15-16-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-15-16-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-15-16-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B31-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B31-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B31-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B15-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B15-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B15-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-6-11-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-6-11-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-6-11-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-6-11-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-6-11-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-6-11-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B114-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B114-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B114-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B37-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B37-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B37-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-1-39-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-1-39-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-1-39-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-1-39-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-1-39-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-1-39-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B106-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B106-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B106-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B9-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B9-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B9-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B102-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B102-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B102-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B33-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B33-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B33-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-23-36-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-23-36-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-23-36-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-23-36-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-23-36-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-23-36-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B11-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B11-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B11-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-6-7-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-6-7-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-6-7-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-6-7-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-6-7-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-6-7-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-21-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-16-21-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-21-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-21-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-16-21-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-21-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-19-33-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-19-33-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-19-33-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-19-33-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-19-33-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-19-33-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-104-109-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-104-109-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-104-109-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-104-109-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-104-109-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-104-109-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B2-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B2-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B2-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-12-11-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-12-11-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-12-11-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-12-11-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-12-11-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-12-11-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B18-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B18-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B18-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-113-114-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-113-114-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-113-114-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-113-114-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-113-114-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-113-114-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B4-SH+1_SC_T_1">
+        <cim:IdentifiedObject.name>B4-SH 1</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B4-SH+1"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B27-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B27-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B27-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B5-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B5-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B5-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-101-105-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-101-105-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-101-105-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-101-105-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-101-105-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-101-105-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-102-103-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-102-103-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-102-103-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-102-103-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-102-103-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-102-103-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B20-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B20-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B20-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B103-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B103-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B103-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B108-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B108-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B108-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B101-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B101-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B101-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-10-32-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-10-32-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-10-32-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-10-32-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-10-32-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-10-32-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-103-104-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-103-104-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-103-104-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-103-104-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-103-104-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-103-104-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B105-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B105-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B105-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_VSC_Station_113_DCCS_T_1">
+        <cim:IdentifiedObject.name>VSC_Station_113</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_VSC_Station_113"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-31-6-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-31-6-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-31-6-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-31-6-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-31-6-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-31-6-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-21-22-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-21-22-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-21-22-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-21-22-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-21-22-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-21-22-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B24-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B24-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B24-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-13-14-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-13-14-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-13-14-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-13-14-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-13-14-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-13-14-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-25-26-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-25-26-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-25-26-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-25-26-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-25-26-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-25-26-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-17-18-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-17-18-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-17-18-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-17-18-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-17-18-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-17-18-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B109-SH+1_SC_T_1">
+        <cim:IdentifiedObject.name>B109-SH 1</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B109-SH+1"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-109-110-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-109-110-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-109-110-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-109-110-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-109-110-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-109-110-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-17-27-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-17-27-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-17-27-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-17-27-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-17-27-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-17-27-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B111-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B111-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B111-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B36-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B36-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B36-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-4-14-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-4-14-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-4-14-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-4-14-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-4-14-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-4-14-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_VSC_Station_16_DCCS_T_1">
+        <cim:IdentifiedObject.name>VSC_Station_16</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_VSC_Station_16"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-105-106-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-105-106-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-105-106-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-105-106-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-105-106-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-105-106-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B39-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B39-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B39-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B12-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B12-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B12-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B109-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B109-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B109-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-22-23-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-22-23-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-22-23-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-22-23-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-22-23-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-22-23-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-1-2-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-1-2-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-1-2-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-1-2-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-1-2-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-1-2-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B28-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B28-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B28-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B32-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B32-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B32-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B1-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B1-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B1-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-17-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-16-17-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-17-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-16-17-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-16-17-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-16-17-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-29-38-1+_PT_T_1">
+        <cim:IdentifiedObject.name>T-29-38-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-29-38-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_T-29-38-1+_PT_T_2">
+        <cim:IdentifiedObject.name>T-29-38-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_T-29-38-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-4-5-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-4-5-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-4-5-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-4-5-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-4-5-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-4-5-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B17-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B17-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B17-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B102-G1+_SM_T_1">
+        <cim:IdentifiedObject.name>B102-G1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B102-G1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B110-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B110-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B110-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B6-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B6-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B6-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-107-108-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-107-108-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-107-108-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-107-108-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-107-108-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-107-108-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_B104-L1+_EC_T_1">
+        <cim:IdentifiedObject.name>B104-L1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_B104-L1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-7-8-1+_ACLS_T_1">
+        <cim:IdentifiedObject.name>L-7-8-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-7-8-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_L-7-8-1+_ACLS_T_2">
+        <cim:IdentifiedObject.name>L-7-8-1 </cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_L-7-8-1+"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:GeographicalRegion rdf:ID="_default+region_GR">
+        <cim:IdentifiedObject.name>default region</cim:IdentifiedObject.name>
+    </cim:GeographicalRegion>
+    <cim:SubGeographicalRegion rdf:ID="_default+region_SGR">
+        <cim:IdentifiedObject.name>default region</cim:IdentifiedObject.name>
+        <cim:SubGeographicalRegion.Region rdf:resource="#_default+region_GR"/>
+    </cim:SubGeographicalRegion>
+    <cim:Substation rdf:ID="_S101">
+        <cim:IdentifiedObject.name>S101</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S113">
+        <cim:IdentifiedObject.name>S113</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S114">
+        <cim:IdentifiedObject.name>S114</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S108">
+        <cim:IdentifiedObject.name>S108</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S104">
+        <cim:IdentifiedObject.name>S104</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S105">
+        <cim:IdentifiedObject.name>S105</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S102">
+        <cim:IdentifiedObject.name>S102</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S103">
+        <cim:IdentifiedObject.name>S103</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S111">
+        <cim:IdentifiedObject.name>S111</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S112">
+        <cim:IdentifiedObject.name>S112</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S110">
+        <cim:IdentifiedObject.name>S110</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S1">
+        <cim:IdentifiedObject.name>S1</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S2">
+        <cim:IdentifiedObject.name>S2</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S3">
+        <cim:IdentifiedObject.name>S3</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S4">
+        <cim:IdentifiedObject.name>S4</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S5">
+        <cim:IdentifiedObject.name>S5</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S6">
+        <cim:IdentifiedObject.name>S6</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S7">
+        <cim:IdentifiedObject.name>S7</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S8">
+        <cim:IdentifiedObject.name>S8</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S9">
+        <cim:IdentifiedObject.name>S9</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S11">
+        <cim:IdentifiedObject.name>S11</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S10">
+        <cim:IdentifiedObject.name>S10</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S15">
+        <cim:IdentifiedObject.name>S15</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S14">
+        <cim:IdentifiedObject.name>S14</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S17">
+        <cim:IdentifiedObject.name>S17</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S16">
+        <cim:IdentifiedObject.name>S16</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S19">
+        <cim:IdentifiedObject.name>S19</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S18">
+        <cim:IdentifiedObject.name>S18</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S22">
+        <cim:IdentifiedObject.name>S22</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S21">
+        <cim:IdentifiedObject.name>S21</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S24">
+        <cim:IdentifiedObject.name>S24</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S23">
+        <cim:IdentifiedObject.name>S23</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S26">
+        <cim:IdentifiedObject.name>S26</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S25">
+        <cim:IdentifiedObject.name>S25</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S28">
+        <cim:IdentifiedObject.name>S28</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S27">
+        <cim:IdentifiedObject.name>S27</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S29">
+        <cim:IdentifiedObject.name>S29</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:Substation rdf:ID="_S39">
+        <cim:IdentifiedObject.name>S39</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_default+region_SGR"/>
+    </cim:Substation>
+    <cim:BaseVoltage rdf:ID="_138_BV">
+        <cim:IdentifiedObject.name>138</cim:IdentifiedObject.name>
+        <cim:BaseVoltage.nominalVoltage>138</cim:BaseVoltage.nominalVoltage>
+    </cim:BaseVoltage>
+    <cim:VoltageLevel rdf:ID="_VL104">
+        <cim:IdentifiedObject.name>VL104</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S104"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL103">
+        <cim:IdentifiedObject.name>VL103</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S103"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL102">
+        <cim:IdentifiedObject.name>VL102</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S102"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL101">
+        <cim:IdentifiedObject.name>VL101</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S101"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL114">
+        <cim:IdentifiedObject.name>VL114</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S114"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL113">
+        <cim:IdentifiedObject.name>VL113</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S113"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL112">
+        <cim:IdentifiedObject.name>VL112</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S112"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL111">
+        <cim:IdentifiedObject.name>VL111</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S111"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL110">
+        <cim:IdentifiedObject.name>VL110</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S110"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL108">
+        <cim:IdentifiedObject.name>VL108</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S108"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL105">
+        <cim:IdentifiedObject.name>VL105</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S105"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:VoltageLevel>
+    <cim:BaseVoltage rdf:ID="_1_BV">
+        <cim:IdentifiedObject.name>1</cim:IdentifiedObject.name>
+        <cim:BaseVoltage.nominalVoltage>1</cim:BaseVoltage.nominalVoltage>
+    </cim:BaseVoltage>
+    <cim:VoltageLevel rdf:ID="_VL1">
+        <cim:IdentifiedObject.name>VL1</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S1"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL3">
+        <cim:IdentifiedObject.name>VL3</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S3"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL2">
+        <cim:IdentifiedObject.name>VL2</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S2"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL5">
+        <cim:IdentifiedObject.name>VL5</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S5"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL4">
+        <cim:IdentifiedObject.name>VL4</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S4"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL7">
+        <cim:IdentifiedObject.name>VL7</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S7"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL6">
+        <cim:IdentifiedObject.name>VL6</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S6"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL9">
+        <cim:IdentifiedObject.name>VL9</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S9"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL8">
+        <cim:IdentifiedObject.name>VL8</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S8"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL24">
+        <cim:IdentifiedObject.name>VL24</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S24"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL25">
+        <cim:IdentifiedObject.name>VL25</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S25"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL26">
+        <cim:IdentifiedObject.name>VL26</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S26"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL27">
+        <cim:IdentifiedObject.name>VL27</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S27"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL28">
+        <cim:IdentifiedObject.name>VL28</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S28"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL29">
+        <cim:IdentifiedObject.name>VL29</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S29"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL21">
+        <cim:IdentifiedObject.name>VL21</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S21"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL22">
+        <cim:IdentifiedObject.name>VL22</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S22"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL23">
+        <cim:IdentifiedObject.name>VL23</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S23"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL14">
+        <cim:IdentifiedObject.name>VL14</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S14"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL15">
+        <cim:IdentifiedObject.name>VL15</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S15"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL16">
+        <cim:IdentifiedObject.name>VL16</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S16"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL17">
+        <cim:IdentifiedObject.name>VL17</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S17"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL18">
+        <cim:IdentifiedObject.name>VL18</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S18"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL19">
+        <cim:IdentifiedObject.name>VL19</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S19"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL10">
+        <cim:IdentifiedObject.name>VL10</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S10"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL11">
+        <cim:IdentifiedObject.name>VL11</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S11"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:VoltageLevel rdf:ID="_VL39">
+        <cim:IdentifiedObject.name>VL39</cim:IdentifiedObject.name>
+        <cim:VoltageLevel.Substation rdf:resource="#_S39"/>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:VoltageLevel>
+    <cim:EnergyConsumer rdf:ID="_B105-L1+">
+        <cim:IdentifiedObject.name>B105-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL105"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B112-L1+">
+        <cim:IdentifiedObject.name>B112-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL112"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B114-L1+">
+        <cim:IdentifiedObject.name>B114-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL114"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B106-L1+">
+        <cim:IdentifiedObject.name>B106-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL105"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B111-L1+">
+        <cim:IdentifiedObject.name>B111-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL111"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B102-L1+">
+        <cim:IdentifiedObject.name>B102-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL102"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B113-L1+">
+        <cim:IdentifiedObject.name>B113-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL113"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B109-L1+">
+        <cim:IdentifiedObject.name>B109-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL104"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B110-L1+">
+        <cim:IdentifiedObject.name>B110-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL110"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B103-L1+">
+        <cim:IdentifiedObject.name>B103-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL103"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B104-L1+">
+        <cim:IdentifiedObject.name>B104-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL104"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B23-L1+">
+        <cim:IdentifiedObject.name>B23-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL23"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B31-L1+">
+        <cim:IdentifiedObject.name>B31-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL6"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B15-L1+">
+        <cim:IdentifiedObject.name>B15-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL15"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B9-L1+">
+        <cim:IdentifiedObject.name>B9-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL9"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B13-L1+">
+        <cim:IdentifiedObject.name>B13-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL11"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B11-L1+">
+        <cim:IdentifiedObject.name>B11-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL11"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B3-L1+">
+        <cim:IdentifiedObject.name>B3-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL3"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B25-L1+">
+        <cim:IdentifiedObject.name>B25-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL25"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B2-L1+">
+        <cim:IdentifiedObject.name>B2-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL2"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B18-L1+">
+        <cim:IdentifiedObject.name>B18-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL18"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B27-L1+">
+        <cim:IdentifiedObject.name>B27-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL27"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B5-L1+">
+        <cim:IdentifiedObject.name>B5-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL5"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B20-L1+">
+        <cim:IdentifiedObject.name>B20-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL19"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B29-L1+">
+        <cim:IdentifiedObject.name>B29-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL29"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B16-L1+">
+        <cim:IdentifiedObject.name>B16-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL16"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B7-L1+">
+        <cim:IdentifiedObject.name>B7-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL7"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B24-L1+">
+        <cim:IdentifiedObject.name>B24-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL24"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B8-L1+">
+        <cim:IdentifiedObject.name>B8-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL8"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B22-L1+">
+        <cim:IdentifiedObject.name>B22-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL22"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B14-L1+">
+        <cim:IdentifiedObject.name>B14-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL14"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B26-L1+">
+        <cim:IdentifiedObject.name>B26-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL26"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B39-L1+">
+        <cim:IdentifiedObject.name>B39-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL39"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B12-L1+">
+        <cim:IdentifiedObject.name>B12-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL11"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B19-L1+">
+        <cim:IdentifiedObject.name>B19-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL19"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B28-L1+">
+        <cim:IdentifiedObject.name>B28-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL28"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B4-L1+">
+        <cim:IdentifiedObject.name>B4-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL4"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B1-L1+">
+        <cim:IdentifiedObject.name>B1-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL1"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B10-L1+">
+        <cim:IdentifiedObject.name>B10-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL10"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B17-L1+">
+        <cim:IdentifiedObject.name>B17-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL17"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B6-L1+">
+        <cim:IdentifiedObject.name>B6-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL6"/>
+    </cim:EnergyConsumer>
+    <cim:EnergyConsumer rdf:ID="_B21-L1+">
+        <cim:IdentifiedObject.name>B21-L1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL21"/>
+    </cim:EnergyConsumer>
+    <cim:LoadArea rdf:ID="_Default%2BIEEE+14+bus%2BIEEE+39+bus_N_LA">
+        <cim:IdentifiedObject.name>Default+IEEE 14 bus+IEEE 39 bus </cim:IdentifiedObject.name>
+    </cim:LoadArea>
+    <cim:SubLoadArea rdf:ID="_Default%2BIEEE+14+bus%2BIEEE+39+bus_N_SLA">
+        <cim:IdentifiedObject.name>Default+IEEE 14 bus+IEEE 39 bus </cim:IdentifiedObject.name>
+        <cim:SubLoadArea.LoadArea rdf:resource="#_Default%2BIEEE+14+bus%2BIEEE+39+bus_N_LA"/>
+    </cim:SubLoadArea>
+    <cim:RegulatingControl rdf:ID="_B106-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B106-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B106-L1+_EC_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B106-G1+">
+        <cim:IdentifiedObject.name>B106-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL105"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B106-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B106-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-6</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>24</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B106-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B106-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S105"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B103-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B103-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B103-L1+_EC_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B103-G1+">
+        <cim:IdentifiedObject.name>B103-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL103"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B103-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B103-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>0</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>40</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B103-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B103-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S103"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B102-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B102-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B102-L1+_EC_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B102-G1+">
+        <cim:IdentifiedObject.name>B102-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL102"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B102-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B102-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-40</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>50</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B102-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B102-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>40</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S102"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B108-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B108-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B108-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B108-G1+">
+        <cim:IdentifiedObject.name>B108-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL108"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B108-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B108-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-6</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>24</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B108-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B108-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S108"/>
+    </cim:GeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_B101-G1+">
+        <cim:IdentifiedObject.name>B101-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL101"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B101-G1+_GU"/>
+        <cim:SynchronousMachine.minQ>0</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>0</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B101-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B101-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>232.392</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S101"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B35-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B35-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B35-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B35-G1+">
+        <cim:IdentifiedObject.name>B35-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL22"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B35-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B35-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B35-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B35-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>650</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S22"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B37-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B37-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B37-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B37-G1+">
+        <cim:IdentifiedObject.name>B37-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL25"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B37-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B37-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B37-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B37-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>540</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S25"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B33-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B33-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B33-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B33-G1+">
+        <cim:IdentifiedObject.name>B33-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL19"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B33-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B33-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B33-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B33-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>632</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S19"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B31-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B31-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B31-L1+_EC_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B31-G1+">
+        <cim:IdentifiedObject.name>B31-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL6"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B31-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B31-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B31-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B31-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>571.285</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S6"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B38-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B38-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B38-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B38-G1+">
+        <cim:IdentifiedObject.name>B38-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL29"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B38-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B38-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B38-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B38-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>830</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S29"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B36-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B36-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B36-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B36-G1+">
+        <cim:IdentifiedObject.name>B36-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL23"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B36-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B36-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B36-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B36-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>560</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S23"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B34-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B34-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B34-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B34-G1+">
+        <cim:IdentifiedObject.name>B34-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL19"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B34-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B34-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-300</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B34-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B34-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>508</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S19"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B32-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B32-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B32-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B32-G1+">
+        <cim:IdentifiedObject.name>B32-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL10"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B32-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B32-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B32-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B32-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>650</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S10"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B39-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B39-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B39-L1+_EC_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B39-G1+">
+        <cim:IdentifiedObject.name>B39-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL39"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B39-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B39-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-1000</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>1500</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B39-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B39-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>1000</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S39"/>
+    </cim:GeneratingUnit>
+    <cim:RegulatingControl rdf:ID="_B30-G1+_RC">
+        <cim:IdentifiedObject.name>RC_B30-G1 </cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B30-G1+_SM_T_1"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
+    <cim:SynchronousMachine rdf:ID="_B30-G1+">
+        <cim:IdentifiedObject.name>B30-G1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL2"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_B30-G1+_GU"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_B30-G1+_RC"/>
+        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenser"/>
+    </cim:SynchronousMachine>
+    <cim:GeneratingUnit rdf:ID="_B30-G1+_GU">
+        <cim:IdentifiedObject.name>GU_B30-G1 </cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>250</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S2"/>
+    </cim:GeneratingUnit>
+    <cim:LinearShuntCompensator rdf:ID="_B109-SH+1">
+        <cim:IdentifiedObject.name>B109-SH 1</cim:IdentifiedObject.name>
+        <cim:ShuntCompensator.normalSections>1</cim:ShuntCompensator.normalSections>
+        <cim:ShuntCompensator.maximumSections>1</cim:ShuntCompensator.maximumSections>
+        <cim:ShuntCompensator.nomU>138</cim:ShuntCompensator.nomU>
+        <cim:LinearShuntCompensator.bPerSection>0.00099768956102</cim:LinearShuntCompensator.bPerSection>
+        <cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL104"/>
+    </cim:LinearShuntCompensator>
+    <cim:LinearShuntCompensator rdf:ID="_B4-SH+1">
+        <cim:IdentifiedObject.name>B4-SH 1</cim:IdentifiedObject.name>
+        <cim:ShuntCompensator.normalSections>1</cim:ShuntCompensator.normalSections>
+        <cim:ShuntCompensator.maximumSections>1</cim:ShuntCompensator.maximumSections>
+        <cim:ShuntCompensator.nomU>1</cim:ShuntCompensator.nomU>
+        <cim:LinearShuntCompensator.bPerSection>100</cim:LinearShuntCompensator.bPerSection>
+        <cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL4"/>
+    </cim:LinearShuntCompensator>
+    <cim:LinearShuntCompensator rdf:ID="_B5-SH+1">
+        <cim:IdentifiedObject.name>B5-SH 1</cim:IdentifiedObject.name>
+        <cim:ShuntCompensator.normalSections>1</cim:ShuntCompensator.normalSections>
+        <cim:ShuntCompensator.maximumSections>1</cim:ShuntCompensator.maximumSections>
+        <cim:ShuntCompensator.nomU>1</cim:ShuntCompensator.nomU>
+        <cim:LinearShuntCompensator.bPerSection>200</cim:LinearShuntCompensator.bPerSection>
+        <cim:LinearShuntCompensator.gPerSection>0</cim:LinearShuntCompensator.gPerSection>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_VL5"/>
+    </cim:LinearShuntCompensator>
+    <cim:ACLineSegment rdf:ID="_L-102-104-1+">
+        <cim:IdentifiedObject.name>L-102-104-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>11.0664684</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>33.57838080000001</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.00017853392145</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-103-104-1+">
+        <cim:IdentifiedObject.name>L-103-104-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>12.7613844</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>32.5709532</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.00006721277043</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-109-110-1+">
+        <cim:IdentifiedObject.name>L-109-110-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>6.0578964</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>16.09218</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-102-105-1+">
+        <cim:IdentifiedObject.name>L-102-105-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>10.845558</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>33.1137072</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.00018168452006</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-106-111-1+">
+        <cim:IdentifiedObject.name>L-106-111-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>18.0879912</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>37.878516</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-112-113-1+">
+        <cim:IdentifiedObject.name>L-112-113-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>42.0720048</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>38.0651472</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-101-102-1+">
+        <cim:IdentifiedObject.name>L-101-102-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>3.6907272</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>11.2683348</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.00027725267801</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-107-109-1+">
+        <cim:IdentifiedObject.name>L-107-109-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>20.9503044</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-106-112-1+">
+        <cim:IdentifiedObject.name>L-106-112-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>23.4069804</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>48.7164564</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-113-114-1+">
+        <cim:IdentifiedObject.name>L-113-114-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>32.5519092</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>66.2769288</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-104-105-1+">
+        <cim:IdentifiedObject.name>L-104-105-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>2.542374</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>8.0194284</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-101-105-1+">
+        <cim:IdentifiedObject.name>L-101-105-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>10.2894732</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>42.4757376</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.00025834908633</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-102-103-1+">
+        <cim:IdentifiedObject.name>L-102-103-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>8.9487756</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>37.7014068</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.0002299936988</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-109-114-1+">
+        <cim:IdentifiedObject.name>L-109-114-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>24.2068284</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>51.4911672</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-107-108-1+">
+        <cim:IdentifiedObject.name>L-107-108-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>33.54600600000001</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-106-113-1+">
+        <cim:IdentifiedObject.name>L-106-113-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>12.597606</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>24.8086188</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-110-111-1+">
+        <cim:IdentifiedObject.name>L-110-111-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>15.625602</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>36.57781079999999</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-15-16-1+">
+        <cim:IdentifiedObject.name>L-15-16-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000009</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000094</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>17.1</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-6-11-1+">
+        <cim:IdentifiedObject.name>L-6-11-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000007</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000082</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>13.89</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-16-24-1+">
+        <cim:IdentifiedObject.name>L-16-24-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000003</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000059</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>6.8</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-1-39-1+">
+        <cim:IdentifiedObject.name>L-1-39-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.00001</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.00025</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>75</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-9-39-1+">
+        <cim:IdentifiedObject.name>L-9-39-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.00001</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.00025</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>120</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-23-24-1+">
+        <cim:IdentifiedObject.name>L-23-24-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000022</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.00035</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>36.1</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-26-27-1+">
+        <cim:IdentifiedObject.name>L-26-27-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000014</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000147</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>23.96</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-6-7-1+">
+        <cim:IdentifiedObject.name>L-6-7-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000006</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000092</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>11.3</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-16-21-1+">
+        <cim:IdentifiedObject.name>L-16-21-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000008</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000135</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>25.48</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-8-9-1+">
+        <cim:IdentifiedObject.name>L-8-9-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000023</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000363</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>38.04</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-10-13-1+">
+        <cim:IdentifiedObject.name>L-10-13-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000004</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000043</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>7.29</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-5-6-1+">
+        <cim:IdentifiedObject.name>L-5-6-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000002</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000026</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>4.34</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-2-3-1+">
+        <cim:IdentifiedObject.name>L-2-3-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000013</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000151</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>25.72</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-2-25-1+">
+        <cim:IdentifiedObject.name>L-2-25-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.00007</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000086</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>14.6</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-3-18-1+">
+        <cim:IdentifiedObject.name>L-3-18-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000011</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000133</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>21.38</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-26-28-1+">
+        <cim:IdentifiedObject.name>L-26-28-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000043</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000474</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>78.02</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-21-22-1+">
+        <cim:IdentifiedObject.name>L-21-22-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000008</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.00014</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>25.65</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-13-14-1+">
+        <cim:IdentifiedObject.name>L-13-14-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000009</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000101</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>17.23</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-25-26-1+">
+        <cim:IdentifiedObject.name>L-25-26-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000032</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000323</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>51.3</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-17-18-1+">
+        <cim:IdentifiedObject.name>L-17-18-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000007</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000082</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>13.19</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-17-27-1+">
+        <cim:IdentifiedObject.name>L-17-27-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000013</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000173</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>32.16</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-16-19-1+">
+        <cim:IdentifiedObject.name>L-16-19-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000016</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000195</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>30.4</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-4-14-1+">
+        <cim:IdentifiedObject.name>L-4-14-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000008</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000129</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>13.82</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-10-11-1+">
+        <cim:IdentifiedObject.name>L-10-11-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000004</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000043</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>7.29</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-3-4-1+">
+        <cim:IdentifiedObject.name>L-3-4-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000013</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000213</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>22.14</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-5-8-1+">
+        <cim:IdentifiedObject.name>L-5-8-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000008</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000112</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>14.76</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-28-29-1+">
+        <cim:IdentifiedObject.name>L-28-29-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000014</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000151</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>24.9</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-22-23-1+">
+        <cim:IdentifiedObject.name>L-22-23-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000006</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000096</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>18.46</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-1-2-1+">
+        <cim:IdentifiedObject.name>L-1-2-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000035</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000411</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>69.87</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-14-15-1+">
+        <cim:IdentifiedObject.name>L-14-15-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000018</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000217</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>36.6</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-16-17-1+">
+        <cim:IdentifiedObject.name>L-16-17-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000007</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000089</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>13.42</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-4-5-1+">
+        <cim:IdentifiedObject.name>L-4-5-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000008</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000128</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>13.42</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-26-29-1+">
+        <cim:IdentifiedObject.name>L-26-29-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000057</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000625</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>102.89999999999999</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:ACLineSegment rdf:ID="_L-7-8-1+">
+        <cim:IdentifiedObject.name>L-7-8-1 </cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>0.000004</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>0.000046</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>7.8</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:ACLineSegment>
+    <cim:PowerTransformer rdf:ID="_T-104-107-1+">
+        <cim:IdentifiedObject.name>T-104-107-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S104"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-104-107-1+_TW1">
+        <cim:IdentifiedObject.name>T-104-107-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>39.8248128</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-104-107-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-104-107-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-104-107-1+_TW2">
+        <cim:IdentifiedObject.name>T-104-107-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-104-107-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-104-107-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-104-107-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-104-107-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-104-107-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>138</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-104-107-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-104-107-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-104-107-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-104-107-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-4.3516</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-4.3516</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.978</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-104-107-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-105-106-1+">
+        <cim:IdentifiedObject.name>T-105-106-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S105"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-105-106-1+_TW1">
+        <cim:IdentifiedObject.name>T-105-106-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>47.99468880000001</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-105-106-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-105-106-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-105-106-1+_TW2">
+        <cim:IdentifiedObject.name>T-105-106-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-105-106-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-105-106-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-105-106-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-105-106-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-105-106-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>138</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-105-106-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-105-106-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-105-106-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-105-106-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-13.13759999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-13.13759999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.932</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-105-106-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-104-109-1+">
+        <cim:IdentifiedObject.name>T-104-109-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S104"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-104-109-1+_TW1">
+        <cim:IdentifiedObject.name>T-104-109-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>105.9189192</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-104-109-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-104-109-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-104-109-1+_TW2">
+        <cim:IdentifiedObject.name>T-104-109-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-104-109-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-104-109-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-104-109-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-104-109-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-104-109-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>138</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-104-109-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-104-109-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-104-109-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-104-109-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-6.10390000000001</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-6.10390000000001</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.969</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-104-109-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-2-30-1+">
+        <cim:IdentifiedObject.name>T-2-30-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S2"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-2-30-1+_TW1">
+        <cim:IdentifiedObject.name>T-2-30-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000181</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-2-30-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-2-30-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-2-30-1+_TW2">
+        <cim:IdentifiedObject.name>T-2-30-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-2-30-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-2-30-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-2-30-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-2-30-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-2-30-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-2-30-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-2-30-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-2-30-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-2-30-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>5.06249999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>5.06249999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-2-30-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-25-37-1+">
+        <cim:IdentifiedObject.name>T-25-37-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S25"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-25-37-1+_TW1">
+        <cim:IdentifiedObject.name>T-25-37-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000006</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000232</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-25-37-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-25-37-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-25-37-1+_TW2">
+        <cim:IdentifiedObject.name>T-25-37-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-25-37-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-25-37-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-25-37-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-25-37-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-25-37-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-25-37-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-25-37-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-25-37-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-25-37-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>5.06249999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>5.06249999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-25-37-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-22-35-1+">
+        <cim:IdentifiedObject.name>T-22-35-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S22"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-22-35-1+_TW1">
+        <cim:IdentifiedObject.name>T-22-35-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000143</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-22-35-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-22-35-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-22-35-1+_TW2">
+        <cim:IdentifiedObject.name>T-22-35-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-22-35-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-22-35-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-22-35-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-22-35-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-22-35-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-22-35-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-22-35-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-22-35-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-22-35-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>5.06249999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>5.06249999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-22-35-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-23-36-1+">
+        <cim:IdentifiedObject.name>T-23-36-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S23"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-23-36-1+_TW1">
+        <cim:IdentifiedObject.name>T-23-36-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000005</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000272</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-23-36-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-23-36-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-23-36-1+_TW2">
+        <cim:IdentifiedObject.name>T-23-36-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-23-36-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-23-36-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformer rdf:ID="_T-19-33-1+">
+        <cim:IdentifiedObject.name>T-19-33-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S19"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-19-33-1+_TW1">
+        <cim:IdentifiedObject.name>T-19-33-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000007</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000142</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-19-33-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-19-33-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-19-33-1+_TW2">
+        <cim:IdentifiedObject.name>T-19-33-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-19-33-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-19-33-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-19-33-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-19-33-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-19-33-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-19-33-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-19-33-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-19-33-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-19-33-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>14.49</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>14.49</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.07</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-19-33-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-12-11-1+">
+        <cim:IdentifiedObject.name>T-12-11-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S11"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-12-11-1+_TW1">
+        <cim:IdentifiedObject.name>T-12-11-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000016</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000435</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-12-11-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-12-11-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-12-11-1+_TW2">
+        <cim:IdentifiedObject.name>T-12-11-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-12-11-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-12-11-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-12-11-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-12-11-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-12-11-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-12-11-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-12-11-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-12-11-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-12-11-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>1.20359999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>1.20359999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.006</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-12-11-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-19-20-1+">
+        <cim:IdentifiedObject.name>T-19-20-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S19"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-19-20-1+_TW1">
+        <cim:IdentifiedObject.name>T-19-20-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000007</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000138</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-19-20-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-19-20-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-19-20-1+_TW2">
+        <cim:IdentifiedObject.name>T-19-20-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-19-20-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-19-20-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-19-20-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-19-20-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-19-20-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-19-20-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-19-20-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-19-20-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-19-20-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>12.36000000000002</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>12.36000000000002</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.06</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-19-20-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-10-32-1+">
+        <cim:IdentifiedObject.name>T-10-32-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S10"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-10-32-1+_TW1">
+        <cim:IdentifiedObject.name>T-10-32-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.0002</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-10-32-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-10-32-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-10-32-1+_TW2">
+        <cim:IdentifiedObject.name>T-10-32-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-10-32-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-10-32-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-10-32-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-10-32-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-10-32-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-10-32-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-10-32-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-10-32-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-10-32-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>14.49</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>14.49</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.07</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-10-32-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-12-13-1+">
+        <cim:IdentifiedObject.name>T-12-13-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S11"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-12-13-1+_TW1">
+        <cim:IdentifiedObject.name>T-12-13-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000016</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000435</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-12-13-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-12-13-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-12-13-1+_TW2">
+        <cim:IdentifiedObject.name>T-12-13-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-12-13-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-12-13-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-12-13-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-12-13-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-12-13-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-12-13-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-12-13-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-12-13-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-12-13-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>1.20359999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>1.20359999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.006</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-12-13-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-31-6-1+">
+        <cim:IdentifiedObject.name>T-31-6-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S6"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-31-6-1+_TW1">
+        <cim:IdentifiedObject.name>T-31-6-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.00025</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-31-6-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-31-6-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-31-6-1+_TW2">
+        <cim:IdentifiedObject.name>T-31-6-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-31-6-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-31-6-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:TapChangerControl rdf:ID="_T-31-6-1+_RTC_RC">
+        <cim:IdentifiedObject.name>T-31-6-1 _RTC_RC</cim:IdentifiedObject.name>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+        <cim:RegulatingControl.Terminal rdf:resource="#_B6-L1+_EC_T_1"/>
+    </cim:TapChangerControl>
+    <cim:RatioTapChanger rdf:ID="_T-31-6-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-31-6-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-31-6-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>5.71428571428571</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>7</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>1</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>4</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+        <cim:TapChanger.TapChangerControl rdf:resource="#_T-31-6-1+_RTC_RC"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-31-6-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-31-6-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-35.99999999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-35.99999999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.8</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_1_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-26.53061224489795</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-26.53061224489795</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>1</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.85714285714286</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_2_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-16.40816326530613</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-16.40816326530613</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>2</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.91428571428571</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_3_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>-5.63265306122449</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>-5.63265306122449</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>3</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>0.97142857142857</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_4_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>5.79591836734692</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>5.79591836734692</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>4</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.02857142857143</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_5_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>17.87755102040816</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>17.87755102040816</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>5</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.08571428571429</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_6_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>30.61224489795917</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>30.61224489795917</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>6</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.14285714285714</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-31-6-1+_PT_1_7_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>43.99999999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>43.99999999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>7</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.2</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-31-6-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-29-38-1+">
+        <cim:IdentifiedObject.name>T-29-38-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S29"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-29-38-1+_TW1">
+        <cim:IdentifiedObject.name>T-29-38-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000008</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.000156</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-29-38-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-29-38-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-29-38-1+_TW2">
+        <cim:IdentifiedObject.name>T-29-38-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-29-38-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-29-38-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-29-38-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-29-38-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-29-38-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-29-38-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-29-38-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-29-38-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-29-38-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>5.06249999999999</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>5.06249999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-29-38-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:PowerTransformer rdf:ID="_T-20-34-1+">
+        <cim:IdentifiedObject.name>T-20-34-1 </cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_S19"/>
+    </cim:PowerTransformer>
+    <cim:PowerTransformerEnd rdf:ID="_T-20-34-1+_TW1">
+        <cim:IdentifiedObject.name>T-20-34-1 _1</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0.000009</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0.00018</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-20-34-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-20-34-1+_PT_T_1"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:PowerTransformerEnd rdf:ID="_T-20-34-1+_TW2">
+        <cim:IdentifiedObject.name>T-20-34-1 _2</cim:IdentifiedObject.name>
+        <cim:TransformerEnd.endNumber>2</cim:TransformerEnd.endNumber>
+        <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
+        <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedU>1</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T-20-34-1+"/>
+        <cim:TransformerEnd.Terminal rdf:resource="#_T-20-34-1+_PT_T_2"/>
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_1_BV"/>
+    </cim:PowerTransformerEnd>
+    <cim:RatioTapChanger rdf:ID="_T-20-34-1+_PT_RTC_1">
+        <cim:IdentifiedObject.name>T-20-34-1 _RTC</cim:IdentifiedObject.name>
+        <cim:RatioTapChanger.TransformerEnd rdf:resource="#_T-20-34-1+_TW1"/>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
+        <cim:TapChanger.neutralU>1</cim:TapChanger.neutralU>
+        <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
+        <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
+        <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_T-20-34-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChanger>
+    <cim:RatioTapChangerTable rdf:ID="_T-20-34-1+_PT_1_RTC_T">
+        <cim:IdentifiedObject.name>T-20-34-1 _TABLE</cim:IdentifiedObject.name>
+    </cim:RatioTapChangerTable>
+    <cim:RatioTapChangerTablePoint rdf:ID="_T-20-34-1+_PT_1_0_RTCS">
+        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
+        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
+        <cim:TapChangerTablePoint.g>1.80809999999998</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>1.80809999999998</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
+        <cim:TapChangerTablePoint.ratio>1.009</cim:TapChangerTablePoint.ratio>
+        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_T-20-34-1+_PT_1_RTC_T"/>
+    </cim:RatioTapChangerTablePoint>
+    <cim:DCConverterUnit rdf:ID="_HVDC_Link_16_113_DCLS_DCCU_1">
+        <cim:IdentifiedObject.name>HVDC_Link_16_113_1</cim:IdentifiedObject.name>
+        <cim:DCConverterUnit.operationMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DCConverterOperatingModeKind.monopolarGroundReturn"/>
+        <cim:DCConverterUnit.Substation rdf:resource="#_S16"/>
+    </cim:DCConverterUnit>
+    <cim:DCNode rdf:ID="_HVDC_Link_16_113_DCLS_DCNODE_1">
+        <cim:IdentifiedObject.name>HVDC_Link_16_113_1</cim:IdentifiedObject.name>
+        <cim:DCNode.DCEquipmentContainer rdf:resource="#_HVDC_Link_16_113_DCLS_DCCU_1"/>
+    </cim:DCNode>
+    <cim:DCConverterUnit rdf:ID="_HVDC_Link_16_113_DCLS_DCCU_2">
+        <cim:IdentifiedObject.name>HVDC_Link_16_113_1</cim:IdentifiedObject.name>
+        <cim:DCConverterUnit.operationMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DCConverterOperatingModeKind.monopolarGroundReturn"/>
+        <cim:DCConverterUnit.Substation rdf:resource="#_S113"/>
+    </cim:DCConverterUnit>
+    <cim:DCNode rdf:ID="_HVDC_Link_16_113_DCLS_DCNODE_2">
+        <cim:IdentifiedObject.name>HVDC_Link_16_113_2</cim:IdentifiedObject.name>
+        <cim:DCNode.DCEquipmentContainer rdf:resource="#_HVDC_Link_16_113_DCLS_DCCU_2"/>
+    </cim:DCNode>
+    <cim:DCTerminal rdf:ID="_HVDC_Link_16_113_DCLS_T_1">
+        <cim:DCTerminal.DCConductingEquipment rdf:resource="#_HVDC_Link_16_113"/>
+        <cim:DCBaseTerminal.DCNode rdf:resource="#_HVDC_Link_16_113_DCLS_DCNODE_1"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:DCTerminal>
+    <cim:DCTerminal rdf:ID="_HVDC_Link_16_113_DCLS_T_2">
+        <cim:DCTerminal.DCConductingEquipment rdf:resource="#_HVDC_Link_16_113"/>
+        <cim:DCBaseTerminal.DCNode rdf:resource="#_HVDC_Link_16_113_DCLS_DCNODE_2"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:DCTerminal>
+    <cim:ACDCConverterDCTerminal rdf:ID="_HVDC_Link_16_113_DCLS_ACDCCDCT_1">
+        <cim:ACDCConverterDCTerminal.DCConductingEquipment rdf:resource="#_VSC_Station_16"/>
+        <cim:DCBaseTerminal.DCNode rdf:resource="#_HVDC_Link_16_113_DCLS_DCNODE_1"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:ACDCConverterDCTerminal>
+    <cim:ACDCConverterDCTerminal rdf:ID="_HVDC_Link_16_113_DCLS_ACDCCDCT_2">
+        <cim:ACDCConverterDCTerminal.DCConductingEquipment rdf:resource="#_VSC_Station_113"/>
+        <cim:DCBaseTerminal.DCNode rdf:resource="#_HVDC_Link_16_113_DCLS_DCNODE_2"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:ACDCConverterDCTerminal>
+    <cim:DCLineSegment rdf:ID="_HVDC_Link_16_113">
+        <cim:IdentifiedObject.name>HVDC_Link_16_113</cim:IdentifiedObject.name>
+        <cim:DCLineSegment.resistance>5</cim:DCLineSegment.resistance>
+    </cim:DCLineSegment>
+    <cim:VsConverter rdf:ID="_VSC_Station_16">
+        <cim:IdentifiedObject.name>VSC_Station_16</cim:IdentifiedObject.name>
+        <cim:ACDCConverter.ratedUdc>150</cim:ACDCConverter.ratedUdc>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_HVDC_Link_16_113_DCLS_DCCU_1"/>
+        <cim:ACDCConverter.PccTerminal rdf:resource="#_VSC_Station_16_DCCS_T_1"/>
+    </cim:VsConverter>
+    <cim:VsConverter rdf:ID="_VSC_Station_113">
+        <cim:IdentifiedObject.name>VSC_Station_113</cim:IdentifiedObject.name>
+        <cim:ACDCConverter.ratedUdc>150</cim:ACDCConverter.ratedUdc>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_HVDC_Link_16_113_DCLS_DCCU_2"/>
+        <cim:ACDCConverter.PccTerminal rdf:resource="#_VSC_Station_113_DCCS_T_1"/>
+    </cim:VsConverter>
+    <cim:ControlArea rdf:ID="_Default%2BIEEE+14+bus%2BIEEE+39+bus_N_CA">
+        <cim:IdentifiedObject.name>Network</cim:IdentifiedObject.name>
+        <entsoe:IdentifiedObject.energyIdentCodeEic>Network--1</entsoe:IdentifiedObject.energyIdentCodeEic>
+        <cim:ControlArea.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ControlAreaTypeKind.Interchange"/>
+        <cim:ControlArea.EnergyArea rdf:resource="#_Default%2BIEEE+14+bus%2BIEEE+39+bus_N_LA"/>
+    </cim:ControlArea>
+</rdf:RDF>
