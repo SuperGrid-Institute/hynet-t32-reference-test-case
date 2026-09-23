@@ -12,8 +12,8 @@ in [model-changes.md](model-changes.md).
 |-----------|----------------------------------------------|-----------|
 | `tx-full` | IEEE 39-bus + VSC HVDC link + IEEE 14-bus    | Available |
 
-Planned: bidding zones, economic assumptions, contingencies, storage, a `reinforced`
-network case, a reduced variant (`tx-reduced`) and a distribution variant (`dx-33`).
+Planned: economic assumptions, contingencies, storage, a `reinforced` network case,
+a reduced variant (`tx-reduced`) and a distribution variant (`dx-33`).
 
 ### `tx-full`
 
@@ -23,6 +23,32 @@ IEEE 14 bus 13 (maximum 60 MW, rectifier on the IEEE 39 side).
 
 Element ids are those of the source model. Generator, load, line, transformer and
 shunt ids end with a space (for example `"B101-G1 "`); the space is part of the id.
+
+## Bidding zones
+
+Four bidding zones overlay the network; they do not change it. IEEE 39 follows its
+classic three-area partition and IEEE 14 forms a zone of its own.
+
+| Zone | Buses                                    | Generators                         |
+|------|------------------------------------------|------------------------------------|
+| Z0   | IEEE 14: 101–114                         | B101 to B108 (5 units)             |
+| Z1   | 15, 16, 19–24, 33–36                     | B33, B34, B35, B36                 |
+| Z2   | 1, 2, 3, 17, 18, 25–30, 37, 38           | B30, B37, B38                      |
+| Z3   | 4–14, 31, 32, 39                         | B31, B32, B39                      |
+
+Each zone is connected through its own branches. Zones are linked by:
+
+| Interconnection | Type      | Zones   | Capacity |
+|-----------------|-----------|---------|----------|
+| L-1-39          | AC line   | Z2 – Z3 | 1000 MVA |
+| L-3-4           | AC line   | Z2 – Z3 | 500 MVA  |
+| L-14-15         | AC line   | Z3 – Z1 | 600 MVA  |
+| L-16-17         | AC line   | Z1 – Z2 | 600 MVA  |
+| HVDC_Link_16_113| VSC HVDC  | Z1 → Z0 | 60 MW    |
+
+AC capacities are the apparent power matching each line's permanent current limit at
+nominal voltage; a zonal model may use them as transfer limits. `zones/zone_balance.csv`
+gives the scheduled generation, load and balance of each zone in each scenario.
 
 ## Scenarios
 
@@ -114,6 +140,8 @@ testcase/tx-full/
 │   ├── xiidm/tx-full_base.xiidm
 │   ├── cgmes/tx-full_base_{EQ,TP,SSH,SV}.xml, id_mapping.csv
 │   └── pfd/TestCase.pfd
+├── zones/
+│   └── bus_zones.csv, element_zones.csv, interconnections.csv, zone_balance.csv
 └── scenarios/
     ├── generation.csv, loads.csv, hvdc.csv, generators.csv
     └── snapshots/S1..S3/

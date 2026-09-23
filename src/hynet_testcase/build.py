@@ -13,10 +13,11 @@ from pypowsybl.network import Network
 
 from hynet_testcase.errors import TestCaseError
 from hynet_testcase.ids import CaseId, VariantId
-from hynet_testcase.io.csv_writers import SCENARIO_WRITERS
+from hynet_testcase.io.csv_writers import CSV_WRITERS, VariantData
 from hynet_testcase.io.exporters import EXPORTERS
 from hynet_testcase.network.builders import TxFullBuilder, VariantBuilder
 from hynet_testcase.network.loadflow import run_ac
+from hynet_testcase.network.zones import ZoneMapping
 from hynet_testcase.paths import RepoPaths
 from hynet_testcase.scenarios.inputs import ScenarioInputs
 from hynet_testcase.scenarios.report import StateReport
@@ -96,6 +97,8 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
     network = builder.build()
     inputs = ScenarioInputs.load(paths.inputs / "scenarios")
     inputs.check_ids(network)
+    zones = ZoneMapping.load(paths.inputs / "zones" / f"{builder.variant}_bus_zones.csv")
+    data = VariantData(scenarios=inputs, zones=zones.resolve(network))
     unchanged = builder.unchanged_files()
     states = _solve_states(network, builder.variant, inputs)
 
@@ -107,8 +110,8 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
         directory = output / "network" / CaseId.BASE / source.suffix.lstrip(".")
         directory.mkdir(parents=True)
         shutil.copyfile(source, directory / source.name)
-    for writer in SCENARIO_WRITERS:
-        writer.write(inputs, output / "scenarios")
+    for writer in CSV_WRITERS:
+        writer.write(data, output)
     logger.info("wrote %s", output.relative_to(paths.root))
     return [state.report for state in states]
 

@@ -59,6 +59,51 @@ Illustrative characteristics of every generator, shared by all scenarios.
 | `price_eur_mwh` | number  | EUR/MWh | Marginal price used for the merit order              |
 | `is_res`        | boolean | —       | `True` for renewable units (wind, solar, hydro)      |
 
+## `testcase/<variant>/zones/`
+
+### `bus_zones.csv`
+
+| Column    | Type | Description                          |
+|-----------|------|--------------------------------------|
+| `bus_id`  | text | IIDM bus-breaker bus id, e.g. `B16`  |
+| `zone_id` | text | Zone id: `Z0`, `Z1`, `Z2` or `Z3`    |
+
+### `element_zones.csv`
+
+Zone of every generator and load, derived from the bus it connects to.
+
+| Column         | Type | Description             |
+|----------------|------|-------------------------|
+| `element_type` | text | `generator` or `load`   |
+| `element_id`   | text | IIDM id                 |
+| `bus_id`       | text | Connection bus          |
+| `zone_id`      | text | Zone id                 |
+
+### `interconnections.csv`
+
+AC branches whose ends lie in different zones, and HVDC links.
+
+| Column               | Type   | Unit | Description                                                          |
+|----------------------|--------|------|----------------------------------------------------------------------|
+| `interconnection_id` | text   | —    | IIDM line, transformer or HVDC line id                               |
+| `type`               | text   | —    | `ac_branch` or `hvdc`                                                |
+| `zone_from`          | text   | —    | Zone of side 1 (rectifier side for HVDC)                             |
+| `zone_to`            | text   | —    | Zone of side 2 (inverter side for HVDC)                              |
+| `capacity_mw`        | number | MW   | AC: √3 · U_nominal · permanent current limit; HVDC: maximum power   |
+
+### `zone_balance.csv`
+
+Scheduled balance of each zone, from the scenario set points (before losses).
+
+| Column          | Type   | Unit | Description                                 |
+|-----------------|--------|------|---------------------------------------------|
+| `timestamp`     | text   | UTC  | Timestamp of the scenario                   |
+| `scenario_id`   | text   | —    | `S1`, `S2` or `S3`                          |
+| `zone_id`       | text   | —    | Zone id                                     |
+| `generation_mw` | number | MW   | Sum of generator set points                 |
+| `load_mw`       | number | MW   | Sum of load active power                    |
+| `balance_mw`    | number | MW   | Generation minus load (positive: exporting) |
+
 ## `testcase/<variant>/**/cgmes/id_mapping.csv`
 
 Correspondence between IIDM ids and the CGMES identifiers of the files in the same
@@ -86,6 +131,12 @@ Hand-edited files from which the build produces `testcase/`.
 `scenario` holds the scenario name (`baseline`, `high_res_low_demand`,
 `low_res_high_demand`). Each scenario has a single timestamp, the same in every file,
 and sets every generator, load and HVDC line of the network exactly once.
+
+### `zones/<variant>_bus_zones.csv`
+
+Zone of every bus-breaker bus, with the same columns as the shipped `bus_zones.csv`.
+The build stops if a bus is missing, unknown or listed twice, or if a zone is not
+connected through its own branches.
 
 ### `network/<variant>_thermal_limits.csv`
 

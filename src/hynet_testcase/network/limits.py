@@ -10,6 +10,7 @@ import pandas as pd
 from pypowsybl.network import Network
 
 from hynet_testcase.errors import IdResolutionError, InputError
+from hynet_testcase.io.readers import read_input_csv
 
 logger = logging.getLogger(__name__)
 
@@ -36,13 +37,7 @@ class ThermalLimits:
             InputError: If the file is missing, has another header, a duplicate branch,
                 or a limit that is not a positive number.
         """
-        try:
-            frame = pd.read_csv(path, dtype=str, keep_default_na=False)
-        except OSError as exc:
-            raise InputError(f"cannot read {path}: {exc}") from exc
-        if list(frame.columns) != _COLUMNS:
-            raise InputError(f"{path.name}: expected columns {_COLUMNS}, "
-                             f"found {list(frame.columns)}")
+        frame = read_input_csv(path, _COLUMNS)
         if frame["branch_id"].duplicated().any():
             raise InputError(f"{path.name}: duplicate branch_id")
         try:

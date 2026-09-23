@@ -1,0 +1,6 @@
+interconnection_id,type,zone_from,zone_to,capacity_mw
+L-1-39-1 ,ac_branch,Z2,Z3,999.7
+L-14-15-1 ,ac_branch,Z3,Z1,599.9
+L-16-17-1 ,ac_branch,Z1,Z2,599.9
+L-3-4-1 ,ac_branch,Z2,Z3,500.2
+HVDC_Link_16_113,hvdc,Z1,Z0,60.0

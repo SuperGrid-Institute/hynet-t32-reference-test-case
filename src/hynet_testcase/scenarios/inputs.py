@@ -12,6 +12,7 @@ from pypowsybl.network import Network
 
 from hynet_testcase.errors import IdResolutionError, InputError
 from hynet_testcase.ids import ScenarioId
+from hynet_testcase.io.readers import read_input_csv
 
 logger = logging.getLogger(__name__)
 
@@ -27,23 +28,6 @@ _TIME_SERIES_COLUMNS: dict[str, tuple[str, list[str]]] = {
 }
 _GENERATOR_COLUMNS = ["generator_id", "subnetwork", "type", "nominal_p_mw", "price_eur_mwh",
                       "is_res"]
-
-
-def _read_csv(path: Path, columns: list[str]) -> pd.DataFrame:
-    """Reads a CSV whose header must be exactly `columns`.
-
-    Ids are read as strings and never stripped: the source ids end with a space.
-
-    Raises:
-        InputError: If the file is missing or its header differs.
-    """
-    try:
-        frame = pd.read_csv(path, dtype=str, keep_default_na=False)
-    except OSError as exc:
-        raise InputError(f"cannot read {path}: {exc}") from exc
-    if list(frame.columns) != columns:
-        raise InputError(f"{path.name}: expected columns {columns}, found {list(frame.columns)}")
-    return frame
 
 
 def _to_float(frame: pd.DataFrame, columns: list[str], name: str) -> None:
@@ -108,14 +92,14 @@ class ScenarioInputs:
         """
         series: dict[str, pd.DataFrame] = {}
         for name, (id_column, values) in _TIME_SERIES_COLUMNS.items():
-            frame = _read_csv(directory / name, ["timestamp", "scenario", id_column, *values])
+            frame = read_input_csv(directory / name, ["timestamp", "scenario", id_column, *values])
             _to_float(frame, values, name)
             frame["timestamp"] = _parse_timestamps(frame["timestamp"], name)
             _check_scenarios(frame, id_column, name)
             series[name] = frame
         _check_same_timestamps(series)
 
-        generators = _read_csv(directory / GENERATOR_FILE, _GENERATOR_COLUMNS)
+        generators = read_input_csv(directory / GENERATOR_FILE, _GENERATOR_COLUMNS)
         _to_float(generators, ["nominal_p_mw", "price_eur_mwh"], GENERATOR_FILE)
         if not generators["is_res"].isin(["True", "False"]).all():
             raise InputError(f"{GENERATOR_FILE}: is_res must be True or False")

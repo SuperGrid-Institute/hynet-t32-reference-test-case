@@ -29,6 +29,9 @@ scenario or file, PATCH for corrected values.
 - Permanent current limits on every line and transformer of `tx-full` (MC-2 in
   `docs/model-changes.md`), in XIIDM and CGMES, and branch loadings in the build
   report.
+- Four bidding zones for `tx-full` (IEEE 14 and the three classic IEEE 39 areas):
+  bus and element mappings, interconnections with capacities, and scheduled zone
+  balances per scenario, in `testcase/tx-full/zones/`.
 
 ### Changed
 
