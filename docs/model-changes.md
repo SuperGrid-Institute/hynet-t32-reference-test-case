@@ -50,6 +50,29 @@ shunts, voltage or operational limits).
 unchanged: before and after the correction they agree to within 10⁻¹⁵. Values in kV,
 A and Ω become physical.
 
+### MC-2 — Thermal limits added
+
+**Finding.** The source model carries no operational limits, so congestion and
+thermal stress cannot be assessed.
+
+**Correction.** Every line and two-winding transformer gets a permanent current limit,
+the same on both sides, declared in `data/inputs/network/tx-full_thermal_limits.csv`
+(66 branches) with the basis of each value:
+
+| Branches                          | Count | Basis                                                                 |
+|-----------------------------------|-------|-----------------------------------------------------------------------|
+| IEEE 39 lines and transformers    | 41    | Rating `rateA` of the MATPOWER `case39` data set, converted at 345 kV |
+| IEEE 39 line L-6-11               | 1     | `rateA` 480 MVA raised to 600 MVA: at 480 MVA, S1 would overload it   |
+| IEEE 39 step-up transformers T-10-32, T-19-33, T-23-36, T-29-38 | 4 | Sized for their unit: P / 0.9, rounded up to the next 100 MVA. The units of this test case are larger than in the original data set, so its ratings (900–1200 MVA) are below the units' output. |
+| IEEE 14 lines                     | 17    | 138 kV conductor classes of 400 or 600 A, the smallest keeping S1 at or below 80 % |
+| IEEE 14 transformers              | 3     | 100 MVA at 138 kV                                                     |
+
+MVA ratings are converted as I = S / (√3 · U_nominal).
+
+**Effect.** Load-flow results are unchanged; limits only allow loadings to be
+assessed. See [test-case.md](test-case.md#branch-loadings) for the resulting
+loadings.
+
 ## Remarks passed on to the model provider
 
 Not corrected, as they are modelling choices rather than errors:

@@ -26,6 +26,10 @@ scenario or file, PATCH for corrected values.
 - Documentation: `docs/test-case.md`, `docs/data-dictionary.md`,
   `docs/model-changes.md`.
 
+- Permanent current limits on every line and transformer of `tx-full` (MC-2 in
+  `docs/model-changes.md`), in XIIDM and CGMES, and branch loadings in the build
+  report.
+
 ### Changed
 
 - IEEE 39 part of `tx-full` rescaled from a 1 kV base to 345 kV (MC-1 in

@@ -12,6 +12,7 @@ from pypowsybl.network import Network
 from hynet_testcase.errors import InputError
 from hynet_testcase.ids import VariantId
 from hynet_testcase.network.corrections import SourceCorrections
+from hynet_testcase.network.limits import ThermalLimits
 from hynet_testcase.paths import RepoPaths
 
 logger = logging.getLogger(__name__)
@@ -44,7 +45,7 @@ class TxFullBuilder(VariantBuilder):
         return self.paths.sources / "tx-full"
 
     def build(self) -> Network:
-        """Imports `TestCase.xiidm` and applies the declared corrections.
+        """Imports `TestCase.xiidm`, applies the declared corrections and thermal limits.
 
         Raises:
             InputError: If the source model is missing.
@@ -54,8 +55,10 @@ class TxFullBuilder(VariantBuilder):
             raise InputError(f"missing source model {source}")
         logger.info("importing %s", source.relative_to(self.paths.root))
         network = pp.network.load(str(source))
-        corrections = self.paths.inputs / "network" / "tx-full_corrections.yaml"
-        SourceCorrections.load(corrections).apply(network)
+        inputs = self.paths.inputs / "network"
+        SourceCorrections.load(inputs / "tx-full_corrections.yaml").apply(network)
+        # Limits are in A, so they are added once voltages are in physical units.
+        ThermalLimits.load(inputs / "tx-full_thermal_limits.csv").apply(network)
         return network
 
     def unchanged_files(self) -> list[Path]:

@@ -1,0 +1,67 @@
+branch_id,permanent_limit_a,basis
+L-1-2-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-1-39-1 ,1673,MATPOWER case39 rateA 1000 MVA at 345 kV
+L-10-11-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-10-13-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-13-14-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-14-15-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-15-16-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-16-17-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-16-19-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-16-21-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-16-24-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-17-18-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-17-27-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-2-25-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+L-2-3-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+L-21-22-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+L-22-23-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-23-24-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-25-26-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-26-27-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-26-28-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-26-29-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-28-29-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-3-18-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+L-3-4-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+L-4-14-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+L-4-5-1 ,1004,MATPOWER case39 rateA 600 MVA at 345 kV
+L-5-6-1 ,2008,MATPOWER case39 rateA 1200 MVA at 345 kV
+L-5-8-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+L-6-11-1 ,1004,MATPOWER case39 rateA 480 MVA raised to 600 MVA (overloaded in S1)
+L-6-7-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+L-7-8-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+L-8-9-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+L-9-39-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+T-10-32-1 ,1841,Step-up transformer sized for its unit: 1100 MVA (MATPOWER 900 MVA)
+T-12-11-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+T-12-13-1 ,837,MATPOWER case39 rateA 500 MVA at 345 kV
+T-19-20-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+T-19-33-1 ,1841,Step-up transformer sized for its unit: 1100 MVA (MATPOWER 900 MVA)
+T-2-30-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+T-20-34-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+T-22-35-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+T-23-36-1 ,1673,Step-up transformer sized for its unit: 1000 MVA (MATPOWER 900 MVA)
+T-25-37-1 ,1506,MATPOWER case39 rateA 900 MVA at 345 kV
+T-29-38-1 ,2343,Step-up transformer sized for its unit: 1400 MVA (MATPOWER 1200 MVA)
+T-31-6-1 ,3012,MATPOWER case39 rateA 1800 MVA at 345 kV
+L-101-102-1 ,600,138 kV conductor class 600 A
+L-101-105-1 ,400,138 kV conductor class 400 A
+L-102-103-1 ,400,138 kV conductor class 400 A
+L-102-104-1 ,400,138 kV conductor class 400 A
+L-102-105-1 ,400,138 kV conductor class 400 A
+L-103-104-1 ,400,138 kV conductor class 400 A
+L-104-105-1 ,400,138 kV conductor class 400 A
+L-106-111-1 ,400,138 kV conductor class 400 A
+L-106-112-1 ,400,138 kV conductor class 400 A
+L-106-113-1 ,400,138 kV conductor class 400 A
+L-107-108-1 ,400,138 kV conductor class 400 A
+L-107-109-1 ,400,138 kV conductor class 400 A
+L-109-110-1 ,400,138 kV conductor class 400 A
+L-109-114-1 ,400,138 kV conductor class 400 A
+L-110-111-1 ,400,138 kV conductor class 400 A
+L-112-113-1 ,400,138 kV conductor class 400 A
+L-113-114-1 ,400,138 kV conductor class 400 A
+T-104-107-1 ,418,IEEE 14 transformer 100 MVA at 138 kV
+T-104-109-1 ,418,IEEE 14 transformer 100 MVA at 138 kV
+T-105-106-1 ,418,IEEE 14 transformer 100 MVA at 138 kV

@@ -53,12 +53,32 @@ through pypowsybl) before export:
   losses are shared without changing the dispatch pattern;
 - one result per AC island; the build stops if either island does not converge.
 
+The build reports voltages, the HVDC flow and branch loadings for each state. These
+are reported, not enforced.
+
 The base case keeps the operating point of the source model. Each scenario snapshot
 is the base case with the scenario's generation, loads and HVDC set point applied.
 These load flows validate the data; they are not results of any HYNET tool.
 
 Voltages at the solved states range from about 0.98 to 1.09 p.u. Voltage control
 (for example with a reactive optimal power flow) is left to the tools.
+
+### Branch loadings
+
+Every line and transformer has a permanent current limit (see
+[model-changes.md](model-changes.md), MC-2). Loadings at the solved states, in % of
+the limit:
+
+| State | Highest loading         | Overloaded branches                                         |
+|-------|-------------------------|-------------------------------------------------------------|
+| base  | 88 % (L-101-102)        | —                                                           |
+| S1    | 92 % (T-10-32)          | —                                                           |
+| S2    | 95 % (L-28-29)          | —                                                           |
+| S3    | 165 % (L-16-19)         | L-16-19 165 %, L-101-102 108 %, L-6-11 105 %, L-10-11 102 % |
+
+S3 is meant to stress thermal limits. L-16-19 is the only connection of buses 19, 20,
+33 and 34 to the rest of the system, so it carries the output of units B33 and B34
+minus the load at bus 20.
 
 ## Formats
 

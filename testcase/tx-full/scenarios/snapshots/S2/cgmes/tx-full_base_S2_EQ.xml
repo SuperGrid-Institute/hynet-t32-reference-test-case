@@ -1861,6 +1861,31 @@
         <cim:ACLineSegment.bch>0.00017853392145</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_fe0acf3d-68a5-5cd3-a0f3-d2b4804c3a02">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_89b47fe3-010b-507e-9855-7fd877abc9bf"/>
+    </cim:OperationalLimitSet>
+    <cim:OperationalLimitType rdf:ID="_dd515ec4-b15d-55c5-b870-6a2a89be96dc">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+        <entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.patl"/>
+    </cim:OperationalLimitType>
+    <cim:CurrentLimit rdf:ID="_09dedd4c-5c3c-5124-9cd2-f9bdd58569fc">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fe0acf3d-68a5-5cd3-a0f3-d2b4804c3a02"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_0fa4062b-2919-53aa-b97a-4ff52d17b41e">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_cc781132-f8ee-596b-ae19-1717993e091b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_e52c0883-a484-5add-b5fe-d653ec8b5850">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_0fa4062b-2919-53aa-b97a-4ff52d17b41e"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_f3fe2568-f109-56a9-9e4b-407e909bf2c4">
         <cim:IdentifiedObject.name>L-103-104-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>12.7613844</cim:ACLineSegment.r>
@@ -1868,6 +1893,26 @@
         <cim:ACLineSegment.bch>0.00006721277043</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_09e0ea53-fcf4-5d25-a88b-40c7d743f363">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_32421677-1041-5d83-9da9-c3e07a13ce4d"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_ac3bb532-4bdd-5110-88bd-e531a4536dc0">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_09e0ea53-fcf4-5d25-a88b-40c7d743f363"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_2988c9b3-b154-5b7e-9d02-42f321f8c60d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b87e8406-7147-5392-909f-fd4429b586c0"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_51a5db55-1edb-57ce-8174-d5032742ad5e">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2988c9b3-b154-5b7e-9d02-42f321f8c60d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_29942b33-c600-57ce-93e8-01b29970848c">
         <cim:IdentifiedObject.name>L-109-110-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>6.0578964</cim:ACLineSegment.r>
@@ -1875,6 +1920,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_103f0169-1070-56c2-9eb8-f33d3ee60ca6">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_fe896096-5aaa-512e-9f30-2bb525bd122c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_4b8c2082-c40a-5b59-8d39-780b54cd1ec4">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_103f0169-1070-56c2-9eb8-f33d3ee60ca6"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_872b7838-34d9-5c83-a77e-f1adb418c99a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_035a8938-8c7d-5ff3-ba9b-b7b5dc688930"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_afad3c51-3950-5461-8854-3c0da99ef4ea">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_872b7838-34d9-5c83-a77e-f1adb418c99a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_da73e15a-fd88-501f-9a74-e624617ead65">
         <cim:IdentifiedObject.name>L-102-105-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>10.845558</cim:ACLineSegment.r>
@@ -1882,6 +1947,26 @@
         <cim:ACLineSegment.bch>0.00018168452006</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_ff80e43a-6ae1-5a60-a5d5-ed1224be12d4">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_734471c9-cbf6-5433-b372-aeb12f9409e1"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_4bc07bc5-4a3a-5bdb-a9ad-ba8724430200">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ff80e43a-6ae1-5a60-a5d5-ed1224be12d4"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_4c4f66db-84f4-5989-aa4a-62ed86594ca8">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_84e72ee5-d98c-5b43-9749-6c0799f87502"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_de1d46af-79ae-5d69-b8b8-65ef7f24113a">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4c4f66db-84f4-5989-aa4a-62ed86594ca8"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_9f76d97a-0ea7-5559-921e-defec7df1b5f">
         <cim:IdentifiedObject.name>L-106-111-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>18.0879912</cim:ACLineSegment.r>
@@ -1889,6 +1974,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_e4fba191-673a-58fd-b262-f27f00e0ff06">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_486407c8-2d80-5e77-b9cd-16169975ecf0"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_184f5552-210f-5f5a-87d0-a9e6b15553c1">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e4fba191-673a-58fd-b262-f27f00e0ff06"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_5800fae5-2a7a-5350-a5c6-6dd2217a6e9b">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_5ddc3414-1db7-50ee-8c79-abf9c922e5b2"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_286703e3-533f-5b4c-9e51-fc010329518a">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5800fae5-2a7a-5350-a5c6-6dd2217a6e9b"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_5a3c909d-ab6f-546c-a416-70c492bf6acb">
         <cim:IdentifiedObject.name>L-112-113-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>42.0720048</cim:ACLineSegment.r>
@@ -1896,6 +2001,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_f4057ca8-0bfe-50bd-bfa6-b8fa1b51a89b">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_f8aed220-3411-5f3c-a040-95e7bc5f5d2b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_09e01e56-e98b-506d-8b75-ffca076009ef">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f4057ca8-0bfe-50bd-bfa6-b8fa1b51a89b"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_22908591-5df9-53f7-b5a0-6db71259947d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_8ed874fc-0d09-5c17-aef0-67723be9a6b9"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_a4ccd065-19c2-5786-9b48-92639b66a9c9">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_22908591-5df9-53f7-b5a0-6db71259947d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_ae03a3a3-0a79-55ff-b61a-1471ba0fb450">
         <cim:IdentifiedObject.name>L-101-102-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>3.6907272</cim:ACLineSegment.r>
@@ -1903,6 +2028,26 @@
         <cim:ACLineSegment.bch>0.00027725267801</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_e9470f55-a5d0-50e1-8713-d7902179cd20">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_5242010e-f151-5f78-9737-8c4914cec193"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_6d760e0e-6e48-5bea-bfa3-7b0ce8174fb7">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>600</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e9470f55-a5d0-50e1-8713-d7902179cd20"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_bfec73db-211f-53a3-a6e8-387d02c82404">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_d9ea11b2-4eab-5866-a2be-b57be5349dda"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_c3d036c5-9032-570e-8990-3f0b63717707">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>600</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_bfec73db-211f-53a3-a6e8-387d02c82404"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_86bd5861-e3ac-5e3e-8d94-a5fd84a52192">
         <cim:IdentifiedObject.name>L-107-109-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0</cim:ACLineSegment.r>
@@ -1910,6 +2055,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_d738a53f-9b9e-5957-bb5e-85c903d5894e">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ec707fba-5321-5a04-983c-e74662868d40"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_155749c2-bad9-5b13-9a45-80bd548df56d">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d738a53f-9b9e-5957-bb5e-85c903d5894e"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_fa6d8490-68cf-5fe9-9fa3-f69c19d408ae">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_2396621c-8ee0-57ac-b0c4-0dab653eb9cc"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_0340999a-b5d1-5d15-8394-c3df8333f705">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fa6d8490-68cf-5fe9-9fa3-f69c19d408ae"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_41e26bc8-bb85-52a9-8ad1-e51f4637e94e">
         <cim:IdentifiedObject.name>L-106-112-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>23.4069804</cim:ACLineSegment.r>
@@ -1917,6 +2082,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_25c5c4bf-0224-5743-87a0-1380fef31379">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_dc4054a2-9f18-5b83-aaa1-193d953fa915"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_ddadfcc9-302e-5883-9288-d8b50df36719">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_25c5c4bf-0224-5743-87a0-1380fef31379"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_b441f719-905b-5a4b-b93f-93a788294f3b">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_3398a1a6-12bd-574e-9a1c-65f976f35ad0"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_70f4bccc-e1b0-5c12-9951-d58788d9804d">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b441f719-905b-5a4b-b93f-93a788294f3b"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_fd172502-8fb8-5c20-ae6a-dfa47f5fdec1">
         <cim:IdentifiedObject.name>L-113-114-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>32.5519092</cim:ACLineSegment.r>
@@ -1924,6 +2109,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_ab6d3d01-92aa-54b8-b0c8-75485db405fc">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_213aff80-7b60-528b-afed-ddd64c1125fd"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_3597882d-bc9d-5679-9b3e-1fb653a5e9d6">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ab6d3d01-92aa-54b8-b0c8-75485db405fc"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_4124a3bb-8f26-5532-b4a2-ee7550dec2d0">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_a2974b02-2225-5ef3-a297-d340fbf54834"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_54fa2002-d19a-5ed7-aa63-86ac0bdbd2df">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4124a3bb-8f26-5532-b4a2-ee7550dec2d0"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_d9174c6d-a35a-50c8-9f52-711c918e7c9e">
         <cim:IdentifiedObject.name>L-104-105-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>2.542374</cim:ACLineSegment.r>
@@ -1931,6 +2136,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_da8bab0e-e3da-5d73-984f-4f161e9a9d25">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_434b2189-fe57-5ac6-b21d-818f0743d6e8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_a04f460c-570d-5d43-b4ec-d31c926bcd97">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_da8bab0e-e3da-5d73-984f-4f161e9a9d25"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_4ebec97c-572a-5588-8f00-dd10dfa82121">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_2f5ad3cb-156c-51da-a27d-0b13c7318b20"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_005a9f57-d2fc-5043-9735-f00cee60e04e">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4ebec97c-572a-5588-8f00-dd10dfa82121"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_bb8c5044-92a7-5c3e-aeb6-9db1acffdd7b">
         <cim:IdentifiedObject.name>L-101-105-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>10.2894732</cim:ACLineSegment.r>
@@ -1938,6 +2163,26 @@
         <cim:ACLineSegment.bch>0.00025834908633</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_2e81a598-a11a-5c13-b205-9cb87ffff093">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_fe5a50fa-547b-5e73-a891-64ea0e244265"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_297f4773-9d10-579a-9d62-930367ab1561">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2e81a598-a11a-5c13-b205-9cb87ffff093"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_dbf2621a-0703-5113-bdd7-31afd990922a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b8bec676-d86c-5ba0-b410-612e622e6c41"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_81f3faf5-aad5-563f-bbb4-98bbe6f84120">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_dbf2621a-0703-5113-bdd7-31afd990922a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_687cf513-ee1c-5de9-bf7a-984f51dbb1cd">
         <cim:IdentifiedObject.name>L-102-103-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>8.9487756</cim:ACLineSegment.r>
@@ -1945,6 +2190,26 @@
         <cim:ACLineSegment.bch>0.0002299936988</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_2956491e-95d5-50fe-861a-84e52e67c956">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_989d31cd-77c2-5f9d-a482-e7a0f9ef5a51"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_352a6392-b1b5-5e8a-abf7-b7c22aafeb91">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2956491e-95d5-50fe-861a-84e52e67c956"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_778a3471-d1b4-5be7-9ba3-453f213a6481">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b5f3a2c4-792a-5f48-a75d-61fcf1a3007f"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_4c1de1ba-3bc7-5cae-9ec5-92ea7aff51e6">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_778a3471-d1b4-5be7-9ba3-453f213a6481"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_c77fb875-b996-5c89-9636-0682a703f892">
         <cim:IdentifiedObject.name>L-109-114-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>24.2068284</cim:ACLineSegment.r>
@@ -1952,6 +2217,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_3e7abe0c-4aba-545a-ae14-894aadef54f1">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_01b554d4-93f5-507b-a4b5-95c4b780abcb"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_048cced1-4b40-52fe-a303-00735a72810f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_3e7abe0c-4aba-545a-ae14-894aadef54f1"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_24896505-cafc-564d-ba4e-291c41d7ecc8">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_32179fe3-ae43-5569-9c92-7d8f358ec095"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_35b7ba09-aadd-5f19-8f18-579ad6639456">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_24896505-cafc-564d-ba4e-291c41d7ecc8"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_adfe3a3e-4728-563a-b47b-8adeffdf7eb7">
         <cim:IdentifiedObject.name>L-107-108-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0</cim:ACLineSegment.r>
@@ -1959,6 +2244,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_30624910-dffa-583a-967f-691931f98910">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_786dac08-d189-5829-8f5d-aea99bebb382"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_393a9264-b20c-57f1-b4ab-52f600651d69">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_30624910-dffa-583a-967f-691931f98910"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_f59f0ebf-cc3e-5ecb-b71e-b4825e40e4a0">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_09390862-26d3-5519-b2ed-5012c3df66ee"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_1eec355a-1e34-5b3e-adf8-e1a216d0b75b">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f59f0ebf-cc3e-5ecb-b71e-b4825e40e4a0"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_a4d8f155-2188-55c7-baf8-84f272aa975b">
         <cim:IdentifiedObject.name>L-106-113-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>12.597606</cim:ACLineSegment.r>
@@ -1966,6 +2271,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_f2034fc4-bf7f-5870-bf6e-b1af20437463">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_00c9cfa8-631c-5019-8aa9-dea07e6c6c75"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_e47de3dc-d86c-53a8-ab55-8f9b1f4e615d">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f2034fc4-bf7f-5870-bf6e-b1af20437463"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_4583c056-2116-518d-aba3-a587d97ba3fb">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_914f675d-b5ad-5a1a-996d-c65c30ce35e8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_7a1016ab-ce2d-5eae-8104-86a66c8df570">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4583c056-2116-518d-aba3-a587d97ba3fb"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_5bd2f37c-d401-5480-b89c-e3975cfb7a50">
         <cim:IdentifiedObject.name>L-110-111-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>15.625602</cim:ACLineSegment.r>
@@ -1973,6 +2298,26 @@
         <cim:ACLineSegment.bch>0</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_1ef5923e-b04e-5e4b-ad35-9dea39110189">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_f07043c2-49ac-55ee-a8b5-b77b7e00c1e3"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_53cbb76f-1a42-5ef2-9b03-0209d1ce4f83">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1ef5923e-b04e-5e4b-ad35-9dea39110189"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_80d1c6f8-ea9b-56ca-8da3-08ccda528d24">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_198d04e7-2155-5bf8-b98f-563c04f7c51e"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_23926b34-2566-5a5d-a5bd-94c0de3ceb6f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_80d1c6f8-ea9b-56ca-8da3-08ccda528d24"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_b6966cf0-025b-5f73-9064-03cc42fe49f1">
         <cim:IdentifiedObject.name>L-15-16-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.071225</cim:ACLineSegment.r>
@@ -1980,6 +2325,26 @@
         <cim:ACLineSegment.bch>0.00014366729679</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_04ae53a4-c2e1-5539-97a4-de8e40b40efe">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ebbe6a39-27c3-524c-8ccf-b2cbc5171f59"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_4276b380-f60b-5855-83bf-b9f8058c22a2">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_04ae53a4-c2e1-5539-97a4-de8e40b40efe"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_047d6633-e809-5067-8a1d-72a9b3f842c1">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c8569293-1640-5fe7-b74f-588a4e996740"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_80b08d44-db77-59a1-90a4-1c44be18cd72">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_047d6633-e809-5067-8a1d-72a9b3f842c1"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_f970583e-c656-5fb0-a4b7-2c00401fc0e5">
         <cim:IdentifiedObject.name>L-6-11-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.833175</cim:ACLineSegment.r>
@@ -1987,6 +2352,26 @@
         <cim:ACLineSegment.bch>0.00011669817265</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_38ae1eae-933d-553f-83d0-afbda20224dd">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_13c94202-a775-5afc-a01b-2e61c4873283"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_72864185-d19f-59b9-a4ba-1bc7e5aeee2c">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_38ae1eae-933d-553f-83d0-afbda20224dd"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_20493a46-6a71-52da-99a6-43b74ccb398a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_dd8c5c01-1d3b-53dc-ab30-edf49ed4f305"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_6250dc44-1873-5c38-9132-f2b42dcd5b53">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_20493a46-6a71-52da-99a6-43b74ccb398a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_8fa29738-d06d-5ecf-8554-ebd3f6fd6d9c">
         <cim:IdentifiedObject.name>L-16-24-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.357075</cim:ACLineSegment.r>
@@ -1994,6 +2379,26 @@
         <cim:ACLineSegment.bch>0.00005713085486</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_4ffcde14-7e89-5193-a0e0-911fe5c7f74d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_894cc0ef-0e4c-54b0-bae7-6f74f9c9b327"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_458d41be-d60e-5ae3-a4b6-979e76f9a38f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4ffcde14-7e89-5193-a0e0-911fe5c7f74d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_c0cabf93-6ab4-5576-be32-0641be42764b">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_00a76057-2871-5293-afba-a97a0779ccc3"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_9ad7bc6e-f590-58f6-9382-71b97e1a40ba">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_c0cabf93-6ab4-5576-be32-0641be42764b"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_5b221cfc-dfb2-5643-b7ff-f506aee9327d">
         <cim:IdentifiedObject.name>L-1-39-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.19025</cim:ACLineSegment.r>
@@ -2001,6 +2406,26 @@
         <cim:ACLineSegment.bch>0.00063011972275</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_e86419bd-1066-519e-840a-e3fe1f335a49">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ab005232-5237-5368-a7db-a35e0fdaab18"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_05a3635c-dc71-5d53-8236-1127a0a00f92">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e86419bd-1066-519e-840a-e3fe1f335a49"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_38e170d1-8963-5b1e-bdd0-55bc2229be50">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_64a8cf27-ff04-5d1d-8065-53bb6a0b9513"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_64ec9a9c-d384-5b0b-82f4-101e03fa261a">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_38e170d1-8963-5b1e-bdd0-55bc2229be50"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_f956ae92-3085-5a55-815a-3af581d8a28e">
         <cim:IdentifiedObject.name>L-9-39-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.19025</cim:ACLineSegment.r>
@@ -2008,6 +2433,26 @@
         <cim:ACLineSegment.bch>0.0010081915564</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_69dc2585-dde9-5722-bdea-5f1c31fc77f8">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_be787bcc-3691-5e8b-82d6-156a4d3c7f5d"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_95fc47a8-8175-56fe-9d37-16219d51c299">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_69dc2585-dde9-5722-bdea-5f1c31fc77f8"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_42f77d72-076a-5fb6-bcc0-a2f7b32fc6aa">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ac14faf4-e35d-50ea-9a4a-276e6c2eb2ce"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_2587da07-601b-5d71-a995-c29c335156d5">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_42f77d72-076a-5fb6-bcc0-a2f7b32fc6aa"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_65298b04-37b2-5f68-8d02-3fb04f03acb0">
         <cim:IdentifiedObject.name>L-23-24-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>2.61855</cim:ACLineSegment.r>
@@ -2015,6 +2460,26 @@
         <cim:ACLineSegment.bch>0.00030329762655</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_b0e9f147-4073-5ebb-819d-bc8a97502f7d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_e4e3c2d2-54bb-5ba8-8746-3e4e5a2c8dc8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_61cfb7a7-a313-5013-a6e7-75ea7e59993f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b0e9f147-4073-5ebb-819d-bc8a97502f7d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_de5deb98-a749-5968-9fff-9c58bf757b9c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_23fde632-367e-5005-a8ad-5f8ed84b5ec4"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_10287473-f851-5cdb-844a-8c36f29c0b33">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_de5deb98-a749-5968-9fff-9c58bf757b9c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_3555ca81-59b7-546a-a96a-7ef8af9377bf">
         <cim:IdentifiedObject.name>L-26-27-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.66635</cim:ACLineSegment.r>
@@ -2022,6 +2487,26 @@
         <cim:ACLineSegment.bch>0.00020130224743</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_edba1dbe-e93c-5e60-9df6-177b4a3f806c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ad040ff9-6fa3-552f-95ff-588cd4caf3e3"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_6080feee-89e5-59b1-9ae9-1f5e7ae4495a">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_edba1dbe-e93c-5e60-9df6-177b4a3f806c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_893e8cef-90ae-5c5f-aaea-01ee2c355188">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_6a186072-d5e6-5560-9a7a-f9a15b646ae6"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_57d68ba8-4800-5d23-ac06-fafbe627d0f2">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_893e8cef-90ae-5c5f-aaea-01ee2c355188"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_6b3296e5-0a65-5a5c-9922-707653030cb1">
         <cim:IdentifiedObject.name>L-6-7-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.71415</cim:ACLineSegment.r>
@@ -2029,6 +2514,26 @@
         <cim:ACLineSegment.bch>0.00009493803823</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_43e1ff2e-1b04-5620-ace7-af4348838bb9">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_0c199d50-0e1b-5104-a066-cbaa6e8d7429"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_63a02f6d-2939-523a-bc19-49e82f86adcd">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_43e1ff2e-1b04-5620-ace7-af4348838bb9"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_4d442d22-12af-5754-9ea7-9308b7300e33">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_e85484ec-eeb3-5906-8234-25a1dcf80523"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_6246feab-8659-548b-a6c7-bc8fa1cda6d9">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4d442d22-12af-5754-9ea7-9308b7300e33"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_ed27567c-8ede-5cad-80c5-e316c346b448">
         <cim:IdentifiedObject.name>L-16-21-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.9522</cim:ACLineSegment.r>
@@ -2036,6 +2541,26 @@
         <cim:ACLineSegment.bch>0.00021407267381</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_ce4eaeda-f4c3-51c1-b35b-0dce98638260">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_9c39269d-11e1-5bb3-bddf-bc1c90a64663"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_7f78044e-9d9d-52a5-a501-e1e86a69122a">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ce4eaeda-f4c3-51c1-b35b-0dce98638260"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_c6aadf66-fbbb-5db2-a844-99efea0dd9e0">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_293c4778-8644-5fe3-9b17-9b14e52d2ac6"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_df4f1543-1411-5f1d-b93f-46dfa4ed32a7">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_c6aadf66-fbbb-5db2-a844-99efea0dd9e0"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_70350ab0-bcd3-5850-9c4b-b7c18dea89b7">
         <cim:IdentifiedObject.name>L-8-9-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>2.737575</cim:ACLineSegment.r>
@@ -2043,6 +2568,26 @@
         <cim:ACLineSegment.bch>0.00031959672338</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_69ea1301-3be2-5e78-b320-e707ce26ece4">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_33139b9a-f31b-55ec-aeb4-4d75df91fbf3"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_eff1e0a4-921a-541a-9f4c-c259b2a756a8">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_69ea1301-3be2-5e78-b320-e707ce26ece4"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_972442c1-1bc2-51c2-a9d9-9892c060897d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_cfcf5cd1-b761-5e4e-8d6c-2d4c9f884bb2"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_f7382eb2-1a16-5405-9179-2c4c67db6b9c">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_972442c1-1bc2-51c2-a9d9-9892c060897d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_7426fd11-57d3-5994-b8ba-75c20c205a76">
         <cim:IdentifiedObject.name>L-10-13-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.4761</cim:ACLineSegment.r>
@@ -2050,6 +2595,26 @@
         <cim:ACLineSegment.bch>0.00006124763705</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_977e0436-d42d-5d5a-998c-a019f8f6c1ef">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_708a7456-b2a5-56be-a897-b772236c79d4"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_eb73ceb1-7a8e-571b-bc41-8a6e3c1ad9c9">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_977e0436-d42d-5d5a-998c-a019f8f6c1ef"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_22b8ad95-f0ff-5fbb-ac6d-74b95c4c90bc">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_456e5fa9-2fa8-53d2-bafb-c5cb7cc55da1"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_c4b0bcfa-e594-5bfa-add1-d2d0cbe70b69">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_22b8ad95-f0ff-5fbb-ac6d-74b95c4c90bc"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_100d9462-4890-5c1d-95a9-51881758bddf">
         <cim:IdentifiedObject.name>L-5-6-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.23805</cim:ACLineSegment.r>
@@ -2057,6 +2622,26 @@
         <cim:ACLineSegment.bch>0.00003646292796</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_824c5d7b-62a8-5761-9e4e-aae81001c19a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_539a9f32-19c7-5d82-a7f7-364319e10947"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_319663d8-af3f-5dd3-b98d-d4ca7a5622e3">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>2008</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_824c5d7b-62a8-5761-9e4e-aae81001c19a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_d282b446-022f-53c4-8980-cd6089d4c67c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_333bf524-fbb3-5dec-ae3e-4b8748246595"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_02282180-6d61-56ec-aa89-663cc2aa8b27">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>2008</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d282b446-022f-53c4-8980-cd6089d4c67c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_822f7bef-b757-513c-9eda-02a80cd975eb">
         <cim:IdentifiedObject.name>L-2-3-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.547325</cim:ACLineSegment.r>
@@ -2064,6 +2649,26 @@
         <cim:ACLineSegment.bch>0.00021608905692</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_5fff8b9d-77af-53f4-86bf-fd9c6c594e20">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_f99c96fb-6c6c-5200-b63d-362cef5362a5"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_22754ae1-6ca3-5537-81e5-e26c7b243992">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5fff8b9d-77af-53f4-86bf-fd9c6c594e20"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_78f03bfa-0144-560a-be02-d5f7e00306ef">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_60760a76-78fc-5cff-af0f-d8652d81fecd"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_52d72c14-0e7f-542d-9b12-0c4c77d430a4">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_78f03bfa-0144-560a-be02-d5f7e00306ef"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_f297b2e8-4dd7-5c4e-aab1-6b9d36ee0842">
         <cim:IdentifiedObject.name>L-2-25-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>8.33175</cim:ACLineSegment.r>
@@ -2071,6 +2676,26 @@
         <cim:ACLineSegment.bch>0.00012266330603</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_65cc0850-b220-559b-b85b-9895725dc057">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c0ea2525-c242-5222-86d9-eee9583b36f4"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_8a8609a5-1694-5d67-9f2f-20ff459017cf">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_65cc0850-b220-559b-b85b-9895725dc057"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_2a903a40-8098-5d4e-8034-d44662ea60c8">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_818f45da-28f7-5a78-ae8e-a6c77029d0db"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_ec39ae8e-d35a-5519-9769-05532234cdce">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2a903a40-8098-5d4e-8034-d44662ea60c8"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_0a29d639-2d92-5171-a4a9-cc4aa89afaec">
         <cim:IdentifiedObject.name>L-3-18-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.309275</cim:ACLineSegment.r>
@@ -2078,6 +2703,26 @@
         <cim:ACLineSegment.bch>0.00017962612896</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_9fadacee-57cd-54c0-accd-3d4bceaebd4f">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_578e6064-5143-5589-8186-aacc01947835"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_0eb9dd91-987a-5086-8dde-90ab4e7d88e0">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9fadacee-57cd-54c0-accd-3d4bceaebd4f"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_7aedd61c-b158-5881-8d93-4d51a30d0248">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_d8c7b265-6a48-5839-9310-9c159548e9b3"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_fd758bce-6faf-5c1e-b90a-361bbdfd0742">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7aedd61c-b158-5881-8d93-4d51a30d0248"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_4328bc8a-ff1d-54e4-aa22-cdb33c2a7524">
         <cim:IdentifiedObject.name>L-26-28-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>5.118075</cim:ACLineSegment.r>
@@ -2085,6 +2730,26 @@
         <cim:ACLineSegment.bch>0.00065549254358</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_1f59a859-543e-54c3-b2b6-2972c66911cd">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_01270f64-d742-5937-b529-d50e8c5cd98b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_58ab9efc-0ae3-51d3-b469-db3b8d982996">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1f59a859-543e-54c3-b2b6-2972c66911cd"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_96f8ed9d-775e-5cef-b6c0-6ac063505fd4">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_2997bf41-d0bc-55f1-8a8d-297afb909932"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_b25e3e42-6517-5150-8f53-3ecc2c06750f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_96f8ed9d-775e-5cef-b6c0-6ac063505fd4"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_6d5abf83-f954-530c-ad3a-562d662bc0ef">
         <cim:IdentifiedObject.name>L-21-22-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.9522</cim:ACLineSegment.r>
@@ -2092,6 +2757,26 @@
         <cim:ACLineSegment.bch>0.00021550094518</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_8cfa4885-a17c-5335-afa3-d3086bb6d423">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_8d25d45b-b56c-5179-83ae-0253f6f4bb98"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_1bda2b92-ec0a-5c9b-8f2b-1b481884b452">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_8cfa4885-a17c-5335-afa3-d3086bb6d423"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_f9d68ad2-a7fe-55ec-8cd2-1171bfc81ce9">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b0b30415-8674-5d5a-87e4-45523aed5b03"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_be4678de-99c6-57e2-878f-883d733c16ae">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f9d68ad2-a7fe-55ec-8cd2-1171bfc81ce9"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_85d40efa-fc10-59c5-a7fd-25bce9d93f31">
         <cim:IdentifiedObject.name>L-13-14-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.071225</cim:ACLineSegment.r>
@@ -2099,6 +2784,26 @@
         <cim:ACLineSegment.bch>0.00014475950431</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_82dcb1df-e85f-5b3d-9fe2-db3e3306cd51">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_0962e71e-1b95-52f6-9ce3-44a9e7dca6c8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_918be406-f145-5849-ae5f-81189f2f2e76">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_82dcb1df-e85f-5b3d-9fe2-db3e3306cd51"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_98891c97-42ed-5ed1-bf0d-b15abc8eb2f4">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_1b056db9-204a-549a-9528-ee417978c582"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_8bccc266-482b-528b-91d2-9828cce6eaaf">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_98891c97-42ed-5ed1-bf0d-b15abc8eb2f4"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_353da10a-b639-52e0-80ae-e6ea37c2f614">
         <cim:IdentifiedObject.name>L-25-26-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>3.8088</cim:ACLineSegment.r>
@@ -2106,6 +2811,26 @@
         <cim:ACLineSegment.bch>0.00043100189036</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_f4d248af-98b1-53e0-a4ea-285b01da159f">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_913c5dcd-b22f-5145-be0a-c4b6e0c3a743"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_aa2307ac-26b3-592a-b324-14ce54cb6057">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f4d248af-98b1-53e0-a4ea-285b01da159f"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_0d88cbfd-51b6-56e2-b5fd-ad8b493e16b7">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b6c2b3ab-c7f6-57c7-a4ba-66c08078bcd8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_9ebf5632-dce5-5828-a05c-b543b1baf2d0">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_0d88cbfd-51b6-56e2-b5fd-ad8b493e16b7"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_cacda775-d4bd-58ef-bd66-a1587d4452fa">
         <cim:IdentifiedObject.name>L-17-18-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.833175</cim:ACLineSegment.r>
@@ -2113,6 +2838,26 @@
         <cim:ACLineSegment.bch>0.00011081705524</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_28b2c52a-b021-5b10-b26d-31bd6acc6940">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_fb95a4c6-6043-5f09-ab0d-b7f34218e929"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_29ed2fc8-808a-5643-8f84-41dcbd0dfa7a">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_28b2c52a-b021-5b10-b26d-31bd6acc6940"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_dcb35892-e51e-5e26-b67b-cf003fab176a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_5f132e6d-6dca-5a3e-af70-1efdb550a8c9"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_99e10251-b155-5630-87af-997750001479">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_dcb35892-e51e-5e26-b67b-cf003fab176a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_517e990a-3c3d-5fee-bb8e-76eb8fb32450">
         <cim:IdentifiedObject.name>L-17-27-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.547325</cim:ACLineSegment.r>
@@ -2120,6 +2865,26 @@
         <cim:ACLineSegment.bch>0.00027019533711</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_35804d4c-d194-5d0d-a1db-2fc8aaf1ca93">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_3ff6c594-ba1d-54b1-bff1-c85e96eee874"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_d31311db-8b78-51f0-8bf5-53dde78b0b7d">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_35804d4c-d194-5d0d-a1db-2fc8aaf1ca93"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_fcff99b7-c18c-53e7-93b8-6f32529e1d6a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_66b66ea6-05c5-59b1-b595-d2403d4db37c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_ba58b047-330a-56e5-94f2-d5097ffe89b5">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fcff99b7-c18c-53e7-93b8-6f32529e1d6a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_6b0d15f3-5989-5ae5-83b3-c9826c993fa8">
         <cim:IdentifiedObject.name>L-16-19-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.9044</cim:ACLineSegment.r>
@@ -2127,6 +2892,26 @@
         <cim:ACLineSegment.bch>0.00025540852762</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_b284682a-beda-56c3-b967-6c330f87a24a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b8220294-f763-525c-b79d-6edfc0eb42fd"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_be841018-8545-5bf7-b526-a2b56e61802b">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b284682a-beda-56c3-b967-6c330f87a24a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_e21c1e18-8107-5e94-b497-70e11b65fbe2">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_2fb06a7d-edba-506d-894c-fd9fb39c79fe"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_af7f173a-673b-5bd7-9732-f9e33a56a5a9">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e21c1e18-8107-5e94-b497-70e11b65fbe2"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_2535214a-01ea-5567-8bd7-bc53e9d9a189">
         <cim:IdentifiedObject.name>L-4-14-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.9522</cim:ACLineSegment.r>
@@ -2134,6 +2919,26 @@
         <cim:ACLineSegment.bch>0.00011611006091</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_5c554f86-95ee-545a-9d27-6a6e639a3822">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_81ee7a0c-87b5-5a68-87b2-1c9695a3aab8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_b3da1d3a-4cc7-5fb6-b925-b3652115cc77">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5c554f86-95ee-545a-9d27-6a6e639a3822"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_fd00540a-fb5f-55f2-b047-17461d852763">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_d796cd3a-967e-5949-9811-50ac1a9174e7"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_68dbb16e-d4cc-5e37-a6b1-e702e1456da8">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fd00540a-fb5f-55f2-b047-17461d852763"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_54cb234a-5f84-5adb-9ffc-2b6cc1847538">
         <cim:IdentifiedObject.name>L-10-11-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.4761</cim:ACLineSegment.r>
@@ -2141,6 +2946,26 @@
         <cim:ACLineSegment.bch>0.00006124763705</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_3d598723-99b1-5215-b178-a3a8da64c407">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_7010e9c4-11a0-5c27-8329-f91742c04028"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_639116cb-7d03-5c26-aec8-2c44078e4a99">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_3d598723-99b1-5215-b178-a3a8da64c407"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_a97c7a7f-631e-5e1c-b8a8-cd30e1bebe9b">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_0c0a7f0e-b644-5ed1-a118-5dcaabb063c9"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_0d3e168b-66bf-5d03-8654-e1bff7d3c983">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a97c7a7f-631e-5e1c-b8a8-cd30e1bebe9b"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_4124c902-9ec4-521c-a1b2-270cd417e5f2">
         <cim:IdentifiedObject.name>L-3-4-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.547325</cim:ACLineSegment.r>
@@ -2148,6 +2973,26 @@
         <cim:ACLineSegment.bch>0.00018601134216</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_0d058d78-57d0-5378-bf1f-1f682a9ff73c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_60b42bc3-7477-5d40-9536-0a291d958cb0"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_e6418e21-24e0-5f48-b738-9d030b28a81e">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_0d058d78-57d0-5378-bf1f-1f682a9ff73c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_11aee9c4-a0b4-5fae-8418-9ca05f28f2be">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_78474fca-88b9-51c1-998d-41536e38225a"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_098b7d13-4e6b-5a16-94d6-c2bdbceff21b">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_11aee9c4-a0b4-5fae-8418-9ca05f28f2be"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_c6c26392-9763-5562-8827-4c98f034ef93">
         <cim:IdentifiedObject.name>L-5-8-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.9522</cim:ACLineSegment.r>
@@ -2155,6 +3000,26 @@
         <cim:ACLineSegment.bch>0.00012400756144</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_edce093a-b019-58c7-8453-d28aa2d7ef7d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_101ea4d4-2657-5d02-9e06-bdac91070728"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_64900a16-66e3-5bb2-a65d-6e227d818a95">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_edce093a-b019-58c7-8453-d28aa2d7ef7d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_ef6d6490-8439-5fb4-bc9b-0b111b3ffa18">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_665726cc-7d19-540f-91b3-87dfa9161281"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_22fcd251-2d0e-53b9-9c2a-9eee800f5068">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ef6d6490-8439-5fb4-bc9b-0b111b3ffa18"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_e122a0bc-6b88-5e9e-944f-5753f6dd46bb">
         <cim:IdentifiedObject.name>L-28-29-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>1.66635</cim:ACLineSegment.r>
@@ -2162,6 +3027,26 @@
         <cim:ACLineSegment.bch>0.00020919974795</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_69eab174-a3d7-5967-be19-e37cc5174c00">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_756536d9-5e49-57cd-8ce7-9ad94d760017"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_25dee50b-2766-528f-a0c9-d33de269dbb0">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_69eab174-a3d7-5967-be19-e37cc5174c00"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_2d410e89-9cd6-5279-9a86-de0c6a78daff">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_649b70f2-3fad-502e-b98b-9bef1afdbd31"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_f51396ac-0167-5ed7-90d1-61c93126b1a5">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2d410e89-9cd6-5279-9a86-de0c6a78daff"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_d74a0e60-a132-5796-aa3d-1aa83fe8ab51">
         <cim:IdentifiedObject.name>L-22-23-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.71415</cim:ACLineSegment.r>
@@ -2169,6 +3054,26 @@
         <cim:ACLineSegment.bch>0.00015509346776</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_1aa56630-db51-5dee-9913-3c1059fc9326">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ec75eca6-beb5-568c-a32e-2e23999f3a1c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_437b63e0-e1ca-54f9-922d-9813cd1e9004">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1aa56630-db51-5dee-9913-3c1059fc9326"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_d85bfa72-abcf-5e6d-8234-b58c2ad14647">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_3dac40cb-3e98-5944-af9b-d7a417f35890"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_0b2d0964-af42-5de4-8942-968f66b4cbd4">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d85bfa72-abcf-5e6d-8234-b58c2ad14647"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_a71a8c57-230b-59d4-8bce-b3e4f9a1470b">
         <cim:IdentifiedObject.name>L-1-2-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>4.165875</cim:ACLineSegment.r>
@@ -2176,6 +3081,26 @@
         <cim:ACLineSegment.bch>0.00058701953371</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_976bfe0f-cd3f-5747-b58b-9be854d6a399">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_db0c5eab-9f94-5884-8e74-cb44754bee75"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_333445cc-f26a-5c6d-8211-69b4c55ca054">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_976bfe0f-cd3f-5747-b58b-9be854d6a399"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_f9ff380e-240d-57f2-bcfa-0558dd8cf96d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_7ad096bd-f0e9-5cbb-9963-04ddd229357c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_928c97a4-652e-5076-ab03-195678df4a7f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f9ff380e-240d-57f2-bcfa-0558dd8cf96d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_dc4f7b23-23bf-5b17-8501-acad18ccf57e">
         <cim:IdentifiedObject.name>L-14-15-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>2.14245</cim:ACLineSegment.r>
@@ -2183,6 +3108,26 @@
         <cim:ACLineSegment.bch>0.0003074984247</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_0b8543e2-6929-5af7-a502-3815593545db">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_4c446090-dfa9-5137-a4d0-079cc85f2b8a"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_51853e44-238d-5ed7-bfa8-9025aebd03a9">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_0b8543e2-6929-5af7-a502-3815593545db"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_f8b68760-ce73-52c9-8eee-ca1c9ee83131">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ecc11cf0-bb7b-52f3-9b03-168c16e33531"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_6527ed2e-3799-50d8-a158-9a54ca9b3235">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f8b68760-ce73-52c9-8eee-ca1c9ee83131"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_d01f4802-23ae-5e4d-b953-078bbc082b4a">
         <cim:IdentifiedObject.name>L-16-17-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.833175</cim:ACLineSegment.r>
@@ -2190,6 +3135,26 @@
         <cim:ACLineSegment.bch>0.00011274942239</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_34e38e9a-1cfe-5c30-9621-688d4d3d334e">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c899ba62-a973-5064-9b6f-f1a35fc6c2dc"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_91d0f233-5ebd-5fd9-9cdd-81045dbaa7a3">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_34e38e9a-1cfe-5c30-9621-688d4d3d334e"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_7e1fccb7-2895-5352-8bfb-bd78666c9c2e">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c033ad41-d5ea-5a9b-8924-7f6d1042c7ac"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_89d0d5e0-3112-5e7c-871c-c98e9ea0f7e4">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7e1fccb7-2895-5352-8bfb-bd78666c9c2e"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_fd4a32f5-6475-55ab-bfec-694b95e0a810">
         <cim:IdentifiedObject.name>L-4-5-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.9522</cim:ACLineSegment.r>
@@ -2197,6 +3162,26 @@
         <cim:ACLineSegment.bch>0.00011274942239</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_82fa7781-831d-57a0-9851-82aa15bb6ab8">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_130cd111-21f7-56b1-9435-48603e69e856"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_2326503e-477b-5553-995b-d5522d4cae9d">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_82fa7781-831d-57a0-9851-82aa15bb6ab8"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_19269b52-a527-583a-8c0c-f9406856d2ae">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_9d38e432-1a13-5e57-8398-447df73c2e26"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_3b6ef3ea-4d62-5284-ba43-07e246e2ceb0">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_19269b52-a527-583a-8c0c-f9406856d2ae"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_f86f9667-83cf-53c9-ab9e-094c0f80a323">
         <cim:IdentifiedObject.name>L-26-29-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>6.784425</cim:ACLineSegment.r>
@@ -2204,6 +3189,26 @@
         <cim:ACLineSegment.bch>0.00086452425961</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_2a87ab93-95c5-5344-af06-f6c7469f1101">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_af2b1c79-cbc1-5c66-a109-17b2b6735b2b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_626b6d6c-2f92-5849-92e3-2cb1c4c620c6">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2a87ab93-95c5-5344-af06-f6c7469f1101"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_75f2a03f-fb9a-5871-b244-30f40966cca2">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_f0e985fb-48de-5ab7-8664-587fb6295d2c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_931ea66e-1a41-5c8d-8879-e3fca3e5ead9">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_75f2a03f-fb9a-5871-b244-30f40966cca2"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:ACLineSegment rdf:ID="_8485ca61-2f51-5255-a31b-c73912dd8688">
         <cim:IdentifiedObject.name>L-7-8-1 </cim:IdentifiedObject.name>
         <cim:ACLineSegment.r>0.4761</cim:ACLineSegment.r>
@@ -2211,6 +3216,26 @@
         <cim:ACLineSegment.bch>0.00006553245117</cim:ACLineSegment.bch>
         <cim:ConductingEquipment.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_ea7ef639-41d1-52e3-bd3e-d414fb76ba7d">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_4ae1e7fd-3bfe-5a11-bfbe-1ec34948538b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_186fe58e-f014-5681-a1d7-1407ee96f72f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ea7ef639-41d1-52e3-bd3e-d414fb76ba7d"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_9eebbecf-ebff-5fb5-8dd0-f6961eebce26">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_83c15a85-0912-5b4a-bccb-aa7473149be1"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_824effb8-ce15-5110-b724-2222bb8b1368">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9eebbecf-ebff-5fb5-8dd0-f6961eebce26"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_4ae54180-b876-5220-a90a-84d2006b283c">
         <cim:IdentifiedObject.name>T-104-107-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_03112813-a65c-5b19-9713-dad2530ca576"/>
@@ -2266,6 +3291,26 @@
         <cim:TapChangerTablePoint.ratio>0.978</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_f201e6a5-9924-5e46-a836-7310fb32394f"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_c9e6696d-c603-5090-b65e-f6e2500f24e7">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_4a11635e-3dc9-50ca-91f1-97f021afb5e4"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_fb82821a-54fb-5640-b330-4fdc1da0bf7f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_c9e6696d-c603-5090-b65e-f6e2500f24e7"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_9853dceb-a607-5946-b47f-4c8c86d4433a">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_bb46ad6c-f6f8-553d-af92-ba274ff0bf63"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_fe1383ce-b5f6-5c26-8bae-f8d25c31c6f4">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9853dceb-a607-5946-b47f-4c8c86d4433a"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_d0e6c72e-f9bf-52e9-94cb-cf10852fd789">
         <cim:IdentifiedObject.name>T-104-109-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_03112813-a65c-5b19-9713-dad2530ca576"/>
@@ -2321,6 +3366,26 @@
         <cim:TapChangerTablePoint.ratio>0.969</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_7ef24807-76e1-50ef-b217-3cfda021044a"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_027eeba3-fdc7-53d3-a843-d192fbf4442c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_70030f3e-d819-5122-96db-eaa26cae32c8"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_c4dd7942-86b8-5f18-ba38-1dc0266c2e33">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_027eeba3-fdc7-53d3-a843-d192fbf4442c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_c5ecd329-7916-5fb8-8c01-fbf6e5c83102">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_b7d08c8f-95c0-52be-ae07-ab9b4a146d88"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_cc7131c7-715c-590b-8347-840affc44f90">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_c5ecd329-7916-5fb8-8c01-fbf6e5c83102"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_4e520b89-f92d-532d-aaa1-1f03a1c9f6a1">
         <cim:IdentifiedObject.name>T-105-106-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_11087473-7932-5f43-addb-fb650fd9e7a9"/>
@@ -2376,6 +3441,26 @@
         <cim:TapChangerTablePoint.ratio>0.932</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_f9d53c1c-9d86-5c3b-93ac-1b3a4dd5b075"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_fa7cb29e-9a88-5f8a-be6a-69bb05ed6bbf">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_23a36139-8542-536e-b38f-ca1095f1335e"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_1a81cbe4-26cf-50c5-bdd5-5f67d99df798">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fa7cb29e-9a88-5f8a-be6a-69bb05ed6bbf"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_1035813f-2552-5e89-ab6a-9667bf2e3093">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c868ae1b-4c51-5933-8e06-295da7249376"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_22f785e4-d249-5c63-8da1-6f8eca1574e6">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1035813f-2552-5e89-ab6a-9667bf2e3093"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_c1b0ac74-a0e0-5b7a-8b2e-77d5762f265a">
         <cim:IdentifiedObject.name>T-2-30-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_73e719b7-c220-5229-960c-391289c988ed"/>
@@ -2431,6 +3516,26 @@
         <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_3669afdf-8303-5aaa-bde1-31f4f2942150"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_f7235192-42d5-53ee-91e7-cec387b670fd">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_81b4e05c-d8b8-5cfa-9163-74a7cee50643"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_eded8a98-1b66-50b0-888f-016b3946e754">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f7235192-42d5-53ee-91e7-cec387b670fd"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_6892e88d-549c-5d8b-8c5e-0d14870ce3d8">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_06119c5d-f684-58cd-979e-b1d93bdb4625"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_75ffbad4-936c-532f-90c8-484693a7ad7f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6892e88d-549c-5d8b-8c5e-0d14870ce3d8"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_a9154c42-005d-5382-967c-cfb9857145b0">
         <cim:IdentifiedObject.name>T-31-6-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_e3087aa2-00ad-5ed6-8a54-4e7c7685af73"/>
@@ -2555,6 +3660,26 @@
         <cim:TapChangerTablePoint.ratio>1.2</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_69a3b4fb-2c75-5086-8d49-2f7117023734"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_5c19cad5-7b8f-59c8-8c2c-feb4b8607b51">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_faa2070e-0aa8-50fb-bc95-1871f8afeb66"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_04a36d83-69cb-523b-9998-95dc85339125">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>3012</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5c19cad5-7b8f-59c8-8c2c-feb4b8607b51"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_73fddc55-7849-5f1e-9fdf-e79cf9dda718">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_bcaae608-f4a0-5313-b5e9-a221effd4548"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_691d9d3a-9fda-51fd-b429-12df98bbbf8c">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>3012</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_73fddc55-7849-5f1e-9fdf-e79cf9dda718"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_ebebe729-4540-55ec-883f-cfdfb4f898b8">
         <cim:IdentifiedObject.name>T-12-11-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_64c62057-fb7b-5d15-ac57-07a1464ea8d1"/>
@@ -2610,6 +3735,26 @@
         <cim:TapChangerTablePoint.ratio>1.006</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_13a29a4e-1544-5942-a36d-746bcb5a830b"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_ec0cc147-9054-597d-aa12-92dbe788d026">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_d8c5e78c-c566-5c89-b433-a22c7d59a72b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_53b5ebf4-fdb1-507b-919e-0ea53eb6bb22">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ec0cc147-9054-597d-aa12-92dbe788d026"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_45ddb548-b0f7-5f9d-bb3b-5827786ce256">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_d739676d-9862-516e-a1da-f8ff932ff5d5"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_7512c176-ef4c-5163-b89b-e16a9b4e2305">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_45ddb548-b0f7-5f9d-bb3b-5827786ce256"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_a7b56d25-43d5-5792-9684-f1573978e4a2">
         <cim:IdentifiedObject.name>T-12-13-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_64c62057-fb7b-5d15-ac57-07a1464ea8d1"/>
@@ -2665,6 +3810,26 @@
         <cim:TapChangerTablePoint.ratio>1.006</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_b46a3aba-8ff3-5cad-a837-ef0387c7d2ed"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_01acc7d1-4ce5-5364-85d6-98e851443d7c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_41af8349-d11b-5240-ba34-4a1d94924f19"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_81152b4a-91d7-5bc2-bf9a-692ca5414e94">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_01acc7d1-4ce5-5364-85d6-98e851443d7c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_df3d45ba-e486-5fdb-9397-934e66defd1c">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_97af6542-911a-5d6d-aaed-13435788505c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_f8411501-512e-5c37-882e-89c84ffc38a2">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>837</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_df3d45ba-e486-5fdb-9397-934e66defd1c"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_b7aa61dc-10e7-5e1f-a759-24171d42e1eb">
         <cim:IdentifiedObject.name>T-10-32-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_4497adc5-8ba4-5a45-a524-35fa5a796506"/>
@@ -2720,6 +3885,26 @@
         <cim:TapChangerTablePoint.ratio>1.07</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_af851619-2b8a-581d-a753-b8234d33927c"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_fad5ab93-9713-539d-8183-6ccaf56db7bb">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_a3c518e1-225c-5b50-b036-74d993d200ab"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_a4793602-e6b3-5e3b-bc58-67abde152de1">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fad5ab93-9713-539d-8183-6ccaf56db7bb"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_52c590ab-f635-5651-8bde-344fb4a05ce6">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_94e5fd91-36fe-50ff-96fc-d2dd348ef00b"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_6fff8990-dfec-5106-becd-51c95afdf385">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_52c590ab-f635-5651-8bde-344fb4a05ce6"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_fa5fe6c5-9d3d-5cee-b178-7f63c6a98f30">
         <cim:IdentifiedObject.name>T-19-20-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_0af00a7e-13f4-5902-8a74-ae2c6d59a16e"/>
@@ -2775,6 +3960,26 @@
         <cim:TapChangerTablePoint.ratio>1.06</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_34663d46-50b4-5caf-990a-df94c6a9f311"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_dbee453a-29b2-53a0-b54a-f431fa688234">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_e36f4a49-4da0-50fb-923c-4090ac275c1c"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_ef2418e5-51da-53e8-9b4d-78c10393651f">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_dbee453a-29b2-53a0-b54a-f431fa688234"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_608e4402-9ec5-5392-8713-58e484980280">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c5440c52-5382-59dc-858e-60b5f8160131"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_67fbdc8a-eded-518a-b244-b61b4324aa17">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_608e4402-9ec5-5392-8713-58e484980280"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_72a47098-f665-5545-83ac-372d896093d8">
         <cim:IdentifiedObject.name>T-19-33-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_0af00a7e-13f4-5902-8a74-ae2c6d59a16e"/>
@@ -2830,6 +4035,26 @@
         <cim:TapChangerTablePoint.ratio>1.07</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_e5e25a8a-574c-51d9-b704-beac5958cc56"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_aa75e8ed-0506-505c-ae14-b682def9dba1">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_9a1ebde4-1980-5700-981a-a74fa277a931"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_c13bffc9-6e42-570c-8a8b-21bd2043a25e">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_aa75e8ed-0506-505c-ae14-b682def9dba1"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_80fc100d-d22b-56c6-8628-37f09e0df6e3">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_dd8dd5b6-9086-51dd-8419-66947dd0a145"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_dfa49898-79f1-5900-bfb8-21a0048fdc5d">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_80fc100d-d22b-56c6-8628-37f09e0df6e3"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_30663458-5eb9-5c4e-9515-98b1a4680f82">
         <cim:IdentifiedObject.name>T-20-34-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_0af00a7e-13f4-5902-8a74-ae2c6d59a16e"/>
@@ -2885,6 +4110,26 @@
         <cim:TapChangerTablePoint.ratio>1.009</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_a8ed9e50-c836-51f0-9d19-1445d5324b33"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_1a9105f6-0988-5cec-b415-3f7f10694233">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_711ab401-26bd-5470-baff-187b39479531"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_7bbd6cbf-cc62-58e6-82af-cbde6fb964ac">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1a9105f6-0988-5cec-b415-3f7f10694233"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_7e824d15-ac56-53d5-b555-59d7ba7352e7">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_37a98750-92f3-5559-bc97-d609920f7150"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_ca3921ea-123d-5077-aac6-65477aae0af0">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7e824d15-ac56-53d5-b555-59d7ba7352e7"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_dc05ba30-68b9-5f2d-9459-ec37c94a0272">
         <cim:IdentifiedObject.name>T-22-35-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_3cd85405-3c2b-5cfe-90d1-519ca6afbe7f"/>
@@ -2940,6 +4185,26 @@
         <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_6b4e983f-4373-5aef-95c1-9a20421e5dc0"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_7940d98f-6344-5cac-ad7e-36f356abc2ab">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_5ee7974e-38b2-5e3e-8aa0-d77eb30b7883"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_3409a57f-7345-5e45-805a-433dcf6b7f65">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7940d98f-6344-5cac-ad7e-36f356abc2ab"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_fd6529ea-837c-54b6-ae3b-0c7c53fce9ef">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_6a5504cf-41dd-5f86-b8ad-9519f7915cdf"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_57061cf5-23b9-5145-a1b2-424d506a79e2">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fd6529ea-837c-54b6-ae3b-0c7c53fce9ef"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_38ac4370-044b-5fd5-b8de-e332ca18b2ef">
         <cim:IdentifiedObject.name>T-23-36-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_cbd1d296-cf4b-50a2-9a38-70073506a930"/>
@@ -2970,6 +4235,26 @@
         <cim:TransformerEnd.Terminal rdf:resource="#_c2fea22b-68f5-5dfb-a21a-c1613c18f6cb"/>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:PowerTransformerEnd>
+    <cim:OperationalLimitSet rdf:ID="_86df5a3e-dc27-5571-b6c9-c73401ff3de2">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_7c02436f-260c-5d63-bd90-bacd5084e473"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_a1eda8e2-d52a-5da0-9d31-dbdc76db4968">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_86df5a3e-dc27-5571-b6c9-c73401ff3de2"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_f020e57e-b4f1-5912-b5b1-5bbf654f2ff0">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_c2fea22b-68f5-5dfb-a21a-c1613c18f6cb"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_79ef4b29-e75d-526d-9bb8-0cfc49893637">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f020e57e-b4f1-5912-b5b1-5bbf654f2ff0"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_16c196e4-53c6-52ac-987a-709dd17f6c06">
         <cim:IdentifiedObject.name>T-25-37-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_ef48fcc6-db2d-53a2-96ca-7fbc5b6721db"/>
@@ -3025,6 +4310,26 @@
         <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_81e3aefb-1581-5541-9b39-ba7dec4a5b47"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_e71785b7-0f92-5e9a-9166-e96032531ce1">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_ace9c86a-aa4e-5874-be3b-e67d8e1d386e"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_076766e0-b051-5334-ad07-21f5bc71fcf3">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e71785b7-0f92-5e9a-9166-e96032531ce1"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_ee3a3e4f-0a83-58fa-9911-f5e927546524">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_69225086-3c33-5eff-b82d-cbc4a6e88849"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_e2908560-9b40-5c0d-a42e-ab26efc7465c">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ee3a3e4f-0a83-58fa-9911-f5e927546524"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_75f9114c-4235-5983-be43-ea978389e239">
         <cim:IdentifiedObject.name>T-29-38-1 </cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_b04f12d0-3a12-510d-9c88-71ffb49d566b"/>
@@ -3080,6 +4385,26 @@
         <cim:TapChangerTablePoint.ratio>1.025</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_18796bf5-fb2f-51c1-affa-6634a52a9103"/>
     </cim:RatioTapChangerTablePoint>
+    <cim:OperationalLimitSet rdf:ID="_c9428b37-ef06-56b1-b1f4-047d6ec2cf87">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_85d78dfb-c95a-5e13-a007-4ec8fb61daf6"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_7418adb9-b0f5-56d3-b15b-67a0cf4f6b12">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>2343</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_c9428b37-ef06-56b1-b1f4-047d6ec2cf87"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_f2b4b7bc-e144-577d-b011-a512b9c7cae3">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_39f11c2b-4a81-5453-bf32-ee935ceb7615"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_accb84d6-d001-5301-bd3b-06ea6fd84783">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>2343</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f2b4b7bc-e144-577d-b011-a512b9c7cae3"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:DCConverterUnit rdf:ID="_a56a494c-e704-5bd4-9023-e6b7d9a3fe10">
         <cim:IdentifiedObject.name>HVDC_Link_16_113_1</cim:IdentifiedObject.name>
         <cim:DCConverterUnit.operationMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#DCConverterOperatingModeKind.monopolarGroundReturn"/>

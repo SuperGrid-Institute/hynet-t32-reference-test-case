@@ -87,6 +87,17 @@ Hand-edited files from which the build produces `testcase/`.
 `low_res_high_demand`). Each scenario has a single timestamp, the same in every file,
 and sets every generator, load and HVDC line of the network exactly once.
 
+### `network/<variant>_thermal_limits.csv`
+
+Permanent current limit of every line and two-winding transformer of the variant,
+applied to both sides. The build stops if a branch is missing or unknown.
+
+| Column              | Type   | Unit | Description                          |
+|---------------------|--------|------|--------------------------------------|
+| `branch_id`         | text   | —    | IIDM line or transformer id          |
+| `permanent_limit_a` | number | A    | Permanent current limit              |
+| `basis`             | text   | —    | Origin of the value                  |
+
 ### `network/<variant>_corrections.yaml`
 
 Corrections applied to the source model of a variant; see
