@@ -59,12 +59,7 @@ class StateReport:
     def of(cls, network: Network, label: str,
            results: list[ComponentResult]) -> StateReport:
         """Summarises the working variant of a solved `network`."""
-        # Bus-breaker ids (e.g. `B31`) are the model's bus ids; bus-view ids such as
-        # `VL6_0` are generated and not stable across formats.
-        buses = network.get_bus_breaker_view_buses().join(
-            network.get_voltage_levels()[["nominal_v"]], on="voltage_level_id")
-        buses = buses[buses["v_mag"].notna()]
-        buses["v_pu"] = buses["v_mag"] / buses["nominal_v"]
+        buses = bus_voltages(network)
         voltages = []
         for nominal_kv in sorted(buses["nominal_v"].unique()):
             v_pu = buses.loc[buses["nominal_v"] == nominal_kv, "v_pu"]
@@ -80,7 +75,7 @@ class StateReport:
                 for line_id, station in rectifiers.items()}
         return cls(label=label, voltages=voltages, hvdc_p_mw=hvdc,
                    slack_mismatch_mw=sum(r.slack_mismatch_mw for r in results),
-                   loadings=_loadings(network))
+                   loadings=branch_loadings(network))
 
     def log(self) -> None:
         """Logs the summary at INFO level."""
@@ -95,8 +90,9 @@ class StateReport:
             logger.info("%s: overload %s at %.0f %%", self.label, branch.strip(), loading)
 
 
-def _loadings(network: Network) -> dict[str, float]:
-    """Loading of every limited branch, worst side, in descending order."""
+def branch_loadings(network: Network) -> dict[str, float]:
+    """Loading of every limited branch of a solved network, in % of its permanent
+    current limit (worst side), in descending order."""
     limits = network.get_operational_limits().reset_index()
     limits = limits[(limits["type"] == "CURRENT") & (limits["acceptable_duration"] == -1)]
     limit_by_side = limits.pivot_table(index="element_id", columns="side", values="value",
@@ -108,3 +104,20 @@ def _loadings(network: Network) -> dict[str, float]:
                          branches["i2"].abs() / branches["TWO"]], axis=1).max(axis=1) * 100.0
     loading = loading.sort_values(ascending=False, kind="stable")
     return {str(branch): float(value) for branch, value in zip(loading.index, loading.to_numpy())}
+
+
+def bus_voltages(network: Network) -> pd.DataFrame:
+    """Voltage of every energised bus of a solved network.
+
+    Bus-breaker ids (e.g. `B31`) are used: they are the model's bus ids, whereas
+    bus-view ids such as `VL6_0` are generated and not stable across formats.
+
+    Returns:
+        Columns `v_mag` (kV), `nominal_v` (kV), `v_pu` and `voltage_level_id`, indexed
+        by bus id.
+    """
+    buses = network.get_bus_breaker_view_buses().join(
+        network.get_voltage_levels()[["nominal_v"]], on="voltage_level_id")
+    buses = buses[buses["v_mag"].notna()]
+    buses["v_pu"] = buses["v_mag"] / buses["nominal_v"]
+    return buses[["v_mag", "nominal_v", "v_pu", "voltage_level_id"]]

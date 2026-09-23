@@ -27,10 +27,13 @@ The scenarios are introduced in
 The project uses [uv](https://docs.astral.sh/uv/) and Python 3.14.
 
 ```sh
-uv sync                       # build tooling only
-uv sync --group notebooks     # also JupyterLab and the notebook dependencies
+uv sync                       # build tooling, notebooks and static checks
 uv run hynet-testcase build   # regenerate testcase/ from data/
+uv run jupyter lab notebooks/presentation.ipynb
 ```
+
+[notebooks/presentation.ipynb](notebooks/presentation.ipynb) presents the network,
+zones, HVDC link, scenarios, voltage profiles, branch loadings and batteries.
 
 The generated test case is committed in `testcase/`. See
 [docs/test-case.md](docs/test-case.md) for its content and formats,

@@ -179,6 +179,20 @@ stops, without writing anything, if an input file is malformed, if an id does no
 resolve in the network, if a network element is not covered by every scenario, or if
 a load flow does not converge.
 
+## Presentation notebook
+
+[`notebooks/presentation.ipynb`](../notebooks/presentation.ipynb) presents the test case
+from the files in `testcase/`: network-area diagram coloured by zone, interactive
+explorer (live kernel only), zones and interconnections, HVDC link, scenario dispatch and
+zone balances, voltage profiles, branch loadings and batteries. It is committed with its
+outputs. To re-execute it:
+
+```sh
+uv run python -m nbconvert --to notebook --execute --inplace     --ExecutePreprocessor.store_widget_state=False notebooks/presentation.ipynb
+```
+
+`store_widget_state=False` keeps the explorer's state (about 12 MB) out of the file.
+
 ## Acknowledgement
 
 <img src="assets/eu-emblem.svg" alt="Flag of the European Union" height="48">

@@ -36,6 +36,10 @@ notebooks = [
     "pypowsybl-jupyter>=1.3.0",
 ]
 
+[tool.uv]
+# Contributors get the notebook dependencies too; Binder installs requirements.txt.
+default-groups = ["dev", "notebooks"]
+
 [tool.mypy]
 python_version = "3.14"
 strict = true
