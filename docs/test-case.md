@@ -193,6 +193,20 @@ uv run python -m nbconvert --to notebook --execute --inplace     --ExecutePrepro
 
 `store_widget_state=False` keeps the explorer's state (about 12 MB) out of the file.
 
+The notebook also runs on [Binder](https://mybinder.org/v2/gh/SuperGrid-Institute/hynet-t32-reference-test-case/HEAD?labpath=notebooks%2Fpresentation.ipynb),
+configured in `binder/`: Python 3.14 (`runtime.txt`), dependencies pinned from
+`uv.lock` (`requirements.txt`) and the package installed by `postBuild`.
+
+## Dependencies
+
+Dependencies are managed with uv. After changing them, refresh both exported
+requirement files:
+
+```sh
+uv export --format requirements-txt --no-dev --group notebooks --no-hashes -o requirements.txt
+uv export --format requirements-txt --no-dev --group notebooks --no-hashes --no-emit-project -o binder/requirements.txt
+```
+
 ## Acknowledgement
 
 <img src="assets/eu-emblem.svg" alt="Flag of the European Union" height="48">

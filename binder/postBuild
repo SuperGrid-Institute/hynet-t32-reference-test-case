@@ -1,0 +1,4 @@
+#!/bin/bash
+# Installs the repository package, whose dependencies are pinned in requirements.txt.
+set -euo pipefail
+pip install --no-deps --editable .

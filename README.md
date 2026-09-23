@@ -1,5 +1,7 @@
 # HYNET Task 3.2 reference test case
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SuperGrid-Institute/hynet-t32-reference-test-case/HEAD?labpath=notebooks%2Fpresentation.ipynb)
+
 Common reference test case of HYNET Task 3.2, shared by the grid-analysis tools of
 ART, SGI, UCY and INESC. It is used to validate tool behaviour before the
 demonstrations, to compare similar tools and to investigate tool complementarity on
@@ -33,7 +35,9 @@ uv run jupyter lab notebooks/presentation.ipynb
 ```
 
 [notebooks/presentation.ipynb](notebooks/presentation.ipynb) presents the network,
-zones, HVDC link, scenarios, voltage profiles, branch loadings and batteries.
+zones, HVDC link, scenarios, voltage profiles, branch loadings and batteries. The Binder
+badge above opens it in the browser, with the interactive network explorer, without
+installing anything.
 
 The generated test case is committed in `testcase/`. See
 [docs/test-case.md](docs/test-case.md) for its content and formats,

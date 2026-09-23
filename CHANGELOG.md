@@ -36,6 +36,7 @@ scenario or file, PATCH for corrected values.
   100 MW / 200 MWh at bus 6 (Z3) and 10 MW / 20 MWh at bus 106 (Z0).
 - Presentation notebook `notebooks/presentation.ipynb`, with plotting helpers in
   `hynet_testcase.viz`.
+- Binder configuration (`binder/`) and README badge opening the presentation notebook.
 
 ### Changed
 
