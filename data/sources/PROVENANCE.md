@@ -1,7 +1,8 @@
 # Provenance of the source models
 
 Files in `data/sources/` are kept exactly as received. The build never modifies
-them; every correction it applies is declared in `data/inputs/`.
+them; every correction it applies is declared in `data/inputs/` and described in
+[docs/model-changes.md](../../docs/model-changes.md).
 
 ## `tx-full/` — IEEE 39-bus + HVDC link + IEEE 14-bus
 

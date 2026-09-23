@@ -13,6 +13,9 @@ dependencies = [
     "pyyaml>=6.0.3",
 ]
 
+[project.scripts]
+hynet-testcase = "hynet_testcase.build:main"
+
 [project.urls]
 Repository = "https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case"
 
@@ -38,12 +41,16 @@ python_version = "3.14"
 strict = true
 
 [[tool.mypy.overrides]]
-# pypowsybl ships no type information.
+# pypowsybl re-exports its public API from private modules without `__all__`.
 module = ["pypowsybl", "pypowsybl.*"]
-ignore_missing_imports = true
+implicit_reexport = true
 
 [tool.pylint.main]
 py-version = "3.14"
+
+[tool.pylint.design]
+# Builders, exporters and writers are single-method providers by design.
+min-public-methods = 1
 
 [tool.pylint.format]
 max-line-length = 100

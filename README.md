@@ -27,9 +27,16 @@ The scenarios are introduced in
 The project uses [uv](https://docs.astral.sh/uv/) and Python 3.14.
 
 ```sh
-uv sync                     # build tooling only
-uv sync --group notebooks   # also JupyterLab and the notebook dependencies
+uv sync                       # build tooling only
+uv sync --group notebooks     # also JupyterLab and the notebook dependencies
+uv run hynet-testcase build   # regenerate testcase/ from data/
 ```
+
+The generated test case is committed in `testcase/`. See
+[docs/test-case.md](docs/test-case.md) for its content and formats,
+[docs/data-dictionary.md](docs/data-dictionary.md) for the file schemas and
+[docs/model-changes.md](docs/model-changes.md) for the corrections applied to the
+source models.
 
 ## Licences
 

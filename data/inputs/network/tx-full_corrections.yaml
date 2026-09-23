@@ -1,0 +1,12 @@
+# Corrections applied by the build to data/sources/tx-full/TestCase.xiidm.
+# Each one is described in docs/model-changes.md.
+
+# The IEEE 39 part of the source is expressed in per unit on a 1 kV base. Its voltage
+# levels are moved to the nominal voltage of the IEEE 39 system; impedances,
+# admittances and voltage set points are scaled so that per-unit values, and hence
+# load-flow results in per unit, are unchanged.
+voltage_rescale:
+  source_nominal_kv: 1.0
+  target_nominal_kv: 345.0
+  # Guards against the correction silently applying to more or fewer elements.
+  expected_voltage_levels: 27

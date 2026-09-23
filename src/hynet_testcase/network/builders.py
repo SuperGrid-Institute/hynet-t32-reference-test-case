@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: MIT
+"""Builders turning source models into the network of each variant."""
+
+import logging
+from abc import ABC, abstractmethod
+from pathlib import Path
+from typing import ClassVar
+
+import pypowsybl as pp
+from pypowsybl.network import Network
+
+from hynet_testcase.errors import InputError
+from hynet_testcase.ids import VariantId
+from hynet_testcase.network.corrections import SourceCorrections
+from hynet_testcase.paths import RepoPaths
+
+logger = logging.getLogger(__name__)
+
+
+class VariantBuilder(ABC):
+    """Builds the base network of one variant, in memory."""
+
+    variant: ClassVar[VariantId]
+
+    def __init__(self, paths: RepoPaths) -> None:
+        self.paths = paths
+
+    @abstractmethod
+    def build(self) -> Network:
+        """Returns the corrected base network of the variant, not yet solved."""
+
+    @abstractmethod
+    def unchanged_files(self) -> list[Path]:
+        """Source files shipped as received, next to the exported base network."""
+
+
+class TxFullBuilder(VariantBuilder):
+    """IEEE 39-bus + HVDC link + IEEE 14-bus, from UCY's XIIDM model."""
+
+    variant = VariantId.TX_FULL
+
+    @property
+    def _source_dir(self) -> Path:
+        return self.paths.sources / "tx-full"
+
+    def build(self) -> Network:
+        """Imports `TestCase.xiidm` and applies the declared corrections.
+
+        Raises:
+            InputError: If the source model is missing.
+        """
+        source = self._source_dir / "TestCase.xiidm"
+        if not source.is_file():
+            raise InputError(f"missing source model {source}")
+        logger.info("importing %s", source.relative_to(self.paths.root))
+        network = pp.network.load(str(source))
+        corrections = self.paths.inputs / "network" / "tx-full_corrections.yaml"
+        SourceCorrections.load(corrections).apply(network)
+        return network
+
+    def unchanged_files(self) -> list[Path]:
+        """The PowerFactory model, which pypowsybl can neither read nor write.
+
+        Raises:
+            InputError: If the file is missing.
+        """
+        pfd = self._source_dir / "TestCase.pfd"
+        if not pfd.is_file():
+            raise InputError(f"missing source model {pfd}")
+        return [pfd]
