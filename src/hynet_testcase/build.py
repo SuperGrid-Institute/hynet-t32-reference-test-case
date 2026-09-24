@@ -16,6 +16,7 @@ from hynet_testcase.ids import CaseId, ScenarioId, VariantId
 from hynet_testcase.io.csv_writers import CSV_WRITERS, VariantData
 from hynet_testcase.io.exporters import EXPORTERS
 from hynet_testcase.network.builders import TxFullBuilder, VariantBuilder
+from hynet_testcase.network.contingencies import ContingencyList, log_states
 from hynet_testcase.network.loadflow import run_ac
 from hynet_testcase.network.zones import ZoneMapping
 from hynet_testcase.paths import RepoPaths
@@ -44,6 +45,37 @@ class SolvedState:
     basename: str
     case_date: datetime
     report: StateReport
+
+
+def _variant_data(variant: VariantId, paths: RepoPaths, network: Network) -> VariantData:
+    """Reads the tabular inputs of a variant and checks them against its network.
+
+    Raises:
+        TestCaseError: On any invalid input or unresolved id.
+    """
+    scenarios = ScenarioInputs.load(paths.inputs / "scenarios")
+    scenarios.check_ids(network)
+    zones = ZoneMapping.load(paths.inputs / "zones" / f"{variant}_bus_zones.csv").resolve(network)
+    batteries = Batteries.load(paths.inputs / "storage" / f"{variant}_batteries.csv")
+    contingencies = ContingencyList.load(
+        paths.inputs / "contingencies" / f"{variant}_contingencies.csv")
+    contingencies.check(network)
+    return VariantData(scenarios=scenarios, zones=zones, batteries=batteries.with_zones(zones),
+                       contingencies=contingencies)
+
+
+def _analyse_contingencies(network: Network, states: list[SolvedState],
+                           contingencies: ContingencyList) -> None:
+    """Solves every contingency on every scenario state and logs the outcome.
+
+    Post-contingency violations are reported, not enforced: the list exists to create
+    them.
+    """
+    base_variant = network.get_working_variant_id()
+    for state in states:
+        network.set_working_variant(state.variant_id)
+        log_states(state.report.label, contingencies.analyse(network, state.report.label))
+    network.set_working_variant(base_variant)
 
 
 def _solve_states(network: Network, variant: VariantId,
@@ -100,16 +132,12 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
         TestCaseError: On any invalid input, unresolved id or non-converged state.
     """
     network = builder.build()
-    inputs = ScenarioInputs.load(paths.inputs / "scenarios")
-    inputs.check_ids(network)
-    zones = ZoneMapping.load(
-        paths.inputs / "zones" / f"{builder.variant}_bus_zones.csv").resolve(network)
-    batteries = Batteries.load(paths.inputs / "storage" / f"{builder.variant}_batteries.csv")
-    data = VariantData(scenarios=inputs, zones=zones, batteries=batteries.with_zones(zones))
+    data = _variant_data(builder.variant, paths, network)
     unchanged = builder.unchanged_files()
-    states = _solve_states(network, builder.variant, inputs)
+    states = _solve_states(network, builder.variant, data.scenarios)
     ScenarioValidation.load(paths.inputs / "scenarios" / "validation.yaml").check(
         {ScenarioId(state.variant_id): state.report for state in states[1:]})
+    _analyse_contingencies(network, states[1:], data.contingencies)
 
     output = paths.variant_output(builder.variant)
     if output.exists():

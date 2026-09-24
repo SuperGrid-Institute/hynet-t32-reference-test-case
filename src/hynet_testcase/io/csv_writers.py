@@ -9,6 +9,7 @@ from typing import ClassVar
 import pandas as pd
 
 from hynet_testcase.ids import ScenarioId
+from hynet_testcase.network.contingencies import ContingencyList
 from hynet_testcase.network.zones import ZoneData
 from hynet_testcase.scenarios.inputs import ScenarioInputs
 
@@ -21,11 +22,13 @@ class VariantData:
         scenarios: Scenario inputs.
         zones: Zone tables.
         batteries: Batteries with the zone of their bus.
+        contingencies: Contingency list.
     """
 
     scenarios: ScenarioInputs
     zones: ZoneData
     batteries: pd.DataFrame
+    contingencies: ContingencyList
 
 
 class CsvWriter(ABC):
@@ -174,8 +177,19 @@ class BatteryWriter(CsvWriter):
         return data.batteries
 
 
+class ContingencyWriter(CsvWriter):
+    """Single-element outages to analyse on every scenario."""
+
+    directory = "contingencies"
+    filename = "contingencies.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the contingency list."""
+        return data.contingencies.table()
+
+
 CSV_WRITERS: list[CsvWriter] = [
     GenerationWriter(), LoadWriter(), HvdcWriter(), BatterySetpointWriter(), GeneratorWriter(),
     BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(), ZoneBalanceWriter(),
-    BatteryWriter(),
+    BatteryWriter(), ContingencyWriter(),
 ]

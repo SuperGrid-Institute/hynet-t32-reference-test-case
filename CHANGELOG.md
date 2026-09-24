@@ -24,6 +24,9 @@ scenario or file, PATCH for corrected values.
 - `hynet-testcase build` command, generating `testcase/tx-full/`: the base network
   and one solved snapshot per scenario in XIIDM and CGMES 2.4.15 (with an IIDM →
   CGMES id mapping), UCY's PowerFactory model, and the scenario CSVs.
+- Contingency list for `tx-full` (six lines, one generator, one transformer, none
+  splitting the network) in `testcase/tx-full/contingencies/contingencies.csv`, with
+  post-contingency loadings in the build report and the presentation notebook.
 - Scenario checks in the build (`data/inputs/scenarios/validation.yaml`): S1 is a
   clean reference, S2 shows the HVDC at its maximum and a voltage rise, S3 shows a
   voltage drop and overloads; the build stops otherwise.

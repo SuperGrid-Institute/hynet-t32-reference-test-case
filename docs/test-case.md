@@ -12,8 +12,8 @@ in [model-changes.md](model-changes.md).
 |-----------|----------------------------------------------|-----------|
 | `tx-full` | IEEE 39-bus + VSC HVDC link + IEEE 14-bus    | Available |
 
-Planned: economic assumptions, contingencies, a `reinforced` network case, a reduced
-variant (`tx-reduced`) and a distribution variant (`dx-33`).
+Planned: economic assumptions, a `reinforced` network case, a reduced variant
+(`tx-reduced`) and a distribution variant (`dx-33`).
 
 ### `tx-full`
 
@@ -151,6 +151,41 @@ S3 is meant to stress thermal limits. L-16-19 is the only connection of buses 19
 33 and 34 to the rest of the system, so it carries the output of units B33 and B34
 minus the load at bus 20.
 
+## Contingencies
+
+`contingencies/contingencies.csv` lists eight single outages, a small selection that is
+quick to analyse. None splits the network, so post-contingency results do not depend on
+how a tool handles islands; the build checks this and stops otherwise.
+
+| Contingency    | Element                   | Why                                                      |
+|----------------|---------------------------|----------------------------------------------------------|
+| `N1-L-26-27`   | line L-26-27              | corridor reinforced in the `reinforced` case             |
+| `N1-L-26-29`   | line L-26-29              | its loss overloads L-28-29                               |
+| `N1-L-6-11`    | line L-6-11               | next to battery `BAT-B6-1`                               |
+| `N1-L-21-22`   | line L-21-22              | inside zone Z1                                           |
+| `N1-L-16-17`   | line L-16-17              | tie line between zones Z1 and Z2                         |
+| `N1-L-104-105` | line L-104-105            | central IEEE 14 line; deep voltage drop in S3            |
+| `N1-B38-G1`    | generator B38-G1 (1245 MW)| largest unit whose loss converges in every scenario      |
+| `N1-T-104-107` | transformer T-104-107     | IEEE 14 transformer that does not isolate any bus        |
+
+Highest branch loading after each outage (% of the permanent limit), from AC load flows
+with the settings above; a lost generator's output is taken up by the other units in
+proportion to their output:
+
+| Contingency    | S1    | S2    | S3    |
+|----------------|-------|-------|-------|
+| `N1-L-26-27`   | 121 % | 134 % | 163 % |
+| `N1-L-26-29`   | 165 % | 186 % | 163 % |
+| `N1-L-6-11`    | 161 % | 95 %  | 180 % |
+| `N1-L-21-22`   | 145 % | 106 % | 162 % |
+| `N1-L-16-17`   | 92 %  | 94 %  | 162 % |
+| `N1-L-104-105` | 92 %  | 95 %  | 162 % |
+| `N1-B38-G1`    | 117 % | 141 % | 228 % |
+| `N1-T-104-107` | 92 %  | 95 %  | 162 % |
+
+The build reports these post-contingency overloads; it does not enforce them. IEEE 39
+is not N-1 secure, even in S1.
+
 ## Formats
 
 | Format     | Shipped for                  | Notes                                            |
@@ -193,6 +228,8 @@ testcase/tx-full/
 │   └── bus_zones.csv, element_zones.csv, interconnections.csv, zone_balance.csv
 ├── storage/
 │   └── batteries.csv
+├── contingencies/
+│   └── contingencies.csv
 └── scenarios/
     ├── generation.csv, loads.csv, hvdc.csv, battery_setpoints.csv, generators.csv
     └── snapshots/S1..S3/
@@ -219,7 +256,8 @@ load flow does not converge or moves a battery, or if a scenario check fails.
 [`notebooks/presentation.ipynb`](../notebooks/presentation.ipynb) presents the test case
 from the files in `testcase/`: network-area diagram coloured by zone, interactive
 explorer (live kernel only), zones and interconnections, HVDC link, scenario dispatch and
-zone balances, voltage profiles, branch loadings and batteries. It is committed with its
+zone balances, voltage profiles, branch loadings, contingencies and batteries. It is
+committed with its
 outputs. To re-execute it:
 
 ```sh

@@ -134,6 +134,16 @@ models; energy capacity, efficiencies and states of charge are only here.
 | `initial_soc`          | number | —    | State of charge at the start, fraction of `energy_mwh` |
 | `final_soc`            | number | —    | Required state of charge at the end, fraction of `energy_mwh` |
 
+## `testcase/<variant>/contingencies/contingencies.csv`
+
+Single-element outages to analyse on every scenario. None splits the network.
+
+| Column           | Type | Description                                                 |
+|------------------|------|-------------------------------------------------------------|
+| `contingency_id` | text | Contingency id, e.g. `N1-L-26-27`                           |
+| `element_type`   | text | `line`, `two_windings_transformer` or `generator`           |
+| `element_id`     | text | IIDM id of the tripped element (CGMES: see `id_mapping.csv`) |
+
 ## `testcase/<variant>/**/cgmes/id_mapping.csv`
 
 Correspondence between IIDM ids and the CGMES identifiers of the files in the same
@@ -176,6 +186,12 @@ from the zone mapping. The build adds each battery to the network models at its 
 The build stops if a bus is unknown, an id is repeated or already used, power or
 energy is not positive, an efficiency is outside (0, 1] or a state of charge outside
 [0, 1].
+
+### `contingencies/<variant>_contingencies.csv`
+
+Same columns as the shipped `contingencies.csv`. The build stops if an id or element is
+repeated, an element is unknown or of another type, or a branch outage disconnects any
+bus.
 
 ### `network/<variant>_thermal_limits.csv`
 
