@@ -8,6 +8,7 @@ from typing import ClassVar
 
 import pandas as pd
 
+from hynet_testcase.economics import Economics
 from hynet_testcase.ids import ScenarioId
 from hynet_testcase.network.contingencies import ContingencyList
 from hynet_testcase.network.zones import ZoneData
@@ -23,12 +24,14 @@ class VariantData:
         zones: Zone tables.
         batteries: Batteries with the zone of their bus.
         contingencies: Contingency list.
+        economics: Economic assumptions.
     """
 
     scenarios: ScenarioInputs
     zones: ZoneData
     batteries: pd.DataFrame
     contingencies: ContingencyList
+    economics: Economics
 
 
 class CsvWriter(ABC):
@@ -188,8 +191,30 @@ class ContingencyWriter(CsvWriter):
         return data.contingencies.table()
 
 
+class EconomicParameterWriter(CsvWriter):
+    """Economic assumptions shared by every variant."""
+
+    directory = "economics"
+    filename = "parameters.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the economic parameters."""
+        return data.economics.parameters()
+
+
+class GeneratorCostWriter(CsvWriter):
+    """Marginal and redispatch prices of every generator."""
+
+    directory = "economics"
+    filename = "generator_costs.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the generator costs."""
+        return data.economics.generator_costs(data.scenarios.generators)
+
+
 CSV_WRITERS: list[CsvWriter] = [
     GenerationWriter(), LoadWriter(), HvdcWriter(), BatterySetpointWriter(), GeneratorWriter(),
     BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(), ZoneBalanceWriter(),
-    BatteryWriter(), ContingencyWriter(),
+    BatteryWriter(), ContingencyWriter(), EconomicParameterWriter(), GeneratorCostWriter(),
 ]

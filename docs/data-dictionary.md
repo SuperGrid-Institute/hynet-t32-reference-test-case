@@ -134,6 +134,32 @@ models; energy capacity, efficiencies and states of charge are only here.
 | `initial_soc`          | number | —    | State of charge at the start, fraction of `energy_mwh` |
 | `final_soc`            | number | —    | Required state of charge at the end, fraction of `energy_mwh` |
 
+## `testcase/<variant>/economics/`
+
+### `parameters.csv`
+
+Economic assumptions shared by every variant, one row per parameter.
+
+| Column        | Type   | Description                     |
+|---------------|--------|---------------------------------|
+| `parameter`   | text   | Parameter name, with its unit as a suffix |
+| `value`       | number | Value                           |
+| `unit`        | text   | Unit (`-` when dimensionless)   |
+| `description` | text   | Meaning of the parameter        |
+
+Parameters: `value_of_lost_load_eur_mwh`, `battery_cycling_cost_eur_mwh`,
+`redispatch_premium_eur_mwh`, `discount_rate`, `asset_lifetime_years`,
+`capital_recovery_factor` (derived: r / (1 − (1 + r)^−n)) and `line_cost_345kv_eur_km`.
+
+### `generator_costs.csv`
+
+| Column                    | Type   | Unit    | Description                                          |
+|---------------------------|--------|---------|------------------------------------------------------|
+| `generator_id`            | text   | —       | IIDM generator id                                    |
+| `marginal_cost_eur_mwh`   | number | EUR/MWh | Marginal cost (the price of `generators.csv`)        |
+| `redispatch_up_eur_mwh`   | number | EUR/MWh | Paid to the unit per MWh of upward redispatch        |
+| `redispatch_down_eur_mwh` | number | EUR/MWh | Paid back by the unit per MWh of downward redispatch; negative when the unit is paid |
+
 ## `testcase/<variant>/contingencies/contingencies.csv`
 
 Single-element outages to analyse on every scenario. None splits the network.
@@ -186,6 +212,12 @@ from the zone mapping. The build adds each battery to the network models at its 
 The build stops if a bus is unknown, an id is repeated or already used, power or
 energy is not positive, an efficiency is outside (0, 1] or a state of charge outside
 [0, 1].
+
+### `economics/economics.yaml`
+
+Shared by every variant: the parameters of `parameters.csv` except
+`capital_recovery_factor`, which the build derives. Every key is required and every
+value must be positive.
 
 ### `contingencies/<variant>_contingencies.csv`
 

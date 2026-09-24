@@ -24,6 +24,9 @@ scenario or file, PATCH for corrected values.
 - `hynet-testcase build` command, generating `testcase/tx-full/`: the base network
   and one solved snapshot per scenario in XIIDM and CGMES 2.4.15 (with an IIDM →
   CGMES id mapping), UCY's PowerFactory model, and the scenario CSVs.
+- Economic assumptions shared by every variant (value of lost load, battery cycling
+  cost, redispatch premium, discount rate, asset lifetime, 345 kV line cost) in
+  `testcase/tx-full/economics/`, with redispatch prices per generator.
 - Contingency list for `tx-full` (six lines, one generator, one transformer, none
   splitting the network) in `testcase/tx-full/contingencies/contingencies.csv`, with
   post-contingency loadings in the build report and the presentation notebook.

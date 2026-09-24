@@ -11,6 +11,7 @@ from pathlib import Path
 
 from pypowsybl.network import Network
 
+from hynet_testcase.economics import Economics
 from hynet_testcase.errors import TestCaseError
 from hynet_testcase.ids import CaseId, ScenarioId, VariantId
 from hynet_testcase.io.csv_writers import CSV_WRITERS, VariantData
@@ -61,7 +62,8 @@ def _variant_data(variant: VariantId, paths: RepoPaths, network: Network) -> Var
         paths.inputs / "contingencies" / f"{variant}_contingencies.csv")
     contingencies.check(network)
     return VariantData(scenarios=scenarios, zones=zones, batteries=batteries.with_zones(zones),
-                       contingencies=contingencies)
+                       contingencies=contingencies,
+                       economics=Economics.load(paths.inputs / "economics" / "economics.yaml"))
 
 
 def _analyse_contingencies(network: Network, states: list[SolvedState],

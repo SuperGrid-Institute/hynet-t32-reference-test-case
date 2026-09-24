@@ -1,0 +1,21 @@
+# Economic assumptions shared by every variant, so that results stay comparable across
+# tools. Common values for a European test case; generator marginal prices are in
+# data/inputs/scenarios/generators_metadata.csv.
+
+# Cost of energy not served (load shedding), EUR/MWh.
+value_of_lost_load_eur_mwh: 10000.0
+
+# Wear cost per MWh discharged by a battery, EUR/MWh.
+battery_cycling_cost_eur_mwh: 2.0
+
+# Redispatch prices around each unit's marginal cost, EUR/MWh: a unit increased by
+# redispatch is paid its marginal cost plus the premium, a unit decreased pays back its
+# marginal cost minus the premium.
+redispatch_premium_eur_mwh: 10.0
+
+# Annualisation of investments.
+discount_rate: 0.05
+asset_lifetime_years: 40
+
+# Investment cost of a single-circuit 345 kV overhead line, EUR/km.
+line_cost_345kv_eur_km: 1200000.0

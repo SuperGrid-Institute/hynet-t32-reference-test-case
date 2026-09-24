@@ -12,8 +12,8 @@ in [model-changes.md](model-changes.md).
 |-----------|----------------------------------------------|-----------|
 | `tx-full` | IEEE 39-bus + VSC HVDC link + IEEE 14-bus    | Available |
 
-Planned: economic assumptions, a `reinforced` network case, a reduced variant
-(`tx-reduced`) and a distribution variant (`dx-33`).
+Planned: a `reinforced` network case, a reduced variant (`tx-reduced`) and a
+distribution variant (`dx-33`).
 
 ### `tx-full`
 
@@ -151,6 +151,26 @@ S3 is meant to stress thermal limits. L-16-19 is the only connection of buses 19
 33 and 34 to the rest of the system, so it carries the output of units B33 and B34
 minus the load at bus 20.
 
+## Economic assumptions
+
+Shared by every variant, so that results stay comparable across tools. They are common
+values for a European test case, in `economics/parameters.csv`:
+
+| Parameter                        | Value           |
+|----------------------------------|-----------------|
+| Value of lost load               | 10 000 EUR/MWh  |
+| Battery cycling cost             | 2 EUR/MWh discharged |
+| Redispatch premium               | 10 EUR/MWh      |
+| Discount rate                    | 5 %             |
+| Asset lifetime                   | 40 years        |
+| Capital recovery factor          | 0.0583 per year (from the two above) |
+| 345 kV overhead line cost        | 1.2 M EUR/km    |
+
+Generator marginal costs are the prices of `scenarios/generators.csv`.
+`economics/generator_costs.csv` adds redispatch prices: a unit increased by redispatch
+is paid its marginal cost plus the premium; a unit decreased pays back its marginal cost
+minus the premium, so a negative value means the unit is paid to reduce its output.
+
 ## Contingencies
 
 `contingencies/contingencies.csv` lists eight single outages, a small selection that is
@@ -230,6 +250,8 @@ testcase/tx-full/
 │   └── batteries.csv
 ├── contingencies/
 │   └── contingencies.csv
+├── economics/
+│   └── parameters.csv, generator_costs.csv
 └── scenarios/
     ├── generation.csv, loads.csv, hvdc.csv, battery_setpoints.csv, generators.csv
     └── snapshots/S1..S3/
