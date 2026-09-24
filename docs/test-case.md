@@ -78,13 +78,16 @@ set point.
 
 ## Scenarios
 
-| Id | Name                  | Timestamp (UTC)      | Loads  | RES output      | HVDC  |
-|----|-----------------------|----------------------|--------|-----------------|-------|
-| S1 | `baseline`            | 2025-01-01T00:00:00Z | × 1.00 | 50 % of nominal | 50 MW |
-| S2 | `high_res_low_demand` | 2025-01-01T01:00:00Z | × 0.70 | 100 % of nominal| 60 MW |
-| S3 | `low_res_high_demand` | 2025-01-01T02:00:00Z | × 1.05 | 10 % of nominal | 50 MW |
+| Id | Name                  | Timestamp (UTC)      | Loads (P / Q)   | RES output       | HVDC  |
+|----|-----------------------|----------------------|-----------------|------------------|-------|
+| S1 | `baseline`            | 2025-01-01T00:00:00Z | × 1.00 / × 1.00 | 50 % of nominal  | 50 MW |
+| S2 | `high_res_low_demand` | 2025-01-01T01:00:00Z | × 0.70 / × 0.70 | 100 % of nominal | 60 MW |
+| S3 | `low_res_high_demand` | 2025-01-01T02:00:00Z | × 1.08 / × 1.50 | 10 % of nominal  | 50 MW |
 
-Load factors apply to the loads of the source model. RES are the wind, solar and hydro
+Load factors apply to the active (P) and reactive (Q) power of the loads of the source
+model. S3 raises reactive demand more than active demand, as at a low power factor
+peak, so that it shows a voltage drop: the IEEE 39 units have large reactive reserves,
+while the small units of IEEE 14 reach their limits. RES are the wind, solar and hydro
 units. The other units are dispatched in merit order (ties in file order) within each
 AC island, so that each island balances its load plus or minus the HVDC transfer.
 This dispatch is a simple, reproducible starting point: adequacy and market tools
@@ -112,8 +115,9 @@ The base case keeps the operating point of the source model. Each scenario snaps
 is the base case with the scenario's generation, loads and HVDC set point applied.
 These load flows validate the data; they are not results of any HYNET tool.
 
-Voltages at the solved states range from about 0.98 to 1.09 p.u. Voltage control
-(for example with a reactive optimal power flow) is left to the tools.
+Voltages at the solved states range from about 0.94 to 1.09 p.u.: IEEE 14 generator
+set points reach 1.09 p.u., and S3 drops the lowest IEEE 14 voltage to 0.94 p.u.
+Voltage control (for example with a reactive optimal power flow) is left to the tools.
 
 ### Branch loadings
 
@@ -126,7 +130,7 @@ the limit:
 | base  | 88 % (L-101-102)        | —                                                           |
 | S1    | 92 % (T-10-32)          | —                                                           |
 | S2    | 95 % (L-28-29)          | —                                                           |
-| S3    | 165 % (L-16-19)         | L-16-19 165 %, L-101-102 108 %, L-6-11 105 %, L-10-11 102 % |
+| S3    | 162 % (L-16-19)         | L-16-19 162 %, L-101-102 118 %, L-6-11 106 %, L-10-11 103 % |
 
 S3 is meant to stress thermal limits. L-16-19 is the only connection of buses 19, 20,
 33 and 34 to the rest of the system, so it carries the output of units B33 and B34

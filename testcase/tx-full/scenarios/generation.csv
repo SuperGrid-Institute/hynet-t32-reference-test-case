@@ -29,7 +29,7 @@ timestamp,scenario_id,scenario_name,generator_id,p_mw
 2025-01-01T01:00:00Z,S2,high_res_low_demand,B37-G1 ,0.0
 2025-01-01T01:00:00Z,S2,high_res_low_demand,B38-G1 ,1245.0
 2025-01-01T01:00:00Z,S2,high_res_low_demand,B39-G1 ,699.6499999999996
-2025-01-01T02:00:00Z,S3,low_res_high_demand,B101-G1 ,211.44999999999993
+2025-01-01T02:00:00Z,S3,low_res_high_demand,B101-G1 ,219.22
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B102-G1 ,0.0
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B103-G1 ,5.0
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B106-G1 ,3.0
@@ -41,6 +41,6 @@ timestamp,scenario_id,scenario_name,generator_id,p_mw
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B34-G1 ,762.0
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B35-G1 ,65.0
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B36-G1 ,840.0
-2025-01-01T02:00:00Z,S3,low_res_high_demand,B37-G1 ,87.97500000000036
+2025-01-01T02:00:00Z,S3,low_res_high_demand,B37-G1 ,272.46
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B38-G1 ,1245.0
 2025-01-01T02:00:00Z,S3,low_res_high_demand,B39-G1 ,1500.0

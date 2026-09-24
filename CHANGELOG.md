@@ -15,7 +15,8 @@ scenario or file, PATCH for corrected values.
   provenance and checksums.
 - Scenario inputs for S1 (`baseline`), S2 (`high_res_low_demand`) and S3
   (`low_res_high_demand`): generator dispatch, loads, HVDC set points and generator
-  metadata. Timestamps are UTC.
+  metadata. Timestamps are UTC. S3 loads are the baseline loads × 1.08 on active and
+  × 1.50 on reactive power, so that S3 shows a voltage drop as well as thermal stress.
   In S1, RES run at 50 % of nominal power and the rest is dispatched in merit order
   within each AC island (IEEE 39, IEEE 14), accounting for the HVDC transfer, as in
   S2 and S3.

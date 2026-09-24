@@ -10,48 +10,48 @@
         <md:Model.modelingAuthoritySet>powsybl.org</md:Model.modelingAuthoritySet>
     </md:FullModel>
     <cim:EnergyConsumer rdf:about="#_fc958cb9-adcb-58c1-ae7f-62cd373910f0">
-        <cim:EnergyConsumer.p>14.175</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>6.09</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>14.58</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>8.7</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_46bb6377-c060-56e0-a6a0-b78ecc0ea109">
-        <cim:EnergyConsumer.p>15.645</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>5.25</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>16.092</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>7.5</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_ee16d560-a969-5c12-a39f-dbe7881c3ab1">
-        <cim:EnergyConsumer.p>50.19</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>-4.095</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>51.624</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>-5.85</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_58cd4d60-b1de-55fd-b635-0242c7a2c998">
-        <cim:EnergyConsumer.p>30.975</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>17.43</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>31.86</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>24.9</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_24df5ace-e6bc-5cc2-9d82-781820135b57">
-        <cim:EnergyConsumer.p>7.98</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>1.68</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>8.208</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>2.4</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_f96292f8-177a-5d4a-b369-8fe325eb7ce6">
-        <cim:EnergyConsumer.p>11.76</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>7.875</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>12.096</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>11.25</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_2892f422-b2d0-5d4c-aa2a-74af1897ac34">
-        <cim:EnergyConsumer.p>22.785</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>13.335</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>23.436</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>19.05</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_125dbea5-5e8b-57c1-a218-ef4a18a66836">
-        <cim:EnergyConsumer.p>98.91000000000001</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>19.95</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>101.736</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>28.5</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_50ad3961-2c03-55e3-80f9-3400f27eedd8">
-        <cim:EnergyConsumer.p>3.675</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>1.89</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>3.78</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>2.7</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_7bf0c244-8bb8-5b87-ab09-444e95a93b95">
-        <cim:EnergyConsumer.p>6.405</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>1.68</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>6.588</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>2.4</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_6ca7ed9b-9594-515e-a543-f4606b1ebaf4">
-        <cim:EnergyConsumer.p>9.45</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>6.09</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>9.72</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>8.7</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_8825f97b-676c-5415-afd7-4bc632a5035e">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
@@ -62,12 +62,12 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_7c00428f-8139-53e3-9beb-eb3bc62cb388">
-        <cim:EnergyConsumer.p>338.1</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>2.52</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>347.76</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>3.6</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_eccee485-75e9-5f73-bf9d-35b63feecb52">
-        <cim:EnergyConsumer.p>525</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>193.20000000000002</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>540</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>276</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_bde5837d-32e7-5771-a4f9-70a50ac099fd">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
@@ -78,16 +78,16 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_6aedba8c-f35a-5d66-b442-c4ea1acfb1ca">
-        <cim:EnergyConsumer.p>9.66</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>4.83</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>9.936</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>6.9</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_70ca4ecf-7793-5fb8-821c-1634de6ff0d7">
-        <cim:EnergyConsumer.p>245.49</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>88.2</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>252.504</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>126</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_6add0489-54e8-5445-9c2a-d35d2aa729f2">
-        <cim:EnergyConsumer.p>548.1</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>184.8</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>563.76</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>264</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_c6a236e6-03ef-5598-9bcf-5f2b10f4950c">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
@@ -98,8 +98,8 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_edc9c32a-55db-539c-a371-177bcd49f7b0">
-        <cim:EnergyConsumer.p>7.875</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>92.4</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>8.1</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>132</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_a375f102-b557-5ff2-8f00-a354b73e003a">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
@@ -110,8 +110,8 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_5ee8f1af-6cc2-5ec9-a185-57691099ffeb">
-        <cim:EnergyConsumer.p>336</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>160.65</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>345.6</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>229.5</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_87f05bca-08d0-5e42-9c25-cad3dfe8ebfb">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
@@ -122,60 +122,60 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_fe108a6b-ef3d-509d-b05b-8df6020dd63b">
-        <cim:EnergyConsumer.p>345.87</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>33.915</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>355.752</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>48.45</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_480aa3c6-21aa-55d9-b16b-ab36e3428593">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_0b68b134-2817-5f43-b542-423e14f0b794">
-        <cim:EnergyConsumer.p>714</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>108.15</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>734.4</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>154.5</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_d3f8b38c-f7dd-528e-9c96-27d5307d28ab">
-        <cim:EnergyConsumer.p>165.9</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>31.5</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>170.64</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>45</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_adc577fd-dd2c-5784-ae25-2e694cf30028">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_ede1ca09-3681-592f-bcf9-759fe8eb43da">
-        <cim:EnergyConsumer.p>287.7</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>120.75</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>295.92</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>172.5</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_2d6e1bb4-15b5-5a4f-b3bb-2357e1c648e6">
-        <cim:EnergyConsumer.p>324.03000000000003</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>-96.81</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>333.288</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>-138.3</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_cc20f6c8-81d7-5125-ba70-8f5435c77a72">
-        <cim:EnergyConsumer.p>259.875</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>88.83</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>267.3</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>126.9</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_0a11e436-06a6-525c-96af-77a0ef691d7a">
-        <cim:EnergyConsumer.p>145.95000000000002</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>17.85</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>150.12</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>25.5</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_e1fd9131-04f3-52ba-93bd-1f786bf084ad">
-        <cim:EnergyConsumer.p>235.20000000000002</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>49.56</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>241.92</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>70.8</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_651cb48a-42df-5aa0-aed9-4aa362e81089">
-        <cim:EnergyConsumer.p>216.3</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>28.98</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>222.48</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>41.4</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_8cb2fba8-6185-5057-b897-caed4d4ea350">
-        <cim:EnergyConsumer.p>295.05</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>79.275</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>303.48</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>113.25</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_cf14d781-e47c-562b-9a26-1f9f2959edb2">
-        <cim:EnergyConsumer.p>297.675</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>28.245</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>306.18</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>40.35</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_e465b0fb-bb3d-55a8-8ca1-601885621f5d">
-        <cim:EnergyConsumer.p>1159.2</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>262.5</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>1192.32</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>375</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:RatioTapChanger rdf:about="#_5d9bfa69-04de-52f6-bf53-6a1eb37aef5b">
         <cim:TapChanger.controlEnabled>false</cim:TapChanger.controlEnabled>
@@ -235,7 +235,7 @@
     </cim:RatioTapChanger>
     <cim:SynchronousMachine rdf:about="#_4941fc0e-65f9-5318-ac6b-d62307772938">
         <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-211.44999999999993</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-219.22</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>16.549</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
@@ -319,7 +319,7 @@
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_83470170-1e6d-569f-be02-0cdfc615aa2d">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-87.97500000000036</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-272.46</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>35.347</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
@@ -473,7 +473,7 @@
         <cim:ACDCConverter.targetPpcc>0</cim:ACDCConverter.targetPpcc>
         <cim:ACDCConverter.targetUdc>148.33333333333334</cim:ACDCConverter.targetUdc>
         <cim:ACDCConverter.p>-49.44444444444444</cim:ACDCConverter.p>
-        <cim:ACDCConverter.q>36.44816881973318</cim:ACDCConverter.q>
+        <cim:ACDCConverter.q>-1.88689101901736</cim:ACDCConverter.q>
         <cim:VsConverter.droop>0</cim:VsConverter.droop>
         <cim:VsConverter.droopCompensation>0</cim:VsConverter.droopCompensation>
         <cim:VsConverter.qShare>0</cim:VsConverter.qShare>
@@ -486,7 +486,7 @@
         <cim:ACDCConverter.targetPpcc>50</cim:ACDCConverter.targetPpcc>
         <cim:ACDCConverter.targetUdc>0</cim:ACDCConverter.targetUdc>
         <cim:ACDCConverter.p>50</cim:ACDCConverter.p>
-        <cim:ACDCConverter.q>325.69131893716127</cim:ACDCConverter.q>
+        <cim:ACDCConverter.q>123.69984796587414</cim:ACDCConverter.q>
         <cim:VsConverter.droop>0</cim:VsConverter.droop>
         <cim:VsConverter.droopCompensation>0</cim:VsConverter.droopCompensation>
         <cim:VsConverter.qShare>0</cim:VsConverter.qShare>

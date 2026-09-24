@@ -1526,7 +1526,7 @@
         <cim:IdentifiedObject.name>GU_B101-G1 </cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
         <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>211.44999999999993</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.initialP>219.22</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_e0c2c7c1-e33a-52ab-9b07-8a8a22aa5053"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_4e370936-ae90-5b37-93d7-f0da059f351f">
@@ -1790,7 +1790,7 @@
         <cim:IdentifiedObject.name>GU_B37-G1 </cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
         <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>87.97500000000036</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.initialP>272.46</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_ef48fcc6-db2d-53a2-96ca-7fbc5b6721db"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_7587ff74-966a-5333-aa2d-5b14136db340">
