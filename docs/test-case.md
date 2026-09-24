@@ -108,8 +108,23 @@ through pypowsybl) before export:
   losses are shared without changing the dispatch pattern;
 - one result per AC island; the build stops if either island does not converge.
 
-The build reports voltages, the HVDC flow and branch loadings for each state. These
-are reported, not enforced.
+The build reports voltages, the HVDC flow, battery power and branch loadings for each
+state, and checks that each scenario exhibits the phenomena it is designed for.
+
+### Scenario checks
+
+The rules are in `data/inputs/scenarios/validation.yaml`. The build stops, without
+writing anything, if a scenario breaks one. Voltage rises and drops are measured bus by
+bus against S1.
+
+| Scenario | Rules                                                                   | Value at the current state |
+|----------|-------------------------------------------------------------------------|----------------------------|
+| S1       | No branch above 100 %; every voltage within 0.90–1.10 p.u.              | 92 %; 0.98–1.09 p.u.       |
+| S2       | HVDC at its maximum; some bus at least 0.015 p.u. above S1              | 60 MW; +0.021 p.u.         |
+| S3       | At least one branch above 100 %; some bus at least 0.03 p.u. below S1   | 4 overloads; −0.070 p.u.   |
+
+The S1 band is wider than the usual 0.95–1.05 p.u. because the IEEE 14 generator set
+points reach 1.09 p.u.
 
 The base case keeps the operating point of the source model. Each scenario snapshot
 is the base case with the scenario's generation, loads and HVDC set point applied.
@@ -196,8 +211,8 @@ uv run hynet-testcase build
 
 Rebuilding from an unchanged commit reproduces `testcase/` byte for byte. The build
 stops, without writing anything, if an input file is malformed, if an id does not
-resolve in the network, if a network element is not covered by every scenario, or if
-a load flow does not converge.
+resolve in the network, if a network element is not covered by every scenario, if a
+load flow does not converge or moves a battery, or if a scenario check fails.
 
 ## Presentation notebook
 

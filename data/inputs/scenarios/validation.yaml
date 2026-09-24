@@ -1,0 +1,21 @@
+# Phenomena each scenario must exhibit on the base network case. The build checks them
+# after solving every scenario and stops, without writing anything, if one fails.
+# Voltages are in p.u. of the nominal voltage; loadings in % of the permanent current
+# limit. Voltage rises and drops are measured bus by bus against S1.
+
+S1:
+  # Clean reference state. The band is wider than the usual 0.95-1.05 p.u. because
+  # the IEEE 14 generator set points reach 1.09 p.u.
+  max_branch_loading_pct: 100.0
+  voltage_band_pu: [0.90, 1.10]
+
+S2:
+  # High RES, low demand, HVDC forced to its maximum: voltage rise, congestion of the
+  # HVDC interconnection.
+  hvdc_at_max: true
+  min_voltage_rise_pu: 0.015
+
+S3:
+  # Low RES, high demand: voltage drop and thermal stress.
+  min_overloaded_branches: 1
+  min_voltage_drop_pu: 0.03

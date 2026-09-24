@@ -188,6 +188,20 @@ applied to both sides. The build stops if a branch is missing or unknown.
 | `permanent_limit_a` | number | A    | Permanent current limit              |
 | `basis`             | text   | —    | Origin of the value                  |
 
+### `scenarios/validation.yaml`
+
+Rules each scenario must satisfy on the base network case. Each top-level key is a
+scenario id (`S1`, `S2`, `S3`); every rule is optional.
+
+| Key                       | Type          | Unit | Rule                                                        |
+|---------------------------|---------------|------|-------------------------------------------------------------|
+| `max_branch_loading_pct`  | number        | %    | No branch loaded above this                                 |
+| `voltage_band_pu`         | [number, number] | p.u. | Every bus voltage within the band                        |
+| `hvdc_at_max`             | boolean       | —    | Every HVDC line carries its maximum power                   |
+| `min_voltage_rise_pu`     | number        | p.u. | Some bus at least this much above its S1 voltage            |
+| `min_voltage_drop_pu`     | number        | p.u. | Some bus at least this much below its S1 voltage            |
+| `min_overloaded_branches` | integer       | —    | At least this many branches above 100 %                     |
+
 ### `network/<variant>_corrections.yaml`
 
 Corrections applied to the source model of a variant; see

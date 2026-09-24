@@ -38,7 +38,9 @@ class StateReport:
     Attributes:
         label: Name of the state (case or scenario).
         voltages: Voltage ranges, one per nominal voltage, ascending.
+        bus_v_pu: Voltage of every energised bus (p.u.), by bus-breaker id.
         hvdc_p_mw: Active power at the rectifier side of each HVDC line (MW).
+        hvdc_max_p_mw: Maximum active power of each HVDC line (MW).
         battery_p_mw: Active power of each battery (MW, > 0 discharging).
         slack_mismatch_mw: Total active power left on slack buses (MW).
         loadings: Loading of each branch (% of its permanent current limit, worst
@@ -47,7 +49,9 @@ class StateReport:
 
     label: str
     voltages: list[VoltageRange]
+    bus_v_pu: dict[str, float]
     hvdc_p_mw: dict[str, float]
+    hvdc_max_p_mw: dict[str, float]
     battery_p_mw: dict[str, float]
     slack_mismatch_mw: float
     loadings: dict[str, float]
@@ -68,17 +72,10 @@ class StateReport:
             voltages.append(VoltageRange(
                 nominal_kv=float(nominal_kv), min_pu=float(v_pu.min()), min_bus=str(v_pu.idxmin()),
                 max_pu=float(v_pu.max()), max_bus=str(v_pu.idxmax())))
-        station_p = network.get_vsc_converter_stations()["p"].astype(float)
-        lines = network.get_hvdc_lines()
-        rectifiers = lines["converter_station1_id"].where(
-            lines["converters_mode"] == "SIDE_1_RECTIFIER_SIDE_2_INVERTER",
-            lines["converter_station2_id"])
-        hvdc = {str(line_id): float(station_p.to_numpy()[station_p.index.get_loc(station)])
-                for line_id, station in rectifiers.items()}
-        battery_p = -network.get_batteries()["p"].astype(float)
-        batteries = {str(battery_id): float(p) for battery_id, p
-                     in zip(battery_p.index, battery_p.to_numpy())}
-        return cls(label=label, voltages=voltages, hvdc_p_mw=hvdc, battery_p_mw=batteries,
+        hvdc, hvdc_max = _hvdc_flows(network)
+        return cls(label=label, voltages=voltages, bus_v_pu=_as_dict(buses["v_pu"]),
+                   hvdc_p_mw=hvdc, hvdc_max_p_mw=hvdc_max,
+                   battery_p_mw=_as_dict(-network.get_batteries()["p"]),
                    slack_mismatch_mw=sum(r.slack_mismatch_mw for r in results),
                    loadings=branch_loadings(network))
 
@@ -95,6 +92,22 @@ class StateReport:
         logger.info("%s: highest branch loading %.0f %% (%s)", self.label, loading, branch.strip())
         for branch, loading in self.overloads.items():
             logger.info("%s: overload %s at %.0f %%", self.label, branch.strip(), loading)
+
+
+def _as_dict(values: pd.Series) -> dict[str, float]:
+    return {str(key): float(value) for key, value in zip(values.index, values.to_numpy())}
+
+
+def _hvdc_flows(network: Network) -> tuple[dict[str, float], dict[str, float]]:
+    """Rectifier-side active power and maximum power of every HVDC line (MW)."""
+    station_p = network.get_vsc_converter_stations()["p"].astype(float)
+    lines = network.get_hvdc_lines()
+    rectifiers = lines["converter_station1_id"].where(
+        lines["converters_mode"] == "SIDE_1_RECTIFIER_SIDE_2_INVERTER",
+        lines["converter_station2_id"])
+    flows = {str(line_id): float(station_p.to_numpy()[station_p.index.get_loc(station)])
+             for line_id, station in rectifiers.items()}
+    return flows, _as_dict(lines["max_p"])
 
 
 def branch_loadings(network: Network) -> dict[str, float]:

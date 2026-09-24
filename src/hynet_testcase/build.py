@@ -12,7 +12,7 @@ from pathlib import Path
 from pypowsybl.network import Network
 
 from hynet_testcase.errors import TestCaseError
-from hynet_testcase.ids import CaseId, VariantId
+from hynet_testcase.ids import CaseId, ScenarioId, VariantId
 from hynet_testcase.io.csv_writers import CSV_WRITERS, VariantData
 from hynet_testcase.io.exporters import EXPORTERS
 from hynet_testcase.network.builders import TxFullBuilder, VariantBuilder
@@ -21,6 +21,7 @@ from hynet_testcase.network.zones import ZoneMapping
 from hynet_testcase.paths import RepoPaths
 from hynet_testcase.scenarios.inputs import ScenarioInputs
 from hynet_testcase.scenarios.report import StateReport
+from hynet_testcase.scenarios.validation import ScenarioValidation
 from hynet_testcase.storage.batteries import Batteries
 
 logger = logging.getLogger(__name__)
@@ -48,6 +49,9 @@ class SolvedState:
 def _solve_states(network: Network, variant: VariantId,
                   inputs: ScenarioInputs) -> list[SolvedState]:
     """Solves the base case and one pypowsybl variant per scenario, in memory.
+
+    The base case comes first, then one state per scenario whose variant id is the
+    scenario id.
 
     Raises:
         LoadFlowError: If any state does not converge.
@@ -104,6 +108,8 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
     data = VariantData(scenarios=inputs, zones=zones, batteries=batteries.with_zones(zones))
     unchanged = builder.unchanged_files()
     states = _solve_states(network, builder.variant, inputs)
+    ScenarioValidation.load(paths.inputs / "scenarios" / "validation.yaml").check(
+        {ScenarioId(state.variant_id): state.report for state in states[1:]})
 
     output = paths.variant_output(builder.variant)
     if output.exists():

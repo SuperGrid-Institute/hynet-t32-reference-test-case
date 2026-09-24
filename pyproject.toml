@@ -55,6 +55,8 @@ py-version = "3.14"
 [tool.pylint.design]
 # Builders, exporters and writers are single-method providers by design.
 min-public-methods = 1
+# Result dataclasses (e.g. state reports) carry more fields than the default 7.
+max-attributes = 10
 
 [tool.pylint.format]
 max-line-length = 100
