@@ -73,6 +73,18 @@ MVA ratings are converted as I = S / (√3 · U_nominal).
 assessed. See [test-case.md](test-case.md#branch-loadings) for the resulting
 loadings.
 
+### MC-3 — Batteries added
+
+**Finding.** The source model has no storage.
+
+**Correction.** The two batteries of `data/inputs/storage/tx-full_batteries.csv` are
+added as IIDM batteries at buses B6 (`BAT-B6-1`, ± 100 MW) and B106 (`BAT-B106-1`,
+± 10 MW), with a reactive range of ± their power in Mvar. They are idle (0 MW, 0 Mvar)
+in the base case and in every snapshot.
+
+**Effect.** Load-flow results are unchanged, since the batteries are idle. The
+PowerFactory model does not contain them.
+
 ## Remarks passed on to the model provider
 
 Not corrected, as they are modelling choices rather than errors:

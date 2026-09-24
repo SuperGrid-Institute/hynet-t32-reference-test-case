@@ -11,6 +11,8 @@ from hynet_testcase.errors import LoadFlowError
 
 logger = logging.getLogger(__name__)
 
+_BATTERY_TOLERANCE_MW = 1e-3
+
 
 @dataclass(frozen=True)
 class ComponentResult:
@@ -49,7 +51,8 @@ def run_ac(network: Network, label: str) -> list[ComponentResult]:
         One result per synchronous component.
 
     Raises:
-        LoadFlowError: If any synchronous component does not converge.
+        LoadFlowError: If any synchronous component does not converge, or if a battery
+            ends away from its set point.
     """
     results = [
         ComponentResult(
@@ -66,4 +69,15 @@ def run_ac(network: Network, label: str) -> list[ComponentResult]:
     for r in results:
         logger.debug("%s: component %d converged in %d iterations, slack mismatch %.3f MW",
                      label, r.synchronous_component, r.iterations, r.slack_mismatch_mw)
+    _check_batteries(network, label)
     return results
+
+
+def _check_batteries(network: Network, label: str) -> None:
+    # OpenLoadFlow shares the slack with batteries in proportion to their set point and
+    # cannot exclude them; an idle battery is unaffected, a scheduled one would drift.
+    batteries = network.get_batteries()
+    # Terminal flow `p` is in load convention, set point `target_p` in generator one.
+    drift = (batteries["p"] + batteries["target_p"]).abs()
+    if moved := sorted(drift.index[drift > _BATTERY_TOLERANCE_MW]):
+        raise LoadFlowError(f"load flow of {label} moved batteries off their set point: {moved}")

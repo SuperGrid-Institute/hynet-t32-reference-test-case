@@ -46,6 +46,18 @@ Active power set point of every HVDC line in every scenario.
 | `hvdc_line_id`  | text   | —    | IIDM HVDC line id                                      |
 | `target_p_mw`   | number | MW   | Set point at the rectifier side (IEEE 39 → IEEE 14)    |
 
+### `battery_setpoints.csv`
+
+Active power set point of every battery in every scenario.
+
+| Column          | Type   | Unit | Description                                    |
+|-----------------|--------|------|------------------------------------------------|
+| `timestamp`     | text   | UTC  | Timestamp of the scenario                      |
+| `scenario_id`   | text   | —    | `S1`, `S2` or `S3`                             |
+| `scenario_name` | text   | —    | Descriptive name                               |
+| `battery_id`    | text   | —    | IIDM battery id                                |
+| `target_p_mw`   | number | MW   | Set point, positive when discharging           |
+
 ### `generators.csv`
 
 Illustrative characteristics of every generator, shared by all scenarios.
@@ -74,7 +86,7 @@ Zone of every generator and load, derived from the bus it connects to.
 
 | Column         | Type | Description             |
 |----------------|------|-------------------------|
-| `element_type` | text | `generator` or `load`   |
+| `element_type` | text | `generator`, `load` or `battery` |
 | `element_id`   | text | IIDM id                 |
 | `bus_id`       | text | Connection bus          |
 | `zone_id`      | text | Zone id                 |
@@ -101,19 +113,21 @@ Scheduled balance of each zone, from the scenario set points (before losses).
 | `scenario_id`   | text   | —    | `S1`, `S2` or `S3`                          |
 | `zone_id`       | text   | —    | Zone id                                     |
 | `generation_mw` | number | MW   | Sum of generator set points                 |
+| `storage_mw`    | number | MW   | Sum of battery set points (positive: discharging) |
 | `load_mw`       | number | MW   | Sum of load active power                    |
-| `balance_mw`    | number | MW   | Generation minus load (positive: exporting) |
+| `balance_mw`    | number | MW   | Generation plus storage minus load (positive: exporting) |
 
 ## `testcase/<variant>/storage/batteries.csv`
 
-Batteries for adequacy studies. They are not part of the network models.
+Characteristics of the batteries. Their power capability is also in the network
+models; energy capacity, efficiencies and states of charge are only here.
 
 | Column                 | Type   | Unit | Description                                           |
 |------------------------|--------|------|-------------------------------------------------------|
 | `battery_id`           | text   | —    | Battery id                                            |
 | `bus_id`               | text   | —    | Connection bus (IIDM bus-breaker bus id)              |
 | `zone_id`              | text   | —    | Zone of the connection bus                            |
-| `power_mw`             | number | MW   | Maximum charging and discharging power                |
+| `power_mw`             | number | MW   | Maximum charging and discharging power; also the reactive range (± Mvar) in the network |
 | `energy_mwh`           | number | MWh  | Energy capacity                                       |
 | `charge_efficiency`    | number | —    | Fraction of the absorbed energy that is stored        |
 | `discharge_efficiency` | number | —    | Fraction of the released stored energy that is delivered |
@@ -127,7 +141,7 @@ directory.
 
 | Column         | Type | Description                                                              |
 |----------------|------|--------------------------------------------------------------------------|
-| `element_type` | text | `substation`, `voltage_level`, `generator`, `load`, `line`, `two_windings_transformer`, `shunt_compensator`, `hvdc_line` or `vsc_converter_station` |
+| `element_type` | text | `substation`, `voltage_level`, `generator`, `load`, `line`, `two_windings_transformer`, `shunt_compensator`, `hvdc_line`, `vsc_converter_station` or `battery` |
 | `iidm_id`      | text | IIDM id                                                                  |
 | `cgmes_id`     | text | CGMES mRID (UUID, without the leading `_` of `rdf:ID`)                   |
 
@@ -142,11 +156,12 @@ Hand-edited files from which the build produces `testcase/`.
 | `generation_scenarios.csv` | `generation.csv`           | `timestamp, scenario, generator_id, p_mw`             |
 | `load_scenarios.csv`       | `loads.csv`                | `timestamp, scenario, load_id, p_mw, q_mvar`          |
 | `hvdc_setpoints.csv`       | `hvdc.csv`                 | `timestamp, scenario, hvdc_line_id, target_p_mw`      |
+| `battery_setpoints.csv`    | `battery_setpoints.csv`    | `timestamp, scenario, battery_id, target_p_mw`        |
 | `generators_metadata.csv`  | `generators.csv`           | as `generators.csv`                                   |
 
 `scenario` holds the scenario name (`baseline`, `high_res_low_demand`,
 `low_res_high_demand`). Each scenario has a single timestamp, the same in every file,
-and sets every generator, load and HVDC line of the network exactly once.
+and sets every generator, load, HVDC line and battery of the network exactly once.
 
 ### `zones/<variant>_bus_zones.csv`
 
@@ -157,7 +172,8 @@ connected through its own branches.
 ### `storage/<variant>_batteries.csv`
 
 Same columns as the shipped `batteries.csv`, without `zone_id`, which the build derives
-from the zone mapping. The build stops if a bus is unknown, an id is repeated, power or
+from the zone mapping. The build adds each battery to the network models at its bus.
+The build stops if a bus is unknown, an id is repeated or already used, power or
 energy is not positive, an efficiency is outside (0, 1] or a state of charge outside
 [0, 1].
 

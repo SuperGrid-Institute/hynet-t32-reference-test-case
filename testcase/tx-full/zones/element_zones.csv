@@ -56,3 +56,5 @@ load,B6-L1 ,B6,Z3
 load,B7-L1 ,B7,Z3
 load,B8-L1 ,B8,Z3
 load,B9-L1 ,B9,Z3
+battery,BAT-B106-1,B106,Z0
+battery,BAT-B6-1,B6,Z3

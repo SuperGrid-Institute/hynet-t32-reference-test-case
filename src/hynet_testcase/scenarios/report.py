@@ -39,6 +39,7 @@ class StateReport:
         label: Name of the state (case or scenario).
         voltages: Voltage ranges, one per nominal voltage, ascending.
         hvdc_p_mw: Active power at the rectifier side of each HVDC line (MW).
+        battery_p_mw: Active power of each battery (MW, > 0 discharging).
         slack_mismatch_mw: Total active power left on slack buses (MW).
         loadings: Loading of each branch (% of its permanent current limit, worst
             side), in descending order.
@@ -47,6 +48,7 @@ class StateReport:
     label: str
     voltages: list[VoltageRange]
     hvdc_p_mw: dict[str, float]
+    battery_p_mw: dict[str, float]
     slack_mismatch_mw: float
     loadings: dict[str, float]
 
@@ -73,7 +75,10 @@ class StateReport:
             lines["converter_station2_id"])
         hvdc = {str(line_id): float(station_p.to_numpy()[station_p.index.get_loc(station)])
                 for line_id, station in rectifiers.items()}
-        return cls(label=label, voltages=voltages, hvdc_p_mw=hvdc,
+        battery_p = -network.get_batteries()["p"].astype(float)
+        batteries = {str(battery_id): float(p) for battery_id, p
+                     in zip(battery_p.index, battery_p.to_numpy())}
+        return cls(label=label, voltages=voltages, hvdc_p_mw=hvdc, battery_p_mw=batteries,
                    slack_mismatch_mw=sum(r.slack_mismatch_mw for r in results),
                    loadings=branch_loadings(network))
 
@@ -84,6 +89,8 @@ class StateReport:
                         v.nominal_kv, v.min_pu, v.min_bus, v.max_pu, v.max_bus)
         for line_id, p in self.hvdc_p_mw.items():
             logger.info("%s: HVDC %s carries %.1f MW", self.label, line_id, p)
+        for battery_id, p in self.battery_p_mw.items():
+            logger.info("%s: battery %s at %.1f MW", self.label, battery_id, p)
         branch, loading = next(iter(self.loadings.items()))
         logger.info("%s: highest branch loading %.0f %% (%s)", self.label, loading, branch.strip())
         for branch, loading in self.overloads.items():

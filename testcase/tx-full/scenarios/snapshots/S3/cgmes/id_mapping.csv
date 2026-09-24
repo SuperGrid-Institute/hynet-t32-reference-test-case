@@ -204,3 +204,5 @@ shunt_compensator,B5-SH 1,fa771da8-8ed9-5b66-8a21-1973fb7c174d
 hvdc_line,HVDC_Link_16_113,ca9f9d3d-a225-5316-8588-c0634eaa7cab
 vsc_converter_station,VSC_Station_113,cbe1e26d-e5e1-5aeb-a531-bb19849a0ef6
 vsc_converter_station,VSC_Station_16,721717dd-6168-5cad-99c5-67b014b4a61a
+battery,BAT-B6-1,5018d056-6fd6-55b6-8294-ff254749c79c
+battery,BAT-B106-1,744661de-84cc-5f33-9237-8f9c600862db

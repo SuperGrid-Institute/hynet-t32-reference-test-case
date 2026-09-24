@@ -65,6 +65,7 @@ class ZoneMapping:
         elements = pd.concat([
             self._element_zones(network.get_generators(all_attributes=True), "generator"),
             self._element_zones(network.get_loads(all_attributes=True), "load"),
+            self._element_zones(network.get_batteries(all_attributes=True), "battery"),
         ], ignore_index=True)
         interconnections = pd.concat([self._ac_ties(branches, network),
                                       self._hvdc_links(network)], ignore_index=True)
@@ -146,7 +147,7 @@ class ZoneData:
 
     Attributes:
         bus_zones: Zone of every bus (`bus_id`, `zone_id`).
-        element_zones: Bus and zone of every generator and load.
+        element_zones: Bus and zone of every generator, load and battery.
         interconnections: AC branches between zones and HVDC links, with capacity.
     """
 
@@ -154,15 +155,20 @@ class ZoneData:
     element_zones: pd.DataFrame
     interconnections: pd.DataFrame
 
-    def zone_balance(self, generation: pd.Series, loads: pd.Series) -> pd.DataFrame:
-        """Generation, load and their difference per zone for one scenario.
+    def zone_balance(self, generation: pd.Series, loads: pd.Series,
+                     batteries: pd.Series) -> pd.DataFrame:
+        """Generation, storage, load and the resulting balance per zone for one scenario.
 
         Args:
             generation: Active power per generator id (MW).
             loads: Active power per load id (MW).
+            batteries: Active power per battery id (MW, > 0 discharging).
         """
         zones = self.element_zones.set_index("element_id")["zone_id"].to_dict()
-        return pd.DataFrame({
+        frame = pd.DataFrame({
             "generation_mw": generation.groupby(generation.index.map(zones)).sum(),
+            "storage_mw": batteries.groupby(batteries.index.map(zones)).sum(),
             "load_mw": loads.groupby(loads.index.map(zones)).sum(),
-        }).fillna(0.0).assign(balance_mw=lambda f: f["generation_mw"] - f["load_mw"])
+        }).fillna(0.0)
+        frame["balance_mw"] = frame["generation_mw"] + frame["storage_mw"] - frame["load_mw"]
+        return frame

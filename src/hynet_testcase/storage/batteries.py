@@ -1,8 +1,9 @@
 # SPDX-License-Identifier: MIT
-"""Batteries for adequacy studies.
+"""Batteries of a variant.
 
-They are shipped as data only and never added to the network models, so security and
-dynamic studies, and the PowerFactory model, are unaffected.
+Each battery is added to the network models as an IIDM battery with its power
+capability. Its energy capacity, efficiencies and states of charge have no place in
+IIDM and are shipped as a table for adequacy studies.
 """
 
 import logging
@@ -11,6 +12,7 @@ from pathlib import Path
 from typing import Self
 
 import pandas as pd
+from pypowsybl.network import Network
 
 from hynet_testcase.errors import IdResolutionError, InputError
 from hynet_testcase.io.readers import read_input_csv
@@ -62,6 +64,30 @@ class Batteries:
         if failed := [message for message, ok in checks.items() if not ok]:
             raise InputError(f"{path.name}: {'; '.join(failed)}")
         return cls(table=table)
+
+    def add_to(self, network: Network) -> None:
+        """Adds every battery to `network`, idle (0 MW, 0 Mvar).
+
+        The active power capability is symmetric (± `power_mw`); the reactive
+        capability is taken as ± `power_mw` Mvar, a typical converter rating.
+
+        Raises:
+            IdResolutionError: If a battery bus is not a bus of the network, or a
+                battery id is already used.
+        """
+        buses = network.get_bus_breaker_view_buses()["voltage_level_id"]
+        if unknown := sorted(set(self.table["bus_id"]) - set(buses.index)):
+            raise IdResolutionError(f"batteries: unknown bus_id {unknown}")
+        if clash := sorted(set(self.table["battery_id"]) & set(network.get_identifiables().index)):
+            raise IdResolutionError(f"batteries: ids already used in the network {clash}")
+        ids = list(self.table["battery_id"])
+        power = list(self.table["power_mw"])
+        network.create_batteries(
+            id=ids, voltage_level_id=[buses[bus] for bus in self.table["bus_id"]],
+            bus_id=list(self.table["bus_id"]), target_p=[0.0] * len(ids),
+            target_q=[0.0] * len(ids), min_p=[-p for p in power], max_p=power)
+        network.create_minmax_reactive_limits(id=ids, min_q=[-p for p in power], max_q=power)
+        logger.info("added %d batteries to the network", len(ids))
 
     def with_zones(self, zones: ZoneData) -> pd.DataFrame:
         """Returns the battery table with the zone of each connection bus.

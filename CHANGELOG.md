@@ -32,8 +32,11 @@ scenario or file, PATCH for corrected values.
 - Four bidding zones for `tx-full` (IEEE 14 and the three classic IEEE 39 areas):
   bus and element mappings, interconnections with capacities, and scheduled zone
   balances per scenario, in `testcase/tx-full/zones/`.
-- Two batteries for adequacy studies in `testcase/tx-full/storage/batteries.csv`:
-  100 MW / 200 MWh at bus 6 (Z3) and 10 MW / 20 MWh at bus 106 (Z0).
+- Two batteries, 100 MW / 200 MWh at bus 6 (Z3) and 10 MW / 20 MWh at bus 106 (Z0):
+  in the network models (XIIDM and CGMES, idle in every snapshot, MC-3 in
+  `docs/model-changes.md`), with their set points in
+  `testcase/tx-full/scenarios/battery_setpoints.csv` and their energy, efficiency and
+  state-of-charge data in `testcase/tx-full/storage/batteries.csv`.
 - Presentation notebook `notebooks/presentation.ipynb`, with plotting helpers in
   `hynet_testcase.viz`.
 - Binder configuration (`binder/`) and README badge opening the presentation notebook.

@@ -89,6 +89,17 @@ class HvdcWriter(CsvWriter):
         return _time_series(data.scenarios.hvdc)
 
 
+class BatterySetpointWriter(CsvWriter):
+    """Battery active power set points per scenario."""
+
+    directory = "scenarios"
+    filename = "battery_setpoints.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the battery set point time series."""
+        return _time_series(data.scenarios.batteries)
+
+
 class GeneratorWriter(CsvWriter):
     """Generator metadata: type, nominal power, marginal price and RES flag."""
 
@@ -112,7 +123,7 @@ class BusZoneWriter(CsvWriter):
 
 
 class ElementZoneWriter(CsvWriter):
-    """Bus and zone of every generator and load."""
+    """Bus and zone of every generator, load and battery."""
 
     directory = "zones"
     filename = "element_zones.csv"
@@ -143,7 +154,8 @@ class ZoneBalanceWriter(CsvWriter):
         """Returns the zone balances of every scenario, from the scenario set points."""
         rows = []
         for snapshot in data.scenarios.snapshots():
-            balance = data.zones.zone_balance(snapshot.generation, snapshot.loads["p_mw"])
+            balance = data.zones.zone_balance(snapshot.generation, snapshot.loads["p_mw"],
+                                              snapshot.batteries)
             balance = balance.rename_axis("zone_id").reset_index()
             balance.insert(0, "timestamp", snapshot.timestamp.strftime("%Y-%m-%dT%H:%M:%SZ"))
             balance.insert(1, "scenario_id", str(snapshot.scenario))
@@ -152,7 +164,7 @@ class ZoneBalanceWriter(CsvWriter):
 
 
 class BatteryWriter(CsvWriter):
-    """Batteries for adequacy studies."""
+    """Battery characteristics, including those IIDM does not hold (energy, SoC)."""
 
     directory = "storage"
     filename = "batteries.csv"
@@ -163,7 +175,7 @@ class BatteryWriter(CsvWriter):
 
 
 CSV_WRITERS: list[CsvWriter] = [
-    GenerationWriter(), LoadWriter(), HvdcWriter(), GeneratorWriter(),
+    GenerationWriter(), LoadWriter(), HvdcWriter(), BatterySetpointWriter(), GeneratorWriter(),
     BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(), ZoneBalanceWriter(),
     BatteryWriter(),
 ]

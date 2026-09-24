@@ -838,6 +838,11 @@
         <cim:Terminal.ConductingEquipment rdf:resource="#_2535214a-01ea-5567-8bd7-bc53e9d9a189"/>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
+    <cim:Terminal rdf:ID="_1be23907-ef9c-5906-8c63-6f3d1cc0675c">
+        <cim:IdentifiedObject.name>744661de-84cc-5f33-9237-8f9c6008</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_744661de-84cc-5f33-9237-8f9c600862db"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
     <cim:Terminal rdf:ID="_73e7bebb-3cc9-51c0-893b-3fab54dc96b0">
         <cim:IdentifiedObject.name>721717dd-6168-5cad-99c5-67b014b4</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_721717dd-6168-5cad-99c5-67b014b4a61a"/>
@@ -861,6 +866,11 @@
     <cim:Terminal rdf:ID="_548d6f12-3054-5d84-8cb7-e08d258755da">
         <cim:IdentifiedObject.name>edc9c32a-55db-539c-a371-177bcd49</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_edc9c32a-55db-539c-a371-177bcd49f7b0"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_f436c8fb-cbca-5642-b2fc-65b61cf36688">
+        <cim:IdentifiedObject.name>5018d056-6fd6-55b6-8294-ff254749</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_5018d056-6fd6-55b6-8294-ff254749c79c"/>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
     <cim:Terminal rdf:ID="_90fabe8c-68b0-50a0-991f-7ca0be006554">
@@ -1827,6 +1837,38 @@
         <cim:GeneratingUnit.initialP>1500</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_b7a4a41a-bffe-5c17-be2a-90402947f854"/>
     </cim:GeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_5018d056-6fd6-55b6-8294-ff254749c79c">
+        <cim:IdentifiedObject.name>BAT-B6-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_6b53782b-7d5c-58da-b00a-a9905fe3d640"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_ba3d0260-1289-57c9-b23b-8e417d36681b"/>
+        <cim:SynchronousMachine.minQ>-100</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>100</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>100</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:HydroGeneratingUnit rdf:ID="_ba3d0260-1289-57c9-b23b-8e417d36681b">
+        <cim:IdentifiedObject.name>GU_BAT-B6-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-100</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>100</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_e3087aa2-00ad-5ed6-8a54-4e7c7685af73"/>
+    </cim:HydroGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_744661de-84cc-5f33-9237-8f9c600862db">
+        <cim:IdentifiedObject.name>BAT-B106-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_0bbc533f-5e42-5ab6-acb3-27ac5197ac49"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_192c08ee-6005-53ff-9b22-abc08f3c1a86"/>
+        <cim:SynchronousMachine.minQ>-10</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>10</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>10</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrCondenserOrMotor"/>
+    </cim:SynchronousMachine>
+    <cim:HydroGeneratingUnit rdf:ID="_192c08ee-6005-53ff-9b22-abc08f3c1a86">
+        <cim:IdentifiedObject.name>GU_BAT-B106-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>-10</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>10</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_11087473-7932-5f43-addb-fb650fd9e7a9"/>
+    </cim:HydroGeneratingUnit>
     <cim:LinearShuntCompensator rdf:ID="_ff88912f-d440-5747-be1e-4cdb7954b620">
         <cim:IdentifiedObject.name>B109-SH 1</cim:IdentifiedObject.name>
         <cim:ShuntCompensator.normalSections>1</cim:ShuntCompensator.normalSections>

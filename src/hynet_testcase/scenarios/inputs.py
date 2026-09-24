@@ -19,12 +19,14 @@ logger = logging.getLogger(__name__)
 GENERATION_FILE = "generation_scenarios.csv"
 LOAD_FILE = "load_scenarios.csv"
 HVDC_FILE = "hvdc_setpoints.csv"
+BATTERY_FILE = "battery_setpoints.csv"
 GENERATOR_FILE = "generators_metadata.csv"
 
 _TIME_SERIES_COLUMNS: dict[str, tuple[str, list[str]]] = {
     GENERATION_FILE: ("generator_id", ["p_mw"]),
     LOAD_FILE: ("load_id", ["p_mw", "q_mvar"]),
     HVDC_FILE: ("hvdc_line_id", ["target_p_mw"]),
+    BATTERY_FILE: ("battery_id", ["target_p_mw"]),
 }
 _GENERATOR_COLUMNS = ["generator_id", "subnetwork", "type", "nominal_p_mw", "price_eur_mwh",
                       "is_res"]
@@ -48,6 +50,7 @@ class ScenarioSnapshot:
         generation: Active power set points (MW), indexed by generator id.
         loads: Active and reactive consumption (MW, Mvar), indexed by load id.
         hvdc: Active power set points (MW, rectifier side), indexed by HVDC line id.
+        batteries: Active power set points (MW, > 0 discharging), indexed by battery id.
     """
 
     scenario: ScenarioId
@@ -55,6 +58,7 @@ class ScenarioSnapshot:
     generation: pd.Series
     loads: pd.DataFrame
     hvdc: pd.Series
+    batteries: pd.Series
 
     def apply(self, network: Network) -> None:
         """Sets the operating point on the working variant of `network`."""
@@ -63,6 +67,7 @@ class ScenarioSnapshot:
         network.update_loads(id=list(self.loads.index), p0=list(self.loads["p_mw"]),
                              q0=list(self.loads["q_mvar"]))
         network.update_hvdc_lines(id=list(self.hvdc.index), target_p=list(self.hvdc))
+        network.update_batteries(id=list(self.batteries.index), target_p=list(self.batteries))
 
 
 @dataclass(frozen=True)
@@ -73,12 +78,14 @@ class ScenarioInputs:
         generation: Generator dispatch per scenario.
         loads: Load consumption per scenario.
         hvdc: HVDC set points per scenario.
+        batteries: Battery set points per scenario.
         generators: Generator metadata (type, nominal power, price, RES flag).
     """
 
     generation: pd.DataFrame
     loads: pd.DataFrame
     hvdc: pd.DataFrame
+    batteries: pd.DataFrame
     generators: pd.DataFrame
 
     @classmethod
@@ -108,13 +115,14 @@ class ScenarioInputs:
             raise InputError(f"{GENERATOR_FILE}: duplicate generator_id")
 
         return cls(generation=series[GENERATION_FILE], loads=series[LOAD_FILE],
-                   hvdc=series[HVDC_FILE], generators=generators)
+                   hvdc=series[HVDC_FILE], batteries=series[BATTERY_FILE],
+                   generators=generators)
 
     def check_ids(self, network: Network) -> None:
         """Checks that the inputs cover exactly the network's elements.
 
-        Every id must exist in the network, and every generator, load and HVDC line of
-        the network must be set by each scenario, so that no element keeps a value from
+        Every id must exist in the network, and every generator, load, HVDC line and
+        battery of the network must be set by each scenario, so that no element keeps a value from
         the source model by omission.
 
         Raises:
@@ -124,8 +132,10 @@ class ScenarioInputs:
             GENERATION_FILE: ("generator_id", set(network.get_generators().index)),
             LOAD_FILE: ("load_id", set(network.get_loads().index)),
             HVDC_FILE: ("hvdc_line_id", set(network.get_hvdc_lines().index)),
+            BATTERY_FILE: ("battery_id", set(network.get_batteries().index)),
         }
-        frames = {GENERATION_FILE: self.generation, LOAD_FILE: self.loads, HVDC_FILE: self.hvdc}
+        frames = {GENERATION_FILE: self.generation, LOAD_FILE: self.loads, HVDC_FILE: self.hvdc,
+                  BATTERY_FILE: self.batteries}
         errors: list[str] = []
         for name, (id_column, network_ids) in expected.items():
             input_ids = set(frames[name][id_column])
@@ -147,12 +157,14 @@ class ScenarioInputs:
             generation = self.generation[self.generation["scenario"] == scenario.input_name]
             loads = self.loads[self.loads["scenario"] == scenario.input_name]
             hvdc = self.hvdc[self.hvdc["scenario"] == scenario.input_name]
+            batteries = self.batteries[self.batteries["scenario"] == scenario.input_name]
             result.append(ScenarioSnapshot(
                 scenario=scenario,
                 timestamp=generation["timestamp"].iloc[0].to_pydatetime(),
                 generation=generation.set_index("generator_id")["p_mw"],
                 loads=loads.set_index("load_id")[["p_mw", "q_mvar"]],
                 hvdc=hvdc.set_index("hvdc_line_id")["target_p_mw"],
+                batteries=batteries.set_index("battery_id")["target_p_mw"],
             ))
         return result
 

@@ -338,6 +338,20 @@
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_5018d056-6fd6-55b6-8294-ff254749c79c">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_744661de-84cc-5f33-9237-8f9c600862db">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
     <cim:LinearShuntCompensator rdf:about="#_ff88912f-d440-5747-be1e-4cdb7954b620">
         <cim:ShuntCompensator.sections>1</cim:ShuntCompensator.sections>
         <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
@@ -1003,6 +1017,9 @@
     <cim:Terminal rdf:about="#_d796cd3a-967e-5949-9811-50ac1a9174e7">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
+    <cim:Terminal rdf:about="#_1be23907-ef9c-5906-8c63-6f3d1cc0675c">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
     <cim:Terminal rdf:about="#_73e7bebb-3cc9-51c0-893b-3fab54dc96b0">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
@@ -1016,6 +1033,9 @@
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_548d6f12-3054-5d84-8cb7-e08d258755da">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
+    <cim:Terminal rdf:about="#_f436c8fb-cbca-5642-b2fc-65b61cf36688">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_90fabe8c-68b0-50a0-991f-7ca0be006554">

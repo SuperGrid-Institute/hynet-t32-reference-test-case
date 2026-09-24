@@ -69,16 +69,21 @@ class CgmesExporter(NetworkExporter):
         r'rdf:ID="_[0-9a-f-]{36}">(?P<body>.*?)</cim:(?P=cls)>', re.DOTALL)
     _REFERENCE = re.compile(r'rdf:resource="#([^"]+)"')
     _SV_NAMESPACE = uuid.UUID("6f3d1a52-9a0e-5f2b-8c47-0d5b7e1c2a90")
+    # Element type → (getter in the IIDM network, getter in the re-imported CGMES).
     _ELEMENT_TYPES = {
-        "substation": "get_substations",
-        "voltage_level": "get_voltage_levels",
-        "generator": "get_generators",
-        "load": "get_loads",
-        "line": "get_lines",
-        "two_windings_transformer": "get_2_windings_transformers",
-        "shunt_compensator": "get_shunt_compensators",
-        "hvdc_line": "get_hvdc_lines",
-        "vsc_converter_station": "get_vsc_converter_stations",
+        "substation": ("get_substations", "get_substations"),
+        "voltage_level": ("get_voltage_levels", "get_voltage_levels"),
+        "generator": ("get_generators", "get_generators"),
+        "load": ("get_loads", "get_loads"),
+        "line": ("get_lines", "get_lines"),
+        "two_windings_transformer": ("get_2_windings_transformers",
+                                     "get_2_windings_transformers"),
+        "shunt_compensator": ("get_shunt_compensators", "get_shunt_compensators"),
+        "hvdc_line": ("get_hvdc_lines", "get_hvdc_lines"),
+        "vsc_converter_station": ("get_vsc_converter_stations", "get_vsc_converter_stations"),
+        # CGMES 2.4.15 has no battery class: batteries are exported as synchronous
+        # machines and read back as generators.
+        "battery": ("get_batteries", "get_generators"),
     }
 
     def export(self, network: Network, directory: Path, basename: str) -> None:
@@ -153,9 +158,9 @@ class CgmesExporter(NetworkExporter):
         """
         exported = pp.network.load(str(directory))
         rows: list[pd.DataFrame] = []
-        for element_type, getter in self._ELEMENT_TYPES.items():
-            iidm_ids = list(getattr(network, getter)().index)
-            names = getattr(exported, getter)(attributes=["name"])["name"]
+        for element_type, (iidm_getter, cgmes_getter) in self._ELEMENT_TYPES.items():
+            iidm_ids = list(getattr(network, iidm_getter)().index)
+            names = getattr(exported, cgmes_getter)(attributes=["name"])["name"]
             by_name = pd.Series(names.index, index=names.values)
             if by_name.index.duplicated().any():
                 raise ExportError(f"ambiguous CGMES names for {element_type}")

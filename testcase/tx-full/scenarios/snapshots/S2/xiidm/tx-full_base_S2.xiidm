@@ -127,6 +127,9 @@
                     <iidm:regulatingTerminal id="B106-L1 "/>
                     <iidm:minMaxReactiveLimits minQ="-6.0" maxQ="24.0"/>
                 </iidm:generator>
+                <iidm:battery id="BAT-B106-1" targetP="0.0" targetQ="0.0" minP="-10.0" maxP="10.0" bus="B106" connectableBus="B106" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-10.0" maxQ="10.0"/>
+                </iidm:battery>
                 <iidm:load id="B105-L1 " loadType="UNDEFINED" p0="5.319999999999999" q0="1.1199999999999999" bus="B105" connectableBus="B105" p="5.319999999999999" q="1.1199999999999999">
                     <iidm:alias type="CGMES.Terminal1">B105-L1 _EC_T_1</iidm:alias>
                 </iidm:load>
@@ -987,6 +990,9 @@
                     <iidm:regulatingTerminal id="B31-L1 "/>
                     <iidm:minMaxReactiveLimits minQ="-500.0" maxQ="800.0"/>
                 </iidm:generator>
+                <iidm:battery id="BAT-B6-1" targetP="0.0" targetQ="0.0" minP="-100.0" maxP="100.0" bus="B6" connectableBus="B6" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-100.0" maxQ="100.0"/>
+                </iidm:battery>
                 <iidm:load id="B31-L1 " loadType="UNDEFINED" p0="6.4399999999999995" q0="3.2199999999999998" bus="B31" connectableBus="B31" p="6.4399999999999995" q="3.2199999999999998">
                     <iidm:alias type="CGMES.Terminal1">B31-L1 _EC_T_1</iidm:alias>
                 </iidm:load>

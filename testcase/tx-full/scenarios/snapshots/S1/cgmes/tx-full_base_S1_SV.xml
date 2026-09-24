@@ -623,6 +623,16 @@
         <cim:SvPowerFlow.q>7.8176894160253</cim:SvPowerFlow.q>
         <cim:SvPowerFlow.Terminal rdf:resource="#_8d2c87bf-47de-544a-9df7-da10c430fbec"/>
     </cim:SvPowerFlow>
+    <cim:SvPowerFlow rdf:ID="_d6d5cc77-21c8-56e5-961f-3b2aa4fd4661">
+        <cim:SvPowerFlow.p>-0</cim:SvPowerFlow.p>
+        <cim:SvPowerFlow.q>-0</cim:SvPowerFlow.q>
+        <cim:SvPowerFlow.Terminal rdf:resource="#_f436c8fb-cbca-5642-b2fc-65b61cf36688"/>
+    </cim:SvPowerFlow>
+    <cim:SvPowerFlow rdf:ID="_62c63b37-bfce-5882-8c91-0382319319b6">
+        <cim:SvPowerFlow.p>-0</cim:SvPowerFlow.p>
+        <cim:SvPowerFlow.q>-0</cim:SvPowerFlow.q>
+        <cim:SvPowerFlow.Terminal rdf:resource="#_1be23907-ef9c-5906-8c63-6f3d1cc0675c"/>
+    </cim:SvPowerFlow>
     <cim:SvPowerFlow rdf:ID="_ee182372-8357-5a13-a57e-7454e06ee905">
         <cim:SvPowerFlow.p>0</cim:SvPowerFlow.p>
         <cim:SvPowerFlow.q>-20.21976316342182</cim:SvPowerFlow.q>

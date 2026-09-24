@@ -1,2 +1,2 @@
 # SPDX-License-Identifier: MIT
-"""Storage data for adequacy studies, not part of the network models."""
+"""Batteries: added to the network models, with their energy data shipped as a table."""

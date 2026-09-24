@@ -20,7 +20,7 @@ a shared, citable dataset.
 
 The transmission variants come with three operating scenarios (base case, high
 RES with low demand, low RES with high demand), bidding zones, economic
-assumptions, a contingency list and storage data for adequacy studies.
+assumptions, a contingency list and two batteries.
 The scenarios are introduced in
 [docs/scenarios_presentation.pptx](docs/scenarios_presentation.pptx).
 
