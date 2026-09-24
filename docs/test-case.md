@@ -12,8 +12,8 @@ in [model-changes.md](model-changes.md).
 |-----------|----------------------------------------------|-----------|
 | `tx-full` | IEEE 39-bus + VSC HVDC link + IEEE 14-bus    | Available |
 
-Planned: a `reinforced` network case, a reduced variant (`tx-reduced`) and a
-distribution variant (`dx-33`).
+`tx-full` comes in two network cases: `base`, and `reinforced` (see below).
+Planned: a reduced variant (`tx-reduced`) and a distribution variant (`dx-33`).
 
 ### `tx-full`
 
@@ -206,12 +206,38 @@ proportion to their output:
 The build reports these post-contingency overloads; it does not enforce them. IEEE 39
 is not N-1 secure, even in S1.
 
+## Reinforced case
+
+The `reinforced` network case is the `base` case plus a second circuit parallel to
+L-26-27, `L-26-27-2`, with the same impedance, admittance and current limit (600 MVA).
+It is shipped as a network only (`network/reinforced/`, XIIDM and CGMES): tools apply
+the scenario set points of `scenarios/` to it.
+
+| New line    | Length  | Investment  | Annuity (5 %, 40 years) |
+|-------------|---------|-------------|-------------------------|
+| `L-26-27-2` | 47 km   | 56.4 M EUR  | 3.29 M EUR/year         |
+
+The length is estimated from the reactance of L-26-27 (17.5 Ω) at 0.37 Ω/km, typical
+of a single-circuit 345 kV overhead line; the cost uses the 1.2 M EUR/km of the economic
+assumptions. The build compares both cases on every scenario and reports, without
+enforcing it, how violations change:
+
+| Scenario | Overloads with all lines in service | Post-contingency overloads | Outage of L-26-27 (highest loading) |
+|----------|-------------------------------------|----------------------------|-------------------------------------|
+| S1       | 0 → 0                               | 13 → 13                    | 121 % → 92 %                        |
+| S2       | 0 → 0                               | 10 → 7                     | 134 % → 95 %                        |
+| S3       | 4 → 4                               | 44 → 43                    | 163 % → 162 %                       |
+
+Post-contingency overloads count (contingency, overloaded branch) pairs. The
+reinforcement secures the L-26-27 corridor in S1 and S2; it does not relieve the S3
+bottlenecks, which lie elsewhere.
+
 ## Formats
 
 | Format     | Shipped for                  | Notes                                            |
 |------------|------------------------------|--------------------------------------------------|
-| XIIDM      | base case and each snapshot  | IIDM 1.17, sorted. Reference format.             |
-| CGMES      | base case and each snapshot  | CGMES 2.4.15: EQ, TP, SSH and SV profiles.       |
+| XIIDM      | base and reinforced cases, each snapshot | IIDM 1.17, sorted. Reference format. |
+| CGMES      | base and reinforced cases, each snapshot | CGMES 2.4.15: EQ, TP, SSH and SV profiles. |
 | PowerFactory (`.pfd`) | base case only    | UCY's model, shipped unchanged.                  |
 
 ### CGMES
@@ -244,6 +270,9 @@ testcase/tx-full/
 │   ├── xiidm/tx-full_base.xiidm
 │   ├── cgmes/tx-full_base_{EQ,TP,SSH,SV}.xml, id_mapping.csv
 │   └── pfd/TestCase.pfd
+├── network/reinforced/
+│   ├── xiidm/tx-full_reinforced.xiidm
+│   └── cgmes/tx-full_reinforced_{EQ,TP,SSH,SV}.xml, id_mapping.csv
 ├── zones/
 │   └── bus_zones.csv, element_zones.csv, interconnections.csv, zone_balance.csv
 ├── storage/
@@ -251,7 +280,7 @@ testcase/tx-full/
 ├── contingencies/
 │   └── contingencies.csv
 ├── economics/
-│   └── parameters.csv, generator_costs.csv
+│   └── parameters.csv, generator_costs.csv, investments.csv
 └── scenarios/
     ├── generation.csv, loads.csv, hvdc.csv, battery_setpoints.csv, generators.csv
     └── snapshots/S1..S3/

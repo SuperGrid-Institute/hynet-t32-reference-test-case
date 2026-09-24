@@ -13,7 +13,7 @@ from pypowsybl.network import Network
 from hynet_testcase.errors import IdResolutionError, InputError, LoadFlowError, TestCaseError
 from hynet_testcase.io.readers import read_input_csv
 from hynet_testcase.network.loadflow import run_ac
-from hynet_testcase.scenarios.report import branch_loadings, bus_voltages
+from hynet_testcase.scenarios.report import StateReport, branch_loadings, bus_voltages
 
 logger = logging.getLogger(__name__)
 
@@ -195,6 +195,37 @@ def log_states(label: str, states: list[PostContingencyState]) -> None:
         elif state.overloads:
             worst = ", ".join(f"{b} {v:.0f} %" for b, v in state.overloads.items())
             logger.info("%s/%s: overloads %s", label, state.contingency_id, worst)
+
+
+def log_case_change(base: StateReport, other: StateReport,
+                    base_states: list[PostContingencyState],
+                    other_states: list[PostContingencyState]) -> None:
+    """Logs how N and N-1 violations of a scenario change from one network case to another.
+
+    Args:
+        base: Report of the scenario on the base case.
+        other: Report of the same scenario on the other case.
+        base_states: Post-contingency states on the base case.
+        other_states: Post-contingency states on the other case.
+    """
+    logger.info("%s: N: highest loading %.0f %% -> %.0f %%, overloads %d -> %d", other.label,
+                max(base.loadings.values()), max(other.loadings.values()),
+                len(base.overloads), len(other.overloads))
+    logger.info("%s: N-1: overloads %d -> %d, non-converged %d -> %d", other.label,
+                _violation_count(base_states), _violation_count(other_states),
+                sum(not s.converged for s in base_states),
+                sum(not s.converged for s in other_states))
+    for before, after in zip(base_states, other_states):
+        if before.converged and after.converged and before.max_loading_pct is not None \
+                and after.max_loading_pct is not None \
+                and abs(after.max_loading_pct - before.max_loading_pct) >= 5.0:
+            logger.info("%s/%s: highest loading %.0f %% -> %.0f %%", other.label,
+                        after.contingency_id, before.max_loading_pct, after.max_loading_pct)
+
+
+def _violation_count(states: list[PostContingencyState]) -> int:
+    """Number of (contingency, overloaded branch) pairs."""
+    return sum(len(s.overloads or {}) for s in states)
 
 
 def _ac_edges(network: Network) -> pd.DataFrame:

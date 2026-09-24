@@ -17,8 +17,10 @@ from hynet_testcase.ids import CaseId, ScenarioId, VariantId
 from hynet_testcase.io.csv_writers import CSV_WRITERS, VariantData
 from hynet_testcase.io.exporters import EXPORTERS
 from hynet_testcase.network.builders import TxFullBuilder, VariantBuilder
-from hynet_testcase.network.contingencies import ContingencyList, log_states
+from hynet_testcase.network.contingencies import (
+    ContingencyList, PostContingencyState, log_case_change, log_states)
 from hynet_testcase.network.loadflow import run_ac
+from hynet_testcase.network.reinforcement import Reinforcement
 from hynet_testcase.network.zones import ZoneMapping
 from hynet_testcase.paths import RepoPaths
 from hynet_testcase.scenarios.inputs import ScenarioInputs
@@ -48,12 +50,14 @@ class SolvedState:
     report: StateReport
 
 
-def _variant_data(variant: VariantId, paths: RepoPaths, network: Network) -> VariantData:
+def _variant_data(variant: VariantId, paths: RepoPaths, network: Network,
+                  reinforcement: Reinforcement) -> VariantData:
     """Reads the tabular inputs of a variant and checks them against its network.
 
     Raises:
         TestCaseError: On any invalid input or unresolved id.
     """
+    economics = Economics.load(paths.inputs / "economics" / "economics.yaml")
     scenarios = ScenarioInputs.load(paths.inputs / "scenarios")
     scenarios.check_ids(network)
     zones = ZoneMapping.load(paths.inputs / "zones" / f"{variant}_bus_zones.csv").resolve(network)
@@ -62,50 +66,83 @@ def _variant_data(variant: VariantId, paths: RepoPaths, network: Network) -> Var
         paths.inputs / "contingencies" / f"{variant}_contingencies.csv")
     contingencies.check(network)
     return VariantData(scenarios=scenarios, zones=zones, batteries=batteries.with_zones(zones),
-                       contingencies=contingencies,
-                       economics=Economics.load(paths.inputs / "economics" / "economics.yaml"))
+                       contingencies=contingencies, economics=economics,
+                       investments=reinforcement.investment(economics))
 
 
 def _analyse_contingencies(network: Network, states: list[SolvedState],
-                           contingencies: ContingencyList) -> None:
-    """Solves every contingency on every scenario state and logs the outcome.
+                           contingencies: ContingencyList,
+                           log: bool = True) -> dict[str, list[PostContingencyState]]:
+    """Solves every contingency on every scenario state.
 
     Post-contingency violations are reported, not enforced: the list exists to create
     them.
+
+    Returns:
+        Post-contingency states per scenario id.
     """
     base_variant = network.get_working_variant_id()
+    results = {}
     for state in states:
         network.set_working_variant(state.variant_id)
-        log_states(state.report.label, contingencies.analyse(network, state.report.label))
+        results[state.variant_id] = contingencies.analyse(network, state.report.label)
+        if log:
+            log_states(state.report.label, results[state.variant_id])
     network.set_working_variant(base_variant)
+    return results
 
 
-def _solve_states(network: Network, variant: VariantId,
+def _solve_states(network: Network, variant: VariantId, case: CaseId,
                   inputs: ScenarioInputs) -> list[SolvedState]:
-    """Solves the base case and one pypowsybl variant per scenario, in memory.
+    """Solves the network case and one pypowsybl variant per scenario, in memory.
 
-    The base case comes first, then one state per scenario whose variant id is the
+    The case itself comes first, then one state per scenario whose variant id is the
     scenario id.
 
     Raises:
         LoadFlowError: If any state does not converge.
     """
     base_variant = network.get_working_variant_id()
-    label = f"{variant}/{CaseId.BASE}"
-    states = [SolvedState(base_variant, Path("network") / CaseId.BASE, f"{variant}_{CaseId.BASE}",
+    label = f"{variant}/{case}"
+    states = [SolvedState(base_variant, Path("network") / case, f"{variant}_{case}",
                           network.case_date,
                           StateReport.of(network, label, run_ac(network, label)))]
     for snapshot in inputs.snapshots():
         network.clone_variant(base_variant, str(snapshot.scenario))
         network.set_working_variant(str(snapshot.scenario))
         snapshot.apply(network)
-        label = f"{variant}/{CaseId.BASE}/{snapshot.scenario}"
+        label = f"{variant}/{case}/{snapshot.scenario}"
         states.append(SolvedState(
             str(snapshot.scenario), Path("scenarios") / "snapshots" / snapshot.scenario,
-            f"{variant}_{CaseId.BASE}_{snapshot.scenario}", snapshot.timestamp,
+            f"{variant}_{case}_{snapshot.scenario}", snapshot.timestamp,
             StateReport.of(network, label, run_ac(network, label))))
         network.set_working_variant(base_variant)
     return states
+
+
+def _solve_reinforced(builder: VariantBuilder, reinforcement: Reinforcement, data: VariantData,
+                      base_states: list[SolvedState],
+                      base_n1: dict[str, list[PostContingencyState]],
+                      ) -> tuple[Network, list[SolvedState]]:
+    """Builds and solves the reinforced case, and logs how violations change.
+
+    Violations are reported, not enforced, since relieving them is the purpose of the
+    reinforcement.
+
+    Returns:
+        The reinforced network and its solved states (the case first, then scenarios).
+    """
+    # Topology is shared by all variants of a pypowsybl network, so the reinforced case
+    # is a second network rather than a variant of the first.
+    reinforced = builder.build()
+    reinforcement.apply(reinforced)
+    data.contingencies.check(reinforced)
+    states = _solve_states(reinforced, builder.variant, CaseId.REINFORCED, data.scenarios)
+    n1 = _analyse_contingencies(reinforced, states[1:], data.contingencies, log=False)
+    for base_state, state in zip(base_states[1:], states[1:]):
+        log_case_change(base_state.report, state.report, base_n1[base_state.variant_id],
+                        n1[state.variant_id])
+    return reinforced, states
 
 
 def _export_states(network: Network, states: list[SolvedState], output: Path) -> None:
@@ -134,17 +171,23 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
         TestCaseError: On any invalid input, unresolved id or non-converged state.
     """
     network = builder.build()
-    data = _variant_data(builder.variant, paths, network)
+    reinforcement = Reinforcement.load(
+        paths.inputs / "network" / f"{builder.variant}_reinforcement.yaml")
+    data = _variant_data(builder.variant, paths, network, reinforcement)
     unchanged = builder.unchanged_files()
-    states = _solve_states(network, builder.variant, data.scenarios)
+    states = _solve_states(network, builder.variant, CaseId.BASE, data.scenarios)
     ScenarioValidation.load(paths.inputs / "scenarios" / "validation.yaml").check(
         {ScenarioId(state.variant_id): state.report for state in states[1:]})
-    _analyse_contingencies(network, states[1:], data.contingencies)
+    base_n1 = _analyse_contingencies(network, states[1:], data.contingencies)
+    reinforced, reinforced_states = _solve_reinforced(builder, reinforcement, data, states,
+                                                      base_n1)
 
     output = paths.variant_output(builder.variant)
     if output.exists():
         shutil.rmtree(output)
     _export_states(network, states, output)
+    # Only the reinforced network is shipped; tools apply the scenario set points to it.
+    _export_states(reinforced, reinforced_states[:1], output)
     for source in unchanged:
         directory = output / "network" / CaseId.BASE / source.suffix.lstrip(".")
         directory.mkdir(parents=True)

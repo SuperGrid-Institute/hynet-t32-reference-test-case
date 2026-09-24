@@ -24,6 +24,10 @@ scenario or file, PATCH for corrected values.
 - `hynet-testcase build` command, generating `testcase/tx-full/`: the base network
   and one solved snapshot per scenario in XIIDM and CGMES 2.4.15 (with an IIDM →
   CGMES id mapping), UCY's PowerFactory model, and the scenario CSVs.
+- `reinforced` network case of `tx-full`: a second circuit parallel to L-26-27
+  (`L-26-27-2`) in `testcase/tx-full/network/reinforced/` (XIIDM and CGMES), with its
+  investment in `testcase/tx-full/economics/investments.csv`; the build reports the
+  change in N and N-1 violations against `base`.
 - Economic assumptions shared by every variant (value of lost load, battery cycling
   cost, redispatch premium, discount rate, asset lifetime, 345 kV line cost) in
   `testcase/tx-full/economics/`, with redispatch prices per generator.

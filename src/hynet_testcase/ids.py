@@ -14,6 +14,7 @@ class CaseId(StrEnum):
     """Network cases of a variant."""
 
     BASE = "base"
+    REINFORCED = "reinforced"
 
 
 class ScenarioId(StrEnum):

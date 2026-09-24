@@ -35,8 +35,8 @@ uv run jupyter lab notebooks/presentation.ipynb
 ```
 
 [notebooks/presentation.ipynb](notebooks/presentation.ipynb) presents the network,
-zones, HVDC link, scenarios, voltage profiles, branch loadings, contingencies and
-batteries. The Binder
+zones, HVDC link, scenarios, voltage profiles, branch loadings, contingencies, the
+reinforced case and batteries. The Binder
 badge above opens it in the browser, with the interactive network explorer, without
 installing anything.
 

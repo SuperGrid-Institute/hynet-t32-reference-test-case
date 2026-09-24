@@ -160,6 +160,17 @@ Parameters: `value_of_lost_load_eur_mwh`, `battery_cycling_cost_eur_mwh`,
 | `redispatch_up_eur_mwh`   | number | EUR/MWh | Paid to the unit per MWh of upward redispatch        |
 | `redispatch_down_eur_mwh` | number | EUR/MWh | Paid back by the unit per MWh of downward redispatch; negative when the unit is paid |
 
+### `investments.csv`
+
+Investment in each network reinforcement.
+
+| Column             | Type   | Unit     | Description                                        |
+|--------------------|--------|----------|----------------------------------------------------|
+| `element_id`       | text   | —        | IIDM id of the new element                         |
+| `length_km`        | number | km       | Length of the new line                             |
+| `investment_eur`   | number | EUR      | Length × 345 kV line cost                          |
+| `annuity_eur_year` | number | EUR/year | Investment × capital recovery factor               |
+
 ## `testcase/<variant>/contingencies/contingencies.csv`
 
 Single-element outages to analyse on every scenario. None splits the network.
@@ -249,6 +260,19 @@ scenario id (`S1`, `S2`, `S3`); every rule is optional.
 | `min_voltage_rise_pu`     | number        | p.u. | Some bus at least this much above its S1 voltage            |
 | `min_voltage_drop_pu`     | number        | p.u. | Some bus at least this much below its S1 voltage            |
 | `min_overloaded_branches` | integer       | —    | At least this many branches above 100 %                     |
+
+### `network/<variant>_reinforcement.yaml`
+
+The new line of the `reinforced` case.
+
+| Key                    | Type   | Unit | Description                                                 |
+|------------------------|--------|------|-------------------------------------------------------------|
+| `new_line.id`          | text   | —    | Id of the new line                                          |
+| `new_line.parallel_to` | text   | —    | Existing line whose parameters and current limit are copied |
+| `new_line.length_km`   | number | km   | Length, for the investment cost                             |
+
+The build stops if the copied line is unknown, the new id is already used or the length
+is not positive.
 
 ### `network/<variant>_corrections.yaml`
 

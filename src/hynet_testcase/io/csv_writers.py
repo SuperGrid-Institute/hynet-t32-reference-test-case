@@ -25,6 +25,7 @@ class VariantData:
         batteries: Batteries with the zone of their bus.
         contingencies: Contingency list.
         economics: Economic assumptions.
+        investments: Investment and annuity of each network reinforcement.
     """
 
     scenarios: ScenarioInputs
@@ -32,6 +33,7 @@ class VariantData:
     batteries: pd.DataFrame
     contingencies: ContingencyList
     economics: Economics
+    investments: pd.DataFrame
 
 
 class CsvWriter(ABC):
@@ -213,8 +215,20 @@ class GeneratorCostWriter(CsvWriter):
         return data.economics.generator_costs(data.scenarios.generators)
 
 
+class InvestmentWriter(CsvWriter):
+    """Investment and annuity of each network reinforcement."""
+
+    directory = "economics"
+    filename = "investments.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the investments."""
+        return data.investments
+
+
 CSV_WRITERS: list[CsvWriter] = [
     GenerationWriter(), LoadWriter(), HvdcWriter(), BatterySetpointWriter(), GeneratorWriter(),
     BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(), ZoneBalanceWriter(),
     BatteryWriter(), ContingencyWriter(), EconomicParameterWriter(), GeneratorCostWriter(),
+    InvestmentWriter(),
 ]

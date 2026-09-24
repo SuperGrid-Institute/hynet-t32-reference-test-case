@@ -60,6 +60,36 @@ class ScenarioSnapshot:
     hvdc: pd.Series
     batteries: pd.Series
 
+    @classmethod
+    def from_testcase(cls, directory: Path, scenario: ScenarioId) -> Self:
+        """Reads one scenario from the CSVs shipped in `testcase/<variant>/scenarios/`.
+
+        Lets a published network case, such as `reinforced`, be put in any scenario.
+
+        Raises:
+            InputError: If a file cannot be read or the scenario is absent.
+        """
+        def rows(name: str, id_column: str) -> pd.DataFrame:
+            try:
+                frame = pd.read_csv(directory / name, dtype={id_column: str},
+                                    keep_default_na=False)
+            except OSError as exc:
+                raise InputError(f"cannot read {directory / name}: {exc}") from exc
+            frame = frame[frame["scenario_id"] == str(scenario)]
+            if frame.empty:
+                raise InputError(f"{name}: no rows for {scenario}")
+            return frame.set_index(id_column)
+
+        generation = rows("generation.csv", "generator_id")
+        return cls(
+            scenario=scenario,
+            timestamp=pd.Timestamp(generation["timestamp"].iloc[0]).to_pydatetime(),
+            generation=generation["p_mw"].astype(float),
+            loads=rows("loads.csv", "load_id")[["p_mw", "q_mvar"]].astype(float),
+            hvdc=rows("hvdc.csv", "hvdc_line_id")["target_p_mw"].astype(float),
+            batteries=rows("battery_setpoints.csv", "battery_id")["target_p_mw"].astype(float),
+        )
+
     def apply(self, network: Network) -> None:
         """Sets the operating point on the working variant of `network`."""
         network.update_generators(id=list(self.generation.index),

@@ -1,0 +1,11 @@
+# The `reinforced` network case of tx-full: the `base` case plus a second circuit
+# parallel to an existing line, with the same impedance, admittance and current limit.
+
+new_line:
+  id: L-26-27-2
+  # Existing line whose parameters and permanent current limit are copied. Source ids
+  # end with a space.
+  parallel_to: "L-26-27-1 "
+  # Estimated from the reactance of L-26-27-1 (17.5 ohm) at 0.37 ohm/km, typical of a
+  # single-circuit 345 kV overhead line.
+  length_km: 47.0
