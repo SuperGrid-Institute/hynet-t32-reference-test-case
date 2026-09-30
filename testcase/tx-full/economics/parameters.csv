@@ -1,0 +1,8 @@
+parameter,value,unit,description
+value_of_lost_load_eur_mwh,10000.0,EUR/MWh,Cost of energy not served
+battery_cycling_cost_eur_mwh,2.0,EUR/MWh,Battery wear cost per MWh discharged
+redispatch_premium_eur_mwh,10.0,EUR/MWh,Redispatch price margin around marginal cost
+discount_rate,0.05,-,Discount rate for annualising investments
+asset_lifetime_years,40.0,year,Economic lifetime of network assets
+capital_recovery_factor,0.058278,1/year,Annuity factor from discount rate and lifetime
+line_cost_345kv_eur_km,1200000.0,EUR/km,Investment cost of a single-circuit 345 kV overhead line

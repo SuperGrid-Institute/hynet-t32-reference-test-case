@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this test case, please cite it as below."
+type: dataset
+title: "HYNET Task 3.2 reference test case"
+abstract: >-
+  Common reference test case of HYNET Task 3.2: IEEE-derived transmission
+  models, operating scenarios, bidding zones, economic assumptions,
+  contingencies and storage data, shared by the Task 3.2 grid-analysis tools.
+authors:
+  - family-names: Mathieu
+    given-names: Valentin
+    affiliation: SuperGrid Institute
+repository-code: "https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - power systems
+  - test case
+  - HVDC
+  - IEEE 39-bus
+  - IEEE 14-bus
+  - HYNET
