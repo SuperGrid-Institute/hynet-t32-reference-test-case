@@ -13,7 +13,7 @@ in [model-changes.md](model-changes.md).
 | `tx-full` | IEEE 39-bus + VSC HVDC link + IEEE 14-bus    | Available |
 
 `tx-full` comes in two network cases: `base`, and `reinforced` (see below).
-Planned: a reduced variant (`tx-reduced`) and a distribution variant (`dx-33`).
+Planned: a reduced variant (`tx-reduced`).
 
 ### `tx-full`
 

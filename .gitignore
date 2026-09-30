@@ -11,10 +11,6 @@ dist/
 .pylint.d/
 .ipynb_checkpoints/
 
-# Partner data not yet cleared for public release (CC-BY-4.0)
-data/sources/dx-33/
-data/sources/IEEE modified 33-bus/
-
 # OS and editors
 .DS_Store
 Thumbs.db

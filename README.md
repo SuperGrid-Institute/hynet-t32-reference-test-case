@@ -3,7 +3,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SuperGrid-Institute/hynet-t32-reference-test-case/HEAD?labpath=notebooks%2Fpresentation.ipynb)
 
 Common reference test case of HYNET Task 3.2, shared by the grid-analysis tools of
-ART, SGI, UCY and INESC. It is used to validate tool behaviour before the
+ART, SGI and UCY. It is used to validate tool behaviour before the
 demonstrations, to compare similar tools and to investigate tool complementarity on
 a shared, citable dataset.
 
@@ -16,7 +16,6 @@ a shared, citable dataset.
 |--------------|-------------------------------------------------------------------------|
 | `tx-full`    | IEEE 39-bus + 50 MW HVDC link + IEEE 14-bus                             |
 | `tx-reduced` | IEEE 39-bus reduced to 3 equivalent nodes + detailed IEEE 14-bus + HVDC |
-| `dx-33`      | Modified IEEE 33-bus hybrid AC/DC distribution system                   |
 
 The transmission variants come with three operating scenarios (base case, high
 RES with low demand, low RES with high demand), bidding zones, economic

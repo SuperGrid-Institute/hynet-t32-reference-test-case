@@ -3,8 +3,8 @@ message: "If you use this test case, please cite it as below."
 type: dataset
 title: "HYNET Task 3.2 reference test case"
 abstract: >-
-  Common reference test case of HYNET Task 3.2: IEEE-derived transmission and
-  distribution models, operating scenarios, bidding zones, economic assumptions,
+  Common reference test case of HYNET Task 3.2: IEEE-derived transmission
+  models, operating scenarios, bidding zones, economic assumptions,
   contingencies and storage data, shared by the Task 3.2 grid-analysis tools.
 authors:
   - family-names: Mathieu

@@ -32,12 +32,6 @@ Known characteristics of the source, handled by the build:
 - Generator, load, line and transformer ids end with a space (for example
   `"B101-G1 "`). They are kept verbatim, since they are the ids of the model.
 
-## `dx-33/` — modified IEEE 33-bus hybrid AC/DC distribution system
-
-- **Provided by**: INESC, HYNET Task 3.2 partner.
-- **Status**: not published. The files are excluded from the repository until INESC
-  agrees to their release under CC-BY-4.0.
-
 ## Scenario inputs (`data/inputs/scenarios/`)
 
 Synthetic operating points written for this test case by SuperGrid Institute
