@@ -20,7 +20,9 @@ scenario or file, PATCH for corrected values.
   In S1, RES run at 50 % of nominal power and the rest is dispatched in merit order
   within each AC island (IEEE 39, IEEE 14), accounting for the HVDC transfer, as in
   S2 and S3.
-- Scenario presentation (`docs/scenarios_presentation.pptx`).
+- Scenario presentation (`docs/scenarios_presentation.pptx`): tools, shipped
+  formats, generator metadata and, for S1–S3, how each scenario is built and the
+  results of its validation load flow.
 - `hynet-testcase build` command, generating `testcase/tx-full/`: the base network
   and one solved snapshot per scenario in XIIDM and CGMES 2.4.15 (with an IIDM →
   CGMES id mapping), UCY's PowerFactory model, and the scenario CSVs.
