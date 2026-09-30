@@ -164,7 +164,7 @@ class ContingencyList:
                     contingency.contingency_id, converged=True,
                     max_loading_pct=max(loadings.values()),
                     min_voltage_pu=float(bus_voltages(network)["v_pu"].min()),
-                    overloads={branch.strip(): value for branch, value in loadings.items()
+                    overloads={branch: value for branch, value in loadings.items()
                                if value > 100.0}))
             network.set_working_variant(source)
             network.remove_variant(variant)

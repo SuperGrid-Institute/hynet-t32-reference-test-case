@@ -30,7 +30,8 @@ Known characteristics of the source, handled by the build:
   part is at 138 kV.
 - The model carries no thermal (operational) limits.
 - Generator, load, line and transformer ids end with a space (for example
-  `"B101-G1 "`). They are kept verbatim, since they are the ids of the model.
+  `"B101-G1 "`), and a few ids contain one (for example `"B4-SH 1"`). The build
+  removes this whitespace (MC-4 in `docs/model-changes.md`).
 
 ## Scenario inputs (`data/inputs/scenarios/`)
 

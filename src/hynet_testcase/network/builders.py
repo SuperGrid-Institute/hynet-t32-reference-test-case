@@ -6,7 +6,6 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import ClassVar
 
-import pypowsybl as pp
 from pypowsybl.network import Network
 
 from hynet_testcase.errors import InputError
@@ -55,9 +54,8 @@ class TxFullBuilder(VariantBuilder):
         if not source.is_file():
             raise InputError(f"missing source model {source}")
         logger.info("importing %s", source.relative_to(self.paths.root))
-        network = pp.network.load(str(source))
         inputs = self.paths.inputs / "network"
-        SourceCorrections.load(inputs / "tx-full_corrections.yaml").apply(network)
+        network = SourceCorrections.load(inputs / "tx-full_corrections.yaml").import_source(source)
         # Limits are in A, so they are added once voltages are in physical units.
         ThermalLimits.load(inputs / "tx-full_thermal_limits.csv").apply(network)
         Batteries.load(self.paths.inputs / "storage" / "tx-full_batteries.csv").add_to(network)

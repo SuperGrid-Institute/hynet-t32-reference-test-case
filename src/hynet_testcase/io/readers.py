@@ -11,7 +11,7 @@ from hynet_testcase.errors import InputError
 def read_input_csv(path: Path, columns: list[str]) -> pd.DataFrame:
     """Reads an input CSV whose header must be exactly `columns`.
 
-    Every value is read as text and never stripped: most source ids end with a space.
+    Every value is read as text, so that ids are never parsed as numbers.
 
     Raises:
         InputError: If the file cannot be read or its header differs.

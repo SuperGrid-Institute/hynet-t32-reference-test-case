@@ -156,4 +156,4 @@ def _deviation(report: StateReport, reference: StateReport) -> tuple[float, floa
 
 
 def _rounded(values: dict[str, float]) -> dict[str, float]:
-    return {key.strip(): round(value, 3) for key, value in values.items()}
+    return {key: round(value, 3) for key, value in values.items()}

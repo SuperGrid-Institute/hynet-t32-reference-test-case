@@ -21,8 +21,9 @@ The IEEE 39-bus (345 kV) and IEEE 14-bus (138 kV) systems are two separate AC
 islands, joined only by the VSC HVDC link `HVDC_Link_16_113` from IEEE 39 bus 16 to
 IEEE 14 bus 13 (maximum 60 MW, rectifier on the IEEE 39 side).
 
-Element ids are those of the source model. Generator, load, line, transformer and
-shunt ids end with a space (for example `"B101-G1 "`); the space is part of the id.
+Element ids are those of the source model without whitespace (MC-4 in
+[model-changes.md](model-changes.md)): for example `B101-G1` for the source's
+`"B101-G1 "` and `B4-SH-1` for `"B4-SH 1"`.
 
 ## Bidding zones
 
@@ -242,8 +243,8 @@ bottlenecks, which lie elsewhere.
 
 ### CGMES
 
-- CGMES identifiers (mRID) are UUIDs derived from the IIDM ids; the source ids
-  contain spaces and are not valid CGMES identifiers. Each CGMES directory holds an
+- CGMES identifiers (mRID) are UUIDs derived from the IIDM ids, some of which (such
+  as the network id) are not valid CGMES identifiers. Each CGMES directory holds an
   `id_mapping.csv`, and each element's `IdentifiedObject.name` is its IIDM id.
 - `Model.scenarioTime` is the scenario timestamp (the source case date for the base
   case).
@@ -261,6 +262,8 @@ bottlenecks, which lie elsewhere.
 The `.pfd` file is UCY's model, used for dynamic studies. pypowsybl can neither
 read nor write it, so it holds none of the corrections in
 [model-changes.md](model-changes.md), none of the scenario states and no batteries.
+Its element names are those of the source model, before MC-4: applying the MC-4
+rule to them gives the ids of the other formats.
 
 ## Layout of `testcase/`
 

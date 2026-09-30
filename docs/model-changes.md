@@ -85,11 +85,45 @@ in the base case and in every snapshot.
 **Effect.** Load-flow results are unchanged, since the batteries are idle. The
 PowerFactory model does not contain them.
 
+### MC-4 — Whitespace removed from ids
+
+**Finding.** 132 ids of the source contain whitespace. Generator, load, line,
+transformer and shunt ids end with a space (`"B101-G1 "`, `"L-26-27-1 "`), the three
+shunts `"B4-SH 1"`, `"B5-SH 1"` and `"B109-SH 1"` contain one, and so do the network
+and subnetwork ids (`"IEEE 39 bus"`). Most CSV tools trim values by default or on
+request (spreadsheets, database imports, R's `strip.white`), which turns
+`"B101-G1 "` into `"B101-G1"`, an id that does not exist in the network.
+
+**Correction.** Before the source is imported, every id is rewritten with this rule:
+
+1. leading and trailing whitespace is removed;
+2. whitespace next to a `-`, `_` or `+` separator is removed;
+3. any remaining run of whitespace becomes `-`.
+
+| Source id                           | Test-case id                      |
+|-------------------------------------|-----------------------------------|
+| `"B101-G1 "`                        | `B101-G1`                         |
+| `"L-26-27-1 "`                      | `L-26-27-1`                       |
+| `"B4-SH 1"`                         | `B4-SH-1`                         |
+| `"IEEE 39 bus"`                     | `IEEE-39-bus`                     |
+| `"Default+IEEE 14 bus+IEEE 39 bus"` | `Default+IEEE-14-bus+IEEE-39-bus` |
+
+The same rule applies to the CGMES ids the source keeps as aliases and properties
+(for example `"B101-G1 _GU"` → `B101-G1_GU`). Element names only lose their leading
+and trailing whitespace. pypowsybl cannot change an id once a network is loaded, so
+the correction rewrites the XIIDM text before the import. The build stops if the
+number of changed ids is not 132 or if two ids would become the same.
+
+**Effect.** Only ids change: every value of the network and every load-flow result
+is identical. The ids in `data/inputs/` and `testcase/` are the new ones, and CGMES
+UUIDs, derived from the ids, change accordingly. The PowerFactory model keeps the
+source names; applying the rule above to them gives the ids of the other formats.
+
 ## Remarks passed on to the model provider
 
 Not corrected, as they are modelling choices rather than errors:
 
-- The shunts `B4-SH 1` and `B5-SH 1` (100 and 200 Mvar at nominal voltage, IEEE 39
+- The shunts `B4-SH-1` and `B5-SH-1` (100 and 200 Mvar at nominal voltage, IEEE 39
   buses 4 and 5) are not part of the original IEEE 39 data set.
 - The two VSC converter stations have no reactive power limits. `VSC_Station_16`
   regulates its bus voltage and supplies 326–666 Mvar in S1–S3.

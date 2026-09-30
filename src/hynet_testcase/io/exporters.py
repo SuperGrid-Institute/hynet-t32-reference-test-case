@@ -53,9 +53,10 @@ class CgmesExporter(NetworkExporter):
 
     format = ExportFormat.CGMES
 
-    # The source ids contain spaces, which are invalid in CGMES rdf:ID and make the
-    # files unreadable. The `cgmes` naming strategy replaces every id by a UUID derived
-    # from it, so ids are valid and stable between builds.
+    # Some IIDM ids contain characters invalid in a CGMES rdf:ID (such as the `+` of
+    # the network id), which make the files unreadable. The `cgmes` naming strategy
+    # replaces every id by a UUID derived from it, so ids are valid and stable between
+    # builds.
     _PARAMETERS = {
         "iidm.export.cgmes.naming-strategy": "cgmes",
         # Otherwise the exporter adds fictitious slack injections with random UUIDs.

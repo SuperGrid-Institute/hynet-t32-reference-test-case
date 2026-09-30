@@ -4,8 +4,8 @@ All CSV files are UTF-8, comma-separated, with a dot as decimal separator, one h
 row and LF line endings. Timestamps are ISO 8601 in UTC (`YYYY-MM-DDTHH:MM:SSZ`).
 Units follow IIDM: MW, Mvar, kV, A, Ω; energy in MWh; prices in EUR/MWh.
 
-Ids are IIDM ids of the network and must be read as text, without trimming: most of
-them end with a space (for example `"B101-G1 "`).
+Ids are IIDM ids of the network. They contain no whitespace (MC-4 in
+[model-changes.md](model-changes.md)) and should be read as text.
 
 ## `testcase/<variant>/scenarios/`
 

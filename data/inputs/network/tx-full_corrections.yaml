@@ -1,6 +1,13 @@
 # Corrections applied by the build to data/sources/tx-full/TestCase.xiidm.
 # Each one is described in docs/model-changes.md.
 
+# Most source ids end with a space and a few contain one ("B101-G1 ", "B4-SH 1").
+# Whitespace is removed from every id before the source is imported, so that ids
+# survive CSV tools that trim values ("B101-G1", "B4-SH-1").
+id_normalisation:
+  # Guards against the correction silently applying to more or fewer ids.
+  expected_ids: 132
+
 # The IEEE 39 part of the source is expressed in per unit on a 1 kV base. Its voltage
 # levels are moved to the nominal voltage of the IEEE 39 system; impedances,
 # admittances and voltage set points are scaled so that per-unit values, and hence

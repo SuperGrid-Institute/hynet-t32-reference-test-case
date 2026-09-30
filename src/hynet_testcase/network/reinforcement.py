@@ -80,7 +80,7 @@ class Reinforcement:
             network.create_loading_limits(
                 element_id=self.line_id, name=PERMANENT_LIMIT_NAME, side=side, type="CURRENT",
                 value=float(value), acceptable_duration=-1, fictitious=False)
-        logger.info("added %s parallel to %s (%g km)", self.line_id, self.parallel_to.strip(),
+        logger.info("added %s parallel to %s (%g km)", self.line_id, self.parallel_to,
                     self.length_km)
 
     def investment(self, economics: Economics) -> pd.DataFrame:

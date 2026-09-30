@@ -124,7 +124,6 @@ def plot_loadings(loadings: dict[str, dict[str, float]], top: int = 15) -> Figur
         top: Number of branches shown, the most loaded in any scenario.
     """
     table = pd.DataFrame(loadings)
-    table.index = table.index.str.strip()
     table = table.loc[table.max(axis=1).sort_values(ascending=False).index[:top]]
     fig, ax = plt.subplots(figsize=(12, 4.5))
     table.plot.bar(ax=ax, color=[SCENARIO_COLORS.get(s, "grey") for s in table.columns], rot=60)

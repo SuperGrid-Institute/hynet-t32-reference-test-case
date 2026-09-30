@@ -89,9 +89,9 @@ class StateReport:
         for battery_id, p in self.battery_p_mw.items():
             logger.info("%s: battery %s at %.1f MW", self.label, battery_id, p)
         branch, loading = next(iter(self.loadings.items()))
-        logger.info("%s: highest branch loading %.0f %% (%s)", self.label, loading, branch.strip())
+        logger.info("%s: highest branch loading %.0f %% (%s)", self.label, loading, branch)
         for branch, loading in self.overloads.items():
-            logger.info("%s: overload %s at %.0f %%", self.label, branch.strip(), loading)
+            logger.info("%s: overload %s at %.0f %%", self.label, branch, loading)
 
 
 def _as_dict(values: pd.Series) -> dict[str, float]:

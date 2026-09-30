@@ -3,9 +3,8 @@
 
 new_line:
   id: L-26-27-2
-  # Existing line whose parameters and permanent current limit are copied. Source ids
-  # end with a space.
-  parallel_to: "L-26-27-1 "
+  # Existing line whose parameters and permanent current limit are copied.
+  parallel_to: L-26-27-1
   # Estimated from the reactance of L-26-27-1 (17.5 ohm) at 0.37 ohm/km, typical of a
   # single-circuit 345 kV overhead line.
   length_km: 47.0

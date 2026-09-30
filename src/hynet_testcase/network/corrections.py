@@ -2,16 +2,92 @@
 """Corrections applied to a source model, declared in `data/inputs/network/`."""
 
 import logging
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Self
 
+import pypowsybl as pp
 from pypowsybl.network import Network
 import yaml
 
 from hynet_testcase.errors import InputError, TestCaseError
 
 logger = logging.getLogger(__name__)
+
+# Identifier-carrying parts of an XIIDM file. Element references (bus, connectableBus,
+# voltage level ids) never contain whitespace in the source, so they need no rewrite.
+_ID_ATTRIBUTE = re.compile(r'\b(id|controlId)="([^"]*)"')
+_NAME_ATTRIBUTE = re.compile(r'\bname="([^"]*)"')
+_ALIAS = re.compile(r"(<iidm:alias\b[^>]*>)([^<]*)(</iidm:alias>)")
+# CGMES ids kept as properties by the CGMES import that produced the source.
+# CGMES.regionName is a name, not an id, and is left as is.
+_CGMES_ID_PROPERTY = re.compile(
+    r'(<iidm:property name="CGMES\.(?:GeneratingUnit|RegulatingControl|regionId|subRegionId)"'
+    r' value=")([^"]*)(")')
+_WHITESPACE = re.compile(r"\s")
+
+
+def normalise_id(value: str) -> str:
+    """Returns `value` without whitespace, as used for the ids of the test case.
+
+    Leading and trailing whitespace is removed, whitespace next to a `-`, `_` or `+`
+    separator is removed, and any other run of whitespace becomes `-`. For example
+    `"B101-G1 "` → `"B101-G1"`, `"B4-SH 1"` → `"B4-SH-1"` and
+    `"T-31-6-1 _PT_RTC_1"` → `"T-31-6-1_PT_RTC_1"`.
+    """
+    value = re.sub(r"\s*([-_+])\s*", r"\1", value.strip())
+    return re.sub(r"\s+", "-", value)
+
+
+@dataclass(frozen=True)
+class IdNormalisation:
+    """Removes whitespace from the ids of an XIIDM source, before it is imported.
+
+    IIDM ids cannot be changed once a network is loaded, so the correction rewrites
+    the XIIDM text. Ids, id aliases and CGMES id properties are normalised with
+    `normalise_id`; names only lose their leading and trailing whitespace.
+
+    Attributes:
+        expected_ids: Number of distinct ids the correction must change.
+    """
+
+    expected_ids: int
+
+    @classmethod
+    def from_mapping(cls, data: dict[str, Any]) -> Self:
+        """Builds the correction from its YAML mapping.
+
+        Raises:
+            InputError: If a field is missing or has the wrong type.
+        """
+        try:
+            return cls(expected_ids=int(data["expected_ids"]))
+        except (KeyError, TypeError, ValueError) as exc:
+            raise InputError(f"invalid id_normalisation correction: {exc}") from exc
+
+    def apply(self, xiidm: str) -> str:
+        """Returns the XIIDM text `xiidm` with normalised ids.
+
+        Raises:
+            TestCaseError: If the number of changed ids is not the expected one, or if
+                two distinct ids would become the same.
+        """
+        ids = {match.group(2) for match in _ID_ATTRIBUTE.finditer(xiidm)}
+        renamed = {old: normalise_id(old) for old in ids if normalise_id(old) != old}
+        if len(renamed) != self.expected_ids:
+            raise TestCaseError(f"id normalisation expects {self.expected_ids} ids to change, "
+                                f"found {len(renamed)}")
+        if len({normalise_id(old) for old in ids}) != len(ids):
+            raise TestCaseError("id normalisation would merge distinct ids")
+
+        xiidm = _ID_ATTRIBUTE.sub(lambda m: f'{m.group(1)}="{normalise_id(m.group(2))}"', xiidm)
+        xiidm = _NAME_ATTRIBUTE.sub(lambda m: f'name="{m.group(1).strip()}"', xiidm)
+        xiidm = _ALIAS.sub(lambda m: m.group(1) + normalise_id(m.group(2)) + m.group(3), xiidm)
+        xiidm = _CGMES_ID_PROPERTY.sub(
+            lambda m: m.group(1) + normalise_id(m.group(2)) + m.group(3), xiidm)
+        logger.info("removed whitespace from %d ids", len(renamed))
+        return xiidm
 
 
 @dataclass(frozen=True)
@@ -149,9 +225,11 @@ class SourceCorrections:
     """All corrections declared for one source model.
 
     Attributes:
+        id_normalisation: Id correction applied to the source text, if any.
         voltage_rescale: Nominal-voltage correction, if any.
     """
 
+    id_normalisation: IdNormalisation | None
     voltage_rescale: VoltageRescale | None
 
     @classmethod
@@ -165,13 +243,27 @@ class SourceCorrections:
             data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
         except (OSError, yaml.YAMLError) as exc:
             raise InputError(f"cannot read corrections {path}: {exc}") from exc
-        unknown = set(data) - {"voltage_rescale"}
+        unknown = set(data) - {"id_normalisation", "voltage_rescale"}
         if unknown:
             raise InputError(f"unknown corrections in {path}: {sorted(unknown)}")
+        ids = data.get("id_normalisation")
         rescale = data.get("voltage_rescale")
-        return cls(voltage_rescale=VoltageRescale.from_mapping(rescale) if rescale else None)
+        return cls(id_normalisation=IdNormalisation.from_mapping(ids) if ids else None,
+                   voltage_rescale=VoltageRescale.from_mapping(rescale) if rescale else None)
 
-    def apply(self, network: Network) -> None:
-        """Applies every declared correction to `network` in place."""
+    def import_source(self, source: Path) -> Network:
+        """Imports the XIIDM `source` and applies every declared correction.
+
+        Raises:
+            InputError: If the source cannot be read.
+        """
+        try:
+            xiidm = source.read_text(encoding="utf-8")
+        except OSError as exc:
+            raise InputError(f"cannot read source model {source}: {exc}") from exc
+        if self.id_normalisation is not None:
+            xiidm = self.id_normalisation.apply(xiidm)
+        network = pp.network.load_from_string(source.name, xiidm)
         if self.voltage_rescale is not None:
             self.voltage_rescale.apply(network)
+        return network

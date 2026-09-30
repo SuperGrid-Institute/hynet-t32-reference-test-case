@@ -1,60 +1,60 @@
 element_type,element_id,bus_id,zone_id
-generator,B101-G1 ,B101,Z0
-generator,B102-G1 ,B102,Z0
-generator,B103-G1 ,B103,Z0
-generator,B106-G1 ,B106,Z0
-generator,B108-G1 ,B108,Z0
-generator,B30-G1 ,B30,Z2
-generator,B31-G1 ,B31,Z3
-generator,B32-G1 ,B32,Z3
-generator,B33-G1 ,B33,Z1
-generator,B34-G1 ,B34,Z1
-generator,B35-G1 ,B35,Z1
-generator,B36-G1 ,B36,Z1
-generator,B37-G1 ,B37,Z2
-generator,B38-G1 ,B38,Z2
-generator,B39-G1 ,B39,Z3
-load,B1-L1 ,B1,Z2
-load,B10-L1 ,B10,Z3
-load,B102-L1 ,B102,Z0
-load,B103-L1 ,B103,Z0
-load,B104-L1 ,B104,Z0
-load,B105-L1 ,B105,Z0
-load,B106-L1 ,B106,Z0
-load,B109-L1 ,B109,Z0
-load,B11-L1 ,B11,Z3
-load,B110-L1 ,B110,Z0
-load,B111-L1 ,B111,Z0
-load,B112-L1 ,B112,Z0
-load,B113-L1 ,B113,Z0
-load,B114-L1 ,B114,Z0
-load,B12-L1 ,B12,Z3
-load,B13-L1 ,B13,Z3
-load,B14-L1 ,B14,Z3
-load,B15-L1 ,B15,Z1
-load,B16-L1 ,B16,Z1
-load,B17-L1 ,B17,Z2
-load,B18-L1 ,B18,Z2
-load,B19-L1 ,B19,Z1
-load,B2-L1 ,B2,Z2
-load,B20-L1 ,B20,Z1
-load,B21-L1 ,B21,Z1
-load,B22-L1 ,B22,Z1
-load,B23-L1 ,B23,Z1
-load,B24-L1 ,B24,Z1
-load,B25-L1 ,B25,Z2
-load,B26-L1 ,B26,Z2
-load,B27-L1 ,B27,Z2
-load,B28-L1 ,B28,Z2
-load,B29-L1 ,B29,Z2
-load,B3-L1 ,B3,Z2
-load,B31-L1 ,B31,Z3
-load,B39-L1 ,B39,Z3
-load,B4-L1 ,B4,Z3
-load,B5-L1 ,B5,Z3
-load,B6-L1 ,B6,Z3
-load,B7-L1 ,B7,Z3
-load,B8-L1 ,B8,Z3
-load,B9-L1 ,B9,Z3
+generator,B101-G1,B101,Z0
+generator,B102-G1,B102,Z0
+generator,B103-G1,B103,Z0
+generator,B106-G1,B106,Z0
+generator,B108-G1,B108,Z0
+generator,B30-G1,B30,Z2
+generator,B31-G1,B31,Z3
+generator,B32-G1,B32,Z3
+generator,B33-G1,B33,Z1
+generator,B34-G1,B34,Z1
+generator,B35-G1,B35,Z1
+generator,B36-G1,B36,Z1
+generator,B37-G1,B37,Z2
+generator,B38-G1,B38,Z2
+generator,B39-G1,B39,Z3
+load,B1-L1,B1,Z2
+load,B10-L1,B10,Z3
+load,B102-L1,B102,Z0
+load,B103-L1,B103,Z0
+load,B104-L1,B104,Z0
+load,B105-L1,B105,Z0
+load,B106-L1,B106,Z0
+load,B109-L1,B109,Z0
+load,B11-L1,B11,Z3
+load,B110-L1,B110,Z0
+load,B111-L1,B111,Z0
+load,B112-L1,B112,Z0
+load,B113-L1,B113,Z0
+load,B114-L1,B114,Z0
+load,B12-L1,B12,Z3
+load,B13-L1,B13,Z3
+load,B14-L1,B14,Z3
+load,B15-L1,B15,Z1
+load,B16-L1,B16,Z1
+load,B17-L1,B17,Z2
+load,B18-L1,B18,Z2
+load,B19-L1,B19,Z1
+load,B2-L1,B2,Z2
+load,B20-L1,B20,Z1
+load,B21-L1,B21,Z1
+load,B22-L1,B22,Z1
+load,B23-L1,B23,Z1
+load,B24-L1,B24,Z1
+load,B25-L1,B25,Z2
+load,B26-L1,B26,Z2
+load,B27-L1,B27,Z2
+load,B28-L1,B28,Z2
+load,B29-L1,B29,Z2
+load,B3-L1,B3,Z2
+load,B31-L1,B31,Z3
+load,B39-L1,B39,Z3
+load,B4-L1,B4,Z3
+load,B5-L1,B5,Z3
+load,B6-L1,B6,Z3
+load,B7-L1,B7,Z3
+load,B8-L1,B8,Z3
+load,B9-L1,B9,Z3
 battery,BAT-B106-1,B106,Z0
 battery,BAT-B6-1,B6,Z3

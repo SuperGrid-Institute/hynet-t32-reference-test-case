@@ -60,3 +60,7 @@ scenario or file, PATCH for corrected values.
 - IEEE 39 part of `tx-full` rescaled from a 1 kV base to 345 kV (MC-1 in
   `docs/model-changes.md`). Per-unit results are unchanged; values in kV, A and Ω
   become physical.
+- Whitespace removed from the ids of `tx-full` (MC-4 in `docs/model-changes.md`):
+  `"B101-G1 "` becomes `B101-G1`, `"B4-SH 1"` becomes `B4-SH-1`. Every id in the
+  network models and CSVs changes accordingly, as do the CGMES UUIDs derived from
+  them; values and load-flow results are unchanged.
