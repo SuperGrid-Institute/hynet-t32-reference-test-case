@@ -66,3 +66,10 @@ scenario or file, PATCH for corrected values.
   `"B101-G1 "` becomes `B101-G1`, `"B4-SH 1"` becomes `B4-SH-1`. Every id in the
   network models and CSVs changes accordingly, as do the CGMES UUIDs derived from
   them; values and load-flow results are unchanged.
+- The repository is split into two branches. `main` holds only the test case, its user
+  documentation and the presentation notebook with its Binder configuration; it is
+  generated from `dev` by the new `hynet-testcase publish` command, and its Binder
+  installs the package from the `dev` commit it was published from. `dev` keeps the
+  source models, the inputs and the build code. The schemas of the build inputs move
+  from `docs/data-dictionary.md` to the new `docs/build.md`, together with the
+  rebuilding and publishing instructions.

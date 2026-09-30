@@ -1,12 +1,18 @@
 # HYNET Task 3.2 reference test case
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SuperGrid-Institute/hynet-t32-reference-test-case/HEAD?labpath=notebooks%2Fpresentation.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SuperGrid-Institute/hynet-t32-reference-test-case/dev?labpath=notebooks%2Fpresentation.ipynb)
 
 Common reference test case of HYNET Task 3.2, shared by the grid-analysis tools of
 ART, SGI and UCY. It is used to validate tool behaviour before the
 demonstrations, to compare similar tools and to investigate tool complementarity on
 a shared, citable dataset.
 
+> **Development branch.** `dev` holds the source models, the hand-edited inputs and
+> the code that builds the test case. The test case itself, with its user
+> documentation, is published on the
+> [`main`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/main)
+> branch; see [docs/build.md](docs/build.md).
+>
 > **Status:** work in progress. The dataset is not released yet; ids, layout and
 > values may still change.
 
@@ -41,9 +47,10 @@ installing anything.
 
 The generated test case is committed in `testcase/`. See
 [docs/test-case.md](docs/test-case.md) for its content and formats,
-[docs/data-dictionary.md](docs/data-dictionary.md) for the file schemas and
+[docs/data-dictionary.md](docs/data-dictionary.md) for the file schemas,
 [docs/model-changes.md](docs/model-changes.md) for the corrections applied to the
-source models.
+source models and [docs/build.md](docs/build.md) for the build, its inputs and the
+publication of `main`.
 
 ## Licences
 
