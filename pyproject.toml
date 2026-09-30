@@ -31,6 +31,8 @@ dev = [
     "types-pyyaml>=6.0.12.20260906",
 ]
 notebooks = [
+    # ipykernel 7 hangs on the first cell when the VS Code notebook runs the kernel.
+    "ipykernel>=6,<7",
     "jupyterlab>=4",
     "matplotlib>=3.11.2",
     "pypowsybl-jupyter>=1.3.0",

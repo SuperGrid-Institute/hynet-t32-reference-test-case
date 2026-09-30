@@ -74,7 +74,7 @@ idna==3.20
     #   httpx
     #   jsonschema
     #   requests
-ipykernel==7.3.0
+ipykernel==6.31.0
     # via jupyterlab
 ipython==9.17.1
     # via
@@ -165,7 +165,7 @@ nbformat==5.11.1
     #   jupyter-server
     #   nbclient
     #   nbconvert
-nest-asyncio2==1.7.3
+nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.7
     # via pypowsybl
