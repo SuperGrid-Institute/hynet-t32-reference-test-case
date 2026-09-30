@@ -23,6 +23,7 @@ from hynet_testcase.network.loadflow import run_ac
 from hynet_testcase.network.reinforcement import Reinforcement
 from hynet_testcase.network.zones import ZoneMapping
 from hynet_testcase.paths import RepoPaths
+from hynet_testcase.publish import publish
 from hynet_testcase.scenarios.inputs import ScenarioInputs
 from hynet_testcase.scenarios.report import StateReport
 from hynet_testcase.scenarios.validation import ScenarioValidation
@@ -217,11 +218,16 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="hynet-testcase",
                                      description="HYNET Task 3.2 reference test case tools.")
     parser.add_argument("-v", "--verbose", action="store_true", help="log debug messages")
+    location = argparse.ArgumentParser(add_help=False)
+    location.add_argument("--root", type=Path, default=None,
+                          help="repository root (default: found from the working directory)")
     commands = parser.add_subparsers(dest="command", required=True)
-    build_parser = commands.add_parser("build", help="regenerate testcase/ from data/")
-    build_parser.add_argument("--root", type=Path, default=None,
-                              help="repository root (default: found from the working "
-                                   "directory)")
+    commands.add_parser("build", parents=[location], help="regenerate testcase/ from data/")
+    publish_parser = commands.add_parser(
+        "publish", parents=[location],
+        help="rewrite the distribution branch from the current commit of dev")
+    publish_parser.add_argument("target", type=Path,
+                                help="worktree of the distribution branch (main)")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
@@ -231,7 +237,10 @@ def main(argv: list[str] | None = None) -> int:
     logging.getLogger("powsybl").setLevel(logging.WARNING if args.verbose else logging.ERROR)
     paths = RepoPaths(args.root.resolve()) if args.root else RepoPaths.discover()
     try:
-        build(paths)
+        if args.command == "publish":
+            publish(paths, args.target)
+        else:
+            build(paths)
     except TestCaseError as exc:
         logger.error("%s", exc)
         return 1

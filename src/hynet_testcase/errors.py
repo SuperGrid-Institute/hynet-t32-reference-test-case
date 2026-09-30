@@ -23,3 +23,7 @@ class LoadFlowError(TestCaseError):
 
 class ExportError(TestCaseError):
     """A network or CSV export failed or produced unexpected output."""
+
+
+class PublishError(TestCaseError):
+    """The distribution branch cannot be published from the current state."""

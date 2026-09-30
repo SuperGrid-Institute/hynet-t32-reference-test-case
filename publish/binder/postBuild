@@ -1,0 +1,5 @@
+#!/bin/bash
+# Installs the package from the development commit this branch was published from;
+# its dependencies are pinned in requirements.txt.
+set -euo pipefail
+pip install --no-deps "${repository}/archive/${commit}.tar.gz"
