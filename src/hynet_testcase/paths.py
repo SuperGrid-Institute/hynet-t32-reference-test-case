@@ -15,12 +15,23 @@ class RepoPaths:
     root: Path
 
     @classmethod
-    def discover(cls) -> Self:
-        """Returns the paths of the repository this package is installed from.
+    def discover(cls, start: Path | None = None) -> Self:
+        """Returns the paths of the repository holding the working directory.
 
-        The package is installed in editable mode from `src/`, so the repository root
-        is two levels above the package directory.
+        The repository root is the first of `start` and its parents that holds
+        `testcase/`. The distribution branch installs the package from an archive, so
+        the package location says nothing about where the test case is; the working
+        directory does, for the build as for the notebooks. Otherwise, falls back to
+        the repository the package is installed from in editable mode, two levels above
+        the package directory.
+
+        Args:
+            start: Directory to search from (default: the working directory).
         """
+        start = (start or Path.cwd()).resolve()
+        for directory in (start, *start.parents):
+            if (directory / "testcase").is_dir():
+                return cls(directory)
         return cls(Path(__file__).resolve().parents[2])
 
     @property

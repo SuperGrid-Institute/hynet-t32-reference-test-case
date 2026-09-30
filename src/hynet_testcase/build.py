@@ -220,7 +220,8 @@ def main(argv: list[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     build_parser = commands.add_parser("build", help="regenerate testcase/ from data/")
     build_parser.add_argument("--root", type=Path, default=None,
-                              help="repository root (default: the installed repository)")
+                              help="repository root (default: found from the working "
+                                   "directory)")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
