@@ -11,7 +11,10 @@ Ids are IIDM ids of the network. They contain no whitespace (MC-4 in
 
 ### `generation.csv`
 
-Active power set point of every generator in every scenario.
+Active power set point of every generator in every scenario. The values follow the
+placeholder dispatch of [test-case.md](test-case.md#scenarios) (RES at a share of
+nominal power, other units in merit order within each AC island); losses are left to
+the slack generator.
 
 | Column          | Type   | Unit | Description                                         |
 |-----------------|--------|------|-----------------------------------------------------|
@@ -23,7 +26,8 @@ Active power set point of every generator in every scenario.
 
 ### `loads.csv`
 
-Consumption of every load in every scenario.
+Consumption of every load in every scenario. Each scenario scales the nominal loads by
+one factor (S1 1.00, S2 0.70, S3 1.08 on P and 1.50 on Q).
 
 | Column          | Type   | Unit | Description                    |
 |-----------------|--------|------|--------------------------------|
@@ -36,7 +40,8 @@ Consumption of every load in every scenario.
 
 ### `hvdc.csv`
 
-Active power set point of every HVDC line in every scenario.
+Active power set point of every HVDC line in every scenario. The link is the only
+connection between IEEE 39 and IEEE 14; S2 sets it to its 60 MW maximum.
 
 | Column          | Type   | Unit | Description                                            |
 |-----------------|--------|------|--------------------------------------------------------|
@@ -48,7 +53,9 @@ Active power set point of every HVDC line in every scenario.
 
 ### `battery_setpoints.csv`
 
-Active power set point of every battery in every scenario.
+Active power set point of every battery in every scenario. Every battery is idle
+(0 MW) in every scenario: the network models include the batteries, and each tool
+decides their dispatch.
 
 | Column          | Type   | Unit | Description                                    |
 |-----------------|--------|------|------------------------------------------------|
@@ -60,7 +67,9 @@ Active power set point of every battery in every scenario.
 
 ### `generators.csv`
 
-Illustrative characteristics of every generator, shared by all scenarios.
+Illustrative characteristics of every generator, shared by all scenarios. Types and
+prices are synthetic values of the test case, not IEEE data; they set the merit order
+of the scenario dispatch.
 
 | Column          | Type    | Unit    | Description                                          |
 |-----------------|---------|---------|------------------------------------------------------|
@@ -75,6 +84,9 @@ Illustrative characteristics of every generator, shared by all scenarios.
 
 ### `bus_zones.csv`
 
+Zone of every bus-breaker bus. It is the only zone input; every other file of this
+directory is derived from it.
+
 | Column    | Type | Description                          |
 |-----------|------|--------------------------------------|
 | `bus_id`  | text | IIDM bus-breaker bus id, e.g. `B16`  |
@@ -82,7 +94,8 @@ Illustrative characteristics of every generator, shared by all scenarios.
 
 ### `element_zones.csv`
 
-Zone of every generator and load, derived from the bus it connects to.
+Zone of every generator, load and battery, derived from the bus it connects to. Use it
+to aggregate scenario set points or tool results per zone without reading the network.
 
 | Column         | Type | Description             |
 |----------------|------|-------------------------|
@@ -93,7 +106,9 @@ Zone of every generator and load, derived from the bus it connects to.
 
 ### `interconnections.csv`
 
-AC branches whose ends lie in different zones, and HVDC links.
+AC branches whose ends lie in different zones, and HVDC links: the links of a zonal
+model. AC capacities are thermal limits, not net transfer capacities: they include no
+N-1 margin and ignore loop flows through the third zone of the Z1–Z2–Z3 ring.
 
 | Column               | Type   | Unit | Description                                                          |
 |----------------------|--------|------|----------------------------------------------------------------------|
@@ -105,7 +120,9 @@ AC branches whose ends lie in different zones, and HVDC links.
 
 ### `zone_balance.csv`
 
-Scheduled balance of each zone, from the scenario set points (before losses).
+Scheduled balance of each zone, from the scenario set points (before losses). Balances
+sum to zero in each scenario, and the balance of Z0 is minus the HVDC set point, its
+only link; tools that compute their own dispatch may use it as a reference.
 
 | Column          | Type   | Unit | Description                                 |
 |-----------------|--------|------|---------------------------------------------|
@@ -120,7 +137,8 @@ Scheduled balance of each zone, from the scenario set points (before losses).
 ## `testcase/<variant>/storage/batteries.csv`
 
 Characteristics of the batteries. Their power capability is also in the network
-models; energy capacity, efficiencies and states of charge are only here.
+models; energy capacity, efficiencies and states of charge are only here. Both
+batteries have a 2 h duration (`energy_mwh` = 2 × `power_mw`).
 
 | Column                 | Type   | Unit | Description                                           |
 |------------------------|--------|------|-------------------------------------------------------|
@@ -138,7 +156,8 @@ models; energy capacity, efficiencies and states of charge are only here.
 
 ### `parameters.csv`
 
-Economic assumptions shared by every variant, one row per parameter.
+Economic assumptions shared by every variant, one row per parameter. The same values
+apply to every tool, so that costs computed by different tools stay comparable.
 
 | Column        | Type   | Description                     |
 |---------------|--------|---------------------------------|
@@ -153,6 +172,9 @@ Parameters: `value_of_lost_load_eur_mwh`, `battery_cycling_cost_eur_mwh`,
 
 ### `generator_costs.csv`
 
+Costs of every generator for market and redispatch studies. The redispatch prices are
+the marginal cost plus or minus `redispatch_premium_eur_mwh`.
+
 | Column                    | Type   | Unit    | Description                                          |
 |---------------------------|--------|---------|------------------------------------------------------|
 | `generator_id`            | text   | —       | IIDM generator id                                    |
@@ -162,7 +184,8 @@ Parameters: `value_of_lost_load_eur_mwh`, `battery_cycling_cost_eur_mwh`,
 
 ### `investments.csv`
 
-Investment in each network reinforcement.
+Investment in each network reinforcement. The `reinforced` case adds one line,
+`L-26-27-2`, whose length is estimated from the reactance of the parallel line.
 
 | Column             | Type   | Unit     | Description                                        |
 |--------------------|--------|----------|----------------------------------------------------|
@@ -173,7 +196,8 @@ Investment in each network reinforcement.
 
 ## `testcase/<variant>/contingencies/contingencies.csv`
 
-Single-element outages to analyse on every scenario. None splits the network.
+Single-element outages to analyse on every scenario. None splits the network. They are
+a small selection, quick to analyse, valid on both the `base` and `reinforced` cases.
 
 | Column           | Type | Description                                                 |
 |------------------|------|-------------------------------------------------------------|
@@ -184,7 +208,8 @@ Single-element outages to analyse on every scenario. None splits the network.
 ## `testcase/<variant>/**/cgmes/id_mapping.csv`
 
 Correspondence between IIDM ids and the CGMES identifiers of the files in the same
-directory.
+directory. CGMES 2.4.15 has no battery class: batteries are exported as synchronous
+machines and read back as generators, and this file is the way to find them.
 
 | Column         | Type | Description                                                              |
 |----------------|------|--------------------------------------------------------------------------|
