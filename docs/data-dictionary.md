@@ -5,7 +5,7 @@ row and LF line endings. Timestamps are ISO 8601 in UTC (`YYYY-MM-DDTHH:MM:SSZ`)
 Units follow IIDM: MW, Mvar, kV, A, Ω; energy in MWh; prices in EUR/MWh.
 
 Ids are IIDM ids of the network. They contain no whitespace (MC-4 in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/model-changes.md)) and should be read as text.
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/model-changes.md)) and should be read as text.
 
 ## `testcase/<variant>/scenarios/`
 
@@ -79,6 +79,19 @@ of the scenario dispatch.
 | `nominal_p_mw`  | number  | MW      | Nominal active power, upper bound of the dispatch    |
 | `price_eur_mwh` | number  | EUR/MWh | Marginal price used for the merit order              |
 | `is_res`        | boolean | —       | `True` for renewable units (wind, solar, hydro)      |
+
+## `testcase/<variant>/network/bus_coordinates.csv`
+
+Illustrative geographical coordinates of every bus-breaker bus: those of its
+substation, also stored in the XIIDM files as the `substationPosition` extension.
+Use this file with CGMES and PowerFactory models, which do not hold them.
+
+| Column          | Type   | Unit | Description                          |
+|-----------------|--------|------|--------------------------------------|
+| `bus_id`        | text   | —    | IIDM bus-breaker bus id, e.g. `B16`  |
+| `substation_id` | text   | —    | IIDM substation id, e.g. `S16`       |
+| `latitude`      | number | °    | WGS84 latitude                       |
+| `longitude`     | number | °    | WGS84 longitude, east positive       |
 
 ## `testcase/<variant>/zones/`
 

@@ -4,8 +4,8 @@ Common reference test case of HYNET Task 3.2, used to validate tool behaviour be
 the demonstrations, to compare similar tools and to investigate tool complementarity.
 This page describes what `testcase/` contains and how it is produced. File schemas
 are in [data-dictionary.md](data-dictionary.md), corrections to the source models in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/model-changes.md) and the build and its inputs in
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/build.md).
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/model-changes.md) and the build and its inputs in
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/build.md).
 
 ## Content
 
@@ -22,10 +22,35 @@ The IEEE 39-bus (345 kV) and IEEE 14-bus (138 kV) systems are two separate AC
 islands, joined only by the VSC HVDC link `HVDC_Link_16_113` from IEEE 39 bus 16 to
 IEEE 14 bus 13 (maximum 60 MW, rectifier on the IEEE 39 side).
 
+### Geography
+
+Every substation has illustrative coordinates (WGS84) that place the test case
+around the southern North Sea, following the bidding zones:
+
+| Zone | Network               | Area                                       |
+|------|-----------------------|--------------------------------------------|
+| Z0   | IEEE 14               | South-east England (Kent, Sussex, Surrey)  |
+| Z1   | IEEE 39               | Northern France (Nord, Pas-de-Calais)      |
+| Z2   | IEEE 39               | Belgium                                    |
+| Z3   | IEEE 39               | Netherlands                                |
+
+The HVDC link crosses the Strait of Dover, from bus 16 near Gravelines to bus 113 near
+Folkestone (about 80 km). Line lengths on the map broadly follow the line
+reactances, but the coordinates are not those of real substations and the network does
+not represent the real grids of these countries. Zones Z1 and Z3 touch only through
+L-14-15, drawn along the Belgian coast, since France and the Netherlands share no
+border. Buses of one substation share its coordinates, so L-107-109, inside substation
+S104, has no length on the map.
+
+The XIIDM files hold the coordinates as the IIDM `substationPosition` extension, which
+pypowsybl uses for geographical diagrams and the network map. The CGMES files do not
+hold them, nor does the PowerFactory model; `network/bus_coordinates.csv` gives them
+for every bus.
+
 ### Changes to the source model
 
 The build corrects the source model from UCY before shipping it. In short (reasons and
-effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/model-changes.md)):
+effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/model-changes.md)):
 
 - **MC-1.** The IEEE 39 part is rescaled from a 1 kV base to 345 kV, its nominal
   voltage. Per-unit results are unchanged; values in kV, A and Ω become physical.
@@ -37,6 +62,8 @@ effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-r
 - **MC-3.** The two batteries (see [Storage](#storage)) are added.
 - **MC-4.** Whitespace is removed from ids: for example `B101-G1` for the source's
   `"B101-G1 "` and `B4-SH-1` for `"B4-SH 1"`.
+- **MC-5.** Every substation gets geographical coordinates (see
+  [Geography](#geography)).
 
 None of them applies to the PowerFactory model, shipped as received (see
 [PowerFactory](#powerfactory)).
@@ -131,7 +158,7 @@ state, and checks that each scenario exhibits the phenomena it is designed for.
 ### Scenario checks
 
 The rules are an input of the build (see
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/build.md#scenariosvalidationyaml)). The build stops, without
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/build.md#scenariosvalidationyaml)). The build stops, without
 writing anything, if a scenario breaks one. Voltage rises and drops are measured bus by
 bus against S1.
 
@@ -155,7 +182,7 @@ Voltage control (for example with a reactive optimal power flow) is left to the 
 ### Branch loadings
 
 Every line and transformer has a permanent current limit (see
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/model-changes.md), MC-2). Loadings at the solved states, in % of
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/model-changes.md), MC-2). Loadings at the solved states, in % of
 the limit:
 
 | State | Highest loading         | Overloaded branches                                         |
@@ -278,7 +305,7 @@ bottlenecks, which lie elsewhere.
 
 The `.pfd` file is UCY's model, used for dynamic studies. pypowsybl can neither
 read nor write it, so it holds none of the corrections in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/model-changes.md), none of the scenario states and no batteries.
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/model-changes.md), none of the scenario states and no batteries.
 Its element names are those of the source model, before MC-4: applying the MC-4
 rule to them gives the ids of the other formats.
 
@@ -286,6 +313,7 @@ rule to them gives the ids of the other formats.
 
 ```
 testcase/tx-full/
+├── network/bus_coordinates.csv
 ├── network/base/
 │   ├── xiidm/tx-full_base.xiidm
 │   ├── cgmes/tx-full_base_{EQ,TP,SSH,SV}.xml, id_mapping.csv
@@ -315,12 +343,13 @@ is never edited by hand. Rebuilding from an unchanged commit reproduces it byte 
 byte. The build stops, without writing anything, if an input file is malformed, if an
 id does not resolve in the network, if a network element is not covered by every
 scenario, if a load flow does not converge or moves a battery, or if a scenario check
-fails. [build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/6845812dbbb0b4f9f6988dc4170851ee58b3d202/docs/build.md) describes the build and its inputs.
+fails. [build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/build.md) describes the build and its inputs.
 
 ## Presentation notebook
 
 [`notebooks/presentation.ipynb`](../notebooks/presentation.ipynb) presents the test case
-from the files in `testcase/`: network-area diagram coloured by zone, interactive
+from the files in `testcase/`: network-area diagrams coloured by zone (by topology and
+on the map), interactive
 explorer (live kernel only), zones and interconnections, HVDC link, scenario dispatch and
 zone balances, voltage profiles, branch loadings, contingencies and batteries. It is
 committed with its outputs, so it reads on GitHub without running it, and runs in the
