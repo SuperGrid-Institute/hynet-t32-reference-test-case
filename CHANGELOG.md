@@ -53,6 +53,12 @@ scenario or file, PATCH for corrected values.
   `docs/model-changes.md`), with their set points in
   `testcase/tx-full/scenarios/battery_setpoints.csv` and their energy, efficiency and
   state-of-charge data in `testcase/tx-full/storage/batteries.csv`.
+- Illustrative geographical coordinates for every `tx-full` substation (MC-5 in
+  `docs/model-changes.md`): IEEE 14 in south-east England, IEEE 39 in northern France
+  (Z1), Belgium (Z2) and the Netherlands (Z3). Stored in XIIDM as the
+  `substationPosition` extension and per bus in
+  `testcase/tx-full/network/bus_coordinates.csv`; the presentation notebook gains a
+  geographical network-area diagram.
 - Presentation notebook `notebooks/presentation.ipynb`, with plotting helpers in
   `hynet_testcase.viz`.
 - Binder configuration (`binder/`) and README badge opening the presentation notebook.

@@ -80,6 +80,19 @@ of the scenario dispatch.
 | `price_eur_mwh` | number  | EUR/MWh | Marginal price used for the merit order              |
 | `is_res`        | boolean | —       | `True` for renewable units (wind, solar, hydro)      |
 
+## `testcase/<variant>/network/bus_coordinates.csv`
+
+Illustrative geographical coordinates of every bus-breaker bus: those of its
+substation, also stored in the XIIDM files as the `substationPosition` extension.
+Use this file with CGMES and PowerFactory models, which do not hold them.
+
+| Column          | Type   | Unit | Description                          |
+|-----------------|--------|------|--------------------------------------|
+| `bus_id`        | text   | —    | IIDM bus-breaker bus id, e.g. `B16`  |
+| `substation_id` | text   | —    | IIDM substation id, e.g. `S16`       |
+| `latitude`      | number | °    | WGS84 latitude                       |
+| `longitude`     | number | °    | WGS84 longitude, east positive       |
+
 ## `testcase/<variant>/zones/`
 
 ### `bus_zones.csv`

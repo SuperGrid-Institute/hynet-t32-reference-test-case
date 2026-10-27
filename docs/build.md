@@ -143,6 +143,19 @@ applied to both sides. The build stops if a branch is missing or unknown.
 | `permanent_limit_a` | number | A    | Permanent current limit              |
 | `basis`             | text   | —    | Origin of the value                  |
 
+### `network/<variant>_substation_coordinates.csv`
+
+WGS84 coordinates of every substation, added to the network models as the IIDM
+`substationPosition` extension and shipped per bus in `network/bus_coordinates.csv`.
+The build stops if a substation is missing, unknown or listed twice, or if a
+coordinate is not a number or out of range.
+
+| Column          | Type   | Unit | Description                    |
+|-----------------|--------|------|--------------------------------|
+| `substation_id` | text   | —    | IIDM substation id             |
+| `latitude`      | number | °    | WGS84 latitude                 |
+| `longitude`     | number | °    | WGS84 longitude, east positive |
+
 ### `scenarios/validation.yaml`
 
 Rules each scenario must satisfy on the base network case. Each top-level key is a

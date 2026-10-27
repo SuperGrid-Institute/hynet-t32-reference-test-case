@@ -7,7 +7,7 @@ Requires the `notebooks` dependency group (matplotlib).
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.figure import Figure
-from pypowsybl.network import NadParameters, NadProfile, Network
+from pypowsybl.network import NadLayoutType, NadParameters, NadProfile, Network
 
 # Zone colours, also used in the network-area diagram.
 ZONE_COLORS = {"Z0": "#7b3294", "Z1": "#1b7837", "Z2": "#2166ac", "Z3": "#d6604d"}
@@ -38,10 +38,20 @@ def zone_diagram_profile(network: Network, bus_zones: pd.DataFrame) -> NadProfil
     return NadProfile(bus_node_styles=styles)
 
 
-def zone_diagram_parameters() -> NadParameters:
-    """Diagram parameters showing active power flows without injections."""
+def zone_diagram_parameters(
+        layout_type: NadLayoutType = NadLayoutType.FORCE_LAYOUT) -> NadParameters:
+    """Diagram parameters showing active power flows without injections.
+
+    Args:
+        layout_type: Bus placement; `GEOGRAPHICAL` places them at the substation
+            coordinates of the network.
+    """
+    # At the default scale, buses a few kilometres apart sit so far from each other
+    # that the labels vanish when the map is fitted to the page.
+    scaling = 40000 if layout_type == NadLayoutType.GEOGRAPHICAL else 150000
     return NadParameters(injections_added=False, edge_info_along_edge=True,
-                         power_value_precision=0, voltage_level_details=False)
+                         power_value_precision=0, voltage_level_details=False,
+                         layout_type=layout_type, scaling_factor=scaling)
 
 
 def plot_dispatch(generation: pd.DataFrame, generators: pd.DataFrame) -> Figure:

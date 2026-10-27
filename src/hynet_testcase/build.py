@@ -19,6 +19,7 @@ from hynet_testcase.io.exporters import EXPORTERS
 from hynet_testcase.network.builders import TxFullBuilder, VariantBuilder
 from hynet_testcase.network.contingencies import (
     ContingencyList, PostContingencyState, log_case_change, log_states)
+from hynet_testcase.network.geography import bus_coordinates
 from hynet_testcase.network.loadflow import run_ac
 from hynet_testcase.network.reinforcement import Reinforcement
 from hynet_testcase.network.zones import ZoneMapping
@@ -68,7 +69,8 @@ def _variant_data(variant: VariantId, paths: RepoPaths, network: Network,
     contingencies.check(network)
     return VariantData(scenarios=scenarios, zones=zones, batteries=batteries.with_zones(zones),
                        contingencies=contingencies, economics=economics,
-                       investments=reinforcement.investment(economics))
+                       investments=reinforcement.investment(economics),
+                       bus_coordinates=bus_coordinates(network))
 
 
 def _analyse_contingencies(network: Network, states: list[SolvedState],

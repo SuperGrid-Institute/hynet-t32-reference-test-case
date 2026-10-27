@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iidm:network xmlns:iidm="http://www.powsybl.org/schema/iidm/1_17" xmlns:ctc="http://www.powsybl.org/schema/iidm/ext/cgmes_tap_changers/1_0" xmlns:slt="http://www.powsybl.org/schema/iidm/ext/slack_terminal/1_5" xmlns:reft="http://www.powsybl.org/schema/iidm/ext/reference_terminals/1_0" xmlns:bv="http://www.powsybl.org/schema/iidm/ext/base_voltage_mapping/1_0" id="Default+IEEE-14-bus+IEEE-39-bus" caseDate="2025-11-26T13:35:09.986Z" forecastDistance="0" sourceFormat="hybrid" minimumValidationLevel="STEADY_STATE_HYPOTHESIS">
+<iidm:network xmlns:iidm="http://www.powsybl.org/schema/iidm/1_17" xmlns:ctc="http://www.powsybl.org/schema/iidm/ext/cgmes_tap_changers/1_0" xmlns:sp="http://www.powsybl.org/schema/iidm/ext/substation_position/1_0" xmlns:slt="http://www.powsybl.org/schema/iidm/ext/slack_terminal/1_5" xmlns:reft="http://www.powsybl.org/schema/iidm/ext/reference_terminals/1_0" xmlns:bv="http://www.powsybl.org/schema/iidm/ext/base_voltage_mapping/1_0" id="Default+IEEE-14-bus+IEEE-39-bus" caseDate="2025-11-26T13:35:09.986Z" forecastDistance="0" sourceFormat="hybrid" minimumValidationLevel="STEADY_STATE_HYPOTHESIS">
     <iidm:network id="Default" caseDate="2025-11-26T13:35:09.981Z" forecastDistance="0" sourceFormat="" minimumValidationLevel="STEADY_STATE_HYPOTHESIS"/>
     <iidm:network id="IEEE-14-bus" caseDate="2025-11-26T13:35:07.803Z" forecastDistance="0" sourceFormat="PSS/E" minimumValidationLevel="STEADY_STATE_HYPOTHESIS">
         <iidm:substation id="S101">
@@ -410,6 +410,61 @@
                 <iidm:currentLimits permanentLimit="400.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
+        <iidm:extension id="S101">
+            <sp:substationPosition>
+                <sp:coordinate longitude="-0.27" latitude="50.83"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S102">
+            <sp:substationPosition>
+                <sp:coordinate longitude="-0.18" latitude="51.2"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S103">
+            <sp:substationPosition>
+                <sp:coordinate longitude="-0.75" latitude="51.05"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S104">
+            <sp:substationPosition>
+                <sp:coordinate longitude="0.05" latitude="51.33"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S105">
+            <sp:substationPosition>
+                <sp:coordinate longitude="0.52" latitude="51.27"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S108">
+            <sp:substationPosition>
+                <sp:coordinate longitude="0.7" latitude="51.44"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S110">
+            <sp:substationPosition>
+                <sp:coordinate longitude="0.22" latitude="51.45"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S111">
+            <sp:substationPosition>
+                <sp:coordinate longitude="0.52" latitude="51.38"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S112">
+            <sp:substationPosition>
+                <sp:coordinate longitude="0.58" latitude="50.87"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S113">
+            <sp:substationPosition>
+                <sp:coordinate longitude="1.0" latitude="51.1"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S114">
+            <sp:substationPosition>
+                <sp:coordinate longitude="1.08" latitude="51.28"/>
+            </sp:substationPosition>
+        </iidm:extension>
         <iidm:extension id="VL101">
             <slt:slackTerminal id="B101-G1"/>
         </iidm:extension>
@@ -1404,6 +1459,141 @@
                 <iidm:currentLimits permanentLimit="1506.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
+        <iidm:extension id="S1">
+            <sp:substationPosition>
+                <sp:coordinate longitude="5.35" latitude="51.2"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S10">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.15" latitude="51.55"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S11">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.3" latitude="51.62"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S14">
+            <sp:substationPosition>
+                <sp:coordinate longitude="3.72" latitude="51.43"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S15">
+            <sp:substationPosition>
+                <sp:coordinate longitude="2.4" latitude="51.02"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S16">
+            <sp:substationPosition>
+                <sp:coordinate longitude="2.13" latitude="51.0"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S17">
+            <sp:substationPosition>
+                <sp:coordinate longitude="2.75" latitude="50.97"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S18">
+            <sp:substationPosition>
+                <sp:coordinate longitude="3.4" latitude="51.05"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S19">
+            <sp:substationPosition>
+                <sp:coordinate longitude="1.8" latitude="50.55"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S2">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.48" latitude="51.03"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S21">
+            <sp:substationPosition>
+                <sp:coordinate longitude="2.25" latitude="50.75"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S22">
+            <sp:substationPosition>
+                <sp:coordinate longitude="2.63" latitude="50.53"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S23">
+            <sp:substationPosition>
+                <sp:coordinate longitude="3.0" latitude="50.58"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S24">
+            <sp:substationPosition>
+                <sp:coordinate longitude="2.3" latitude="50.93"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S25">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.7" latitude="50.88"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S26">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.1" latitude="50.6"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S27">
+            <sp:substationPosition>
+                <sp:coordinate longitude="3.6" latitude="50.75"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S28">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.87" latitude="50.47"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S29">
+            <sp:substationPosition>
+                <sp:coordinate longitude="5.57" latitude="50.62"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S3">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.35" latitude="51.22"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S39">
+            <sp:substationPosition>
+                <sp:coordinate longitude="5.3" latitude="51.7"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S4">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.45" latitude="51.48"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S5">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.75" latitude="51.58"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S6">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.6" latitude="51.7"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S7">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.65" latitude="51.82"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S8">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.48" latitude="51.9"/>
+            </sp:substationPosition>
+        </iidm:extension>
+        <iidm:extension id="S9">
+            <sp:substationPosition>
+                <sp:coordinate longitude="4.9" latitude="52.33"/>
+            </sp:substationPosition>
+        </iidm:extension>
         <iidm:extension id="T-31-6-1">
             <ctc:cgmesTapChangers>
                 <ctc:tapChanger id="T-31-6-1_PT_RTC_1" controlId="T-31-6-1_RTC_RC"/>

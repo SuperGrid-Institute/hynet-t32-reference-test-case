@@ -11,6 +11,7 @@ from pypowsybl.network import Network
 from hynet_testcase.errors import InputError
 from hynet_testcase.ids import VariantId
 from hynet_testcase.network.corrections import SourceCorrections
+from hynet_testcase.network.geography import SubstationCoordinates
 from hynet_testcase.network.limits import ThermalLimits
 from hynet_testcase.paths import RepoPaths
 from hynet_testcase.storage.batteries import Batteries
@@ -45,7 +46,7 @@ class TxFullBuilder(VariantBuilder):
         return self.paths.sources / "tx-full"
 
     def build(self) -> Network:
-        """Imports `TestCase.xiidm` and applies corrections, thermal limits and batteries.
+        """Imports `TestCase.xiidm` and adds corrections, limits, batteries and coordinates.
 
         Raises:
             InputError: If the source model is missing.
@@ -59,6 +60,7 @@ class TxFullBuilder(VariantBuilder):
         # Limits are in A, so they are added once voltages are in physical units.
         ThermalLimits.load(inputs / "tx-full_thermal_limits.csv").apply(network)
         Batteries.load(self.paths.inputs / "storage" / "tx-full_batteries.csv").add_to(network)
+        SubstationCoordinates.load(inputs / "tx-full_substation_coordinates.csv").add_to(network)
         return network
 
     def unchanged_files(self) -> list[Path]:

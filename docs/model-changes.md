@@ -119,6 +119,21 @@ is identical. The ids in `data/inputs/` and `testcase/` are the new ones, and CG
 UUIDs, derived from the ids, change accordingly. The PowerFactory model keeps the
 source names; applying the rule above to them gives the ids of the other formats.
 
+### MC-5 — Geographical coordinates added
+
+**Finding.** The source model has no geographical data.
+
+**Correction.** Every substation gets the coordinates (WGS84) of
+`data/inputs/network/tx-full_substation_coordinates.csv` as the IIDM
+`substationPosition` extension: IEEE 14 in south-east England, the three IEEE 39
+zones in northern France (Z1), Belgium (Z2) and the Netherlands (Z3). The
+coordinates are illustrative, not real substation sites. The build stops if a
+substation is missing, unknown or listed twice, or if a coordinate is out of range.
+
+**Effect.** Load-flow results are unchanged. The CGMES export has no geographical
+profile and the PowerFactory model is shipped as received, so neither holds the
+coordinates; `testcase/tx-full/network/bus_coordinates.csv` gives them for every bus.
+
 ## Remarks passed on to the model provider
 
 Not corrected, as they are modelling choices rather than errors:

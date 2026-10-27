@@ -22,6 +22,31 @@ The IEEE 39-bus (345 kV) and IEEE 14-bus (138 kV) systems are two separate AC
 islands, joined only by the VSC HVDC link `HVDC_Link_16_113` from IEEE 39 bus 16 to
 IEEE 14 bus 13 (maximum 60 MW, rectifier on the IEEE 39 side).
 
+### Geography
+
+Every substation has illustrative coordinates (WGS84) that place the test case
+around the southern North Sea, following the bidding zones:
+
+| Zone | Network               | Area                                       |
+|------|-----------------------|--------------------------------------------|
+| Z0   | IEEE 14               | South-east England (Kent, Sussex, Surrey)  |
+| Z1   | IEEE 39               | Northern France (Nord, Pas-de-Calais)      |
+| Z2   | IEEE 39               | Belgium                                    |
+| Z3   | IEEE 39               | Netherlands                                |
+
+The HVDC link crosses the Strait of Dover, from bus 16 near Gravelines to bus 113 near
+Folkestone (about 80 km). Line lengths on the map broadly follow the line
+reactances, but the coordinates are not those of real substations and the network does
+not represent the real grids of these countries. Zones Z1 and Z3 touch only through
+L-14-15, drawn along the Belgian coast, since France and the Netherlands share no
+border. Buses of one substation share its coordinates, so L-107-109, inside substation
+S104, has no length on the map.
+
+The XIIDM files hold the coordinates as the IIDM `substationPosition` extension, which
+pypowsybl uses for geographical diagrams and the network map. The CGMES files do not
+hold them, nor does the PowerFactory model; `network/bus_coordinates.csv` gives them
+for every bus.
+
 ### Changes to the source model
 
 The build corrects the source model from UCY before shipping it. In short (reasons and
@@ -37,6 +62,8 @@ effects in [model-changes.md](model-changes.md)):
 - **MC-3.** The two batteries (see [Storage](#storage)) are added.
 - **MC-4.** Whitespace is removed from ids: for example `B101-G1` for the source's
   `"B101-G1 "` and `B4-SH-1` for `"B4-SH 1"`.
+- **MC-5.** Every substation gets geographical coordinates (see
+  [Geography](#geography)).
 
 None of them applies to the PowerFactory model, shipped as received (see
 [PowerFactory](#powerfactory)).
@@ -286,6 +313,7 @@ rule to them gives the ids of the other formats.
 
 ```
 testcase/tx-full/
+├── network/bus_coordinates.csv
 ├── network/base/
 │   ├── xiidm/tx-full_base.xiidm
 │   ├── cgmes/tx-full_base_{EQ,TP,SSH,SV}.xml, id_mapping.csv
@@ -320,7 +348,8 @@ fails. [build.md](build.md) describes the build and its inputs.
 ## Presentation notebook
 
 [`notebooks/presentation.ipynb`](../notebooks/presentation.ipynb) presents the test case
-from the files in `testcase/`: network-area diagram coloured by zone, interactive
+from the files in `testcase/`: network-area diagrams coloured by zone (by topology and
+on the map), interactive
 explorer (live kernel only), zones and interconnections, HVDC link, scenario dispatch and
 zone balances, voltage profiles, branch loadings, contingencies and batteries. It is
 committed with its outputs, so it reads on GitHub without running it, and runs in the

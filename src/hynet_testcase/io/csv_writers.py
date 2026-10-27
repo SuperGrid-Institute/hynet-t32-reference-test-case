@@ -26,6 +26,7 @@ class VariantData:
         contingencies: Contingency list.
         economics: Economic assumptions.
         investments: Investment and annuity of each network reinforcement.
+        bus_coordinates: Coordinates of every bus.
     """
 
     scenarios: ScenarioInputs
@@ -34,6 +35,7 @@ class VariantData:
     contingencies: ContingencyList
     economics: Economics
     investments: pd.DataFrame
+    bus_coordinates: pd.DataFrame
 
 
 class CsvWriter(ABC):
@@ -117,6 +119,17 @@ class GeneratorWriter(CsvWriter):
     def frame(self, data: VariantData) -> pd.DataFrame:
         """Returns the generator metadata, sorted by id."""
         return data.scenarios.generators.sort_values("generator_id", kind="stable")
+
+
+class BusCoordinateWriter(CsvWriter):
+    """Coordinates of every bus, for formats that cannot hold them."""
+
+    directory = "network"
+    filename = "bus_coordinates.csv"
+
+    def frame(self, data: VariantData) -> pd.DataFrame:
+        """Returns the bus coordinates."""
+        return data.bus_coordinates
 
 
 class BusZoneWriter(CsvWriter):
@@ -228,7 +241,7 @@ class InvestmentWriter(CsvWriter):
 
 CSV_WRITERS: list[CsvWriter] = [
     GenerationWriter(), LoadWriter(), HvdcWriter(), BatterySetpointWriter(), GeneratorWriter(),
-    BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(), ZoneBalanceWriter(),
-    BatteryWriter(), ContingencyWriter(), EconomicParameterWriter(), GeneratorCostWriter(),
-    InvestmentWriter(),
+    BusCoordinateWriter(), BusZoneWriter(), ElementZoneWriter(), InterconnectionWriter(),
+    ZoneBalanceWriter(), BatteryWriter(), ContingencyWriter(), EconomicParameterWriter(),
+    GeneratorCostWriter(), InvestmentWriter(),
 ]
