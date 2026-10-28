@@ -55,10 +55,10 @@ the operating points; they are not results of any HYNET tool.
 ## How it is built
 
 This branch is generated; it is not edited by hand. It was published from commit
-[`27f276e`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287) of the `dev` branch, which holds the
+[`0383471`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/03834712c2050bbbf168611aad96de78e2229365) of the `dev` branch, which holds the
 source models, the hand-edited inputs and the code that builds `testcase/`. The
 corrections applied to the source models are listed in
-[`docs/model-changes.md`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/27f276ee87ace2fb3bcd7b3e200d2c7ac163b287/docs/model-changes.md).
+[`docs/model-changes.md`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/model-changes.md).
 
 ## Licences
 
