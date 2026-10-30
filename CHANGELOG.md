@@ -5,7 +5,7 @@ All result-affecting changes to the test case are listed here. Versions follow
 breaking changes to ids, layout or CSV schema, MINOR for a new variant, case,
 scenario or file, PATCH for corrected values.
 
-## [Unreleased]
+## [0.2.0] - 2026-10-30
 
 ### Added
 
