@@ -1,0 +1,2419 @@
+********************************************************************************
+*
+* DIgSILENT (R) DGS Export V1.8.4
+* Copyright 1997-2026 DIgSILENT GmbH. All rights reserved.
+*
+* DIgSILENT (C) PowerFactory V25.0.2.0
+*
+* Date:     10/29/2026 14:54
+* Project:  IEEE39B_14B_P2P_VSCHVDC_HYNET (Study Case: 01 RMS Simulation with HVDC)
+*
+********************************************************************************
+
+
+$$General;ID(a:40);Descr(a:40);Val(a:255)
+********************************************************************************
+*  General Information
+*
+*  ID: Unique identifier for DGS file
+*  Descr: Setting
+*  Val: Value
+********************************************************************************
+  1;Version;5.0
+
+
+$$BlkDef;ID(a:40);loc_name(a:80);fold_id(p)
+********************************************************************************
+*  DSL Model Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+********************************************************************************
+  2;1/K;655
+  3;(1+ATs)/(1+BTs);656
+  4;SYM Frame_no droop;657
+  5;LFDD;1811
+  6;OFGT;1812
+  7;Overcurrent Relay;1813
+  8;UFGT;1814
+  9;OutOfStep;
+  10;SYM Frame_no droop_IEEEG1;
+  11;Damping;
+  12;avr_IEEET1;
+  13;1/(1+sT);631
+  14;1/(K+sT);631
+  15;Se(Efd);631
+  16;bias;631
+  17;sK/(1+sT);631
+  18;{K/(1+sT)};631
+  19;gov_BPA GG;
+  20;(1+sTb)/(1+sTa);632
+  21;1/(1+sT);632
+  22;K/(1+sT);632
+  23;Limiter;632
+  24;Pt/Pturb;632
+  25;_K/(1+sT)_;632
+  26;Damping;
+  27;OutOfStep;
+  28;SYM Frame_no droop_IEEEG1;
+  29;avr_IEEET1;
+  30;1/(1+sT);633
+  31;1/(K+sT);633
+  32;Se(Efd);633
+  33;bias;633
+  34;sK/(1+sT);633
+  35;{K/(1+sT)};633
+  36;gov_BPA GG;
+  37;(1+sTb)/(1+sTa);634
+  38;1/(1+sT);634
+  39;K/(1+sT);634
+  40;Limiter;634
+  41;Pt/Pturb;634
+  42;_K/(1+sT)_;634
+  43;OutOfStep;
+  44;EPC Generic BlkDef;658
+  45;FRT Control (Pos Seq Balanced) BlkDef;658
+  46;Additional i1Q;635
+  47;Fault Detection;635
+  48;Pre-Fault Voltage;635
+  49;iP Reduction;635
+  50;iQ Freeze Steady-State;635
+  51;Filter idc BlkDef;658
+  52;Frame HVDC MMC Control;658
+  53;Limiter Current (Pos Seq) BlkDef;658
+  54;Iref Limiter;636
+  55;Output Limiter Transform (Pos Seq)BlkDef;658
+  56;Limiter;637
+  57;Polar to xy;637
+  58;dq-Back;637
+  59;xy to polar;637
+  60;P_Vdc Control BlkDef;658
+  61;(Kp+Ki/s) enhanced;638
+  62;(Kp+Ki/s);638
+  63;-1;638
+  64;Deadband control;638
+  65;Droop P;638
+  66;Droop Vdc;638
+  67;Gradient Limiter;638
+  68;Input Select Ctrl.;638
+  69;Input Selector;638
+  70;Limiter EPC;638
+  71;Limiter;638
+  72;Mode Selector P/Vdc;638
+  73;Over-Voltage;638
+  74;PowerToCurrent;638
+  75;STATCOM_EPC_input;638
+  76;Switch SI EPC;638
+  77;Under-Voltage;638
+  78;Vdc_ref STATCOM;638
+  79;Protection ACDC (Pos Seq) BlkDef;658
+  80;Q_Vac Control BlkDef;658
+  81;(Kp+Ki/s);639
+  82;Droop Q;639
+  83;Droop;639
+  84;Gradient Limiter;639
+  85;Input Selector;639
+  86;Mode Selector Q/Vac;639
+  87;Mode_Select_PI;639
+  88;Output Conversion;639
+  89;Power Factor to Power;639
+  90;Signal Calculation (RMS balanced) BlkDef;658
+  91;1;640
+  92;1/(1+sT) mag-d-q;640
+  93;1/(1+sT);640
+  94;Limiter;640
+  95;Magnitude;640
+  96;Measurement Adjustment;640
+  97;Power Calculation AC;640
+  98;Power Calculation DC;640
+  99;Vdc;640
+  100;dq-Transform;640
+  101;V_f Control BlkDef;658
+  102;-1;641
+  103;Current Limiter;641
+  104;Droop;641
+  105;Frequency;641
+  106;Gradient Limiter;641
+  107;Input Selector;641
+  108;Limiter Frequency;641
+  109;Limiter;641
+  110;Oscillation;641
+  111;Oscillator;641
+  112;[Kp+sKd/(1+sTd)+Ki/s];641
+  113;cap_MMC Capacitor Control BlkDef;658
+  114;1/2;642
+  115;1/3;642
+  116;1/6;642
+  117;Base Current;642
+  118;C;642
+  119;DC bias simplified;642
+  120;Flag DC bias;642
+  121;Kp+Ki/s;642
+  122;MMC Type;642
+  123;SGN;642
+  124;ccc_Circulating Current Control BlkDef;658
+  125;-2;643
+  126;0;643
+  127;Kp+Ki/s;643
+  128;Larm_d;643
+  129;Larm_q;643
+  130;Limiter;643
+  131;Polar;643
+  132;Rectangular;643
+  133;abc to dq;643
+  134;atan2;643
+  135;dq to abc;643
+  136;fsm_Freq Sensitive Mode HVDC Link BlkDef;658
+  137;1/(1+sT);644
+  138;FSM Activate;644
+  139;FSM Deadband;644
+  140;FSM Remote Logic HVDC;644
+  141;Frequency Response Overfrequency;644
+  142;Frequency Response Underfrequency;644
+  143;Frequency Response;644
+  144;Gradient Limiter;644
+  145;Input Selector;644
+  146;LFSM-O Activation;644
+  147;LFSM-U Activation;644
+  148;Limiter;644
+  149;idq_Current Control (Pos Seq) BlkDef;658
+  150;Activate Gain;645
+  151;Kp+Ki/s;645
+  152;Voltage Drop Compensation;645
+  153;opm_Operating Mode BlkDef;658
+  154;Mode Selector;646
+  155;Output Selector 1;646
+  156;Output Selector 2;646
+  157;pm_Modulation Factor BlkDef;658
+  158;Magnitude;647
+  159;Pulse modulation factor;647
+  160;pod_Power Oscillation Damping BlkDef;658
+  161;(1+sT1)/(1+sT2);648
+  162;-1;648
+  163;Divider;648
+  164;K dx/dt;648
+  165;K;648
+  166;Limiter;648
+  167;Selector 2;648
+  168;Selector 5;648
+  169;sTw/(1+sTw);648
+  170;si_Synthetic Inertia BlkDef;658
+  171;pss_type_conv;
+  172;pss_CONV;
+  173;u2_Voltage Unbalance Control BlkDef;658
+
+
+$$ElmBranch;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);iDatCon0(i);iDatCon1(i)
+********************************************************************************
+*  Branch
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  iDatCon0: Connection 1
+*  iDatCon1: Connection 2
+********************************************************************************
+  174;HVDC Link;;365;0;0
+
+
+$$ElmComp;ID(a:40);loc_name(a:80);fold_id(p);outserv(i);typ_id(p)
+********************************************************************************
+*  Composite Model
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  outserv: Out of Service
+*  typ_id: Frame in BlkDef,BlkFrame
+********************************************************************************
+  175;Plant_Gen_0001;363;0;10
+  176;Plant_Gen_0002;363;0;10
+  177;Plant_Gen_0003;363;0;4
+  178;Plant_Gen_0006;363;0;4
+  179;Plant_Gen_0008;363;0;4
+  180;Power Plant 02;364;0;28
+  181;Power Plant 03;364;0;28
+  182;Power Plant 04;364;0;28
+  183;Power Plant 05;364;0;28
+  184;Power Plant 06;364;0;28
+  185;Power Plant 07;364;0;28
+  186;Power Plant 08;364;0;28
+  187;Power Plant 09;364;0;28
+  188;Power Plant 10;364;0;28
+  189;Rest of U.S.A. / Canada;364;0;28
+  190;HVDC Control Master Conv;365;0;52
+  191;HVDC Control Slave Conv;365;0;52
+
+
+$$ElmDsl;ID(a:40);loc_name(a:80);fold_id(p);typ_id(p);outserv(i)
+********************************************************************************
+*  DSL Model
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  typ_id: Type in BlkDef*
+*  outserv: Out of Service
+********************************************************************************
+  192;IEEET1;175;12;0
+  193;OOS;175;43;0
+  194;PSS_TYPE_CONV_G1;175;171;1
+  195;gov_BPA GG;175;19;0
+  196;IEEET1;176;12;0
+  197;OOS;176;43;0
+  198;PSS_TYPE_CONV_G2;176;171;1
+  199;gov_BPA GG;176;19;0
+  200;IEEET1;177;12;0
+  201;IEEET1;178;12;0
+  202;IEEET1;179;12;0
+  203;AVR 02;180;29;0
+  204;GOV02;180;36;0
+  205;OOS;180;43;0
+  206;AVR 03;181;29;0
+  207;GOV03;181;36;0
+  208;OOS;181;43;0
+  209;PSS 03;181;172;1
+  210;AVR 04;182;29;0
+  211;GOV04;182;36;0
+  212;OOS;182;43;0
+  213;PSS 04;182;172;1
+  214;AVR 05;183;29;0
+  215;GOV05;183;36;0
+  216;OOS;183;43;0
+  217;PSS 05;183;172;1
+  218;AVR 06;184;29;0
+  219;GOV06;184;36;0
+  220;OOS;184;43;0
+  221;PSS 06;184;172;1
+  222;AVR 07;185;29;0
+  223;GOV07;185;36;0
+  224;OOS;185;43;0
+  225;PSS 07;185;172;1
+  226;AVR 08;186;29;0
+  227;GOV08;186;36;0
+  228;OOS;186;43;0
+  229;PSS 08;186;172;1
+  230;AVR 09;187;29;0
+  231;GOV09;187;36;0
+  232;OOS;187;43;0
+  233;PSS 09;187;172;1
+  234;AVR 10;188;29;0
+  235;GOV10;188;36;0
+  236;OOS;188;43;0
+  237;PSS 10;188;172;1
+  238;Arm Capacitor Voltage Control A;190;113;0
+  239;Circulating Current Suppression Control;190;124;0
+  240;Current Controller A;190;149;0
+  241;Current Limiter A;190;53;0
+  242;Emergency Power Control A;190;44;0
+  243;FRT Controller A;190;45;0
+  244;Frequency Sensitive Mode A;190;136;0
+  245;Idc Measurement Filter A;190;51;0
+  246;Modulation Factor Calculation A;190;157;0
+  247;Operating Mode Selector A;190;153;0
+  248;Output Limiter and Backward Transform A;190;55;0
+  249;P/Vdc Control A;190;60;0
+  250;Power Oscillation Damping A;190;160;0
+  251;Protection A;190;79;0
+  252;Q/Vac Control A;190;80;0
+  253;Signal Calculation A;190;90;0
+  254;Synthetic Inertia A;190;170;0
+  255;V/f Control A;190;101;0
+  256;Voltage Unbalance Control;190;173;1
+  257;Arm Capacitor Voltage Control A;191;113;0
+  258;Circulating Current Suppression Control;191;124;0
+  259;Current Controller A;191;149;0
+  260;Current Limiter B;191;53;0
+  261;Emergency Power Control B;191;44;0
+  262;FRT Controller B;191;45;0
+  263;Frequency Sensitive Mode B;191;136;0
+  264;Idc Measurement Filter B;191;51;0
+  265;Modulation Factor Calculation B;191;157;0
+  266;Operating Mode Selector B;191;153;0
+  267;Output Limiter and Backward Transform B;191;55;0
+  268;P/Vdc Control B;191;60;0
+  269;Power Oscillation Damping B;191;160;0
+  270;Protection B;191;79;0
+  271;Q/Vac Control B;191;80;0
+  272;Signal Calculation B;191;90;0
+  273;Synthetic Inertia B;191;170;0
+  274;V/f Control B;191;101;0
+  275;Voltage Unbalance Control;191;173;1
+
+
+$$ElmLne;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);typ_id(p);dline(r);fline(r);GPScoords:SIZEROW(i);GPScoords:SIZECOL(i);nlnum(i);inAir(i)
+********************************************************************************
+*  Line
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  typ_id: Type in TypLne,TypTow,TypGeo,TypCabsys
+*  dline: Parameters: Length of Line in km
+*  fline: Parameters: Derating Factor
+*  GPScoords:SIZEROW: Number of rows for attribute 'GPScoords'
+*  GPScoords:SIZECOL: Number of columns for attribute 'GPScoords'
+*  nlnum: Number of: parallel Lines
+*  inAir: Parameters: Laying:Ground:Air
+********************************************************************************
+  276;Line_0001_0002/1;;363;1759;1;1;0;2;1;0
+  277;Line_0001_0002/2;;363;1759;1;1;0;2;1;0
+  278;Line_0001_0005;;363;1760;1;1;0;2;1;0
+  279;Line_0002_0003;;363;1761;1;1;0;2;1;0
+  280;Line_0002_0004;;363;1762;1;1;0;2;1;0
+  281;Line_0002_0005;;363;1763;1;1;0;2;1;0
+  282;Line_0003_0004;;363;1764;1;1;0;2;1;0
+  283;Line_0004_0005;;363;1765;1;1;0;2;1;0
+  284;Line_0006_0011;;363;1766;1;1;0;2;1;0
+  285;Line_0006_0012;;363;1767;1;1;0;2;1;0
+  286;Line_0006_0013;;363;1768;1;1;0;2;1;0
+  287;Line_0007_0008;;363;1769;1;1;0;2;1;0
+  288;Line_0007_0009;;363;1770;1;1;0;2;1;0
+  289;Line_0009_0010;;363;1771;1;1;0;2;1;0
+  290;Line_0009_0014;;363;1772;1;1;0;2;1;0
+  291;Line_0010_0011;;363;1773;1;1;0;2;1;0
+  292;Line_0012_0013;;363;1774;1;1;0;2;1;0
+  293;Line_0013_0014;;363;1775;1;1;0;2;1;0
+  294;Line 01 - 02;;364;1776;163,0643;1;0;2;1;0
+  295;Line 01 - 39;;364;1777;99,1875;1;0;2;1;0
+  296;Line 02 - 03;;364;1778;59,90925;1;0;2;1;0
+  297;Line 02 - 25;;364;1779;34,1205;1;0;2;1;0
+  298;Line 03 - 04;;364;1780;84,50775;1;0;2;1;0
+  299;Line 03 - 18;;364;1781;52,76775;1;0;2;1;0
+  300;Line 04 - 05;;364;1782;50,784;1;0;2;1;0
+  301;Line 04 - 14;;364;1783;51,18075;1;0;2;1;0
+  302;Line 05 - 06;;364;1784;10,3155;1;0;2;1;0
+  303;Line 05 - 08;;364;1785;44,436;1;0;2;1;0
+  304;Line 06 - 07;;364;1786;36,501;1;0;2;1;0
+  305;Line 06 - 11;;364;1787;32,5335;1;0;2;1;0
+  306;Line 07 - 08;;364;1788;18,2505;1;0;2;1;0
+  307;Line 08 - 09;;364;1789;144,0202;1;0;2;1;0
+  308;Line 09 - 39;;364;1790;99,1875;1;0;2;1;0
+  309;Line 10 - 11;;364;1791;17,06025;1;0;2;1;0
+  310;Line 10 - 13;;364;1792;17,06025;1;0;2;1;0
+  311;Line 13 - 14;;364;1793;40,07175;1;0;2;1;0
+  312;Line 14 - 15;;364;1794;86,09475;1;0;2;1;0
+  313;Line 15 - 16;;364;1795;37,2945;1;0;2;1;0
+  314;Line 16 - 17;;364;1796;35,31075;1;0;2;1;0
+  315;Line 16 - 19;;364;1797;77,36625;1;0;2;1;0
+  316;Line 16 - 21;;364;1798;53,56125;1;0;2;1;0
+  317;Line 16 - 24;;364;1799;23,40825;1;0;2;1;0
+  318;Line 17 - 18;;364;1800;32,5335;1;0;2;1;0
+  319;Line 17 - 27;;364;1801;68,63775;1;0;2;1;0
+  320;Line 21 - 22;;364;1802;55,545;1;0;2;1;0
+  321;Line 22 - 23;;364;1803;38,088;1;0;2;1;0
+  322;Line 23 - 24;;364;1804;138,8625;1;0;2;1;0
+  323;Line 25 - 26;;364;1805;128,1503;1;0;2;1;0
+  324;Line 26 - 27;;364;1806;58,32225;1;0;2;1;0
+  325;Line 26 - 28;;364;1807;188,0595;1;0;2;1;0
+  326;Line 26 - 29;;364;1808;247,9688;1;0;2;1;0
+  327;Line 28 - 29;;364;1809;59,90925;1;0;2;1;0
+  328;DC-Line_neg;;174;1810;150;1;0;2;1;0
+  329;DC-Line_pos;;174;1810;150;1;0;2;1;0
+
+
+$$ElmLod;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);typ_id(p);mode_inp(a:6);slini(r);plini(r);qlini(r);coslini(r);pf_recap(i);scale0(r);i_scale(i);outserv(i);classif(a:40)
+********************************************************************************
+*  General Load
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  typ_id: Type in TypLod,TypLodind,TypLodwecc
+*  mode_inp: Input Mode
+*  slini: Operating Point: Apparent Power in MVA
+*  plini: Operating Point: Active Power in MW
+*  qlini: Operating Point: Reactive Power in Mvar
+*  coslini: Operating Point: Power Factor
+*  pf_recap: Operating Point: Power Factor:ind.:cap.
+*  scale0: Operating Point: Scaling Factor
+*  i_scale: Operating Point: Adjusted by Load Scaling
+*  outserv: Out of Service
+*  classif: Load Classification:Agricultural:Domestic:Commercial:Industrial
+********************************************************************************
+  330;Load Event_B14;;363;;DEF;40;40;0;1;0;1;0;0;
+  331;Load_0002;;363;;DEF;25,14319;21,7;12,7;0,863056;0;1;1;0;
+  332;Load_0003;;363;;DEF;96,09703;94,2;19;0,980259;0;1;1;0;
+  333;Load_0004;;363;;DEF;47,95884;47,8;-3,9;0,996688;1;1;1;0;
+  334;Load_0005;;363;;DEF;7,766595;7,6;1,6;0,978549;0;1;1;0;
+  335;Load_0006;;363;;DEF;13,47924;11,2;7,5;0,830907;0;1;1;0;
+  336;Load_0009;;363;;DEF;33,84982;29,5;16,6;0,871496;0;1;1;0;
+  337;Load_0010;;363;;DEF;10,70701;9;5,8;0,840571;0;1;1;0;
+  338;Load_0011;;363;;DEF;3,935734;3,5;1,8;0,889287;0;1;1;0;
+  339;Load_0012;;363;;DEF;6,306346;6,1;1,6;0,967279;0;1;1;0;
+  340;Load_0013;;363;;DEF;14,6932;13,5;5,8;0,918792;0;1;1;0;
+  341;Load_0014;;363;;DEF;15,71655;14,9;5;0,948045;0;1;1;0;
+  342;Load_Imbalance_Sink Area;;363;;PC;27,77778;25;12,10805;0,9;0;1;0;0;
+  343;Load 01;;364;;DEF;107,142;97,6;44,2;0,910940;0;1;1;0;
+  344;Load 03;;364;;DEF;322,0089;322;2,4;0,999972;0;1;1;0;
+  345;Load 04;;364;;DEF;532,7814;500;184;0,938471;0;1;1;0;
+  346;Load 07;;364;;DEF;248,432;233,8;84;0,941102;0;1;1;0;
+  347;Load 08;;364;;DEF;550,872;522;176;0,947588;0;1;1;0;
+  348;Load 12;;364;;DEF;88,31902;7,5;88;0,084919;0;1;1;0;
+  349;Load 15;;364;;DEF;354,6956;320;153;0,902181;0;1;1;0;
+  350;Load 16;;364;;DEF;330,5818;329;32,3;0,995215;0;1;1;0;
+  351;Load 18;;364;;DEF;160,8229;158;30;0,982447;0;1;1;0;
+  352;Load 20;;364;;DEF;636,3906;628;103;0,986815;0;1;1;0;
+  353;Load 21;;364;;DEF;297,1548;274;115;0,922078;0;1;1;0;
+  354;Load 23;;364;;DEF;261,5596;247,5;84,6;0,946247;0;1;1;0;
+  355;Load 24;;364;;DEF;322,0789;308,6;-92,2;0,958150;1;1;1;0;
+  356;Load 25;;364;;DEF;228,9189;224;47,2;0,978512;0;1;1;0;
+  357;Load 26;;364;;DEF;140,0357;139;17;0,992604;0;1;1;0;
+  358;Load 27;;364;;DEF;290,9661;281;75,5;0,965748;0;1;1;0;
+  359;Load 28;;364;;DEF;207,8407;206;27,6;0,991143;0;1;1;0;
+  360;Load 29;;364;;DEF;284,7733;283,5;26,9;0,995528;0;1;1;0;
+  361;Load 31;;364;;DEF;10,28591;9,2;4,6;0,894427;0;1;1;0;
+  362;Load 39;;364;;DEF;1131,952;1104;250;0,975306;0;1;1;0;
+
+
+$$ElmNet;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);frnom(r);pDiagram(p)
+********************************************************************************
+*  Grid
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  frnom: Nominal Frequency in Hz
+*  pDiagram: Diagram in IntGrfnet
+********************************************************************************
+  363;Grid_14bus;;;60;
+  364;Grid_39Bus;;;60;
+  365;HVDC_Link;;;60;
+
+
+$$ElmRelay;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);typ_id(p);outserv(i)
+********************************************************************************
+*  Relay
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  typ_id: Relay Type in TypRelay
+*  outserv: Out of Service
+********************************************************************************
+  366;OCLne;;1285;1813;0
+  367;OCLne;;1286;1813;0
+  368;OCTF;;1287;1813;0
+  369;OCLne;;1288;1813;0
+  370;OCTF;;1291;1813;0
+  371;OCLne;;1292;1813;0
+  372;OCLne;;1293;1813;0
+  373;OCLne;;1294;1813;0
+  374;LFDD;;1295;1811;0
+  375;OCTF;;1296;1813;0
+  376;LFDD;;1299;1811;0
+  377;OCLne;;1301;1813;0
+  378;OCTF;;1303;1813;0
+  379;OCTF;;1304;1813;0
+  380;LFDD;;1305;1811;0
+  381;OCLne;;1307;1813;0
+  382;OCTF;;1309;1813;0
+  383;LFDD;;1310;1811;0
+  384;OCTF;;1311;1813;0
+  385;OCLne;;1312;1813;0
+  386;OCLne;;1314;1813;0
+  387;LFDD;;1316;1811;0
+  388;OCLne;;1317;1813;0
+  389;OCLne;;1320;1813;0
+  390;OCTF;;1321;1813;0
+  391;LFDD;;1326;1811;0
+  392;OCLne;;1328;1813;0
+  393;LFDD;;1330;1811;0
+  394;OCLne;;1331;1813;0
+  395;LFDD;;1333;1811;0
+  396;LFDD;;1336;1811;0
+  397;OCLne;;1338;1813;0
+  398;LFDD;;1339;1811;0
+  399;OCLne;;1340;1813;0
+  400;OCLne;;1341;1813;0
+  401;LFDD;;1342;1811;0
+  402;OCLne;;1345;1813;0
+  403;LFDD;;1346;1811;0
+  404;OFGT;;1347;1812;0
+  405;UFGT;;1347;1814;0
+  406;OFGT;;1349;1812;0
+  407;UFGT;;1349;1814;0
+  408;OFGT;;1351;1812;0
+  409;UFGT;;1351;1814;0
+  410;OFGT;;1353;1812;0
+  411;UFGT;;1353;1814;0
+  412;OFGT;;1356;1812;0
+  413;UFGT;;1356;1814;0
+  414;LFDD;;1358;1811;0
+  415;OCLne;;1359;1813;0
+  416;OCTF;;1361;1813;0
+  417;OCLne;;1362;1813;0
+  418;OCLne;;1363;1813;0
+  419;LFDD;;1365;1811;0
+  420;OCLne;;1366;1813;0
+  421;OCLne;;1368;1813;0
+  422;LFDD;;1369;1811;0
+  423;OCLne;;1373;1813;0
+  424;OCLne;;1375;1813;0
+  425;OCTF;;1376;1813;0
+  426;OCLne;;1377;1813;0
+  427;OCLne;;1378;1813;0
+  428;LFDD;;1380;1811;0
+  429;OCLne;;1381;1813;0
+  430;LFDD;;1383;1811;0
+  431;OCLne;;1387;1813;0
+  432;OCTF;;1389;1813;0
+  433;OCLne;;1390;1813;0
+  434;OCLne;;1391;1813;0
+  435;OCTF;;1392;1813;0
+  436;OCLne;;1393;1813;0
+  437;LFDD;;1395;1811;0
+  438;OCTF;;1398;1813;0
+  439;OCLne;;1399;1813;0
+  440;OCLne;;1401;1813;0
+  441;OCLne;;1402;1813;0
+  442;LFDD;;1404;1811;0
+  443;OCTF;;1407;1813;0
+  444;LFDD;;1408;1811;0
+  445;OCLne;;1412;1813;0
+  446;OCLne;;1413;1813;0
+  447;OCLne;;1414;1813;0
+  448;LFDD;;1417;1811;0
+  449;OCTF;;1420;1813;0
+  450;OCTF;;1421;1813;0
+  451;OCLne;;1422;1813;0
+  452;LFDD;;1423;1811;0
+  453;OCTF;;1425;1813;0
+  454;LFDD;;1426;1811;0
+  455;OCLne;;1427;1813;0
+  456;OCTF;;1429;1813;0
+  457;OCLne;;1430;1813;0
+  458;OCLne;;1431;1813;0
+  459;OCTF;;1432;1813;0
+  460;OCLne;;1434;1813;0
+  461;LFDD;;1435;1811;0
+  462;LFDD;;1436;1811;0
+  463;OCLne;;1437;1813;0
+  464;LFDD;;1439;1811;0
+  465;OCTF;;1440;1813;0
+  466;OCLne;;1441;1813;0
+  467;OCLne;;1442;1813;0
+  468;LFDD;;1443;1811;0
+  469;OCLne;;1445;1813;0
+  470;LFDD;;1448;1811;0
+  471;OCLne;;1450;1813;0
+  472;LFDD;;1451;1811;0
+  473;OCLne;;1452;1813;0
+  474;LFDD;;1454;1811;0
+  475;OCTF;;1455;1813;0
+  476;OCLne;;1456;1813;0
+  477;OCLne;;1457;1813;0
+  478;LFDD;;1461;1811;0
+  479;LFDD;;1478;1811;0
+  480;OCLne;;1480;1813;0
+  481;OFGT;;1481;1812;0
+  482;UFGT;;1481;1814;0
+  483;OFGT;;1483;1812;0
+  484;UFGT;;1483;1814;0
+  485;OFGT;;1487;1812;0
+  486;UFGT;;1487;1814;0
+  487;OFGT;;1488;1812;0
+  488;UFGT;;1488;1814;0
+  489;OFGT;;1490;1812;0
+  490;UFGT;;1490;1814;0
+  491;OFGT;;1492;1812;0
+  492;UFGT;;1492;1814;0
+  493;OFGT;;1495;1812;0
+  494;UFGT;;1495;1814;0
+  495;OFGT;;1497;1812;0
+  496;UFGT;;1497;1814;0
+  497;OFGT;;1498;1812;0
+  498;UFGT;;1498;1814;0
+  499;OFGT;;1500;1812;0
+  500;UFGT;;1500;1814;0
+  501;OCTF;;1504;1813;0
+  502;OCTF;;1505;1813;0
+
+
+$$ElmShnt;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);systp(i);ctech(i);shtype(i);ushnm(r);mode_inp(a:6);qcapn(r);ncapx(i);ncapa(i);outserv(i);qrean(r);qtotn(r);tandc(r);fres(r);greaf0(r);grea(r);bcap(r);xrea(r);rrea(r);gparac(r);iswitch(i);imldc(a:2);usetp_mx(r);usetp_mn(r);qsetp_mx(r);qsetp_mn(r);iQorient(i);ilcph(i)
+********************************************************************************
+*  Shunt/Filter
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  systp: System Type:AC:DC:AC/BI
+*  ctech: Technology
+*  shtype: Shunt Type
+*  ushnm: Rated Voltage in kV
+*  mode_inp: Input Mode
+*  qcapn: Design Parameter (per Step): Rated Reactive Power, C in Mvar
+*  ncapx: Controller: Max. No. of Steps
+*  ncapa: Controller: Act. No. of Step
+*  outserv: Out of Service
+*  qrean: Design Parameter (per Step): Rated Reactive Power, L in Mvar
+*  qtotn: Design Parameter (per Step): Rated Reactive Power, L-C in Mvar
+*  tandc: Design Parameter (per Step): Loss Factor, tan(delta)
+*  fres: Design Parameter (per Step): Resonant Frequency in Hz
+*  greaf0: Design Parameter (per Step): Quality Factor (at fr)
+*  grea: Design Parameter (per Step): Quality Factor (at fn)
+*  bcap: Layout Parameter (per Step): Susceptance in uS
+*  xrea: Layout Parameter (per Step): Reactance in Ohm
+*  rrea: Layout Parameter (per Step): Resistance in Ohm
+*  gparac: Layout Parameter (per Step): Parallel Conductance in uS
+*  iswitch: Switchable
+*  imldc: Control Mode
+*  usetp_mx: Upper Voltage Limit in p.u.
+*  usetp_mn: Lower Voltage Limit in p.u.
+*  qsetp_mx: Upper Reactive Power Limit in Mvar
+*  qsetp_mn: Lower Reactive Power Limit in Mvar
+*  iQorient: Orientation:+Q:-Q
+*  ilcph: Phase:a:b:c:a-b:b-c:c-a:Pos.Seq.
+********************************************************************************
+  503;Shnt_0009;;363;0;1;2;132;LAY;18,99216;1;1;0;0;18,99216;0;0;0;0;1090;1,5;0;0;0;V;1,05;0,95;0;0;0;0
+
+
+$$ElmSym;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);typ_id(p);cCategory(a);ngnum(i);i_mot(i);pgini(r);qgini(r);cosgini(r);usetp(r);pf_recap(i);q_min(r);q_max(r);outserv(i);av_mode(a);phtech(i);ip_ctrl(i)
+********************************************************************************
+*  Synchronous Machine
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  typ_id: Type in TypSym
+*  cCategory: Plant Category
+*  ngnum: Number of: parallel Machines
+*  i_mot: Machine
+*  pgini: Dispatch: Active Power in MW
+*  qgini: Dispatch: Reactive Power in Mvar
+*  cosgini: Dispatch: Power Factor
+*  usetp: Dispatch: Voltage in p.u.
+*  pf_recap: Dispatch: Power Factor:ind.:cap.
+*  q_min: Reactive Power Operational Limits: Min. in p.u.
+*  q_max: Reactive Power Operational Limits: Max. in p.u.
+*  outserv: Out of Service
+*  av_mode: Local Controller
+*  phtech: Technology
+*  ip_ctrl: Reference Machine
+********************************************************************************
+  504;Gen_0001;;363;1815;Others;1;0;137,3737;0;1;1,06;0;-0,4;0,75;0;constv;1;0
+  505;Gen_0002;;363;1816;Others;1;0;73,3825;0;1;1,05;0;-0,4;0,5;0;constv;1;0
+  506;Gen_0003;;363;1817;Others;1;0;0;23,4;0;1,01;0;0;0,4;0;constv;1;0
+  507;Gen_0006;;363;1818;Others;1;0;0;12,2;0;1,02;0;-0,06;0,24;0;constv;1;0
+  508;Gen_0008;;363;1819;Others;1;0;0;17,4;0;1,04;0;-0,06;0,24;0;constv;1;0
+  509;G 01;;364;1820;Others;1;0;826,1155;0;1;1,03;0;-0,3;0,7;0;constv;1;0
+  510;G 02;;364;1821;Nuclear;1;0;646;0;1;0,982;0;-0,3;0,7;0;constv;1;0
+  511;G 03;;364;1822;Nuclear;1;0;667,5676;0;1;0,9831;0;-0,3;0,7;0;constv;1;0
+  512;G 04;;364;1823;Coal;1;0;632;0;1;0,9972;0;-0,3;0,7;0;constv;1;0
+  513;G 05;;364;1824;Coal;2;0;508;0;1;1,0123;0;-0,3;0,7;0;constv;1;1
+  514;G 06;;364;1825;Nuclear;1;0;687;0;1;1,0493;0;-0,3;0,7;0;constv;1;0
+  515;G 07;;364;1826;Coal;1;0;610;0;1;1,05;0;-0,3;0,7;0;constv;1;0
+  516;G 08;;364;1827;Nuclear;1;0;525,2602;0;1;1,0278;0;-0,3;0,7;0;constv;1;0
+  517;G 09;;364;1828;Nuclear;1;0;808,6584;0;1;1,0265;0;-0,3;0,7;0;constv;1;0
+  518;G 10;;364;1829;Hydro;1;0;450,7254;0;1;1,0475;0;-0,5;0,6;0;constv;1;0
+
+
+$$ElmTerm;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);typ_id(p);systype(i);iUsage(i);uknom(r);unknom(r);iminus(i);outserv(i);GPSlat(r);GPSlon(r);vtarget(r)
+********************************************************************************
+*  Terminal
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  typ_id: Type in TypBar
+*  systype: System Type:AC:DC:AC/BI
+*  iUsage: Usage:Busbar:Junction Node:Internal Node
+*  uknom: Nominal Voltage: Line-Line in kV
+*  unknom: Nominal Voltage: Line-Ground in kV
+*  iminus: Nominal Voltage: DC-Polarity:positive (+):negative (-):neutral
+*  outserv: Out of Service
+*  GPSlat: Geographical Position: Latitude / Northing in deg
+*  GPSlon: Geographical Position: Longitude / Easting in deg
+*  vtarget: Voltage Control: Target Voltage in p.u.
+********************************************************************************
+  519;Bus_0001;;363;;0;0;220;127,0171;0;0;0;0;1
+  520;Bus_0002;;363;;0;0;220;127,0171;0;0;0;0;1
+  521;Bus_0003;;363;;0;0;220;127,0171;0;0;0;0;1
+  522;Bus_0004;;363;;0;0;220;127,0171;0;0;0;0;1
+  523;Bus_0005;;363;;0;0;220;127,0171;0;0;0;0;1
+  524;Bus_0006;;363;;0;0;132;76,21024;0;0;0;0;1
+  525;Bus_0007;;363;;0;0;132;76,21024;0;0;0;0;1
+  526;Bus_0008;;363;;0;0;132;76,21024;0;0;0;0;1
+  527;Bus_0009;;363;;0;0;132;76,21024;0;0;0;0;1
+  528;Bus_0010;;363;;0;0;132;76,21024;0;0;0;0;1
+  529;Bus_0011;;363;;0;0;132;76,21024;0;0;0;0;1
+  530;Bus_0012;;363;;0;0;132;76,21024;0;0;0;0;1
+  531;Bus_0013;;363;;0;0;132;76,21024;0;0;0;0;1
+  532;Bus_0014;;363;;0;0;132;76,21024;0;0;0;0;1
+  533;Bus_0015;;363;;0;0;22;12,70171;0;0;0;0;1
+  534;Bus_0016;;363;;0;0;13,8;7,967434;0;0;0;0;1
+  535;Bus_0017;;363;;0;0;13,8;7,967434;0;0;0;0;1
+  536;Bus_0018;;363;;0;0;13,8;7,967434;0;0;0;0;1
+  537;Bus_0019;;363;;0;0;13,8;7,967434;0;0;0;0;1
+  538;Bus 01;;364;;0;0;345;199,1858;0;0;0;0;1
+  539;Bus 02;;364;;0;0;345;199,1858;0;0;0;0;1
+  540;Bus 03;;364;;0;0;345;199,1858;0;0;0;0;1
+  541;Bus 04;;364;;0;0;345;199,1858;0;0;0;0;1
+  542;Bus 05;;364;;0;0;345;199,1858;0;0;0;0;1
+  543;Bus 06;;364;;0;0;345;199,1858;0;0;0;0;1
+  544;Bus 07;;364;;0;0;345;199,1858;0;0;0;0;1
+  545;Bus 08;;364;;0;0;345;199,1858;0;0;0;0;1
+  546;Bus 09;;364;;0;0;345;199,1858;0;0;0;0;1
+  547;Bus 10;;364;;0;0;345;199,1858;0;0;0;0;1
+  548;Bus 11;;364;;0;0;345;199,1858;0;0;0;0;1
+  549;Bus 12;;364;;0;0;138;79,67434;0;0;0;0;1
+  550;Bus 13;;364;;0;0;345;199,1858;0;0;0;0;1
+  551;Bus 14;;364;;0;0;345;199,1858;0;0;0;0;1
+  552;Bus 15;;364;;0;0;345;199,1858;0;0;0;0;1
+  553;Bus 16;;364;;0;0;345;199,1858;0;0;0;0;1
+  554;Bus 17;;364;;0;0;345;199,1858;0;0;0;0;1
+  555;Bus 18;;364;;0;0;345;199,1858;0;0;0;0;1
+  556;Bus 19;;364;;0;0;345;199,1858;0;0;0;0;1
+  557;Bus 20;;364;;0;0;230;132,7906;0;0;0;0;1
+  558;Bus 21;;364;;0;0;345;199,1858;0;0;0;0;1
+  559;Bus 22;;364;;0;0;345;199,1858;0;0;0;0;1
+  560;Bus 23;;364;;0;0;345;199,1858;0;0;0;0;1
+  561;Bus 24;;364;;0;0;345;199,1858;0;0;0;0;1
+  562;Bus 25;;364;;0;0;345;199,1858;0;0;0;0;1
+  563;Bus 26;;364;;0;0;345;199,1858;0;0;0;0;1
+  564;Bus 27;;364;;0;0;345;199,1858;0;0;0;0;1
+  565;Bus 28;;364;;0;0;345;199,1858;0;0;0;0;1
+  566;Bus 29;;364;;0;0;345;199,1858;0;0;0;0;1
+  567;Bus 30;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  568;Bus 31;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  569;Bus 32;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  570;Bus 33;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  571;Bus 34;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  572;Bus 35;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  573;Bus 36;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  574;Bus 37;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  575;Bus 38;;364;;0;0;16,5;9,526279;0;0;0;0;1
+  576;Bus 39;;364;;0;0;345;199,1858;0;0;0;0;1
+  577;Bus 40;;364;;0;0;22;12,70171;0;0;0;0;1
+  578;Bus 41;;364;;0;0;20;11,54701;0;0;0;0;1
+  579;Bus 42;;364;;0;0;20;11,54701;0;0;0;0;1
+  580;Bus 43;;364;;0;0;20;11,54701;0;0;0;0;1
+  581;Bus 44;;364;;0;0;20;11,54701;0;0;0;0;1
+  582;Bus 45;;364;;0;0;20;11,54701;0;0;0;0;1
+  583;Bus 46;;364;;0;0;20;11,54701;0;0;0;0;1
+  584;Bus 47;;364;;0;0;20;11,54701;0;0;0;0;1
+  585;Bus 48;;364;;0;0;26;15,01111;0;0;0;0;1
+  586;Bus 49;;364;;0;0;26;15,01111;0;0;0;0;1
+  587;AC Terminal 1;;174;;0;1;300;173,2051;0;0;0;0;1
+  588;AC Terminal 2;;174;;0;1;300;173,2051;0;0;0;0;1
+  589;Chopper Node +;;174;;1;2;320;320;1;0;0;0;1
+  590;Chopper Node -;;174;;1;2;320;320;1;0;0;0;1
+  591;T_DC_neg1;;174;;1;0;320;320;1;0;0;0;1
+  592;T_DC_neg2;;174;;1;0;320;320;1;0;0;0;1
+  593;T_DC_pos1;;174;;1;0;320;320;0;0;0;0;1
+  594;T_DC_pos2;;174;;1;0;320;320;0;0;0;0;1
+
+
+$$ElmTr2;ID(a:40);loc_name(a:80);fold_id(p);for_name(a:100);typ_id(p);ntnum(i);outserv(i);nntap(i);i_auto(i);ntrcn(i);usetp(r);usp_low(r);usp_up(r);t2ldc(i);mTaps:SIZEROW(i);mTaps:SIZECOL(i);mTaps:0:0(r);mTaps:0:1(r);mTaps:0:2(r);mTaps:0:3(r);mTaps:0:4(r)
+********************************************************************************
+*  2-Winding Transformer
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  for_name: Foreign Key
+*  typ_id: Type in TypTr2
+*  ntnum: Number of: parallel Transformers
+*  outserv: Out of Service
+*  nntap: Tap Changer 1: Tap Position
+*  i_auto: Auto Transformer
+*  ntrcn: Automatic Tap Changing
+*  usetp: Voltage Setpoint in p.u.
+*  usp_low: Lower Voltage Bound in p.u.
+*  usp_up: Upper Voltage Bound in p.u.
+*  t2ldc: Controlled Node is at:HV:LV:EXT
+*  mTaps:SIZEROW: Number of rows for attribute 'mTaps'
+*  mTaps:SIZECOL: Number of columns for attribute 'mTaps'
+*  mTaps: Tap Changer 1, Measurement Table: Measurement Report
+********************************************************************************
+  595;2-Winding Transformer(1);363;;1831;1;0;0;0;0;1;0,99;1,01;0;0;0;;;;;
+  596;2-Winding Transformer(2);363;;1832;1;0;0;0;0;1;0,99;1,01;0;0;0;;;;;
+  597;2-Winding Transformer(3);363;;1833;1;0;0;0;0;1;0,99;1,01;0;0;0;;;;;
+  598;2-Winding Transformer(4);363;;1834;1;0;0;0;0;1;0,99;1,01;0;0;0;;;;;
+  599;2-Winding Transformer;363;;1830;1;0;0;0;0;1;0,99;1,01;0;0;0;;;;;
+  600;Trf_0004_0007;363;;1835;1;0;-1;0;0;1;0,99;1,01;0;0;0;;;;;
+  601;Trf_0004_0009;363;;1836;1;0;-1;0;0;1;0,99;1,01;0;0;0;;;;;
+  602;Trf_0005_0006;363;;1837;1;0;-1;0;0;1;0,99;1,01;0;0;0;;;;;
+  603;Trf 02 - 30;364;;1848;1;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  604;Trf 06 - 31;364;;1849;1;0;2;0;0;1;0,99;1,01;0;1;0;;;;;
+  605;Trf 10 - 32;364;;1850;1;0;2;0;0;1;0,99;1,01;0;1;0;;;;;
+  606;Trf 11 - 12;364;;1851;1;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  607;Trf 13 - 12;364;;1852;1;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  608;Trf 19 - 20;364;;1853;1;0;2;0;0;1;0,99;1,01;0;1;0;;;;;
+  609;Trf 19 - 33;364;;1854;1;0;2;0;0;1;0,99;1,01;0;1;0;;;;;
+  610;Trf 20 - 34;364;;1855;2;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  611;Trf 22 - 35;364;;1856;1;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  612;Trf 23 - 36;364;;1857;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  613;Trf 25 - 37;364;;1858;1;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  614;Trf 29 - 38;364;;1859;1;0;1;0;0;1;0,99;1,01;0;1;0;;;;;
+  615;Trf 30-40;364;;1838;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  616;Trf 31-41;364;;1839;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  617;Trf 32-42;364;;1840;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  618;Trf 33-43;364;;1841;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  619;Trf 34-44;364;;1842;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  620;Trf 35-45;364;;1843;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  621;Trf 36-46;364;;1844;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  622;Trf 37-47;364;;1845;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  623;Trf 38-48;364;;1846;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  624;Trf 39-49;364;;1847;1;0;0;0;0;1;0,99;1,01;0;1;0;;;;;
+  625;HVDC Transformer 1;174;;1861;1;0;0;0;0;1;0,99;1,01;0;0;0;;;;;
+  626;HVDC Transformer 2;174;;1860;1;0;0;0;0;1;0,99;1,01;1;0;0;;;;;
+
+
+$$ElmVsc;ID(a:40);loc_name(a:80);fold_id(p);psetp(r);qsetp(r);usetp(r);Pnold(r);Unom(r);P_max(r);i_acdc(i);usetpdc(r);Unomdc(r);swtLossFactor(r);resLossFactor(r)
+********************************************************************************
+*  PWM Converter/2 DC-Connections
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  psetp: AC-Control: Active power in MW
+*  qsetp: AC-Control: Reactive power in Mvar
+*  usetp: AC-Control: AC voltage in p.u.
+*  Pnold: Losses: No-load losses in kW
+*  Unom: Ratings: Rated AC-voltage in kV
+*  P_max: Max. in MW
+*  i_acdc: Control mode:Vac-phi:Vdc-phi:PWM-phi:Vdc-Q:P-Vac:P-Q:Vdc-Vac:P-cos(phi):Vdc-cos(phi)
+*  usetpdc: DC-control: DC voltage in p.u.
+*  Unomdc: Ratings: Rated DC-voltage (DC) in kV
+*  swtLossFactor: Losses: Switching loss factor in kW/A
+*  resLossFactor: Losses: Resistive loss factor in Ohm
+********************************************************************************
+  627;HVDC Converter 1;174;0;0;1,01;1500;300;500;6;1,01;640;0;0
+  628;HVDC Converter 2;174;50;0;1,01;1500;300;500;4;1;640;0;0
+
+
+$$IntFolder;ID(a:40);loc_name(a:80);fold_id(p)
+********************************************************************************
+*  Folder
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+********************************************************************************
+  629;Characteristics;1812
+  630;Characteristics;1813
+  631;Used Macros;12
+  632;Used Macros;19
+  633;Used Macros;29
+  634;Used Macros;36
+  635;Used Macros;45
+  636;Used Macros;53
+  637;Used Macros;55
+  638;Used Macros;60
+  639;Used Macros;80
+  640;Used Macros;90
+  641;Used Macros;101
+  642;Used Macros;113
+  643;Used Macros;124
+  644;Used Macros;136
+  645;Used Macros;149
+  646;Used Macros;153
+  647;Used Macros;157
+  648;Used Macros;160
+  649;Layers;1130
+  650;Settings;1130
+  651;Layers;1131
+  652;Settings;1131
+  653;Layers;1132
+  654;Settings;1132
+  655;v001;659
+  656;v001;660
+  657;Composite Model Frames;661
+  658;HVDC MMC Control;662
+  659;Gains;663
+  660;Lead-lag Blocks;663
+  661;PSS/E compatible;664
+  662;User Defined Models;665
+  663;Macros;664
+  664;Dynamic Models;666
+  665;Library;1133
+  666;DIgSILENT Library;667
+  667;External;
+  668;..;667
+  669;Library;1134
+  670;Relay;671
+  671;Equipment Type Library;672
+  672;Library_39DCFM;673
+  673;IEEE 39 CFA;667
+
+
+$$IntGrf;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);iCol(i);iVis(i);iLevel(i);rCenterX(r);rCenterY(r);sSymNam(a:80);pDataObj(p);iRot(i);rSizeX(r);rSizeY(r)
+********************************************************************************
+*  Graphical Net Object
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  iCol: Colour
+*  iVis: Visible
+*  iLevel: Layer
+*  rCenterX: X-Position
+*  rCenterY: Y-Position
+*  sSymNam: Symbol Name
+*  pDataObj: Net Data Object
+*  iRot: Rotation
+*  rSizeX: X-Size
+*  rSizeY: Y-Size
+********************************************************************************
+  674;ColLeg;;1130;1;1;42;18,86027;93,57041;__COLGRAF__;;0;0,6;0,6
+  675;Graphical Net Object10;;1130;1;1;1;363,125;181,5625;ShortTermStrip;526;270;1,5;1
+  676;Graphical Net Object11;;1130;1;1;1;330,3125;196,875;ShortTermStrip;527;0;5,500004;1
+  677;Graphical Net Object12;;1130;1;1;1;284,375;214,375;ShortTermStrip;528;0;1,999999;1
+  678;Graphical Net Object13;;1130;1;1;1;249,375;223,125;ShortTermStrip;529;0;1,999999;1
+  679;Graphical Net Object14;;1130;1;1;1;148,75;240,625;ShortTermStrip;530;0;1,999999;1
+  680;Graphical Net Object15;;1130;1;1;1;205,625;266,875;ShortTermStrip;531;0;2,999999;1
+  681;Graphical Net Object16;;1130;1;1;1;275,625;245;ShortTermStrip;532;0;1,999999;1
+  682;Graphical Net Object17;;1130;1;1;1;59,06251;142,1875;d_lin;276;49;1;1
+  683;Graphical Net Object18;;1130;1;1;1;218,75;85,3125;d_lin;279;84;1;1
+  684;Graphical Net Object19;;1130;1;1;1;157,5;118,125;d_lin;281;95;1;1
+  685;Graphical Net Object20;;1130;1;1;1;218,75;118,125;d_lin;280;95;1;1
+  686;Graphical Net Object21;;1130;1;1;1;328,125;102,8125;d_lin;282;180;1;1
+  687;Graphical Net Object22;;1130;1;1;1;262,5;126,875;d_lin;283;95;1;1
+  688;Graphical Net Object23;;1130;1;1;1;120,3125;153,125;d_lin;278;77;1;1
+  689;Graphical Net Object24;;1130;1;1;1;168,4375;214,375;d_lin;285;241;1;1
+  690;Graphical Net Object25;;1130;1;1;1;179,375;242,8125;d_lin;292;131;1;1
+  691;Graphical Net Object26;;1130;1;1;1;205,6252;227,5004;d_lin;286;0;1;1
+  692;Graphical Net Object27;;1130;1;1;1;242,8125;247,1875;d_lin;293;69;1;1
+  693;Graphical Net Object28;;1130;1;1;1;304,0625;227,5;d_lin;290;70;1;1
+  694;Graphical Net Object29;;1130;1;1;1;299,6875;203,4375;d_lin;289;259;1;1
+  695;Graphical Net Object3(1);;1130;1;1;1;35;223,125;ShortTermStrip;533;0;2;1
+  696;Graphical Net Object3(2);;1130;1;1;1;105;65,62502;ShortTermStrip;534;0;2,000001;1
+  697;Graphical Net Object3(3);;1130;1;1;1;319,375;35,00002;ShortTermStrip;535;0;2,000002;1
+  698;Graphical Net Object3(4);;1130;1;1;1;398,125;183,75;ShortTermStrip;536;90;1,000001;1
+  699;Graphical Net Object3(5);;1130;1;1;1;157,5;172,8125;ShortTermStrip;537;270;1,5;1
+  700;Graphical Net Object3;;1130;1;1;1;35;188,125;ShortTermStrip;519;0;3;1
+  701;Graphical Net Object30;;1130;1;1;1;266,875;207,8125;d_lin;291;81;1;1
+  702;Graphical Net Object31;;1130;1;1;1;229,6875;207,8125;d_lin;284;293;1;1
+  703;Graphical Net Object32;;1130;1;1;1;310,625;170,625;d_tr2;601;180;1;1
+  704;Graphical Net Object33;;1130;1;1;1;336,875;155,3125;d_tr2;600;0;1;1
+  705;Graphical Net Object36;;1130;1;1;1;205,625;170,625;d_tr2;602;0;1;1
+  706;Graphical Net Object37;;1130;1;1;1;371,875;126,875;d_load;333;90;1;1
+  707;Graphical Net Object38;;1130;1;1;1;170,625;166,25;d_load;334;270;1;1
+  708;Graphical Net Object39;;1130;1;1;1;245;201,25;d_load;335;90;1;1
+  709;Graphical Net Object4;;1130;1;1;1;105;100,625;ShortTermStrip;520;0;3,999999;1
+  710;Graphical Net Object40;;1130;1;1;1;284,375;227,5;d_load;337;180;1;1
+  711;Graphical Net Object41;;1130;1;1;1;249,375;236,25;d_load;338;180;1;1
+  712;Graphical Net Object42;;1130;1;1;1;148,75;258,125;d_load;339;180;1;1
+  713;Graphical Net Object43(1);;1130;1;1;1;214,375;284,375;d_load;342;180;1;1
+  714;Graphical Net Object43;;1130;1;1;1;205,625;284,375;d_load;340;180;1;1
+  715;Graphical Net Object44(1);;1130;1;1;1;284,375;262,5;d_load;330;180;1;1
+  716;Graphical Net Object44;;1130;1;1;1;275,625;262,5;d_load;341;180;1;1
+  717;Graphical Net Object45;;1130;1;1;1;56,875;87,49999;d_load;331;270;1;1
+  718;Graphical Net Object46;;1130;1;1;1;354,375;210;d_load;336;90;1;1
+  719;Graphical Net Object47;;1130;1;1;1;411,25;183,75;d_symg;508;90;1;1
+  720;Graphical Net Object48;;1130;1;1;1;140;175;d_symg;507;270;1;1
+  721;Graphical Net Object49;;1130;1;1;1;35;240,625;d_symg;504;180;1;1
+  722;Graphical Net Object5;;1130;1;1;1;323,75;65,625;ShortTermStrip;521;0;2;1
+  723;Graphical Net Object50;;1130;1;1;1;105;48,125;d_symg;505;0;1;1
+  724;Graphical Net Object51;;1130;1;1;1;306,25;21,87493;d_symg;506;270;1;1
+  725;Graphical Net Object52;;1130;1;1;1;358,75;52,5;d_load;332;90;1;1
+  726;Graphical Net Object53;;1130;1;1;1;341,25;210;d_shunt;503;180;1;1
+  727;Graphical Net Object54;;1130;1;1;1;332,5;183,75;d_lin;288;180;1;1
+  728;Graphical Net Object55(1);;1130;1;1;1;352,1875;183,75;d_lin;287;90;1;1
+  729;Graphical Net Object55;;1130;1;1;1;67,8125;142,1875;d_lin;277;49;1;1
+  730;Graphical Net Object6;;1130;1;1;1;323,75;140;ShortTermStrip;522;0;4,000002;1
+  731;Graphical Net Object61;;1130;1;1;1;35;205,625;d_tr2;599;180;1;1
+  732;Graphical Net Object62;;1130;1;1;1;105;83,12499;d_tr2;595;0;1;1
+  733;Graphical Net Object63;;1130;1;1;1;319,375;48,125;d_tr2;596;0;1;1
+  734;Graphical Net Object64;;1130;1;1;1;380,625;183,75;d_tr2;597;90;1;1
+  735;Graphical Net Object65;;1130;1;1;1;175;175;d_tr2;598;90;1;1
+  736;Graphical Net Object7;;1130;1;1;1;205,625;153,125;ShortTermStrip;523;0;3,000002;1
+  737;Graphical Net Object8;;1130;1;1;1;207,8125;188,125;ShortTermStrip;524;0;4,500001;1
+  738;Graphical Net Object9;;1130;1;1;1;334,6875;170,625;ShortTermStrip;525;0;1,5;1
+  739;ColLeg;;1131;1;1;42;22,95443;367,9142;__COLGRAF__;;0;0,6;0,6
+  740;Graphical Net Object10;;1131;1;1;1;109,375;74,375;TermStrip;545;0;1,666667;1
+  741;Graphical Net Object100;;1131;1;1;1;148,75;185,9375;d_lin;300;0;1;1
+  742;Graphical Net Object101;;1131;-16777216;1;1;148,75;126,875;d_lin;304;0;1;1
+  743;Graphical Net Object102;;1131;1;1;1;223,125;118,125;d_lin;305;0;1;1
+  744;Graphical Net Object103;;1131;1;1;1;253,75;78,74999;d_lin;309;180;1;1
+  745;Graphical Net Object104;;1131;1;1;1;301,875;83,125;d_lin;310;180;1;1
+  746;Graphical Net Object105;;1131;1;1;1;301,875;146,5625;d_lin;311;180;1;1
+  747;Graphical Net Object106;;1131;1;1;1;385;190,3125;d_lin;315;0;1;1
+  748;Graphical Net Object107;;1131;1;1;1;424,375;229,6875;d_lin;316;0;1;1
+  749;Graphical Net Object108;;1131;1;1;1;415,625;277,8125;d_lin;317;180;1;1
+  750;Graphical Net Object109;;1131;1;1;1;347,8125;371,875;d_lin;325;90;1;1
+  751;Graphical Net Object11;;1131;1;1;1;135,625;113,75;TermStrip;544;0;1,666667;1
+  752;Graphical Net Object110;;1131;1;1;1;398,125;385;d_lin;326;90;1;1
+  753;Graphical Net Object111;;1131;1;1;1;446,25;371,875;d_lin;327;90;1;1
+  754;Graphical Net Object112;;1131;1;1;1;542,5;207,8125;d_lin;322;180;1;1
+  755;Graphical Net Object113;;1131;1;1;1;511,875;170,625;d_lin;321;0;1;1
+  756;Graphical Net Object114;;1131;1;1;1;490;148,75;d_load;354;180;1;1
+  757;Graphical Net Object115;;1131;1;1;1;468,125;223,125;d_lin;320;90;1;1
+  758;Graphical Net Object116;;1131;1;1;1;179,375;277,8125;d_lin;299;180;1;1
+  759;Graphical Net Object119;;1131;1;1;1;96,25;367,5;d_tr2;615;0;1;1
+  760;Graphical Net Object12;;1131;1;1;1;122,5;170,625;TermStrip;542;0;2,666667;1
+  761;Graphical Net Object121;;1131;1;1;1;43,75;214,375;d_tr2;624;0;1;1
+  762;Graphical Net Object123;;1131;1;1;1;170,625;398,125;d_tr2;622;270;1;1
+  763;Graphical Net Object125;;1131;1;1;1;529,375;315;d_tr2;623;90;1;1
+  764;Graphical Net Object127;;1131;1;1;1;503,125;253,75;d_tr2;620;90;1;1
+  765;Graphical Net Object129;;1131;1;1;1;490;83,125;d_tr2;621;0;1;1
+  766;Graphical Net Object13;;1131;1;1;1;146,5625;201,25;TermStrip;541;0;2,166667;1
+  767;Graphical Net Object131;;1131;1;1;1;411,25;48,125;d_tr2;618;0;1;1
+  768;Graphical Net Object133;;1131;1;1;1;363,125;43,75;d_tr2;619;0;1;1
+  769;Graphical Net Object135;;1131;1;1;1;280;13,125;d_tr2;617;0;1;1
+  770;Graphical Net Object137;;1131;1;1;1;188,125;43,75;d_tr2;616;0;1;1
+  771;Graphical Net Object14;;1131;1;1;1;181,5625;140;TermStrip;543;0;3,500001;1
+  772;Graphical Net Object15(1);;1131;1;1;1;185,9375;26,24999;TermStrip;578;0;0,833333;1
+  773;Graphical Net Object15;;1131;1;1;1;196,875;65,62499;TermStrip;568;0;1,666667;1
+  774;Graphical Net Object16;;1131;1;1;1;238,4375;96,24999;TermStrip;548;0;1,833332;1
+  775;Graphical Net Object17;;1131;1;1;1;262,5;144,375;TermStrip;549;0;1,666667;1
+  776;Graphical Net Object18;;1131;1;1;1;275,625;61,24999;TermStrip;547;0;2,666666;1
+  777;Graphical Net Object19(1);;1131;1;1;1;299,6875;17,5;TermStrip;579;0;0,500000;1
+  778;Graphical Net Object19;;1131;1;1;1;273,4375;26,25;TermStrip;569;0;0,833333;1
+  779;Graphical Net Object20;;1131;1;1;1;290,9375;105;TermStrip;550;0;1,5;1
+  780;Graphical Net Object21;;1131;1;1;1;286,5625;188,125;TermStrip;551;0;1,833334;1
+  781;Graphical Net Object22;;1131;1;1;1;312,8125;218,75;TermStrip;552;0;1,833333;1
+  782;Graphical Net Object23;;1131;1;1;1;352,1875;96,24999;TermStrip;557;0;1,499999;1
+  783;Graphical Net Object24;;1131;1;1;1;385;131,25;TermStrip;556;0;2,666666;1
+  784;Graphical Net Object25(1);;1131;1;1;1;358,75;30,625;TermStrip;581;0;0,666666;1
+  785;Graphical Net Object25;;1131;1;1;1;356,5625;61,25;TermStrip;571;0;0,833333;1
+  786;Graphical Net Object26(1);;1131;1;1;1;409,0625;30,625;TermStrip;580;0;0,833334;1
+  787;Graphical Net Object26;;1131;1;1;1;409,0625;61,25;TermStrip;570;0;0,833334;1
+  788;Graphical Net Object27(1);;1131;1;1;1;487,8125;65,62499;TermStrip;583;0;0,833332;1
+  789;Graphical Net Object27;;1131;1;1;1;487,8125;96,24999;TermStrip;573;0;0,833332;1
+  790;Graphical Net Object28;;1131;1;1;1;511,875;131,25;TermStrip;560;0;3,333333;1
+  791;Graphical Net Object29;;1131;1;1;1;503,125;210;TermStrip;559;0;1,333333;1
+  792;Graphical Net Object3(1);;1131;1;1;1;146,5625;402,5;TermStrip;584;0;0,833333;1
+  793;Graphical Net Object3;;1131;1;1;1;181,5625;389,375;TermStrip;574;0;0,833333;1
+  794;Graphical Net Object30(1);;1131;1;1;1;492,1875;262,5;TermStrip;582;0;0,833332;1
+  795;Graphical Net Object30;;1131;1;1;1;514,0625;245;TermStrip;572;0;0,833332;1
+  796;Graphical Net Object31;;1131;1;1;1;437,5;306,25;TermStrip;561;0;2,666666;1
+  797;Graphical Net Object32;;1131;1;1;1;424,375;210;TermStrip;558;0;1,666664;1
+  798;Graphical Net Object33;;1131;1;1;1;363,125;249,375;TermStrip;553;0;5,666664;1
+  799;Graphical Net Object34;;1131;1;1;1;288,75;297,5;TermStrip;554;0;1,666666;1
+  800;Graphical Net Object35;;1131;1;1;1;317,1875;328,125;TermStrip;564;0;2,166667;1
+  801;Graphical Net Object36;;1131;1;1;1;194,6875;297,5;TermStrip;555;0;2,166667;1
+  802;Graphical Net Object37;;1131;1;1;1;164,0625;258,125;TermStrip;540;0;2,166667;1
+  803;Graphical Net Object38;;1131;1;1;1;290,9376;358,75;TermStrip;563;0;2,499999;1
+  804;Graphical Net Object39;;1131;1;1;1;395,9375;358,7499;TermStrip;565;0;1,833333;1
+  805;Graphical Net Object4;;1131;1;1;1;181,5625;358,75;TermStrip;562;0;3,5;1
+  806;Graphical Net Object40;;1131;1;1;1;503,125;358,75;TermStrip;566;0;2,666667;1
+  807;Graphical Net Object41(1);;1131;1;1;1;535,9375;306,25;TermStrip;585;0;0,833332;1
+  808;Graphical Net Object41;;1131;1;1;1;514,0625;323,75;TermStrip;575;0;0,833332;1
+  809;Graphical Net Object42;;1131;1;1;1;91,87499;393,75;d_symg;518;180;1;1
+  810;Graphical Net Object43;;1131;1;1;1;144,375;411,25;d_symg;516;180;1;1
+  811;Graphical Net Object44;;1131;1;1;1;39,37499;249,375;d_symg;509;180;1;1
+  812;Graphical Net Object45;;1131;1;1;1;188,125;8,749999;d_symg;510;0;1;1
+  813;Graphical Net Object46;;1131;1;1;1;301,875;8,750002;d_symg;511;0;1;1
+  814;Graphical Net Object47;;1131;1;1;1;411,25;17,5;d_symg;512;0;1;1
+  815;Graphical Net Object48;;1131;1;1;1;363,125;13,125;d_symg;513;0;1;1
+  816;Graphical Net Object49;;1131;1;1;1;490;275,625;d_symg;514;180;1;1
+  817;Graphical Net Object5(1);;1131;1;1;1;91,87499;380,625;TermStrip;577;0;1;1
+  818;Graphical Net Object5;;1131;1;1;1;91,87499;354,375;TermStrip;567;0;1;1
+  819;Graphical Net Object50;;1131;1;1;1;542,5;293,125;d_symg;517;0;1;1
+  820;Graphical Net Object51;;1131;1;1;1;490;48,125;d_symg;515;0;1;1
+  821;Graphical Net Object52;;1131;1;1;1;516,25;376,25;d_load;360;180;1;1
+  822;Graphical Net Object53;;1131;1;1;1;393,75;341,25;d_load;359;0;1;1
+  823;Graphical Net Object54;;1131;1;1;1;336,875;310,625;d_load;358;0;1;1
+  824;Graphical Net Object55;;1131;1;1;1;275,625;376,25;d_load;357;180;1;1
+  825;Graphical Net Object56;;1131;1;1;1;183,75;341,25;d_load;356;0;1;1
+  826;Graphical Net Object57;;1131;1;1;1;210;280;d_load;351;0;1;1
+  827;Graphical Net Object58(1);;1131;-16777216;1;1;96,25;262,5;d_load;343;0;1;1
+  828;Graphical Net Object58;;1131;1;1;1;179,375;240,625;d_load;344;0;1;1
+  829;Graphical Net Object59;;1131;1;1;1;131,25;218,75;d_load;345;180;1;1
+  830;Graphical Net Object6;;1131;1;1;1;118,125;319,375;TermStrip;539;0;3;1
+  831;Graphical Net Object60;;1131;1;1;1;39,37499;175;d_load;362;0;1;1
+  832;Graphical Net Object61;;1131;1;1;1;148,75;96,24999;d_load;346;0;1;1
+  833;Graphical Net Object62;;1131;1;1;1;126,875;56,875;d_load;347;0;1;1
+  834;Graphical Net Object63;;1131;1;1;1;210;48,125;d_load;361;0;1;1
+  835;Graphical Net Object64;;1131;1;1;1;266,875;161,875;d_load;348;180;1;1
+  836;Graphical Net Object65;;1131;1;1;1;341,25;113,75;d_load;352;180;1;1
+  837;Graphical Net Object66;;1131;1;1;1;424,375;192,5;d_load;353;0;1;1
+  838;Graphical Net Object67;;1131;1;1;1;363,125;231,875;d_load;350;0;1;1
+  839;Graphical Net Object68;;1131;1;1;1;441,875;288,75;d_load;355;0;1;1
+  840;Graphical Net Object69;;1131;1;1;1;328,125;201,25;d_load;349;0;1;1
+  841;Graphical Net Object7;;1131;1;1;1;76,56249;280;TermStrip;538;0;2,166667;1
+  842;Graphical Net Object70;;1131;1;1;1;100,625;59,0625;d_lin;307;0;1;1
+  843;Graphical Net Object71;;1131;1;1;1;126,875;94,06249;d_lin;306;0;1;1
+  844;Graphical Net Object72;;1131;1;1;1;188,125;102,8125;d_tr2;604;0;1;1
+  845;Graphical Net Object73;;1131;1;1;1;253,75;120,3125;d_tr2;606;0;1;1
+  846;Graphical Net Object74;;1131;1;1;1;280;124,6875;d_tr2;607;0;1;1
+  847;Graphical Net Object75;;1131;1;1;1;280;43,75;d_tr2;605;0;1;1
+  848;Graphical Net Object76;;1131;1;1;1;363,125;113,75;d_tr2;608;0;1;1
+  849;Graphical Net Object77;;1131;1;1;1;363,125;78,75;d_tr2;610;0;1;1
+  850;Graphical Net Object78;;1131;1;1;1;411,25;98,4375;d_tr2;609;0;1;1
+  851;Graphical Net Object79;;1131;1;1;1;490;113,75;d_tr2;612;0;1;1
+  852;Graphical Net Object8(1);;1131;1;1;1;41,5625;231,875;TermStrip;586;0;1,166667;1
+  853;Graphical Net Object8;;1131;1;1;1;48,125;192,5;TermStrip;576;0;2;1
+  854;Graphical Net Object80;;1131;1;1;1;516,25;227,5;d_tr2;611;0;1;1
+  855;Graphical Net Object81;;1131;-16777216;1;1;516,25;341,25;d_tr2;614;0;1;1
+  856;Graphical Net Object82;;1131;1;1;1;183,75;374,0625;d_tr2;613;0;1;1
+  857;Graphical Net Object83;;1131;1;1;1;96,25;336,875;d_tr2;603;0;1;1
+  858;Graphical Net Object84;;1131;1;1;1;148,75;339,0625;d_lin;297;180;1;1
+  859;Graphical Net Object85;;1131;1;1;1;96,25;299,6875;d_lin;294;180;1;1
+  860;Graphical Net Object86;;1131;1;1;1;247,1875;341,25;d_lin;323;90;1;1
+  861;Graphical Net Object87;;1131;1;1;1;242,8125;315;d_lin;318;270;1;1
+  862;Graphical Net Object88;;1131;1;1;1;301,875;343,4375;d_lin;324;0;1;1
+  863;Graphical Net Object89;;1131;1;1;1;301,875;312,8125;d_lin;319;180;1;1
+  864;Graphical Net Object9;;1131;1;1;1;78,75001;43,75;TermStrip;546;0;2;1
+  865;Graphical Net Object90;;1131;1;1;1;301,875;273,4375;d_lin;314;180;1;1
+  866;Graphical Net Object91;;1131;1;1;1;301,875;234,0625;d_lin;313;180;1;1
+  867;Graphical Net Object92;;1131;1;1;1;301,875;203,4375;d_lin;312;180;1;1
+  868;Graphical Net Object93;;1131;1;1;1;218,75;214,375;d_lin;301;90;1;1
+  869;Graphical Net Object94;;1131;1;1;1;148,75;229,6875;d_lin;298;0;1;1
+  870;Graphical Net Object95;;1131;1;1;1;148,75;288,75;d_lin;296;0;1;1
+  871;Graphical Net Object96;;1131;1;1;1;65,625;236,25;d_lin;295;0;1;1
+  872;Graphical Net Object97;;1131;1;1;1;65,625;118,125;d_lin;308;180;1;1
+  873;Graphical Net Object98;;1131;1;1;1;100,625;122,5;d_lin;303;0;1;1
+  874;Graphical Net Object99;;1131;1;1;1;148,75;155,3125;d_lin;302;0;1;1
+  875;ColLeg;;1132;1;1;42;13,5399;73,828;__COLGRAF__;;0;0,6;0,6
+  876;Grafisches Netzelement20;;1132;1;1;1;122,5;102,8125;d_dcubi;;0;1;1
+  877;Grafisches Netzelement21(1);;1132;1;1;1;122,5;91,87501;PointTerm;590;0;1;1
+  878;Grafisches Netzelement21;;1132;1;1;1;122,5;113,75;PointTerm;589;0;1;1
+  879;Grafisches Netzelement22(1);;1132;1;1;1;122,5;80,93752;d_valve_dc;;0;1;1
+  880;Grafisches Netzelement22;;1132;1;1;1;122,5;126,875;d_valve_dc;;0;1;1
+  881;Graphical Net Object1(6);;1132;1;1;1;78,74998;102,8125;TermStrip;587;90;0,833333;1
+  882;Graphical Net Object12(6);;1132;1;1;1;159,6875;148,75;d_lin;329;90;1;1
+  883;Graphical Net Object12(7);;1132;1;1;1;159,6875;56,875;d_lin;328;90;1;1
+  884;Graphical Net Object15;;1132;1;1;1;262,5;131,25;ShortTermStrip;531;0;2,999999;1
+  885;Graphical Net Object16;;1132;-16777216;1;1;59,0625;105;d_tr2;625;90;1;1
+  886;Graphical Net Object24(1);;1132;1;1;1;100,625;105;3_vsc;627;0;1;1
+  887;Graphical Net Object24;;1132;1;1;1;210;105;3_vsc;628;0;-1;1
+  888;Graphical Net Object29(1);;1132;1;1;1;227,5;102,8125;TermStrip;588;90;0,833333;1
+  889;Graphical Net Object30;;1132;1;1;1;245;105;d_tr2;626;90;1;1
+  890;Graphical Net Object33;;1132;-16777216;1;1;26,25;140;TermStrip;553;0;1,33333;1
+  891;Graphical Net Object8(2);;1132;1;1;1;111,5625;140;TermStrip;593;0;1,166667;1
+  892;Graphical Net Object8(4);;1132;1;1;1;111,5625;70;TermStrip;591;0;1,166667;1
+  893;Graphical Net Object9(1);;1132;1;1;1;205,625;140;TermStrip;594;0;0,666667;1
+  894;Graphical Net Object9(2);;1132;1;1;1;205,625;70;TermStrip;592;0;0,666667;1
+
+
+$$IntGrfcon;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);rX:SIZEROW(i);rX:0(r);rX:1(r);rX:2(r);rX:3(r);rX:4(r);rX:5(r);rY:SIZEROW(i);rY:0(r);rY:1(r);rY:2(r);rY:3(r);rY:4(r);rY:5(r);iDatConNr(i)
+********************************************************************************
+*  Graphical Connection
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  rX:SIZEROW: Number of rows for attribute 'rX'
+*  rX: X
+*  rY:SIZEROW: Number of rows for attribute 'rY'
+*  rY: Y
+*  iDatConNr: Internal Connection Number
+********************************************************************************
+  895;GCO_1;;682;3;59,0625114440918;26,25;26,25;;;;3;142,1875;170,625;188,125;;;;0
+  896;GCO_2;;682;3;59,0625114440918;91,8750076293945;91,8750076293945;;;;3;142,1875;113,75;100,625;;;;1
+  897;GCO_1;;683;3;218,75;319,375;319,375;;;;3;85,3125;74,375;65,625;;;;1
+  898;GCO_2;;683;3;218,75;118,124900817871;118,124900817871;;;;3;85,3125;96,2500228881836;100,625;;;;0
+  899;GCO_1;;684;3;157,5;205,625;205,625;;;;3;118,125;122,5;153,125;;;;1
+  900;GCO_2;;684;3;157,5;109,375;109,375;;;;3;118,125;113,75;100,625;;;;0
+  901;GCO_1;;685;3;218,75;319,375;319,375;;;;3;118,125;126,875;140;;;;1
+  902;GCO_2;;685;3;218,75;118,125;118,125;;;;3;118,125;109,375;100,625;;;;0
+  903;GCO_1;;686;2;328,125;328,125;;;;;2;102,8125;65,6249923706055;;;;;0
+  904;GCO_2;;686;2;328,125;328,125;;;;;2;102,8125;140;;;;;1
+  905;GCO_1;;687;3;262,5;310,625;310,625;;;;3;126,875;131,25;140;;;;1
+  906;GCO_2;;687;3;262,5;214,375;214,375;;;;3;126,875;122,5;153,125;;;;0
+  907;GCO_1;;688;3;120,3125;43,75;43,75;;;;3;153,125;170,625;188,125;;;;0
+  908;GCO_2;;688;3;120,3125;196,875;196,875;;;;3;153,125;135,625;153,125;;;;1
+  909;GCO_1;;689;3;168,4375;192,5;192,5;;;;3;214,375;201,25;188,125;;;;0
+  910;GCO_2;;689;3;168,4375;144,375;144,375;;;;3;214,375;227,5;240,625;;;;1
+  911;GCO_1;;690;3;179,375;196,875;196,875;;;;3;242,8125;258,125;266,875;;;;1
+  912;GCO_2;;690;4;179,375;161,875;153,125;153,125;;;4;242,8125;227,5;227,5;240,625;;;0
+  913;GCO_1;;691;2;205,625198364258;205,625;;;;;2;227,500396728516;266,875;;;;;0
+  914;GCO_2;;691;2;205,625198364258;205,625;;;;;2;227,500396728516;188,125;;;;;1
+  915;GCO_1;;692;3;242,8125;271,25;271,25;;;;3;247,1875;236,25;245;;;;1
+  916;GCO_2;;692;3;242,8125;214,375;214,375;;;;3;247,1875;258,125;266,875;;;;0
+  917;GCO_1;;693;3;304,0625;328,125;328,125;;;;3;227,5;218,75;196,875;;;;1
+  918;GCO_2;;693;3;304,0625;280;280;;;;3;227,5;236,25;245;;;;0
+  919;GCO_1;;694;3;299,6875;310,625;310,625;;;;3;203,4375;201,25;196,875;;;;0
+  920;GCO_2;;694;3;299,6875;288,75;288,75;;;;3;203,4375;205,625;214,375;;;;1
+  921;GCO_1;;701;3;266,875;280;280;;;;3;207,8125;205,625;214,375;;;;0
+  922;GCO_2;;701;3;266,875;253,75;253,75;;;;3;207,8125;210;223,125;;;;1
+  923;GCO_1;;702;3;229,6875;214,375;214,375;;;;3;207,8125;201,25;188,125;;;;1
+  924;GCO_2;;702;3;229,6875;245;245;;;;3;207,8125;214,375;223,125;;;;0
+  925;GCO_1;;703;2;310,625;310,625;;;;;2;166,25;140;;;;;0
+  926;GCO_2;;703;2;310,625;310,625091552734;;;;;2;175;196,875;;;;;1
+  927;GCO_1;;704;2;336,875;336,875;;;;;2;150,9375;140;;;;;0
+  928;GCO_2;;704;2;336,875;336,875;;;;;2;159,6875;170,625;;;;;1
+  929;GCO_1;;705;2;205,625;205,625;;;;;2;166,25;153,125;;;;;0
+  930;GCO_2;;705;2;205,625;205,625;;;;;2;175;188,125;;;;;1
+  931;GCO_1;;706;3;367,5;336,875;336,875;;;;3;126,875;126,875;140;;;;0
+  932;GCO_1;;707;3;175;196,875;196,875;;;;3;166,25;166,25;153,125;;;;0
+  933;GCO_1;;708;3;240,625;223,125;223,125;;;;3;201,25;201,25;188,125;;;;0
+  934;GCO_1;;710;2;284,375;284,375;;;;;2;223,125;214,375;;;;;0
+  935;GCO_1;;711;2;249,375;249,375;;;;;2;231,875;223,125;;;;;0
+  936;GCO_1;;712;2;148,75;148,75;;;;;2;253,75;240,625;;;;;0
+  937;GCO_1;;713;2;214,375;214,375;;;;;2;280;266,875;;;;;0
+  938;GCO_1;;714;2;205,625;205,625;;;;;2;280;266,875;;;;;0
+  939;GCO_1;;715;2;284,375;284,375;;;;;2;258,125;245;;;;;0
+  940;GCO_1;;716;2;275,625;275,625;;;;;2;258,125;245;;;;;0
+  941;GCO_1;;717;3;61,25;91,8750076293945;91,8750076293945;;;;3;87,4999923706055;87,4999923706055;100,625;;;;0
+  942;GCO_1;;718;2;350;350;;;;;2;210;196,875;;;;;0
+  943;GCO_1;;719;3;406,875;402,5;398,125;;;;3;183,75;183,819198608398;183,796096801758;;;;0
+  944;GCO_1;;720;3;144,375;144,375;157,5;;;;3;175;175,03630065918;175;;;;0
+  945;GCO_1;;721;4;35;35,0466384887695;35,0310897827148;35,0310897827148;;;4;236,25;231,875;227,5;223,125;;;0
+  946;GCO_1;;723;2;105;105;;;;;2;52,5;65,6250228881836;;;;;0
+  947;GCO_1;;724;3;310,625;319,375;319,375;;;;3;21,8749294281006;21,875;35,0000190734863;;;;0
+  948;GCO_1;;725;3;354,375;328,125;328,125;;;;3;52,5;52,5;65,625;;;;0
+  949;GCO_1;;726;2;341,25;341,25;;;;;2;205,625;196,875;;;;;0
+  950;GCO_1;;727;2;332,5;332,5;;;;;2;183,75;170,625;;;;;0
+  951;GCO_2;;727;2;332,5;332,5;;;;;2;183,75;196,875;;;;;1
+  952;GCO_1;;728;3;352,1875;341,25;341,25;;;;3;183,75;183,75;170,625;;;;0
+  953;GCO_2;;728;2;352,1875;363,125;;;;;2;183,75;183,75;;;;;1
+  954;GCO_1;;729;3;67,8125;35;35;;;;3;142,1875;170,625;188,125;;;;0
+  955;GCO_2;;729;3;67,8125;100,625;100,625;;;;3;142,1875;113,75;100,625;;;;1
+  956;GCO_1;;731;3;35;34,9883804321289;35;;;;3;201,25;201,25;188,125;;;;0
+  957;GCO_2;;731;3;35;34,9883804321289;35;;;;3;210;210;223,125;;;;1
+  958;GCO_1;;732;3;105;104,894302368164;105;;;;3;78,7499923706055;78,7500228881836;65,6250228881836;;;;1
+  959;GCO_2;;732;3;105;105,071502685547;105;;;;3;87,4999923706055;87,5000076293945;100,625;;;;0
+  960;GCO_1;;733;2;319,375;319,375;;;;;2;43,75;35,0000190734863;;;;;1
+  961;GCO_2;;733;3;319,375;319,347991943359;319,375;;;;3;52,5;52,5;65,625;;;;0
+  962;GCO_1;;734;3;385,000091552734;385;398,125;;;;3;183,75;183,73649597168;183,75;;;;1
+  963;GCO_2;;734;3;376,25;376,25;363,125;;;;3;183,75;183,73649597168;183,75;;;;0
+  964;GCO_1;;735;2;170,625;157,5;;;;;2;175;175;;;;;1
+  965;GCO_2;;735;3;179,375;192,5;192,5;;;;3;175;175;188,125;;;;0
+  966;GCO_1;;741;2;148,75;148,75;;;;;2;185,937484741211;201,249969482422;;;;;0
+  967;GCO_2;;741;2;148,75;148,75;;;;;2;185,937484741211;170,625;;;;;1
+  968;GCO_1;;742;2;148,75;148,75;;;;;2;126,874992370605;140;;;;;0
+  969;GCO_2;;742;2;148,75;148,75;;;;;2;126,874992370605;113,749992370605;;;;;1
+  970;GCO_1;;743;2;223,125;223,125;;;;;2;118,124992370605;139,999984741211;;;;;0
+  971;GCO_2;;743;2;223,125;223,125;;;;;2;118,124992370605;96,2499923706055;;;;;1
+  972;GCO_1;;744;2;253,750015258789;253,750015258789;;;;;2;78,7499923706055;96,2499923706055;;;;;1
+  973;GCO_2;;744;2;253,750015258789;253,750015258789;;;;;2;78,7499923706055;61,2499923706055;;;;;0
+  974;GCO_1;;745;2;301,875;301,875;;;;;2;83,125;104,999992370605;;;;;1
+  975;GCO_2;;745;2;301,875;301,875;;;;;2;83,125;61,2499923706055;;;;;0
+  976;GCO_1;;746;2;301,875;301,875;;;;;2;146,5625;188,124984741211;;;;;1
+  977;GCO_2;;746;2;301,875;301,875;;;;;2;146,5625;104,999992370605;;;;;0
+  978;GCO_1;;747;2;384,999969482422;384,999969482422;;;;;2;190,3125;249,374984741211;;;;;0
+  979;GCO_2;;747;2;384,999969482422;384,999969482422;;;;;2;190,3125;131,250015258789;;;;;1
+  980;GCO_1;;748;2;424,375;424,375;;;;;2;229,6875;249,374984741211;;;;;0
+  981;GCO_2;;748;2;424,375;424,375;;;;;2;229,6875;210,000015258789;;;;;1
+  982;GCO_1;;749;2;415,624969482422;415,624969482422;;;;;2;277,8125;306,25;;;;;1
+  983;GCO_2;;749;2;415,624969482422;415,624969482422;;;;;2;277,8125;249,374984741211;;;;;0
+  984;GCO_1;;750;3;347,8125;315;315;;;;3;371,875;371,875;358,75;;;;0
+  985;GCO_2;;750;3;347,8125;380,625030517578;380,625;;;;3;371,875;371,875;358,749938964844;;;;1
+  986;GCO_1;;752;3;398,125030517578;301,875;301,875;;;;3;385;385;358,75;;;;0
+  987;GCO_2;;752;3;398,125030517578;494,375;494,375;;;;3;385;385;358,75;;;;1
+  988;GCO_1;;753;3;446,25;411,250030517578;411,250030517578;;;;3;371,875;371,875;358,749938964844;;;;0
+  989;GCO_2;;753;3;446,25;481,25;481,25;;;;3;371,875;371,875;358,75;;;;1
+  990;GCO_1;;754;4;542,5;542,5;463,750030517578;463,750030517578;;;4;207,8125;284,375;284,375;306,25;;;1
+  991;GCO_2;;754;2;542,5;542,5;;;;;2;207,8125;131,249984741211;;;;;0
+  992;GCO_1;;755;2;511,875;511,875;;;;;2;170,625;210,000015258789;;;;;0
+  993;GCO_2;;755;2;511,875;511,875;;;;;2;170,625;131,249984741211;;;;;1
+  994;GCO_1;;756;2;490;490;;;;;2;144,375;131,249984741211;;;;;0
+  995;GCO_1;;757;3;468,125030517578;441,875030517578;441,875030517578;;;;3;223,125;223,125;210,000015258789;;;;0
+  996;GCO_2;;757;3;468,125030517578;494,375;494,375;;;;3;223,125;223,125;210,000015258789;;;;1
+  997;GCO_1;;758;2;179,375;179,375;;;;;2;277,8125;258,124969482422;;;;;0
+  998;GCO_2;;758;2;179,375;179,375;;;;;2;277,8125;297,5;;;;;1
+  999;GCO_1;;759;2;96,25;96,25;;;;;2;371,875030517578;380,625;;;;;0
+  1000;GCO_2;;759;2;96,25;96,25;;;;;2;363,125;354,374969482422;;;;;1
+  1001;GCO_1;;761;2;43,75;43,75;;;;;2;210,000015258789;192,499984741211;;;;;0
+  1002;GCO_2;;761;2;43,75;43,75;;;;;2;218,75;231,874984741211;;;;;1
+  1003;GCO_1;;762;3;175,000015258789;183,750015258789;183,750015258789;;;;3;398,125030517578;398,125030517578;389,375030517578;;;;1
+  1004;GCO_2;;762;5;166,250015258789;157,5;157,5;144,375;144,375;;5;398,125030517578;398,125030517578;389,375030517578;389,375030517578;402,5;;0
+  1005;GCO_1;;763;3;524,999938964844;516,25;516,25;;;;3;315;315;323,75;;;;1
+  1006;GCO_2;;763;3;533,75;538,125;538,125;;;;3;315;315;306,25;;;;0
+  1007;GCO_1;;764;3;498,749969482422;494,375;494,375;;;;3;253,749984741211;253,750015258789;262,5;;;;0
+  1008;GCO_2;;764;3;507,500030517578;511,875;511,875;;;;3;253,749984741211;253,750015258789;245;;;;1
+  1009;GCO_1;;765;2;490;490;;;;;2;87,5;96,2499923706055;;;;;1
+  1010;GCO_2;;765;2;490;490;;;;;2;78,75;65,6249923706055;;;;;0
+  1011;GCO_1;;767;2;411,250030517578;411,250030517578;;;;;2;52,5000038146973;61,25;;;;;1
+  1012;GCO_2;;767;2;411,250030517578;411,250030517578;;;;;2;43,75;30,625;;;;;0
+  1013;GCO_1;;768;2;363,125;363,125;;;;;2;48,125;61,25;;;;;1
+  1014;GCO_2;;768;2;363,125;363,125;;;;;2;39,375;30,625;;;;;0
+  1015;GCO_1;;769;2;280;280;;;;;2;17,5;26,2499961853027;;;;;1
+  1016;GCO_2;;769;6;280;280;288,75;288,75;301,875;301,875;6;8,75000095367432;4,375;4,375;21,875;21,875;17,4999961853027;0
+  1017;GCO_1;;770;2;188,125015258789;188,125015258789;;;;;2;48,125;65,6249923706055;;;;;1
+  1018;GCO_2;;770;2;188,125015258789;188,125015258789;;;;;2;39,375;26,2499923706055;;;;;0
+  1019;GCO_1;;809;2;91,8749923706055;91,8750076293945;;;;;2;389,375030517578;380,625;;;;;0
+  1020;GCO_1;;810;2;144,375015258789;144,375;;;;;2;406,875;402,5;;;;;0
+  1021;GCO_1;;811;2;39,3749923706055;39,375;;;;;2;245,000015258789;231,874984741211;;;;;0
+  1022;GCO_1;;812;2;188,125015258789;188,125015258789;;;;;2;13,1249990463257;26,2499923706055;;;;;0
+  1023;GCO_1;;813;2;301,875;301,875;;;;;2;13,1250019073486;17,4999961853027;;;;;0
+  1024;GCO_1;;814;2;411,249969482422;411,250030517578;;;;;2;21,8749980926514;30,625;;;;;0
+  1025;GCO_1;;815;2;363,125;363,125;;;;;2;17,5;30,625;;;;;0
+  1026;GCO_1;;816;2;490;490;;;;;2;271,25;262,5;;;;;0
+  1027;GCO_1;;819;2;542,5;542,5;;;;;2;297,5;306,25;;;;;0
+  1028;GCO_1;;820;2;490;490;;;;;2;52,4999961853027;65,6249923706055;;;;;0
+  1029;GCO_1;;821;2;516,25;516,25;;;;;2;371,875;358,75;;;;;0
+  1030;GCO_1;;822;2;393,75;393,75;;;;;2;345,624969482422;358,749938964844;;;;;0
+  1031;GCO_1;;823;2;336,875;336,875;;;;;2;315;328,125;;;;;0
+  1032;GCO_1;;824;2;275,625;275,625;;;;;2;371,875;358,75;;;;;0
+  1033;GCO_1;;825;2;183,750015258789;183,750015258789;;;;;2;345,624969482422;358,75;;;;;0
+  1034;GCO_1;;826;2;210,000015258789;210,000015258789;;;;;2;284,375;297,5;;;;;0
+  1035;GCO_1;;827;2;96,25;96,25;;;;;2;266,875;280;;;;;0
+  1036;GCO_1;;828;2;179,375;179,375;;;;;2;245;258,124969482422;;;;;0
+  1037;GCO_1;;829;2;131,250015258789;131,250015258789;;;;;2;214,374984741211;201,249969482422;;;;;0
+  1038;GCO_1;;831;2;39,3749923706055;39,3749923706055;;;;;2;179,375;192,499984741211;;;;;0
+  1039;GCO_1;;832;2;148,75;148,75;;;;;2;100,624984741211;113,749992370605;;;;;0
+  1040;GCO_1;;833;2;126,874992370605;126,874992370605;;;;;2;61,25;74,375;;;;;0
+  1041;GCO_1;;834;2;210,000015258789;210,000015258789;;;;;2;52,5000038146973;65,6249923706055;;;;;0
+  1042;GCO_1;;835;2;266,875030517578;266,875030517578;;;;;2;157,5;144,375;;;;;0
+  1043;GCO_1;;836;2;341,25;341,25;;;;;2;109,375;96,2499923706055;;;;;0
+  1044;GCO_1;;837;2;424,375;424,375;;;;;2;196,875015258789;210,000015258789;;;;;0
+  1045;GCO_1;;838;2;363,125;363,125;;;;;2;236,25;249,374984741211;;;;;0
+  1046;GCO_1;;839;2;441,875030517578;441,875030517578;;;;;2;293,125;306,25;;;;;0
+  1047;GCO_1;;840;2;328,125;328,125;;;;;2;205,624984741211;218,75;;;;;0
+  1048;GCO_1;;842;2;100,625;100,625;;;;;2;59,0625;74,375;;;;;0
+  1049;GCO_2;;842;2;100,625;100,625;;;;;2;59,0625;43,75;;;;;1
+  1050;GCO_1;;843;2;126,874992370605;126,874992370605;;;;;2;94,0624923706055;113,749992370605;;;;;0
+  1051;GCO_2;;843;2;126,874992370605;126,874992370605;;;;;2;94,0624923706055;74,375;;;;;1
+  1052;GCO_1;;844;2;188,125015258789;188,125015258789;;;;;2;107,187492370605;139,999984741211;;;;;0
+  1053;GCO_2;;844;2;188,125015258789;188,125015258789;;;;;2;98,4375;65,6249923706055;;;;;1
+  1054;GCO_1;;845;2;253,750015258789;253,750015258789;;;;;2;124,687492370605;144,375;;;;;1
+  1055;GCO_2;;845;2;253,750015258789;253,750015258789;;;;;2;115,937507629395;96,2499923706055;;;;;0
+  1056;GCO_1;;846;2;280;280;;;;;2;129,062484741211;144,375;;;;;1
+  1057;GCO_2;;846;2;280;280;;;;;2;120,3125;104,999992370605;;;;;0
+  1058;GCO_1;;847;2;280;280;;;;;2;39,375;26,2499961853027;;;;;1
+  1059;GCO_2;;847;2;280;280;;;;;2;48,125;61,2499923706055;;;;;0
+  1060;GCO_1;;848;2;363,125;363,125;;;;;2;118,124992370605;131,250015258789;;;;;0
+  1061;GCO_2;;848;2;363,125;363,125;;;;;2;109,375;96,2499923706055;;;;;1
+  1062;GCO_1;;849;2;363,125;363,125;;;;;2;83,1250076293945;96,2499923706055;;;;;0
+  1063;GCO_2;;849;2;363,125;363,125;;;;;2;74,375;61,25;;;;;1
+  1064;GCO_1;;850;2;411,250030517578;411,250030517578;;;;;2;102,812492370605;131,250015258789;;;;;0
+  1065;GCO_2;;850;2;411,250030517578;411,250030517578;;;;;2;94,0625076293945;61,25;;;;;1
+  1066;GCO_1;;851;2;490;490;;;;;2;118,124992370605;131,249984741211;;;;;0
+  1067;GCO_2;;851;2;490;490;;;;;2;109,375;96,2499923706055;;;;;1
+  1068;GCO_1;;854;2;516,25;516,25;;;;;2;231,875015258789;245;;;;;1
+  1069;GCO_2;;854;2;516,25;516,25;;;;;2;223,125015258789;210,000015258789;;;;;0
+  1070;GCO_1;;855;2;516,25;516,25;;;;;2;345,625030517578;358,75;;;;;0
+  1071;GCO_2;;855;2;516,25;516,25;;;;;2;336,875030517578;323,749969482422;;;;;1
+  1072;GCO_1;;856;2;183,750015258789;183,750015258789;;;;;2;378,437530517578;389,375030517578;;;;;1
+  1073;GCO_2;;856;2;183,750015258789;183,750015258789;;;;;2;369,6875;358,75;;;;;0
+  1074;GCO_1;;857;2;96,25;96,25;;;;;2;341,250030517578;354,374969482422;;;;;1
+  1075;GCO_2;;857;2;96,25;96,25;;;;;2;332,500030517578;319,375;;;;;0
+  1076;GCO_1;;858;2;148,75;148,75;;;;;2;339,0625;358,75;;;;;1
+  1077;GCO_2;;858;2;148,75;148,75;;;;;2;339,0625;319,375;;;;;0
+  1078;GCO_1;;859;2;96,25;96,25;;;;;2;299,687530517578;319,375;;;;;1
+  1079;GCO_2;;859;2;96,25;96,25;;;;;2;299,687530517578;280;;;;;0
+  1080;GCO_1;;860;3;247,1875;218,75;218,75;;;;3;341,25;341,25;358,75;;;;0
+  1081;GCO_2;;860;3;247,1875;275,625;275,625;;;;3;341,25;341,25;358,75;;;;1
+  1082;GCO_1;;861;3;242,812515258789;275,625;275,625;;;;3;315;315;297,5;;;;0
+  1083;GCO_2;;861;3;242,812515258789;210,000015258789;210,000015258789;;;;3;315;315;297,5;;;;1
+  1084;GCO_1;;862;2;301,875;301,875;;;;;2;343,4375;358,75;;;;;0
+  1085;GCO_2;;862;2;301,875;301,875;;;;;2;343,4375;328,125;;;;;1
+  1086;GCO_1;;863;2;301,875;301,875;;;;;2;312,8125;328,125;;;;;1
+  1087;GCO_2;;863;2;301,875;301,875;;;;;2;312,8125;297,5;;;;;0
+  1088;GCO_1;;865;2;301,875;301,875;;;;;2;273,4375;297,5;;;;;1
+  1089;GCO_2;;865;2;301,875;301,875;;;;;2;273,4375;249,374984741211;;;;;0
+  1090;GCO_1;;866;2;301,875;301,875;;;;;2;234,0625;249,374984741211;;;;;1
+  1091;GCO_2;;866;2;301,875;301,875;;;;;2;234,0625;218,75;;;;;0
+  1092;GCO_1;;867;2;301,875;301,875;;;;;2;203,4375;218,75;;;;;1
+  1093;GCO_2;;867;2;301,875;301,875;;;;;2;203,4375;188,124984741211;;;;;0
+  1094;GCO_1;;868;3;218,75;166,249984741211;166,249984741211;;;;3;214,375;214,375;201,249969482422;;;;0
+  1095;GCO_2;;868;3;218,75;271,25;271,25;;;;3;214,375;214,375;188,124984741211;;;;1
+  1096;GCO_1;;869;2;148,75;148,75;;;;;2;229,687484741211;258,124969482422;;;;;0
+  1097;GCO_2;;869;2;148,75;148,75;;;;;2;229,687484741211;201,249969482422;;;;;1
+  1098;GCO_1;;870;2;148,75;148,75;;;;;2;288,75;319,375;;;;;0
+  1099;GCO_2;;870;2;148,75;148,75;;;;;2;288,75;258,124969482422;;;;;1
+  1100;GCO_1;;871;2;65,625;65,625;;;;;2;236,249984741211;280;;;;;0
+  1101;GCO_2;;871;2;65,625;65,625;;;;;2;236,249984741211;192,499984741211;;;;;1
+  1102;GCO_1;;872;2;65,625;65,625;;;;;2;118,124992370605;192,499984741211;;;;;1
+  1103;GCO_2;;872;2;65,625;65,625;;;;;2;118,124992370605;43,75;;;;;0
+  1104;GCO_1;;873;2;100,624984741211;100,624984741211;;;;;2;122,5;170,625;;;;;0
+  1105;GCO_2;;873;2;100,624984741211;100,624984741211;;;;;2;122,5;74,375;;;;;1
+  1106;GCO_1;;874;2;148,75;148,75;;;;;2;155,312484741211;170,625;;;;;0
+  1107;GCO_2;;874;2;148,75;148,75;;;;;2;155,312484741211;139,999984741211;;;;;1
+  1108;GCO_1;;876;2;122,5;122,5;;;;;2;107,187545776367;113,750015258789;;;;;0
+  1109;GCO_2;;876;2;122,5;122,5;;;;;2;98,4375534057617;91,8750076293945;;;;;1
+  1110;GCO_1;;879;2;122,5;122,5;;;;;2;76,5625152587891;70;;;;;1
+  1111;GCO_2;;879;2;122,5;122,5;;;;;2;85,3125152587891;91,8750076293945;;;;;0
+  1112;GCO_1;;880;2;122,5;122,5;;;;;2;122,500007629395;113,750015258789;;;;;1
+  1113;GCO_2;;880;2;122,5;122,5;;;;;2;131,25;140;;;;;0
+  1114;GCO_1;;882;3;159,6875;109,375;109,375;;;;3;148,75;148,75;140;;;;0
+  1115;GCO_2;;882;3;159,6875;210;210;;;;3;148,75;148,75;140;;;;1
+  1116;GCO_1;;883;3;159,6875;109,375;109,375;;;;3;56,875;56,875;70;;;;0
+  1117;GCO_2;;883;3;159,6875;210;210;;;;3;56,875;56,875;70;;;;1
+  1118;GCO_1;;885;3;54,6875;43,75;43,75;;;;3;105;105;100,625;;;;0
+  1119;GCO_2(1);;885;2;63,4375;78,7499771118164;;;;;2;105;105;;;;;1
+  1120;GCO_2;;885;3;54,6875;26,25;26,25;;;;3;105;105;140;;;;0
+  1121;GCO_1;;886;2;96,2500228881836;78,7499771118164;;;;;2;105;105;;;;;0
+  1122;GCO_2;;886;2;100,625;100,625;;;;;2;109,375;140;;;;;1
+  1123;GCO_3;;886;2;100,625;100,625;;;;;2;100,625;70;;;;;2
+  1124;GCO_1;;887;2;214,375;227,5;;;;;2;105;105;;;;;0
+  1125;GCO_2;;887;2;210;210;;;;;2;109,375;140;;;;;1
+  1126;GCO_3;;887;2;210;210;;;;;2;100,625;70;;;;;2
+  1127;GCO_1;;889;2;240,625;227,5;;;;;2;105;105;;;;;0
+  1128;GCO_2(1);;889;3;249,375;266,875;266,875;;;;3;105;105;131,25;;;;1
+  1129;GCO_2;;889;2;249,375;249,375;;;;;2;113,75;245;;;;;0
+
+
+$$IntGrfnet;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);snap_on(i);ortho_on(i);pDataFolder(p)
+********************************************************************************
+*  Graphic
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  snap_on: Drawing aids: Snap elements to grid
+*  ortho_on: Drawing aids: Line routing
+*  pDataFolder: Target folder for network elements in ElmNet,BlkDef,IntFolder,ElmSubstat,ElmTrfstat,ElmSite,ElmBranch,ElmSubmodel,ElmFolder,IntTemplate
+********************************************************************************
+  1130;14 Bus System;;;1;2;363
+  1131;39 Bus System;;;1;1;364
+  1132;HVDC Link;;;1;1;174
+
+
+$$IntTemplate;ID(a:40);loc_name(a:80);fold_id(p)
+********************************************************************************
+*  Template Folder
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+********************************************************************************
+  1133;HVDC MMC HB Monopole (RMS Balanced);
+  1134;HVDC Link (sym. monopole RMS);
+
+
+$$StaCt;ID(a:40);loc_name(a:80);fold_id(p);chr_name(a:40);ptapset(r);stapset(r);outserv(i);typ_id(p)
+********************************************************************************
+*  Current Transformer
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  chr_name: Characteristic Name
+*  ptapset: Tap selection: Primary in A
+*  stapset: Tap selection: Secondary in A
+*  outserv: Out of Service
+*  typ_id: Type in TypCt,TypCtcore
+********************************************************************************
+  1135;CT;366;;300;1;0;1758
+  1136;CoreCT;366;;300;1;0;1758
+  1137;CT;367;;300;1;0;1758
+  1138;CoreCT;367;;300;1;0;1758
+  1139;CT;368;;1300;1;0;1758
+  1140;CoreCT;368;;1300;1;0;1758
+  1141;CT;369;;300;1;0;1758
+  1142;CoreCT;369;;300;1;0;1758
+  1143;CT;370;;300;1;0;1758
+  1144;CoreCT;370;;300;1;0;1758
+  1145;CT;371;;300;1;0;1758
+  1146;CoreCT;371;;300;1;0;1758
+  1147;CT;372;;300;1;0;1758
+  1148;CoreCT;372;;300;1;0;1758
+  1149;CT;373;;300;1;0;1758
+  1150;CoreCT;373;;300;1;0;1758
+  1151;CT;375;;150;1;0;1758
+  1152;CoreCT;375;;150;1;0;1758
+  1153;CT;377;;150;1;0;1758
+  1154;CoreCT;377;;150;1;0;1758
+  1155;CT;378;;150;1;0;1758
+  1156;CoreCT;378;;150;1;0;1758
+  1157;CT;379;;150;1;0;1758
+  1158;CoreCT;379;;150;1;0;1758
+  1159;CT;381;;300;1;0;1758
+  1160;CoreCT;381;;300;1;0;1758
+  1161;CT;382;;300;1;0;1758
+  1162;CoreCT;382;;300;1;0;1758
+  1163;CT;384;;150;1;0;1758
+  1164;CoreCT;384;;150;1;0;1758
+  1165;CT;385;;100;1;0;1758
+  1166;CoreCT;385;;100;1;0;1758
+  1167;CT;386;;250;1;0;1758
+  1168;CoreCT;386;;250;1;0;1758
+  1169;CT;388;;250;1;0;1758
+  1170;CoreCT;388;;250;1;0;1758
+  1171;CT;389;;250;1;0;1758
+  1172;CoreCT;389;;250;1;0;1758
+  1173;CT;390;;150;1;0;1758
+  1174;CoreCT;390;;150;1;0;1758
+  1175;CT;392;;100;1;0;1758
+  1176;CoreCT;392;;100;1;0;1758
+  1177;CT;394;;100;1;0;1758
+  1178;CoreCT;394;;100;1;0;1758
+  1179;CT;397;;100;1;0;1758
+  1180;CoreCT;397;;100;1;0;1758
+  1181;CT;399;;250;1;0;1758
+  1182;CoreCT;399;;250;1;0;1758
+  1183;CT;400;;100;1;0;1758
+  1184;CoreCT;400;;100;1;0;1758
+  1185;CT;402;;100;1;0;1758
+  1186;CoreCT;402;;100;1;0;1758
+  1187;CT;415;;1700;1;0;1758
+  1188;CoreCT;415;;1700;1;0;1758
+  1189;CT;416;;1600;1;0;1758
+  1190;CoreCT;416;;1600;1;0;1758
+  1191;CT;417;;900;1;0;1758
+  1192;CoreCT;417;;900;1;0;1758
+  1193;CT;418;;1100;1;0;1758
+  1194;CoreCT;418;;1100;1;0;1758
+  1195;CT;420;;900;1;0;1758
+  1196;CoreCT;420;;900;1;0;1758
+  1197;CT;421;;900;1;0;1758
+  1198;CoreCT;421;;900;1;0;1758
+  1199;CT;423;;1600;1;0;1758
+  1200;CoreCT;423;;1600;1;0;1758
+  1201;CT;424;;1100;1;0;1758
+  1202;CoreCT;424;;1100;1;0;1758
+  1203;CT;425;;1600;1;0;1758
+  1204;CoreCT;425;;1600;1;0;1758
+  1205;CT;426;;1700;1;0;1758
+  1206;CoreCT;426;;1700;1;0;1758
+  1207;CT;427;;1600;1;0;1758
+  1208;CoreCT;427;;1600;1;0;1758
+  1209;CT;429;;1600;1;0;1758
+  1210;CoreCT;429;;1600;1;0;1758
+  1211;CT;431;;1600;1;0;1758
+  1212;CoreCT;431;;1600;1;0;1758
+  1213;CT;432;;1600;1;0;1758
+  1214;CoreCT;432;;1600;1;0;1758
+  1215;CT;433;;1100;1;0;1758
+  1216;CoreCT;433;;1100;1;0;1758
+  1217;CT;434;;1100;1;0;1758
+  1218;CoreCT;434;;1100;1;0;1758
+  1219;CT;435;;900;1;0;1758
+  1220;CoreCT;435;;900;1;0;1758
+  1221;CT;436;;900;1;0;1758
+  1222;CoreCT;436;;900;1;0;1758
+  1223;CT;438;;900;1;0;1758
+  1224;CoreCT;438;;900;1;0;1758
+  1225;CT;439;;1100;1;0;1758
+  1226;CoreCT;439;;1100;1;0;1758
+  1227;CT;440;;900;1;0;1758
+  1228;CoreCT;440;;900;1;0;1758
+  1229;CT;441;;1100;1;0;1758
+  1230;CoreCT;441;;1100;1;0;1758
+  1231;CT;443;;1600;1;0;1758
+  1232;CoreCT;443;;1600;1;0;1758
+  1233;CT;445;;1100;1;0;1758
+  1234;CoreCT;445;;1100;1;0;1758
+  1235;CT;446;;1100;1;0;1758
+  1236;CoreCT;446;;1100;1;0;1758
+  1237;CT;447;;1100;1;0;1758
+  1238;CoreCT;447;;1100;1;0;1758
+  1239;CT;449;;1600;1;0;1758
+  1240;CoreCT;449;;1600;1;0;1758
+  1241;CT;450;;1600;1;0;1758
+  1242;CoreCT;450;;1600;1;0;1758
+  1243;CT;451;;1100;1;0;1758
+  1244;CoreCT;451;;1100;1;0;1758
+  1245;CT;453;;1700;1;0;1758
+  1246;CoreCT;453;;1700;1;0;1758
+  1247;CT;455;;1100;1;0;1758
+  1248;CoreCT;455;;1100;1;0;1758
+  1249;CT;456;;1600;1;0;1758
+  1250;CoreCT;456;;1600;1;0;1758
+  1251;CT;457;;1100;1;0;1758
+  1252;CoreCT;457;;1100;1;0;1758
+  1253;CT;458;;1600;1;0;1758
+  1254;CoreCT;458;;1600;1;0;1758
+  1255;CT;459;;1600;1;0;1758
+  1256;CoreCT;459;;1600;1;0;1758
+  1257;CT;460;;1100;1;0;1758
+  1258;CoreCT;460;;1100;1;0;1758
+  1259;CT;463;;1100;1;0;1758
+  1260;CoreCT;463;;1100;1;0;1758
+  1261;CT;465;;1600;1;0;1758
+  1262;CoreCT;465;;1600;1;0;1758
+  1263;CT;466;;1100;1;0;1758
+  1264;CoreCT;466;;1100;1;0;1758
+  1265;CT;467;;900;1;0;1758
+  1266;CoreCT;467;;900;1;0;1758
+  1267;CT;469;;1100;1;0;1758
+  1268;CoreCT;469;;1100;1;0;1758
+  1269;CT;471;;1100;1;0;1758
+  1270;CoreCT;471;;1100;1;0;1758
+  1271;CT;473;;1100;1;0;1758
+  1272;CoreCT;473;;1100;1;0;1758
+  1273;CT;475;;1700;1;0;1758
+  1274;CoreCT;475;;1700;1;0;1758
+  1275;CT;476;;1100;1;0;1758
+  1276;CoreCT;476;;1100;1;0;1758
+  1277;CT;477;;1100;1;0;1758
+  1278;CoreCT;477;;1100;1;0;1758
+  1279;CT;480;;1600;1;0;1758
+  1280;CoreCT;480;;1600;1;0;1758
+  1281;CT;501;;1700;1;0;1758
+  1282;CoreCT;501;;1700;1;0;1758
+  1283;CT;502;;1700;1;0;1758
+  1284;CoreCT;502;;1700;1;0;1758
+
+
+$$StaCubic;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);obj_bus(i);obj_id(p);it2p1(i);it2p2(i);it2p3(i)
+********************************************************************************
+*  Cubicle
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  obj_bus: Bus Index
+*  obj_id: Connected with in Elm*,RelFuse,StaSua*
+*  it2p1: Phase 1
+*  it2p2: Phase 2
+*  it2p3: Phase 3
+********************************************************************************
+  1285;Cub_1(1);;519;0;277;0;1;2
+  1286;Cub_1;;519;0;276;0;1;2
+  1287;Cub_2(1);;519;0;599;0;1;2
+  1288;Cub_2;;519;0;278;0;1;2
+  1289;Cub_1(1);;520;1;277;0;1;2
+  1290;Cub_1;;520;1;276;0;1;2
+  1291;Cub_2(1);;520;0;595;0;1;2
+  1292;Cub_2;;520;0;279;0;1;2
+  1293;Cub_3;;520;0;281;0;1;2
+  1294;Cub_4;;520;0;280;0;1;2
+  1295;Cub_5;;520;0;331;0;1;2
+  1296;Cub_1(1);;521;0;596;0;1;2
+  1297;Cub_1;;521;1;279;0;1;2
+  1298;Cub_2;;521;0;282;0;1;2
+  1299;Cub_4;;521;0;332;0;1;2
+  1300;Cub_1;;522;1;280;0;1;2
+  1301;Cub_2;;522;1;282;0;1;2
+  1302;Cub_3;;522;1;283;0;1;2
+  1303;Cub_4;;522;0;601;0;1;2
+  1304;Cub_5;;522;0;600;0;1;2
+  1305;Cub_6;;522;0;333;0;1;2
+  1306;Cub_1;;523;1;281;0;1;2
+  1307;Cub_2;;523;0;283;0;1;2
+  1308;Cub_3;;523;1;278;0;1;2
+  1309;Cub_4;;523;0;602;0;1;2
+  1310;Cub_5;;523;0;334;0;1;2
+  1311;Cub_1(1);;524;0;598;0;1;2
+  1312;Cub_1;;524;0;285;0;1;2
+  1313;Cub_2;;524;1;286;0;1;2
+  1314;Cub_3;;524;1;284;0;1;2
+  1315;Cub_4;;524;1;602;0;1;2
+  1316;Cub_5;;524;0;335;0;1;2
+  1317;Cub_1(1);;525;0;288;0;1;2
+  1318;Cub_1;;525;1;600;0;1;2
+  1319;Cub_2;;525;0;287;0;1;2
+  1320;Cub_1;;526;1;287;0;1;2
+  1321;Cub_2;;526;0;597;0;1;2
+  1322;Cub_1(1);;527;1;288;0;1;2
+  1323;Cub_1;;527;1;290;0;1;2
+  1324;Cub_2;;527;0;289;0;1;2
+  1325;Cub_3;;527;1;601;0;1;2
+  1326;Cub_5;;527;0;336;0;1;2
+  1327;Cub_6;;527;0;503;0;1;2
+  1328;Cub_1;;528;1;289;0;1;2
+  1329;Cub_2;;528;0;291;0;1;2
+  1330;Cub_3;;528;0;337;0;1;2
+  1331;Cub_1;;529;1;291;0;1;2
+  1332;Cub_2;;529;0;284;0;1;2
+  1333;Cub_3;;529;0;338;0;1;2
+  1334;Cub_1;;530;1;285;0;1;2
+  1335;Cub_2;;530;0;292;0;1;2
+  1336;Cub_3;;530;0;339;0;1;2
+  1337;Cub_1(1);;531;1;626;0;1;2
+  1338;Cub_1;;531;1;292;0;1;2
+  1339;Cub_2(1);;531;0;342;0;1;2
+  1340;Cub_2;;531;0;286;0;1;2
+  1341;Cub_3;;531;0;293;0;1;2
+  1342;Cub_4;;531;0;340;0;1;2
+  1343;Cub_1(1);;532;0;330;0;1;2
+  1344;Cub_1;;532;1;293;0;1;2
+  1345;Cub_2;;532;0;290;0;1;2
+  1346;Cub_3;;532;0;341;0;1;2
+  1347;Cub_1(1);;533;0;504;0;1;2
+  1348;Cub_3;;533;1;599;0;1;2
+  1349;Cub_1(1);;534;0;505;0;1;2
+  1350;Cub_3;;534;1;595;0;1;2
+  1351;Cub_1(1);;535;0;506;0;1;2
+  1352;Cub_3;;535;1;596;0;1;2
+  1353;Cub_1;;536;0;508;0;1;2
+  1354;Cub_2;;536;1;597;0;1;2
+  1355;Cub_3;;536;0;;0;1;2
+  1356;Cub_2;;537;0;507;0;1;2
+  1357;Cub_3;;537;1;598;0;1;2
+  1358;Cub_1;;538;0;343;0;1;2
+  1359;Cub_2;;538;0;295;0;1;2
+  1360;Cub_3;;538;0;294;0;1;2
+  1361;Cub_1;;539;0;603;0;1;2
+  1362;Cub_4;;539;0;296;0;1;2
+  1363;Cub_5;;539;1;294;0;1;2
+  1364;Cub_6;;539;0;297;0;1;2
+  1365;Cub_1;;540;0;344;0;1;2
+  1366;Cub_2;;540;0;298;0;1;2
+  1367;Cub_3;;540;1;296;0;1;2
+  1368;Cub_4;;540;0;299;0;1;2
+  1369;Cub_1;;541;0;345;0;1;2
+  1370;Cub_2;;541;0;301;0;1;2
+  1371;Cub_3;;541;1;298;0;1;2
+  1372;Cub_4;;541;0;300;0;1;2
+  1373;Cub_1;;542;0;303;0;1;2
+  1374;Cub_2;;542;0;302;0;1;2
+  1375;Cub_3;;542;1;300;0;1;2
+  1376;Cub_1;;543;0;604;0;1;2
+  1377;Cub_2;;543;1;302;0;1;2
+  1378;Cub_3;;543;0;304;0;1;2
+  1379;Cub_4;;543;0;305;0;1;2
+  1380;Cub_1;;544;0;346;0;1;2
+  1381;Cub_2;;544;0;306;0;1;2
+  1382;Cub_3;;544;1;304;0;1;2
+  1383;Cub_1;;545;0;347;0;1;2
+  1384;Cub_2;;545;0;307;0;1;2
+  1385;Cub_3;;545;1;306;0;1;2
+  1386;Cub_4;;545;1;303;0;1;2
+  1387;Cub_1;;546;1;307;0;1;2
+  1388;Cub_2;;546;0;308;0;1;2
+  1389;Cub_1;;547;0;605;0;1;2
+  1390;Cub_3;;547;0;310;0;1;2
+  1391;Cub_4;;547;0;309;0;1;2
+  1392;Cub_1;;548;0;606;0;1;2
+  1393;Cub_2;;548;1;305;0;1;2
+  1394;Cub_3;;548;1;309;0;1;2
+  1395;Cub_1;;549;0;348;0;1;2
+  1396;Cub_2;;549;1;606;0;1;2
+  1397;Cub_3;;549;1;607;0;1;2
+  1398;Cub_1;;550;0;607;0;1;2
+  1399;Cub_3;;550;0;311;0;1;2
+  1400;Cub_4;;550;1;310;0;1;2
+  1401;Cub_2;;551;1;301;0;1;2
+  1402;Cub_4;;551;0;312;0;1;2
+  1403;Cub_5;;551;1;311;0;1;2
+  1404;Cub_1;;552;0;349;0;1;2
+  1405;Cub_4;;552;0;313;0;1;2
+  1406;Cub_5;;552;1;312;0;1;2
+  1407;Cub_1(1);;553;0;625;0;1;2
+  1408;Cub_1;;553;0;350;0;1;2
+  1409;Cub_4;;553;0;315;0;1;2
+  1410;Cub_5;;553;0;316;0;1;2
+  1411;Cub_6;;553;0;317;0;1;2
+  1412;Cub_7;;553;0;314;0;1;2
+  1413;Cub_8;;553;1;313;0;1;2
+  1414;Cub_1;;554;0;318;0;1;2
+  1415;Cub_4;;554;0;319;0;1;2
+  1416;Cub_5;;554;1;314;0;1;2
+  1417;Cub_1;;555;0;351;0;1;2
+  1418;Cub_2;;555;1;318;0;1;2
+  1419;Cub_3;;555;1;299;0;1;2
+  1420;Cub_1;;556;0;608;0;1;2
+  1421;Cub_2;;556;0;609;0;1;2
+  1422;Cub_3;;556;1;315;0;1;2
+  1423;Cub_1;;557;0;352;0;1;2
+  1424;Cub_2;;557;1;608;0;1;2
+  1425;Cub_3;;557;0;610;0;1;2
+  1426;Cub_1;;558;0;353;0;1;2
+  1427;Cub_2;;558;1;316;0;1;2
+  1428;Cub_3;;558;0;320;0;1;2
+  1429;Cub_1;;559;0;611;0;1;2
+  1430;Cub_2;;559;0;321;0;1;2
+  1431;Cub_3;;559;1;320;0;1;2
+  1432;Cub_1;;560;0;612;0;1;2
+  1433;Cub_3;;560;1;321;0;1;2
+  1434;Cub_4;;560;0;322;0;1;2
+  1435;Cub_5;;560;0;354;0;1;2
+  1436;Cub_1;;561;0;355;0;1;2
+  1437;Cub_4;;561;1;317;0;1;2
+  1438;Cub_5;;561;1;322;0;1;2
+  1439;Cub_1;;562;0;356;0;1;2
+  1440;Cub_2;;562;0;613;0;1;2
+  1441;Cub_4;;562;0;323;0;1;2
+  1442;Cub_5;;562;1;297;0;1;2
+  1443;Cub_1;;563;0;357;0;1;2
+  1444;Cub_2;;563;1;323;0;1;2
+  1445;Cub_3;;563;0;324;0;1;2
+  1446;Cub_4;;563;0;325;0;1;2
+  1447;Cub_5;;563;0;326;0;1;2
+  1448;Cub_1;;564;0;358;0;1;2
+  1449;Cub_2;;564;1;324;0;1;2
+  1450;Cub_3;;564;1;319;0;1;2
+  1451;Cub_1;;565;0;359;0;1;2
+  1452;Cub_2;;565;1;325;0;1;2
+  1453;Cub_3;;565;0;327;0;1;2
+  1454;Cub_1;;566;0;360;0;1;2
+  1455;Cub_2;;566;0;614;0;1;2
+  1456;Cub_3;;566;1;326;0;1;2
+  1457;Cub_4;;566;1;327;0;1;2
+  1458;Cub_1;;567;1;615;0;1;2
+  1459;Cub_2;;567;1;603;0;1;2
+  1460;Cub_1;;568;1;616;0;1;2
+  1461;Cub_2;;568;0;361;0;1;2
+  1462;Cub_3;;568;1;604;0;1;2
+  1463;Cub_1;;569;1;617;0;1;2
+  1464;Cub_2;;569;1;605;0;1;2
+  1465;Cub_1;;570;1;618;0;1;2
+  1466;Cub_2;;570;1;609;0;1;2
+  1467;Cub_1;;571;1;619;0;1;2
+  1468;Cub_2;;571;1;610;0;1;2
+  1469;Cub_1;;572;1;620;0;1;2
+  1470;Cub_2;;572;1;611;0;1;2
+  1471;Cub_1;;573;1;621;0;1;2
+  1472;Cub_2;;573;1;612;0;1;2
+  1473;Cub_1;;574;1;622;0;1;2
+  1474;Cub_2;;574;1;613;0;1;2
+  1475;Cub_1;;575;1;623;0;1;2
+  1476;Cub_2;;575;1;614;0;1;2
+  1477;Cub_1;;576;0;624;0;1;2
+  1478;Cub_2;;576;0;362;0;1;2
+  1479;Cub_3;;576;1;295;0;1;2
+  1480;Cub_4;;576;1;308;0;1;2
+  1481;Cub_1;;577;0;518;0;1;2
+  1482;Cub_2;;577;0;615;0;1;2
+  1483;Cub_1;;578;0;510;0;1;2
+  1484;Cub_2;;578;0;616;0;1;2
+  1485;Cub_3;;578;1;;0;1;2
+  1486;Cub_1;;579;0;617;0;1;2
+  1487;Cub_2;;579;0;511;0;1;2
+  1488;Cub_1;;580;0;512;0;1;2
+  1489;Cub_2;;580;0;618;0;1;2
+  1490;Cub_1;;581;0;513;0;1;2
+  1491;Cub_2;;581;0;619;0;1;2
+  1492;Cub_1;;582;0;514;0;1;2
+  1493;Cub_2;;582;0;620;0;1;2
+  1494;Cub_1(1);;583;0;621;0;1;2
+  1495;Cub_1;;583;0;515;0;1;2
+  1496;Cub_1;;584;0;622;0;1;2
+  1497;Cub_2;;584;0;516;0;1;2
+  1498;Cub_1;;585;0;517;0;1;2
+  1499;Cub_2;;585;0;623;0;1;2
+  1500;Cub_1;;586;0;509;0;1;2
+  1501;Cub_3;;586;1;624;0;1;2
+  1502;Cub_4;;586;1;;0;1;2
+  1503;Cub_1(1);;587;1;625;0;1;2
+  1504;Cub_1;;587;0;627;0;1;2
+  1505;Cub_1(1);;588;0;626;0;1;2
+  1506;Cub_1;;588;0;628;0;1;2
+  1507;Cub_1;;589;1;;0;1;2
+  1508;Cub_2;;589;0;;0;1;2
+  1509;Cub_1;;590;0;;0;1;2
+  1510;Cub_2;;590;1;;0;1;2
+  1511;Cub_1;;591;2;627;0;1;2
+  1512;Cub_2;;591;0;328;0;1;2
+  1513;Cub_3;;591;1;;0;1;2
+  1514;Cub_1;;592;2;628;0;1;2
+  1515;Cub_2;;592;1;328;0;1;2
+  1516;Cub_1;;593;1;627;0;1;2
+  1517;Cub_2;;593;0;329;0;1;2
+  1518;Cub_3;;593;0;;0;1;2
+  1519;Cub_1;;594;1;628;0;1;2
+  1520;Cub_2;;594;1;329;0;1;2
+
+
+$$StaSwitch;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);on_off(i);typ_id(p);aUsage(a)
+********************************************************************************
+*  Switch
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: in Cubicle
+*  on_off: Closed
+*  typ_id: Type in TypSwitch
+*  aUsage: Switch Type
+********************************************************************************
+  1521;Switch;;1285;1;;cbk
+  1522;Switch;;1286;1;;cbk
+  1523;Switch;;1287;1;;cbk
+  1524;Switch;;1288;1;;cbk
+  1525;Switch;;1289;1;;cbk
+  1526;Switch;;1290;1;;cbk
+  1527;Switch;;1291;1;;cbk
+  1528;Switch;;1292;1;;cbk
+  1529;Switch;;1293;1;;cbk
+  1530;Switch;;1294;1;;cbk
+  1531;Switch;;1295;1;;cbk
+  1532;Switch;;1296;1;;cbk
+  1533;Switch;;1297;1;;cbk
+  1534;Switch;;1298;1;;cbk
+  1535;Switch;;1299;1;;cbk
+  1536;Switch;;1300;1;;cbk
+  1537;Switch;;1301;1;;cbk
+  1538;Switch;;1302;1;;cbk
+  1539;Switch;;1303;1;;cbk
+  1540;Switch;;1304;1;;cbk
+  1541;Switch;;1305;1;;cbk
+  1542;Switch;;1306;1;;cbk
+  1543;Switch;;1307;1;;cbk
+  1544;Switch;;1308;1;;cbk
+  1545;Switch;;1309;1;;cbk
+  1546;Switch;;1310;1;;cbk
+  1547;Switch;;1311;1;;cbk
+  1548;Switch;;1312;1;;cbk
+  1549;Switch;;1313;1;;cbk
+  1550;Switch;;1314;1;;cbk
+  1551;Switch;;1315;1;;cbk
+  1552;Switch;;1316;1;;cbk
+  1553;Switch;;1317;1;;cbk
+  1554;Switch;;1318;1;;cbk
+  1555;Switch;;1319;1;;cbk
+  1556;Switch;;1320;1;;cbk
+  1557;Switch;;1321;1;;cbk
+  1558;Switch;;1322;1;;cbk
+  1559;Switch;;1323;1;;cbk
+  1560;Switch;;1324;1;;cbk
+  1561;Switch;;1325;1;;cbk
+  1562;Switch;;1326;1;;cbk
+  1563;Switch;;1327;1;;cbk
+  1564;Switch;;1328;1;;cbk
+  1565;Switch;;1329;1;;cbk
+  1566;Switch;;1330;1;;cbk
+  1567;Switch;;1331;1;;cbk
+  1568;Switch;;1332;1;;cbk
+  1569;Switch;;1333;1;;cbk
+  1570;Switch;;1334;1;;cbk
+  1571;Switch;;1335;1;;cbk
+  1572;Switch;;1336;1;;cbk
+  1573;Switch;;1337;1;;cbk
+  1574;Switch;;1338;1;;cbk
+  1575;Switch;;1339;0;;cbk
+  1576;Switch;;1340;1;;cbk
+  1577;Switch;;1341;1;;cbk
+  1578;Switch;;1342;1;;cbk
+  1579;Switch;;1343;0;;cbk
+  1580;Switch;;1344;1;;cbk
+  1581;Switch;;1345;1;;cbk
+  1582;Switch;;1346;1;;cbk
+  1583;Switch;;1347;1;;cbk
+  1584;Switch;;1348;1;;cbk
+  1585;Switch;;1349;1;;cbk
+  1586;Switch;;1350;1;;cbk
+  1587;Switch;;1351;1;;cbk
+  1588;Switch;;1352;1;;cbk
+  1589;Switch;;1353;1;;cbk
+  1590;Switch;;1354;1;;cbk
+  1591;Switch;;1355;1;;cbk
+  1592;Switch;;1356;1;;cbk
+  1593;Switch;;1357;1;;cbk
+  1594;Switch;;1358;1;;cbk
+  1595;Switch;;1359;1;;cbk
+  1596;Switch;;1360;1;;cbk
+  1597;Switch;;1361;1;;cbk
+  1598;Switch;;1362;1;;cbk
+  1599;Switch;;1363;1;;cbk
+  1600;Switch;;1364;1;;cbk
+  1601;Switch;;1365;1;;cbk
+  1602;Switch;;1366;1;;cbk
+  1603;Switch;;1367;1;;cbk
+  1604;Switch;;1368;1;;cbk
+  1605;Switch;;1369;1;;cbk
+  1606;Switch;;1370;1;;cbk
+  1607;Switch;;1371;1;;cbk
+  1608;Switch;;1372;1;;cbk
+  1609;Switch;;1373;1;;cbk
+  1610;Switch;;1374;1;;cbk
+  1611;Switch;;1375;1;;cbk
+  1612;Switch;;1376;1;;cbk
+  1613;Switch;;1377;1;;cbk
+  1614;Switch;;1378;1;;cbk
+  1615;Switch;;1379;1;;cbk
+  1616;Switch;;1380;1;;cbk
+  1617;Switch;;1381;1;;cbk
+  1618;Switch;;1382;1;;cbk
+  1619;Switch;;1383;1;;cbk
+  1620;Switch;;1384;1;;cbk
+  1621;Switch;;1385;1;;cbk
+  1622;Switch;;1386;1;;cbk
+  1623;Switch;;1387;1;;cbk
+  1624;Switch;;1388;1;;cbk
+  1625;Switch;;1389;1;;cbk
+  1626;Switch;;1390;1;;cbk
+  1627;Switch;;1391;1;;cbk
+  1628;Switch;;1392;1;;cbk
+  1629;Switch;;1393;1;;cbk
+  1630;Switch;;1394;1;;cbk
+  1631;Switch;;1395;1;;cbk
+  1632;Switch;;1396;1;;cbk
+  1633;Switch;;1397;1;;cbk
+  1634;Switch;;1398;1;;cbk
+  1635;Switch;;1399;1;;cbk
+  1636;Switch;;1400;1;;cbk
+  1637;Switch;;1401;1;;cbk
+  1638;Switch;;1402;1;;cbk
+  1639;Switch;;1403;1;;cbk
+  1640;Switch;;1404;1;;cbk
+  1641;Switch;;1405;1;;cbk
+  1642;Switch;;1406;1;;cbk
+  1643;Switch;;1407;1;;cbk
+  1644;Switch;;1408;1;;cbk
+  1645;Switch;;1409;1;;cbk
+  1646;Switch;;1410;1;;cbk
+  1647;Switch;;1411;1;;cbk
+  1648;Switch;;1412;1;;cbk
+  1649;Switch;;1413;1;;cbk
+  1650;Switch;;1414;1;;cbk
+  1651;Switch;;1415;1;;cbk
+  1652;Switch;;1416;1;;cbk
+  1653;Switch;;1417;1;;cbk
+  1654;Switch;;1418;1;;cbk
+  1655;Switch;;1419;1;;cbk
+  1656;Switch;;1420;1;;cbk
+  1657;Switch;;1421;1;;cbk
+  1658;Switch;;1422;1;;cbk
+  1659;Switch;;1423;1;;cbk
+  1660;Switch;;1424;1;;cbk
+  1661;Switch;;1425;1;;cbk
+  1662;Switch;;1426;1;;cbk
+  1663;Switch;;1427;1;;cbk
+  1664;Switch;;1428;1;;cbk
+  1665;Switch;;1429;1;;cbk
+  1666;Switch;;1430;1;;cbk
+  1667;Switch;;1431;1;;cbk
+  1668;Switch;;1432;1;;cbk
+  1669;Switch;;1433;1;;cbk
+  1670;Switch;;1434;1;;cbk
+  1671;Switch;;1435;1;;cbk
+  1672;Switch;;1436;1;;cbk
+  1673;Switch;;1437;1;;cbk
+  1674;Switch;;1438;1;;cbk
+  1675;Switch;;1439;1;;cbk
+  1676;Switch;;1440;1;;cbk
+  1677;Switch;;1441;1;;cbk
+  1678;Switch;;1442;1;;cbk
+  1679;Switch;;1443;1;;cbk
+  1680;Switch;;1444;1;;cbk
+  1681;Switch;;1445;1;;cbk
+  1682;Switch;;1446;1;;cbk
+  1683;Switch;;1447;1;;cbk
+  1684;Switch;;1448;1;;cbk
+  1685;Switch;;1449;1;;cbk
+  1686;Switch;;1450;1;;cbk
+  1687;Switch;;1451;1;;cbk
+  1688;Switch;;1452;1;;cbk
+  1689;Switch;;1453;1;;cbk
+  1690;Switch;;1454;1;;cbk
+  1691;Switch;;1455;1;;cbk
+  1692;Switch;;1456;1;;cbk
+  1693;Switch;;1457;1;;cbk
+  1694;Switch;;1458;1;;cbk
+  1695;Switch;;1459;1;;cbk
+  1696;Switch;;1460;1;;cbk
+  1697;Switch;;1461;1;;cbk
+  1698;Switch;;1462;1;;cbk
+  1699;Switch;;1463;1;;cbk
+  1700;Switch;;1464;1;;cbk
+  1701;Switch;;1465;1;;cbk
+  1702;Switch;;1466;1;;cbk
+  1703;Switch;;1467;1;;cbk
+  1704;Switch;;1468;1;;cbk
+  1705;Switch;;1469;1;;cbk
+  1706;Switch;;1470;1;;cbk
+  1707;Switch;;1471;1;;cbk
+  1708;Switch;;1472;1;;cbk
+  1709;Switch;;1473;1;;cbk
+  1710;Switch;;1474;1;;cbk
+  1711;Switch;;1475;1;;cbk
+  1712;Switch;;1476;1;;cbk
+  1713;Switch;;1477;1;;cbk
+  1714;Switch;;1478;1;;cbk
+  1715;Switch;;1479;1;;cbk
+  1716;Switch;;1480;1;;cbk
+  1717;Switch;;1481;1;;cbk
+  1718;Switch;;1482;1;;cbk
+  1719;Switch;;1483;1;;cbk
+  1720;Switch;;1484;1;;cbk
+  1721;Switch;;1485;1;;cbk
+  1722;Switch;;1486;1;;cbk
+  1723;Switch;;1487;1;;cbk
+  1724;Switch;;1488;1;;cbk
+  1725;Switch;;1489;1;;cbk
+  1726;Switch;;1490;1;;cbk
+  1727;Switch;;1491;1;;cbk
+  1728;Switch;;1492;1;;cbk
+  1729;Switch;;1493;1;;cbk
+  1730;Switch;;1494;1;;cbk
+  1731;Switch;;1495;1;;cbk
+  1732;Switch;;1496;1;;cbk
+  1733;Switch;;1497;1;;cbk
+  1734;Switch;;1498;1;;cbk
+  1735;Switch;;1499;1;;cbk
+  1736;Switch;;1500;1;;cbk
+  1737;Switch;;1501;1;;cbk
+  1738;Switch;;1502;1;;cbk
+  1739;Switch;;1503;1;;cbk
+  1740;Switch;;1504;1;;cbk
+  1741;Switch;;1505;1;;cbk
+  1742;Switch;;1506;1;;cbk
+  1743;Switch;;1511;1;;cbk
+  1744;Switch;;1512;1;;cbk
+  1745;Switch;;1513;1;;cbk
+  1746;Switch;;1514;1;;cbk
+  1747;Switch;;1515;1;;cbk
+  1748;Switch;;1516;1;;cbk
+  1749;Switch;;1517;1;;cbk
+  1750;Switch;;1518;1;;cbk
+  1751;Switch;;1519;1;;cbk
+  1752;Switch;;1520;1;;cbk
+
+
+$$StaVt;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);chr_name(a:40);ptapset(r);stapset(r);typ_id(p);outserv(i)
+********************************************************************************
+*  Voltage Transformer
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  chr_name: Characteristic Name
+*  ptapset: Tap selection: Primary in V
+*  stapset: Tap selection: Secondary in V
+*  typ_id: Type in TypVt
+*  outserv: Out of Service
+********************************************************************************
+  1753;Voltage Transformer;;1383;;345;1;1862;0
+
+
+$$TypChatoc;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);i_use(i);i_type(i);vmat:SIZEROW(i);vmat:SIZECOL(i);vmat:0:0(r);vmat:1:0(r);vmat:2:0(r);vmat:3:0(r);i_curves(i);rTp(a:80);expr:SIZEROW(i)
+********************************************************************************
+*  I-t Characteristic
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  i_use: Usage:Time Overcurrent:Fuse:Damage Curve:Min Trip/Max clear Time Overcurrent:Reset characteristic
+*  i_type: Function
+*  vmat:SIZEROW: Number of rows for attribute 'vmat'
+*  vmat:SIZECOL: Number of columns for attribute 'vmat'
+*  vmat: Values
+*  i_curves: No. of Curves
+*  rTp: Time Dial: Range
+*  expr:SIZEROW: Number of rows for attribute 'expr'
+********************************************************************************
+  1754;f> Definite Time;;629;0;0;1;1;1;;;;2;0.-100.;0
+  1755;f> IDMT;;629;0;2;4;1;1;1;1;0;2;"0.1-100;0.01";0
+  1756;C1 - IEC Class A (Standard Inverse);;630;0;1;3;1;0,14;0,02;1;;2;"0.05-60.;0.01";0
+  1757;C1 - IEC Class A(Standard Inverse) reset;;630;4;1;3;1;-13,5;2;1;;2;"0.05-15.;oo;0.01";0
+
+
+$$TypCt;ID(a:40);loc_name(a:80);fold_id(p);primtaps:SIZEROW(i);primtaps:0(r);primtaps:1(r);primtaps:2(r);primtaps:3(r);primtaps:4(r);primtaps:5(r);primtaps:6(r);primtaps:7(r);primtaps:8(r);primtaps:9(r);sectaps:SIZEROW(i);sectaps:0(r)
+********************************************************************************
+*  Current Transformer Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  primtaps:SIZEROW: Number of rows for attribute 'primtaps'
+*  primtaps: Primary Taps in A
+*  sectaps:SIZEROW: Number of rows for attribute 'sectaps'
+*  sectaps: Secondary Taps in A
+********************************************************************************
+  1758;CT 120-1000/1A;1813;10;100;150;250;300;500;900;1100;1300;1600;1700;1;1
+
+
+$$TypLne;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);uline(r);sline(r);InomAir(r);cohl_(i);rline(r);xline(r);rline0(r);xline0(r);Ithr(r);tmax(r);rtemp(r);systp(i);nlnph(i);nneutral(i);frnom(r);mlei(a:4);bline(r);bline0(r)
+********************************************************************************
+*  Line Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  uline: Rated Voltage in kV
+*  sline: Rated Current in kA
+*  InomAir: Rated Current (in air) in kA
+*  cohl_: Cable / OHL:Cable:Overhead Line
+*  rline: Parameters per Length 1,2-Sequence: AC-Resistance R'(20°C) in Ohm/km
+*  xline: Parameters per Length 1,2-Sequence: Reactance X' in Ohm/km
+*  rline0: Parameters per Length Zero Sequence: AC-Resistance R0' in Ohm/km
+*  xline0: Parameters per Length Zero Sequence: Reactance X0' in Ohm/km
+*  Ithr: Rated Short-Time (1s) Current (Conductor) in kA
+*  tmax: Parameters per Length 1,2-Sequence: Max. Operating Temperature in degC
+*  rtemp: Max. End Temperature in degC
+*  systp: System Type:AC:DC
+*  nlnph: Phases:1:2:3
+*  nneutral: Number of Neutrals:0:1
+*  frnom: Nominal Frequency in Hz
+*  mlei: Parameters per Length 1,2-Sequence: Conductor material
+*  bline: Parameters per Length 1,2-Sequence: Susceptance B' in uS/km
+*  bline0: Parameters per Length Zero Sequence: Susceptance B0' in uS/km
+********************************************************************************
+  1759;TypLne 0001 to 0002;;668;220;0,262743;9999;1;9,37992;28,63828;0;0;0;80;80;0;3;0;60;Cu;109,0909;0
+  1760;TypLne 0001 to 0005;;668;220;0,262743;9999;1;26,15052;107,9514;0;0;0;80;80;0;3;0;60;Cu;101,6529;0
+  1761;TypLne 0002 to 0003;;668;220;0,262743;9999;1;22,74316;95,81748;0;0;0;80;80;0;3;0;60;Cu;90,49586;0
+  1762;TypLne 0002 to 0004;;668;220;0,262743;9999;1;28,12524;85,33888;0;0;0;80;80;0;3;0;60;Cu;70,24793;0
+  1763;TypLne 0002 to 0005;;668;220;0,262743;9999;1;27,5638;84,15792;0;0;0;80;80;0;3;0;60;Cu;71,4876;0
+  1764;TypLne 0003 to 0004;;668;220;0,131371;9999;1;32,43284;82,77852;0;0;0;80;80;0;3;0;60;Cu;26,44628;0
+  1765;TypLne 0004 to 0005;;668;220;0,262743;9999;1;6,4614;20,38124;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1766;TypLne 0006 to 0011;;668;132;0,218952;9999;1;16,54931;34,65634;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1767;TypLne 0006 to 0012;;668;132;0,087581;9999;1;21,41584;44,57233;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1768;TypLne 0006 to 0013;;668;132;0,218952;9999;1;11,52598;22,69824;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1769;TypLne 0007 to 0008;;668;132;0,218952;9999;1;0;30,69238;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1770;TypLne 0007 to 0009;;668;132;0,218952;9999;1;0;19,16814;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1771;TypLne 0009 to 0010;;668;132;0,087581;9999;1;5,542574;14,72328;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1772;TypLne 0009 to 0014;;668;132;0,087581;9999;1;22,14765;47,11101;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1773;TypLne 0010 to 0011;;668;132;0,087581;9999;1;14,29639;33,46628;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1774;TypLne 0012 to 0013;;668;132;0,087581;9999;1;38,4931;34,82709;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1775;TypLne 0013 to 0014;;668;132;0,087581;9999;1;29,78284;60,639;0;0;0;80;80;0;3;0;60;Cu;0;0
+  1776;Line Type 01 - 02;;;345;1,005278;1;1;0,025547;0,3;0;0;0;80;80;0;3;0;60;Ds;3,599926;0
+  1777;Line Type 01 - 39;;;345;1,675463;1;1;0,012;0,3;0;0;0;80;80;0;3;0;60;Ds;6,352828;0
+  1778;Line Type 02 - 03;;;345;0,837731;1;1;0,025827;0,3;0;0;0;80;80;0;3;0;60;Ds;3,606938;0
+  1779;Line Type 02 - 25;;;345;0,837731;1;1;0,244186;0,3;0;0;0;80;80;0;3;0;60;Ds;3,594987;0
+  1780;Line Type 03 - 04;;;345;0,837731;1;1;0,018309;0,3;0;0;0;80;80;0;3;0;60;Ds;2,2011;0
+  1781;Line Type 03 - 18;;;345;0,837731;1;1;0,024812;0,3;0;0;0;80;80;0;3;0;60;Ds;3,404079;0
+  1782;Line Type 04 - 05;;;345;1,005278;1;1;0,01875;0,3;0;0;0;80;80;0;3;0;60;Ds;2,220176;0
+  1783;Line Type 04 - 14;;;345;0,837731;1;1;0,018604;0,3;0;0;0;80;80;0;3;0;60;Ds;2,268619;0
+  1784;Line Type 05 - 06;;;345;2,010556;1;1;0,023076;0,3;0;0;0;80;80;0;3;0;60;Ds;3,534782;0
+  1785;Line Type 05 - 08;;;345;1,507917;1;1;0,021428;0,3;0;0;0;80;80;0;3;0;60;Ds;2,790714;0
+  1786;Line Type 06 - 07;;;345;1,507917;1;1;0,019565;0,3;0;0;0;80;80;0;3;0;60;Ds;2,600975;0
+  1787;Line Type 06 - 11;;;345;0,804222;1;1;0,025609;0,3;0;0;0;80;80;0;3;0;60;Ds;3,587033;0
+  1788;Line Type 07 - 08;;;345;1,507917;1;1;0,026086;0,3;0;0;0;80;80;0;3;0;60;Ds;3,590727;0
+  1789;Line Type 08 - 09;;;345;1,507917;1;1;0,019008;0,3;0;0;0;80;80;0;3;0;60;Ds;2,219121;0
+  1790;Line Type 09 - 39;;;345;1,507917;1;1;0,012;0,3;0;0;0;80;80;0;3;0;60;Ds;10,16451;0
+  1791;Line Type 10 - 11;;;345;1,005278;1;1;0,027906;0,3;0;0;0;80;80;0;3;0;60;Ds;3,590086;0
+  1792;Line Type 10 - 13;;;345;1,005278;1;1;0,027906;0,3;0;0;0;80;80;0;3;0;60;Ds;3,590086;0
+  1793;Line Type 13 - 14;;;345;1,005278;1;1;0,026732;0,3;0;0;0;80;80;0;3;0;60;Ds;3,612517;0
+  1794;Line Type 14 - 15;;;345;1,005278;1;1;0,024884;0,3;0;0;0;80;80;0;3;0;60;Ds;3,571614;0
+  1795;Line Type 15 - 16;;;345;1,005278;1;1;0,028723;0,3;0;0;0;80;80;0;3;0;60;Ds;3,852246;0
+  1796;Line Type 16 - 17;;;345;1,005278;1;1;0,023595;0,3;0;0;0;80;80;0;3;0;60;Ds;3,193077;0
+  1797;Line Type 16 - 19;;;345;1,005278;1;1;0,024615;0,3;0;0;0;80;80;0;3;0;60;Ds;3,301274;0
+  1798;Line Type 16 - 21;;;345;1,005278;1;1;0,017777;0,3;0;0;0;80;80;0;3;0;60;Ds;3,996784;0
+  1799;Line Type 16 - 24;;;345;1,005278;1;1;0,015254;0,3;0;0;0;80;80;0;3;0;60;Ds;2,44064;0
+  1800;Line Type 17 - 18;;;345;1,005278;1;1;0,025609;0,3;0;0;0;80;80;0;3;0;60;Ds;3,406228;0
+  1801;Line Type 17 - 27;;;345;1,005278;1;1;0,022543;0,3;0;0;0;80;80;0;3;0;60;Ds;3,936541;0
+  1802;Line Type 21 - 22;;;345;1,507917;1;1;0,017142;0,3;0;0;0;80;80;0;3;0;60;Ds;3,879766;0
+  1803;Line Type 22 - 23;;;345;1,005278;1;1;0,01875;0,3;0;0;0;80;80;0;3;0;60;Ds;4,071994;0
+  1804;Line Type 23 - 24;;;345;1,005278;1;1;0,018857;0,3;0;0;0;80;80;0;3;0;60;Ds;2,184173;0
+  1805;Line Type 25 - 26;;;345;1,005278;1;1;0,029721;0,3;0;0;0;80;80;0;3;0;60;Ds;3,363251;0
+  1806;Line Type 26 - 27;;;345;1,005278;1;1;0,028571;0,3;0;0;0;80;80;0;3;0;60;Ds;3,451542;0
+  1807;Line Type 26 - 28;;;345;1,005278;1;1;0,027215;0,3;0;0;0;80;80;0;3;0;60;Ds;3,485547;0
+  1808;Line Type 26 - 29;;;345;1,005278;1;1;0,02736;0,3;0;0;0;80;80;0;3;0;60;Ds;3,486414;0
+  1809;Line Type 28 - 29;;;345;1,005278;1;1;0,027814;0,3;0;0;0;80;80;0;3;0;60;Ds;3,491956;0
+  1810;DC Cable Type 320kV;;669;320;2;2;0;0,01;0;0;0;0;90;80;1;1;0;0;Cu;0;0
+
+
+$$TypRelay;ID(a:40);loc_name(a:80);fold_id(p);for_name(a:100);typ_id(p);pblk:SIZEROW(i);pblk:0(p);pblk:1(p);pblk:2(p);pblk:3(p);pblk:4(p);pblk:5(p);pblk:6(p);pblk:7(p);pblk:8(p);pblk:9(p);pblk:10(p);pblk:11(p);pblk:12(p);pblk:13(p);pblk:14(p);pblk:15(p);pblk:16(p);pblk:17(p);pblk:18(p);ptyp:SIZEROW(i);ptyp:0(p);ptyp:1(p);ptyp:2(p);ptyp:3(p);ptyp:4(p);ptyp:5(p);ptyp:6(p);ptyp:7(p);ptyp:8(p);ptyp:9(p);ptyp:10(p);ptyp:11(p);ptyp:12(p);ptyp:13(p);ptyp:14(p);ptyp:15(p);ptyp:16(p);ptyp:17(p);ptyp:18(p)
+********************************************************************************
+*  Relay Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  for_name: Foreign Key
+*  typ_id: Relay Definition in BlkDef,BlkFrame
+*  pblk:SIZEROW: Number of rows for attribute 'pblk'
+*  pblk: Slots in BlkSlot
+*  ptyp:SIZEROW: Number of rows for attribute 'ptyp'
+*  ptyp: Types in Typ*,BlkDef
+********************************************************************************
+  1811;LFDD;670;;5;19;;;;;;;;;;;;;;;;;;;;19;;;;;;;;;;;;;;;;;;;
+  1812;OFGT;670;;6;3;;;;;;;;;;;;;;;;;;;;3;;;;;;;;;;;;;;;;;;;
+  1813;Thermal Relay;670;;7;8;;;;;;;;;;;;;;;;;;;;8;1758;;1758;;;;;;;;;;;;;;;;
+  1814;UFGT;670;;8;3;;;;;;;;;;;;;;;;;;;;3;;;;;;;;;;;;;;;;;;;
+
+
+$$TypSym;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);sgn(r);ugn(r);cosn(r);xd(r);xq(r);xdsss(r);rstr(r);xdsat(r);satur(i);nphase(i);nslty(i);x0sy(r);r0sy(r);x2sy(r);r2sy(r);iopt_data(i);xds(r);xqs(r);xl(r);xdss(r);xqss(r);xrlq(r);tds(r);tqs(r);tdss(r);tqss(r)
+********************************************************************************
+*  Synchronous Machine Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  sgn: Rated apparent power in MVA
+*  ugn: Rated voltage in kV
+*  cosn: Rated power factor
+*  xd: Synchronous reactances: xd in p.u.
+*  xq: Synchronous reactances: xq in p.u.
+*  xdsss: Subtransient reactance: saturated value xd''sat in p.u.
+*  rstr: Stator parameters: rstr in p.u.
+*  xdsat: For single fed short-circuit: Reciprocal of short-circuit ratio (xdsat) in p.u.
+*  satur: For single fed short-circuit: Machine type IEC909/IEC60909
+*  nphase: No. of phases:1:3
+*  nslty: Connection:D:Y:YN
+*  x0sy: Zero sequence data: Reactance x0 in p.u.
+*  r0sy: Zero sequence data: Resistance r0 in p.u.
+*  x2sy: Negative sequence data: Reactance x2 in p.u.
+*  r2sy: Negative sequence data: Resistance r2 in p.u.
+*  iopt_data: Input parameters
+*  xds: Transient reactances: xd' in p.u.
+*  xqs: Transient reactances: xq' in p.u.
+*  xl: Stator parameters: xl in p.u.
+*  xdss: Subtransient reactances: xd'' in p.u.
+*  xqss: Subtransient reactances: xq'' in p.u.
+*  xrlq: Rotor mutual reactances: xrlq in p.u.
+*  tds: Transient time constants: Td' in s
+*  tqs: Transient time constants: Tq' in s
+*  tdss: Subtransient time constants: Td'' in s
+*  tqss: Subtransient time constants: Tq'' in s
+********************************************************************************
+  1815;TypSym_0001;;668;448;22;0,85;1,67;1,6;0,2;0,0043;1,2;0;3;2;0,1;0;0,2;0;1;0,265;0,46;0,15;0,205;0,205;0;0,093162;0,038841;0,019184;0,011898
+  1816;TypSym_0002;;668;100;13,8;0,8;1,18;1,05;0,2;0,0035;1,2;0;3;2;0,1;0;0,2;0;1;0,22;0,38;0,075;0,145;0,145;0;0,205084;0,039302;0,018256;0,013393
+  1817;TypSym_0003;;668;40;13,8;1e-06;2,373;1,172001;0,2;0;1,2;0;3;2;0,1;0;0,2;0;1;0,343;1,172;0,132;0,231;0,231;0;1,676696;0,158999;0,039061;0,039616
+  1818;TypSym_0006;;668;25;13,8;1e-06;1,769;0,855;0,2;0,0025;1,2;0;3;2;0,1;0;0,2;0;1;0,304;0,5795;0,1045;0,2035;0,2035;0;1,374788;0,005422;0,035143;0,005302
+  1819;TypSym_0008;;668;25;13,8;1e-06;1,769;0,855;0,2;0,0025;1,2;0;3;2;0,1;0;0,2;0;1;0,304;0,5795;0,1045;0,2035;0,2035;0;1,374788;0,005422;0,035143;0,005302
+  1820;Type Gen 01;;;911;26;0,9;2,04;1,96;0,2;0,001;1,2;0;3;2;0,1;0;0,2;0;1;0,266;0,262;0,154;0,193;0,193;0;0,782353;0,120306;0,002902;0,002946
+  1821;Type Gen 02;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1822;Type Gen 03;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1823;Type Gen 04;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1824;Type Gen 05;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1825;Type Gen 06;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1826;Type Gen 07;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1827;Type Gen 08;;;835;20;0,9;2,183;2,157;0,2;0,0019;1,2;0;3;2;0,1;0;0,2;0;1;0,413;1,285;0,246;0,339;0,339;0;1,076486;0,893602;0,033653;0,037989
+  1828;Type Gen 09;;;911;26;0,95;2,04;1,96;0,2;0,001;1,2;0;3;2;0,1;0;0,2;0;1;0,266;0,262;0,154;0,193;0,193;0;0,782353;0,120306;0,002902;0,002946
+  1829;Type Gen 10;;;590;22;0,95;2,11;2,02;0,2;0,0046;1,2;0;3;2;0,1;0;0,2;0;1;0,28;0,49;0,155;0,215;0,215;0;0,557346;0,137054;0,024571;0,027204
+
+
+$$TypTr2;ID(a:40);loc_name(a:80);for_name(a:100);fold_id(p);nt2ph(i);strn(r);frnom(r);utrn_h(r);utrn_l(r);uktr(r);pcutr(r);uk0tr(r);ur0tr(r);tr2cn_h(a:4);tr2cn_l(a:4);nt2ag(r);curmg(r);pfe(r);zx0hl_n(r);itapch(i);tap_side(i);dutap(r);phitr(r);nntap0(i);ntpmn(i);ntpmx(i);manuf(a:40)
+********************************************************************************
+*  2-Winding Transformer Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  for_name: Foreign Key
+*  fold_id: In Folder
+*  nt2ph: Technology
+*  strn: Rated Power in MVA
+*  frnom: Nominal Frequency in Hz
+*  utrn_h: Rated Voltage: HV-Side in kV
+*  utrn_l: Rated Voltage: LV-Side in kV
+*  uktr: Positive Sequence Impedance: Short-Circuit Voltage uk in %
+*  pcutr: Positive Sequence Impedance: Copper Losses in kW
+*  uk0tr: Zero Sequence Impedance: Short-Circuit Voltage uk0 in %
+*  ur0tr: Zero Sequence Impedance: SHC-Voltage (Re(uk0)) uk0r in %
+*  tr2cn_h: Vector Group: HV-Side:Y :YN:Z :ZN:D
+*  tr2cn_l: Vector Group: LV-Side:Y :YN:Z :ZN:D
+*  nt2ag: Vector Group: Phase Shift in *30deg
+*  curmg: Magnetising Impedance: No Load Current in %
+*  pfe: Magnetising Impedance: No Load Losses in kW
+*  zx0hl_n: Zero Sequence Magnetising Impedance: Mag. Impedance/uk0
+*  itapch: Tap Changer 1
+*  tap_side: Tap Changer 1: at Side:HV:LV
+*  dutap: Tap Changer 1: Additional voltage per tap in %
+*  phitr: Tap Changer 1: Phase of du in deg
+*  nntap0: Tap Changer 1: Neutral Position
+*  ntpmn: Tap Changer 1: Minimum Position
+*  ntpmx: Tap Changer 1: Maximum Position
+*  manuf: Manufacturer
+********************************************************************************
+  1830;2-Winding Transformer Type(1);;668;3;450;60;220;22;0;0;3;0;YN;YN;0;0;0;100;1;0;0;0;0;0;0;
+  1831;2-Winding Transformer Type(2);;668;3;100;60;220;13,8;0;0;3;0;YN;YN;0;0;0;100;1;0;0;0;0;0;0;
+  1832;2-Winding Transformer Type(3);;668;3;40;60;220;13,8;0;0;3;0;YN;YN;0;0;0;100;1;0;0;0;0;0;0;
+  1833;2-Winding Transformer Type(4);;668;3;25;60;132;13,8;0;0;3;0;YN;YN;0;0;0;100;1;0;0;0;0;0;0;
+  1834;2-Winding Transformer Type(5);;668;3;25;60;132;13,8;0;0;3;0;YN;YN;0;0;0;100;1;0;0;0;0;0;0;
+  1835;TypTr2 0004 to 0007;;668;3;50;60;220;132;20,912;0;0;0;YN;YN;0;0;0;100;1;0;2,2;0;0;-1;1;
+  1836;TypTr2 0004 to 0009;;668;3;50;60;220;132;55,618;0;0;0;YN;YN;0;0;0;100;1;0;3,1;0;0;-1;1;
+  1837;TypTr2 0005 to 0006;;668;3;100;60;220;132;25,202;0;0;0;YN;YN;0;0;0;100;1;0;6,8;0;0;-1;1;
+  1838;Trf 30-40;;;3;900;60;22;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1839;Trf 31-41;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1840;Trf 32-42;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1841;Trf 33-43;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1842;Trf 34-44;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1843;Trf 35-45;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1844;Trf 36-46;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1845;Trf 37-47;;;3;900;60;20;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1846;Trf 38-48;;;3;1000;60;26;16,5;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1847;Trf 39-49;;;3;1100;60;345;26;0;0;0;0;YN;YN;0;0;0;0;1;0;0;0;0;0;0;
+  1848;Trf Type 02 - 30 YNy0;;;3;900;60;345;16,5;18,1;0;18,1;0;YN;Y;0;0;0;100;1;0;2,5;0;0;-1;1;
+  1849;Trf Type 06 - 31 YNy0;;;3;900;60;345;16,5;17,5;0;17,5;0;YN;Y;0;0;0;100;1;0;3,5;0;0;-2;2;
+  1850;Trf Type 10 - 32 YNy0;;;3;900;60;345;16,5;16;0;16;0;YN;Y;0;0;0;100;1;0;3,5;0;0;-2;2;
+  1851;Trf Type 11 - 12 YNy0;;;3;500;60;345;138;13,05882;1440;13,05882;0,48;YN;Y;0;0;0;100;1;1;0,6;0;0;-1;1;
+  1852;Trf Type 13 - 12 YNy0;;;3;500;60;345;138;13,05882;1440;13,05882;0,48;YN;Y;0;0;0;100;1;1;0,6;0;0;-1;1;
+  1853;Trf Type 19 - 20 YNy0;;;3;900;60;345;230;13,81774;7000;13,81774;0,7;YN;Y;0;0;0;100;1;0;3;0;0;-2;2;
+  1854;Trf Type 19 - 33 YNy0;;;3;900;60;345;16,5;11,37379;4480;11,37379;0,56;YN;Y;0;0;0;100;1;0;3,5;0;0;-2;2;
+  1855;Trf Type 20 - 34 YNy0;;;3;900;60;230;16,5;10,81349;1620;10,81349;0,54;YN;Y;0;0;0;100;1;0;0,9;0;0;-1;1;
+  1856;Trf Type 22 - 35 YNy0;;;3;900;60;345;16,5;11,44;0;11,44;0;YN;Y;0;0;0;100;1;0;2,5;0;0;-1;1;
+  1857;Trf Type 23 - 36 YNy0;;;3;900;60;345;16,5;19,04322;2450;19,04322;0,35;YN;Y;0;0;0;100;1;0;0;0;0;0;0;
+  1858;Trf Type 25 - 37 YNy0;;;3;900;60;345;16,5;16,24543;2940;16,24543;0,42;YN;Y;0;0;0;100;1;0;2,5;0;0;-1;1;
+  1859;Trf Type 29 - 38 YNy0;;;3;1000;60;345;16,5;15,6205;8000;15,6205;0,8;YN;Y;0;0;0;100;1;0;2,5;0;0;-1;1;
+  1860;HVDC Transformer Type 300/132;;669;3;500;60;300;132;10;250;10;0,1;YN;D;11;0;0;100;1;0;1;0;0;-5;5;
+  1861;HVDC Transformer Type 345/300;;669;3;500;60;345;300;10;250;10;0,1;YN;D;11;0;0;100;1;0;1;0;0;-5;5;
+
+
+$$TypVt;ID(a:40);loc_name(a:80);fold_id(p);primtaps:SIZEROW(i);primtaps:0(r)
+********************************************************************************
+*  Voltage Transformer Type
+*
+*  ID: Unique identifier for DGS file
+*  loc_name: Name
+*  fold_id: In Folder
+*  primtaps:SIZEROW: Number of rows for attribute 'primtaps'
+*  primtaps: Primary Taps (L-L) in V
+********************************************************************************
+  1862;VT_sina;;1;345

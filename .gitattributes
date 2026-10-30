@@ -1,6 +1,8 @@
 # LF everywhere, so rebuilding testcase/ gives identical bytes on every OS.
 * text=auto eol=lf
 
+# PowerFactory DGS export, kept byte-identical (CRLF) to what PowerFactory wrote.
+*.dgs -text
 *.pfd binary
 *.pptx binary
 *.png binary

@@ -1,7 +1,8 @@
 # Provenance of the source models
 
-Files in `data/sources/` are kept exactly as received. The build never modifies
-them; every correction it applies is declared in `data/inputs/` and described in
+Files in `data/sources/` are kept exactly as received, except `TestCase.dgs`
+(see below). The build never modifies them; every correction it applies is
+declared in `data/inputs/` and described in
 [docs/model-changes.md](../../docs/model-changes.md).
 
 ## `tx-full/` — IEEE 39-bus + HVDC link + IEEE 14-bus
@@ -22,6 +23,18 @@ them; every correction it applies is declared in `data/inputs/` and described in
 | `TestCase_CGMES/TestCase_SSH.xml`  | CGMES 2.4.15 SSH            | Kept for reference; not used          | `d8cc1eec36996b2345142353fe303adc865e26b9a998d60758b52830d664d72e` |
 | `TestCase_CGMES/TestCase_SV.xml`   | CGMES 2.4.15 SV             | Kept for reference; not used          | `6e7868c4cf550e99a9c322134e1b22a16caf6e3576d3037b66117133d63fe3f9` |
 | `TestCase_CGMES/TestCase_TP.xml`   | CGMES 2.4.15 TP             | Kept for reference; not used          | `c1bae230b9c96eff013a1099a0f9805e08818e988726f1c1de5aaca775ec1a63` |
+| `TestCase.dgs`                     | PowerFactory DGS 5.0 ASCII  | Kept for comparison; not used         | `f0578e1a4e7cae4ca24437a11f60785831e1bff2e27e77c55d1908d3ac3116d9` |
+
+`TestCase.dgs` is an export of `TestCase.pfd` (project
+`IEEE39B_14B_P2P_VSCHVDC_HYNET`, study case "01 RMS Simulation with HVDC"), made by
+SuperGrid Institute with PowerFactory 25.0.2 on 2026-10-29. It makes the
+PowerFactory model readable by pypowsybl (`POWER-FACTORY` importer), so that it can
+be compared with `TestCase.xiidm`. One line was edited by hand: the measured tap
+table (`mTaps`) of transformer `Trf_0004_0009` held a single row while its type
+allows taps −1 to +1, which the importer rejects; it was removed, so the tap changer
+is defined by its type (3.1 % per tap). In this model the HVDC link is rated 500 MW
+(converter `P_max`, 500 MVA converter transformers, ±320 kV DC), whereas
+`TestCase.xiidm` gives it a 60 MW maximum.
 
 Known characteristics of the source, handled by the build:
 
