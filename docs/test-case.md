@@ -4,8 +4,8 @@ Common reference test case of HYNET Task 3.2, used to validate tool behaviour be
 the demonstrations, to compare similar tools and to investigate tool complementarity.
 This page describes what `testcase/` contains and how it is produced. File schemas
 are in [data-dictionary.md](data-dictionary.md), corrections to the source models in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/model-changes.md) and the build and its inputs in
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/build.md).
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/model-changes.md) and the build and its inputs in
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/build.md).
 
 ## Content
 
@@ -50,7 +50,7 @@ for every bus.
 ### Changes to the source model
 
 The build corrects the source model from UCY before shipping it. In short (reasons and
-effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/model-changes.md)):
+effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/model-changes.md)):
 
 - **MC-1.** The IEEE 39 part is rescaled from a 1 kV base to 345 kV, its nominal
   voltage. Per-unit results are unchanged; values in kV, A and Ω become physical.
@@ -158,7 +158,7 @@ state, and checks that each scenario exhibits the phenomena it is designed for.
 ### Scenario checks
 
 The rules are an input of the build (see
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/build.md#scenariosvalidationyaml)). The build stops, without
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/build.md#scenariosvalidationyaml)). The build stops, without
 writing anything, if a scenario breaks one. Voltage rises and drops are measured bus by
 bus against S1.
 
@@ -182,7 +182,7 @@ Voltage control (for example with a reactive optimal power flow) is left to the 
 ### Branch loadings
 
 Every line and transformer has a permanent current limit (see
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/model-changes.md), MC-2). Loadings at the solved states, in % of
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/model-changes.md), MC-2). Loadings at the solved states, in % of
 the limit:
 
 | State | Highest loading         | Overloaded branches                                         |
@@ -305,7 +305,7 @@ bottlenecks, which lie elsewhere.
 
 The `.pfd` file is UCY's model, used for dynamic studies. pypowsybl can neither
 read nor write it, so it holds none of the corrections in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/model-changes.md), none of the scenario states and no batteries.
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/model-changes.md), none of the scenario states and no batteries.
 Its element names are those of the source model, before MC-4: applying the MC-4
 rule to them gives the ids of the other formats.
 
@@ -343,7 +343,7 @@ is never edited by hand. Rebuilding from an unchanged commit reproduces it byte 
 byte. The build stops, without writing anything, if an input file is malformed, if an
 id does not resolve in the network, if a network element is not covered by every
 scenario, if a load flow does not converge or moves a battery, or if a scenario check
-fails. [build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/03834712c2050bbbf168611aad96de78e2229365/docs/build.md) describes the build and its inputs.
+fails. [build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/build.md) describes the build and its inputs.
 
 ## Presentation notebook
 
