@@ -180,6 +180,26 @@ class ScenarioInputs:
             raise IdResolutionError("; ".join(errors))
         logger.info("all scenario ids resolve in the network")
 
+    def check_dispatch(self, network: Network) -> None:
+        """Checks that every scheduled generator output lies within its operating range.
+
+        The load flow may still move units through slack distribution; this checks the
+        schedule, which is what the scenario defines.
+
+        Raises:
+            InputError: If an output is below `min_p` or above `max_p` of its generator.
+        """
+        limits = network.get_generators()[["min_p", "max_p"]]
+        generation = self.generation.join(limits, on="generator_id")
+        outside = generation[(generation["p_mw"] < generation["min_p"])
+                             | (generation["p_mw"] > generation["max_p"])]
+        if len(outside):
+            rows = [f"{row.scenario}/{row.generator_id} {row.p_mw:g} MW not in "
+                    f"[{row.min_p:g}, {row.max_p:g}]" for row in outside.itertuples()]
+            raise InputError(f"{GENERATION_FILE}: dispatch outside the operating range: "
+                             + "; ".join(rows))
+        logger.info("every scheduled generator output lies within its operating range")
+
     def snapshots(self) -> list[ScenarioSnapshot]:
         """Returns one snapshot per scenario, ordered by scenario id."""
         result = []

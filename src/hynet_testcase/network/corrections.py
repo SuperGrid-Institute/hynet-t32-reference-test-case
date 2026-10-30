@@ -2,16 +2,20 @@
 """Corrections applied to a source model, declared in `data/inputs/network/`."""
 
 import logging
+import math
 import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Self
 
+import pandas as pd
 import pypowsybl as pp
 from pypowsybl.network import Network
 import yaml
 
-from hynet_testcase.errors import InputError, TestCaseError
+from hynet_testcase.errors import IdResolutionError, InputError, TestCaseError
+from hynet_testcase.network.alignment import HvdcData
+from hynet_testcase.network.reinforcement import add_parallel_line
 
 logger = logging.getLogger(__name__)
 
@@ -221,16 +225,105 @@ def _within(branches: Any, ids: set[str], kind: str) -> Any:
 
 
 @dataclass(frozen=True)
+class TapRatios:
+    """Fixed ratios replacing the ratio tap changers of some transformers.
+
+    Each listed transformer gets a one-step, non-regulating tap changer at the given
+    ratio ρ (side 2 voltage over side 1 voltage at no load, in p.u. of the rated
+    voltages), replacing any tap changer it had.
+
+    Attributes:
+        ratios: Ratio per transformer id.
+    """
+
+    ratios: dict[str, float]
+
+    @classmethod
+    def from_mapping(cls, data: dict[str, Any]) -> Self:
+        """Builds the correction from its YAML mapping (transformer id → ratio).
+
+        Raises:
+            InputError: If a ratio is not a positive number.
+        """
+        try:
+            ratios = {str(key): float(value) for key, value in data.items()}
+        except (AttributeError, TypeError, ValueError) as exc:
+            raise InputError(f"invalid tap_ratios correction: {exc}") from exc
+        if any(ratio <= 0 for ratio in ratios.values()):
+            raise InputError("invalid tap_ratios correction: ratios must be positive")
+        return cls(ratios=ratios)
+
+    def apply(self, network: Network) -> None:
+        """Replaces the tap changers of the listed transformers of `network`.
+
+        Raises:
+            IdResolutionError: If a transformer is unknown.
+        """
+        transformers = set(network.get_2_windings_transformers().index)
+        if unknown := sorted(set(self.ratios) - transformers):
+            raise IdResolutionError(f"tap_ratios: unknown transformers {unknown}")
+        ids = list(self.ratios)
+        changers = pd.DataFrame({
+            "id": ids, "tap": 0, "low_tap": 0, "oltc": False, "regulating": False,
+            "target_v": math.nan, "target_deadband": 0.0}).set_index("id")
+        steps = pd.DataFrame({"id": ids, "rho": list(self.ratios.values()), "r": 0.0, "x": 0.0,
+                              "g": 0.0, "b": 0.0}).set_index("id")
+        network.create_ratio_tap_changers(changers, steps)
+        logger.info("fixed the ratio of %d transformers", len(ids))
+
+
+@dataclass(frozen=True)
+class ParallelLine:
+    """A second circuit added next to an existing line, with the same parameters.
+
+    Attributes:
+        line_id: Id of the new line.
+        parallel_to: Id of the existing line whose parameters are copied.
+    """
+
+    line_id: str
+    parallel_to: str
+
+    @classmethod
+    def from_mapping(cls, data: dict[str, Any]) -> Self:
+        """Builds the correction from one item of the YAML `parallel_lines` list.
+
+        Raises:
+            InputError: If `id` or `parallel_to` is missing, or another key is present.
+        """
+        if not isinstance(data, dict) or set(data) != {"id", "parallel_to"}:
+            raise InputError("invalid parallel_lines correction: expected id and parallel_to")
+        return cls(line_id=str(data["id"]), parallel_to=str(data["parallel_to"]))
+
+    def apply(self, network: Network) -> None:
+        """Adds the line to `network`; its current limit comes with the others.
+
+        Raises:
+            IdResolutionError: If the copied line is unknown or the new id is taken.
+        """
+        add_parallel_line(network, self.line_id, self.parallel_to)
+
+
+_KEYS = {"id_normalisation", "voltage_rescale", "tap_ratios", "parallel_lines", "hvdc"}
+
+
+@dataclass(frozen=True)
 class SourceCorrections:
     """All corrections declared for one source model.
 
     Attributes:
         id_normalisation: Id correction applied to the source text, if any.
         voltage_rescale: Nominal-voltage correction, if any.
+        tap_ratios: Fixed transformer ratios, if any.
+        parallel_lines: Circuits added next to existing lines.
+        hvdc: HVDC line data and converter station control, if any.
     """
 
     id_normalisation: IdNormalisation | None
     voltage_rescale: VoltageRescale | None
+    tap_ratios: TapRatios | None = None
+    parallel_lines: tuple[ParallelLine, ...] = ()
+    hvdc: HvdcData | None = None
 
     @classmethod
     def load(cls, path: Path) -> Self:
@@ -243,19 +336,28 @@ class SourceCorrections:
             data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
         except (OSError, yaml.YAMLError) as exc:
             raise InputError(f"cannot read corrections {path}: {exc}") from exc
-        unknown = set(data) - {"id_normalisation", "voltage_rescale"}
+        unknown = set(data) - _KEYS
         if unknown:
             raise InputError(f"unknown corrections in {path}: {sorted(unknown)}")
         ids = data.get("id_normalisation")
         rescale = data.get("voltage_rescale")
+        ratios = data.get("tap_ratios")
+        lines = data.get("parallel_lines") or []
+        hvdc = data.get("hvdc")
+        if not isinstance(lines, list):
+            raise InputError(f"{path.name}: parallel_lines must be a list")
         return cls(id_normalisation=IdNormalisation.from_mapping(ids) if ids else None,
-                   voltage_rescale=VoltageRescale.from_mapping(rescale) if rescale else None)
+                   voltage_rescale=VoltageRescale.from_mapping(rescale) if rescale else None,
+                   tap_ratios=TapRatios.from_mapping(ratios) if ratios else None,
+                   parallel_lines=tuple(ParallelLine.from_mapping(line) for line in lines),
+                   hvdc=HvdcData.from_mapping(hvdc) if hvdc else None)
 
     def import_source(self, source: Path) -> Network:
         """Imports the XIIDM `source` and applies every declared correction.
 
         Raises:
             InputError: If the source cannot be read.
+            TestCaseError: If a correction does not apply as declared.
         """
         try:
             xiidm = source.read_text(encoding="utf-8")
@@ -266,4 +368,10 @@ class SourceCorrections:
         network = pp.network.load_from_string(source.name, xiidm)
         if self.voltage_rescale is not None:
             self.voltage_rescale.apply(network)
+        if self.tap_ratios is not None:
+            self.tap_ratios.apply(network)
+        for line in self.parallel_lines:
+            line.apply(network)
+        if self.hvdc is not None:
+            self.hvdc.apply(network)
         return network

@@ -10,9 +10,11 @@ from pypowsybl.network import Network
 
 from hynet_testcase.errors import InputError
 from hynet_testcase.ids import VariantId
+from hynet_testcase.network.alignment import GeneratorData, LoadData, TransformerData
 from hynet_testcase.network.corrections import SourceCorrections
 from hynet_testcase.network.geography import SubstationCoordinates
 from hynet_testcase.network.limits import ThermalLimits
+from hynet_testcase.network.res_units import ResUnits
 from hynet_testcase.paths import RepoPaths
 from hynet_testcase.storage.batteries import Batteries
 
@@ -46,7 +48,7 @@ class TxFullBuilder(VariantBuilder):
         return self.paths.sources / "tx-full"
 
     def build(self) -> Network:
-        """Imports `TestCase.xiidm` and adds corrections, limits, batteries and coordinates.
+        """Imports `TestCase.xiidm` and adds corrections, limits, units and coordinates.
 
         Raises:
             InputError: If the source model is missing.
@@ -57,9 +59,19 @@ class TxFullBuilder(VariantBuilder):
         logger.info("importing %s", source.relative_to(self.paths.root))
         inputs = self.paths.inputs / "network"
         network = SourceCorrections.load(inputs / "tx-full_corrections.yaml").import_source(source)
+        # Element data aligned with the PowerFactory model is optional: a variant
+        # derived otherwise declares none.
+        if (path := inputs / "tx-full_generator_data.csv").is_file():
+            GeneratorData.load(path).apply(network)
+        if (path := inputs / "tx-full_transformer_data.csv").is_file():
+            TransformerData.load(path).apply(network)
+        if (path := inputs / "tx-full_load_data.csv").is_file():
+            LoadData.load(path).apply(network)
         # Limits are in A, so they are added once voltages are in physical units.
         ThermalLimits.load(inputs / "tx-full_thermal_limits.csv").apply(network)
         Batteries.load(self.paths.inputs / "storage" / "tx-full_batteries.csv").add_to(network)
+        if (path := inputs / "tx-full_res_units.csv").is_file():
+            ResUnits.load(path).add_to(network)
         SubstationCoordinates.load(inputs / "tx-full_substation_coordinates.csv").add_to(network)
         return network
 

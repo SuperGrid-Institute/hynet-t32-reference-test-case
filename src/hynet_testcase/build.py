@@ -62,6 +62,7 @@ def _variant_data(variant: VariantId, paths: RepoPaths, network: Network,
     economics = Economics.load(paths.inputs / "economics" / "economics.yaml")
     scenarios = ScenarioInputs.load(paths.inputs / "scenarios")
     scenarios.check_ids(network)
+    scenarios.check_dispatch(network)
     zones = ZoneMapping.load(paths.inputs / "zones" / f"{variant}_bus_zones.csv").resolve(network)
     batteries = Batteries.load(paths.inputs / "storage" / f"{variant}_batteries.csv")
     contingencies = ContingencyList.load(

@@ -104,7 +104,9 @@ refer to are described in [data-dictionary.md](data-dictionary.md).
 
 `scenario` holds the scenario name (`baseline`, `high_res_low_demand`,
 `low_res_high_demand`). Each scenario has a single timestamp, the same in every file,
-and sets every generator, load, HVDC line and battery of the network exactly once.
+and sets every generator, load, HVDC line and battery of the network exactly once. The
+build stops if a scheduled generator output lies outside the generator's active power
+range (`min_p`, `max_p` of the network model).
 
 ### `zones/<variant>_bus_zones.csv`
 
@@ -142,6 +144,78 @@ applied to both sides. The build stops if a branch is missing or unknown.
 | `branch_id`         | text   | —    | IIDM line or transformer id          |
 | `permanent_limit_a` | number | A    | Permanent current limit              |
 | `basis`             | text   | —    | Origin of the value                  |
+
+### `network/<variant>_generator_data.csv`
+
+Optional. Ratings, operating ranges and voltage control of every generator of the
+source model, aligned with a reference model. A blank cell keeps the source value. The
+build stops if a generator is missing, unknown or listed twice, if only one reactive
+limit is given, or if a minimum is above its maximum.
+
+| Column                 | Type    | Unit | Description                                             |
+|------------------------|---------|------|---------------------------------------------------------|
+| `generator_id`         | text    | —    | IIDM generator id                                       |
+| `rated_s_mva`          | number  | MVA  | Rated apparent power                                    |
+| `min_p_mw`             | number  | MW   | Minimum active power                                    |
+| `max_p_mw`             | number  | MW   | Maximum active power                                    |
+| `target_p_mw`          | number  | MW   | Active power set point of the base case                 |
+| `min_q_mvar`           | number  | Mvar | Lower reactive limit                                    |
+| `max_q_mvar`           | number  | Mvar | Upper reactive limit                                    |
+| `target_v_pu`          | number  | p.u. | Voltage set point, in p.u. of the nominal voltage       |
+| `voltage_regulator_on` | boolean | —    | `True` or `False`: whether the unit regulates voltage   |
+| `basis`                | text    | —    | Reference element the values come from                  |
+
+### `network/<variant>_transformer_data.csv`
+
+Optional. Nameplate data of every two-winding transformer, from which the build
+derives its series impedance as PowerFactory does: r = P_cu / S_n and
+x = √(u_k² − r²) in p.u. of the unit rating, converted to ohms at the nominal voltage
+of side 2 and divided by the number of units in parallel. The rating becomes
+`rated_s_mva` × `parallel_units`. The build stops if a transformer is missing, unknown
+or listed twice, or if the copper losses exceed the short-circuit impedance.
+
+| Column           | Type    | Unit | Description                                 |
+|------------------|---------|------|---------------------------------------------|
+| `transformer_id` | text    | —    | IIDM two-winding transformer id             |
+| `rated_s_mva`    | number  | MVA  | Rating of one unit                          |
+| `uk_pct`         | number  | %    | Short-circuit voltage of one unit           |
+| `pcu_kw`         | number  | kW   | Copper losses of one unit at rated current  |
+| `parallel_units` | integer | —    | Identical units in parallel                 |
+| `basis`          | text    | —    | Reference element the values come from      |
+
+### `network/<variant>_load_data.csv`
+
+Optional. Base-case consumption of selected loads. The build stops if a load is unknown
+or listed twice. Scenario consumption is set by `scenarios/load_scenarios.csv`.
+
+| Column    | Type   | Unit | Description                             |
+|-----------|--------|------|-----------------------------------------|
+| `load_id` | text   | —    | IIDM load id                            |
+| `p_mw`    | number | MW   | Active power                            |
+| `q_mvar`  | number | Mvar | Reactive power                          |
+| `basis`   | text   | —    | Reference element the values come from  |
+
+### `network/<variant>_res_units.csv`
+
+Optional. Inverter-based wind and solar units added to the network models as IIDM
+generators, idle in the base case and without voltage control. Their rating is
+`max_p_mw / power_factor` and their reactive range ± `max_p_mw` · tan(acos
+`power_factor`). The build stops if a bus is unknown, an id is repeated or already
+used, the energy source is not `WIND` or `SOLAR`, the power is not positive or the
+power factor is outside (0, 1].
+
+| Column          | Type   | Unit | Description                                  |
+|-----------------|--------|------|----------------------------------------------|
+| `generator_id`  | text   | —    | Id of the new generator                      |
+| `bus_id`        | text   | —    | Bus-breaker bus of the connection            |
+| `energy_source` | text   | —    | `WIND` or `SOLAR`                            |
+| `max_p_mw`      | number | MW   | Maximum active power                         |
+| `power_factor`  | number | —    | Power factor reachable at full output        |
+| `site`          | text   | —    | Illustrative location                        |
+
+The build applies the network inputs in this order: id normalisation and voltage
+rescale, the other corrections of `<variant>_corrections.yaml`, generator, transformer
+and load data, thermal limits, batteries, renewable units and coordinates.
 
 ### `network/<variant>_substation_coordinates.csv`
 
@@ -193,3 +267,18 @@ Corrections applied to the source model of a variant; see
 | `voltage_rescale.source_nominal_kv`        | number  | kV   | Nominal voltage of the voltage levels to move |
 | `voltage_rescale.target_nominal_kv`        | number  | kV   | Nominal voltage after correction              |
 | `voltage_rescale.expected_voltage_levels`  | integer | —    | Number of voltage levels that must match      |
+| `tap_ratios.<transformer_id>`              | number  | p.u. | Fixed ratio ρ replacing the tap changer       |
+| `parallel_lines[].id`                      | text    | —    | Id of a line added next to an existing one    |
+| `parallel_lines[].parallel_to`             | text    | —    | Existing line whose parameters are copied     |
+| `hvdc.lines.<id>.nominal_v_kv`             | number  | kV   | Nominal DC voltage                            |
+| `hvdc.lines.<id>.r_ohm`                    | number  | Ω    | DC resistance                                 |
+| `hvdc.lines.<id>.max_p_mw`                 | number  | MW   | Maximum active power                          |
+| `hvdc.converter_stations.<id>.voltage_regulator_on` | boolean | — | Whether the station regulates its AC voltage |
+| `hvdc.converter_stations.<id>.target_v_pu`   | number | p.u. | AC voltage set point, if it regulates        |
+| `hvdc.converter_stations.<id>.target_q_mvar` | number | Mvar | Reactive set point, if it does not           |
+| `hvdc.converter_stations.<id>.min_q_mvar`, `max_q_mvar` | number | Mvar | Reactive limits                |
+
+A transformer listed in `tap_ratios` gets a one-step, non-regulating tap changer at ρ
+(side 2 over side 1 voltage at no load, in p.u. of the rated voltages). A parallel line
+gets its current limit from `<variant>_thermal_limits.csv` like any other branch.
+`hvdc` must cover every HVDC line and converter station of the model.
