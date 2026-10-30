@@ -90,6 +90,13 @@ generator,B36-G1,78e42ae6-68b8-593e-b610-e547d2ce96e2
 generator,B37-G1,789fa14d-e833-5610-b973-a6ea685fffc0
 generator,B38-G1,dfe6967f-9399-5c72-bff1-f36385d34f7b
 generator,B39-G1,afbb0ffd-63d2-5a22-b540-c89b71494c33
+generator,WF-B14-1,46877883-79f9-5821-9323-d46a90191e92
+generator,PV-B6-1,866742f8-9bab-5354-87f6-711873a8288e
+generator,WF-B15-1,515b2fc9-6f86-5188-96d0-eaacbf86b1c3
+generator,PV-B21-1,cb3131af-dd22-5024-bae2-6ab957ba6d03
+generator,WF-B3-1,eb6d2406-d154-5bdd-aa6e-56e5acfbdf1c
+generator,WF-B101-1,7b8d5ec5-186f-5a62-9252-5b28e33fe762
+generator,PV-B106-1,8ae70482-1677-53b2-89de-cd101a7c18ae
 load,B113-L1,3150ad94-ca3b-5ad2-ad32-ac53e2096be5
 load,B114-L1,28668797-4716-5642-91a7-e2f209e26a3b
 load,B104-L1,c6ec711d-3ef6-5428-b543-f8d709ac95bc

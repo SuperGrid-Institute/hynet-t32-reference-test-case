@@ -108,6 +108,25 @@ and sets every generator, load, HVDC line and battery of the network exactly onc
 build stops if a scheduled generator output lies outside the generator's active power
 range (`min_p`, `max_p` of the network model).
 
+The generation and load files are computed once with the rule below and written as
+inputs; the build only reads them. Tools that dispatch on their own do not need it.
+
+1. Loads: the base-case loads (after MC-9) times the scenario factors, rounded to
+   0.001: S1 × 1.00, S2 × 0.70, S3 × 1.08 on P and × 1.80 on Q.
+2. Wind and solar units: S1 50 %, S2 100 %, S3 10 % of their `max_p`.
+3. Synchronous condensers: 0 MW.
+4. Every other synchronous unit runs at least at 30 % of its `max_p`, a minimum
+   stable output. If the minimums of an AC island exceed its remaining demand, they
+   are scaled down uniformly.
+5. The rest of each island's demand is dispatched in merit order of
+   `price_eur_mwh` (ties in file order of `generators_metadata.csv`), up to `max_p`.
+   The demand of IEEE 39 includes the HVDC export; that of IEEE 14 is reduced by the
+   import. Losses are left to the slack.
+6. Values are rounded to 0.1 MW, never above `max_p`.
+
+Without the minimum output, plain merit order shuts down most coal units of zone Z1 in
+S1, and the power flowing into Z1 overloads L-2-3 (108 %).
+
 ### `zones/<variant>_bus_zones.csv`
 
 Zone of every bus-breaker bus, with the same columns as the shipped `bus_zones.csv`.

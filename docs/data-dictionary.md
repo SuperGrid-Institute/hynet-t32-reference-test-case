@@ -12,9 +12,10 @@ Ids are IIDM ids of the network. They contain no whitespace (MC-4 in
 ### `generation.csv`
 
 Active power set point of every generator in every scenario. The values follow the
-placeholder dispatch of [test-case.md](test-case.md#scenarios) (RES at a share of
-nominal power, other units in merit order within each AC island); losses are left to
-the slack generator.
+placeholder dispatch of [test-case.md](test-case.md#scenarios) (wind and solar at a
+share of their rating, synchronous units at a 30 % minimum and in merit order within
+each AC island, condensers at 0 MW); losses are left to the slack. Every value lies
+within the active power range of its generator in the network models.
 
 | Column          | Type   | Unit | Description                                         |
 |-----------------|--------|------|-----------------------------------------------------|
@@ -27,7 +28,7 @@ the slack generator.
 ### `loads.csv`
 
 Consumption of every load in every scenario. Each scenario scales the nominal loads by
-one factor (S1 1.00, S2 0.70, S3 1.08 on P and 1.50 on Q).
+one factor (S1 1.00, S2 0.70, S3 1.08 on P and 1.80 on Q).
 
 | Column          | Type   | Unit | Description                    |
 |-----------------|--------|------|--------------------------------|
@@ -41,7 +42,7 @@ one factor (S1 1.00, S2 0.70, S3 1.08 on P and 1.50 on Q).
 ### `hvdc.csv`
 
 Active power set point of every HVDC line in every scenario. The link is the only
-connection between IEEE 39 and IEEE 14; S2 sets it to its 60 MW maximum.
+connection between IEEE 39 and IEEE 14; S2 sets it to its 50 MW maximum.
 
 | Column          | Type   | Unit | Description                                            |
 |-----------------|--------|------|--------------------------------------------------------|
@@ -67,18 +68,22 @@ decides their dispatch.
 
 ### `generators.csv`
 
-Illustrative characteristics of every generator, shared by all scenarios. Types and
-prices are synthetic values of the test case, not IEEE data; they set the merit order
-of the scenario dispatch.
+Characteristics of every generator, shared by all scenarios. Types of the synchronous
+units follow the PowerFactory model; prices are synthetic values of the test case, not
+IEEE data, and set the merit order of the scenario dispatch.
 
 | Column          | Type    | Unit    | Description                                          |
 |-----------------|---------|---------|------------------------------------------------------|
 | `generator_id`  | text    | —       | IIDM generator id                                    |
 | `subnetwork`    | text    | —       | `IEEE 14` or `IEEE 39`                               |
-| `type`          | text    | —       | `NUCLEAR`, `COAL`, `GAS`, `HYDRO`, `WIND` or `SOLAR` |
-| `nominal_p_mw`  | number  | MW      | Nominal active power, upper bound of the dispatch    |
+| `type`          | text    | —       | `NUCLEAR`, `COAL`, `GAS`, `HYDRO`, `WIND`, `SOLAR` or `CONDENSER` |
+| `nominal_p_mw`  | number  | MW      | Rated active power (S_n · cos φ_n for synchronous units, 0 for condensers), the `max_p` of the network models |
 | `price_eur_mwh` | number  | EUR/MWh | Marginal price used for the merit order              |
 | `is_res`        | boolean | —       | `True` for renewable units (wind, solar, hydro)      |
+
+Wind and solar units (`WF-*`, `PV-*`) are inverter-based; hydro (`B30-G1`) is a
+synchronous unit, renewable but dispatched in merit order. `CONDENSER` units are
+synchronous condensers: they produce no active power and regulate voltage.
 
 ## `testcase/<variant>/network/bus_coordinates.csv`
 
@@ -135,7 +140,7 @@ N-1 margin and ignore loop flows through the third zone of the Z1–Z2–Z3 ring
 
 Scheduled balance of each zone, from the scenario set points (before losses). Balances
 sum to zero in each scenario, and the balance of Z0 is minus the HVDC set point, its
-only link; tools that compute their own dispatch may use it as a reference.
+only link, to within the 0.1 MW rounding of the dispatch; tools that compute their own dispatch may use it as a reference.
 
 | Column          | Type   | Unit | Description                                 |
 |-----------------|--------|------|---------------------------------------------|

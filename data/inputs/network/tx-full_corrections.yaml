@@ -38,7 +38,8 @@ hvdc:
     HVDC_Link_16_113:
       nominal_v_kv: 320.0
       r_ohm: 0.75
-      max_p_mw: 60.0
+      # Rating of the test case, sized for IEEE 14 (PowerFactory: 500 MW).
+      max_p_mw: 50.0
   converter_stations:
     # Converter 1 (IEEE 39 side) controls the DC voltage and runs at zero reactive power.
     VSC_Station_16:

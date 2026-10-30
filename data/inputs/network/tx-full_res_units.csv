@@ -1,0 +1,8 @@
+generator_id,bus_id,energy_source,max_p_mw,power_factor,site
+WF-B14-1,B14,WIND,400,0.95,Offshore wind farm off the Zeeland coast
+PV-B6-1,B6,SOLAR,400,0.95,Solar park next to battery BAT-B6-1
+WF-B15-1,B15,WIND,300,0.95,Offshore wind farm off Dunkirk
+PV-B21-1,B21,SOLAR,200,0.95,Solar parks of northern France
+WF-B3-1,B3,WIND,200,0.95,Onshore wind farms of the Antwerp area
+WF-B101-1,B101,WIND,50,0.95,Offshore wind farm landing at Shoreham
+PV-B106-1,B106,SOLAR,30,0.95,Solar park next to battery BAT-B106-1

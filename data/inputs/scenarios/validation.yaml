@@ -5,7 +5,7 @@
 
 S1:
   # Clean reference state. The band is wider than the usual 0.95-1.05 p.u. because
-  # the IEEE 14 generator set points reach 1.09 p.u.
+  # generator set points reach 1.06 p.u.
   max_branch_loading_pct: 100.0
   voltage_band_pu: [0.90, 1.10]
 

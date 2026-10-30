@@ -235,106 +235,155 @@
     </cim:RatioTapChanger>
     <cim:SynchronousMachine rdf:about="#_ea78a1c8-992b-5915-ac60-7e55e45d202c">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-156.5</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-155</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>16.549</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_f5acf967-a9b1-5bf8-a891-bf0418bd2af1">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-12.5</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-17.623</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_190374d0-04fd-502c-8d86-7ed7e745afd6">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-15</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-12.73</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_0836c577-347b-52e5-9d8b-38b8d15f4cdb">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-24</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-43.556</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_c1056a87-05d6-533e-b2b7-508ad31179f3">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-25</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-25.075</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_c083c4c3-84d4-5fa7-8278-08e04cbb79e9">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-125</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-560.5</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-83.211</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_a9cbb551-538b-59ba-98d0-bda2fc6f3fed">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-285</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-751.5</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-363.936</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_fef5e8d3-e3f1-5a17-bc2e-60c2d160f0b4">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-975</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-751.5</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-1.533</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_bd70743e-a014-589b-929e-c9f5666d9b2d">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-950</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-225.4</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-69.667</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_1cf886ba-320e-5647-bc85-62234c267777">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-225.4</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-148.79</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_87238fa2-82f4-5e22-824e-567ad2b6ba95">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-325</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-751.5</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-167.043</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_78e42ae6-68b8-593e-b610-e547d2ce96e2">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-794.5</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-225.4</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>-75.449</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_789fa14d-e833-5610-b973-a6ea685fffc0">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-0</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-751.5</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>35.347</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_dfe6967f-9399-5c72-bff1-f36385d34f7b">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-1245</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-865.4</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>0.473</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
     <cim:SynchronousMachine rdf:about="#_afbb0ffd-63d2-5a22-b540-c89b71494c33">
         <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
-        <cim:RotatingMachine.p>-1500</cim:RotatingMachine.p>
+        <cim:RotatingMachine.p>-376.4</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>36.487</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_46877883-79f9-5821-9323-d46a90191e92">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-200</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_866742f8-9bab-5354-87f6-711873a8288e">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-200</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_515b2fc9-6f86-5188-96d0-eaacbf86b1c3">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-150</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_cb3131af-dd22-5024-bae2-6ab957ba6d03">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-100</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_eb6d2406-d154-5bdd-aa6e-56e5acfbdf1c">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-100</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_7b8d5ec5-186f-5a62-9252-5b28e33fe762">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-25</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
+        <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+        <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SynchronousMachine rdf:about="#_8ae70482-1677-53b2-89de-cd101a7c18ae">
+        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RotatingMachine.p>-15</cim:RotatingMachine.p>
+        <cim:RotatingMachine.q>-0</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
         <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
     </cim:SynchronousMachine>
@@ -471,9 +520,9 @@
     </cim:RegulatingControl>
     <cim:VsConverter rdf:about="#_cbe1e26d-e5e1-5aeb-a531-bb19849a0ef6">
         <cim:ACDCConverter.targetPpcc>0</cim:ACDCConverter.targetPpcc>
-        <cim:ACDCConverter.targetUdc>319.8828125</cim:ACDCConverter.targetUdc>
-        <cim:ACDCConverter.p>-49.981689453125</cim:ACDCConverter.p>
-        <cim:ACDCConverter.q>14.22333391892922</cim:ACDCConverter.q>
+        <cim:ACDCConverter.targetUdc>319.90625</cim:ACDCConverter.targetUdc>
+        <cim:ACDCConverter.p>-39.98828125</cim:ACDCConverter.p>
+        <cim:ACDCConverter.q>10.32793799649874</cim:ACDCConverter.q>
         <cim:VsConverter.droop>0</cim:VsConverter.droop>
         <cim:VsConverter.droopCompensation>0</cim:VsConverter.droopCompensation>
         <cim:VsConverter.qShare>0</cim:VsConverter.qShare>
@@ -483,9 +532,9 @@
         <cim:VsConverter.qPccControl rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsQpccControlKind.voltagePcc"/>
     </cim:VsConverter>
     <cim:VsConverter rdf:about="#_721717dd-6168-5cad-99c5-67b014b4a61a">
-        <cim:ACDCConverter.targetPpcc>50</cim:ACDCConverter.targetPpcc>
+        <cim:ACDCConverter.targetPpcc>40</cim:ACDCConverter.targetPpcc>
         <cim:ACDCConverter.targetUdc>0</cim:ACDCConverter.targetUdc>
-        <cim:ACDCConverter.p>50</cim:ACDCConverter.p>
+        <cim:ACDCConverter.p>40</cim:ACDCConverter.p>
         <cim:ACDCConverter.q>-0</cim:ACDCConverter.q>
         <cim:VsConverter.droop>0</cim:VsConverter.droop>
         <cim:VsConverter.droopCompensation>0</cim:VsConverter.droopCompensation>
@@ -624,6 +673,12 @@
     <cim:Terminal rdf:about="#_d59820e4-9c3d-5942-8d69-deb8f6d2a784">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
+    <cim:Terminal rdf:about="#_4a51f17d-68dc-55ab-8c5d-486b1279fdef">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
+    <cim:Terminal rdf:about="#_e32feb67-cc4a-5bdb-90a5-817d794b1174">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
     <cim:Terminal rdf:about="#_253d53fb-b624-5b25-84f9-64178327ffec">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
@@ -729,6 +784,9 @@
     <cim:Terminal rdf:about="#_ecc9a667-4af6-5146-af58-80c47f925bca">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
+    <cim:Terminal rdf:about="#_0b50cea8-cfc2-52fa-a92d-3aff4958cc82">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
     <cim:Terminal rdf:about="#_88fabeec-9557-5bb0-8dba-04b38ed2945f">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
@@ -822,6 +880,9 @@
     <cim:Terminal rdf:about="#_c6e0a7f4-1306-5287-abf5-3bd8833fcd87">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
+    <cim:Terminal rdf:about="#_9158b8bf-2753-5e58-871e-48d14ee27482">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
     <cim:Terminal rdf:about="#_b9e8326d-8395-5bb5-bc77-24b2557bf1f3">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
@@ -909,10 +970,16 @@
     <cim:Terminal rdf:about="#_1fcc894f-641a-5993-bdb7-b00d1e014924">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
+    <cim:Terminal rdf:about="#_fbf55922-c1ba-51eb-a75f-9587ee613879">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
     <cim:Terminal rdf:about="#_82533747-a76b-502a-9e16-30fb9034a204">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_ed8028f9-4cb1-5e5d-9480-53323feb96d9">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
+    <cim:Terminal rdf:about="#_9cc02085-65d8-50ed-bbf0-766acd8c9317">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_c7e4ad2e-e38e-56bf-80df-2327c9d6563d">
@@ -961,6 +1028,9 @@
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_e066a4bf-2d49-5b18-b89d-2e420ad79708">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
+    <cim:Terminal rdf:about="#_6398adb2-16df-5908-9be9-c53a6f9b0a56">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_f5d1d321-e2e3-5035-8d12-25550532d1e3">

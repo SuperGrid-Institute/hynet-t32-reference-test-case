@@ -59,6 +59,10 @@ scenario or file, PATCH for corrected values.
   `substationPosition` extension and per bus in
   `testcase/tx-full/network/bus_coordinates.csv`; the presentation notebook gains a
   geographical network-area diagram.
+- Seven inverter-based wind and solar units in `tx-full` (MC-11 in
+  `docs/model-changes.md`), 1500 MW in IEEE 39 and 80 MW in IEEE 14, as IIDM
+  generators in XIIDM and CGMES, with their scenario output in
+  `testcase/tx-full/scenarios/generation.csv`.
 - Presentation notebook `notebooks/presentation.ipynb`, with plotting helpers in
   `hynet_testcase.viz`.
 - Binder configuration (`binder/`) and README badge opening the presentation notebook.
@@ -82,6 +86,24 @@ scenario or file, PATCH for corrected values.
   of regulating bus 16, `VSC_Station_113` regulating bus 113 at 1.01 p.u., both within
   ±25 Mvar. Scenario voltages, loadings and post-contingency results change
   accordingly; every scenario check still passes.
+- Units of `tx-full` rated and typed as in the PowerFactory model (MC-6): active power
+  range 0 to S_n · cos φ_n (751.5 MW for most IEEE 39 units, 865.45 MW for B38-G1,
+  819.9 MW for B39-G1), B103-G1, B106-G1 and B108-G1 as synchronous condensers at
+  0 MW, types `NUCLEAR`, `COAL`, `HYDRO` and the new `CONDENSER` following
+  PowerFactory; the base case runs the PowerFactory dispatch. `nominal_p_mw` in
+  `generators.csv` is the rated active power, and the build stops if a scheduled
+  output lies outside a unit's range.
+- Thermal limits of `tx-full` are the PowerFactory ratings (MC-2): IEEE 39 lines
+  unchanged except L-6-11 (480 MVA), step-up transformers 900–1000 MVA (`T-20-34`
+  2 × 900 MVA), IEEE 14 lines 20, 50 or 100 MVA and transformers 50 or 100 MVA.
+- HVDC link rated 50 MW (60 MW before), sized for IEEE 14; S1 and S3 run it at
+  40 MW, S2 at its 50 MW maximum.
+- S1–S3 rebuilt with a new dispatch rule: wind and solar at 50 / 100 / 10 % of their
+  rating, every other synchronous unit at least at 30 % of its rating, the rest in
+  merit order within each AC island, condensers at 0 MW. S3 reactive demand is the
+  base case × 1.80 (× 1.50 before). S1 peaks at 91 % (L-113-114), S2 raises voltages
+  by up to 0.035 p.u., S3 overloads L-2-3 and L-113-114 and lowers voltages by up to
+  0.050 p.u.; post-contingency results and the zone balances change accordingly.
 - `L-26-27-2` of the `reinforced` case is 58.3 km long, the length of line 26-27 in
   the PowerFactory model (47 km estimated before): investment 70.0 M EUR, annuity
   4.08 M EUR/year.

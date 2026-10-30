@@ -10,10 +10,13 @@
                 <iidm:busBreakerTopology>
                     <iidm:bus id="B101" name="Bus 1" v="146.28" angle="0.0"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B101-G1" energySource="OTHER" minP="-10000.0" maxP="10000.0" ratedS="448.0" voltageRegulatorOn="true" targetP="232.392" targetV="146.28" targetQ="-16.549" bus="B101" connectableBus="B101" p="-185.89779141726527" q="1.9221247472211296">
+                <iidm:generator id="B101-G1" energySource="OTHER" minP="0.0" maxP="380.8" ratedS="448.0" voltageRegulatorOn="true" targetP="137.4" targetV="146.28" targetQ="-16.549" bus="B101" connectableBus="B101" p="-141.58958740906394" q="-9.577662194688868">
                     <iidm:alias type="CGMES.Terminal1">B101-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B101-G1_GU"/>
                     <iidm:minMaxReactiveLimits minQ="-179.2" maxQ="336.0"/>
+                </iidm:generator>
+                <iidm:generator id="WF-B101-1" energySource="WIND" minP="0.0" maxP="50.0" ratedS="52.631578947368425" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B101" connectableBus="B101" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-16.43420525894316" maxQ="16.43420525894316"/>
                 </iidm:generator>
             </iidm:voltageLevel>
         </iidm:substation>
@@ -23,9 +26,9 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL102" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B102" name="Bus 2" v="144.86417287239732" angle="-2.1805124107525433"/>
+                    <iidm:bus id="B102" name="Bus 2" v="144.9" angle="-1.5066975829236067"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B102-G1" energySource="OTHER" minP="-10000.0" maxP="10000.0" ratedS="100.0" voltageRegulatorOn="true" targetP="40.0" targetV="144.9" targetQ="43.556" bus="B102" connectableBus="B102" p="-31.99727897987285" q="-50.0">
+                <iidm:generator id="B102-G1" energySource="OTHER" minP="0.0" maxP="80.0" ratedS="100.0" voltageRegulatorOn="true" targetP="73.4" targetV="144.9" targetQ="43.556" bus="B102" connectableBus="B102" p="-75.6381056464723" q="-35.71982806899321">
                     <iidm:alias type="CGMES.Terminal1">B102-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B102-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B102-G1_RC"/>
@@ -43,9 +46,9 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL103" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B103" name="Bus 3" v="137.82221817387597" angle="-9.238417466771288"/>
+                    <iidm:bus id="B103" name="Bus 3" v="137.85598243148755" angle="-8.633635775392046"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B103-G1" energySource="OTHER" minP="-10000.0" maxP="10000.0" ratedS="40.0" voltageRegulatorOn="true" targetP="0.0" targetV="139.38" targetQ="25.075" bus="B103" connectableBus="B103" p="-0.0" q="-16.0">
+                <iidm:generator id="B103-G1" energySource="OTHER" minP="0.0" maxP="0.0" ratedS="40.0" voltageRegulatorOn="true" targetP="0.0" targetV="139.38" targetQ="25.075" bus="B103" connectableBus="B103" p="-0.0" q="-16.0">
                     <iidm:alias type="CGMES.Terminal1">B103-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B103-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B103-G1_RC"/>
@@ -63,9 +66,9 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL104" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B104" name="Bus 4" v="139.2049464163607" angle="-6.320998147935697"/>
-                    <iidm:bus id="B107" name="Bus 7" v="139.70974541630358" angle="-9.83024465841954"/>
-                    <iidm:bus id="B109" name="Bus 9" v="138.21742335554953" angle="-10.780240790000674"/>
+                    <iidm:bus id="B104" name="Bus 4" v="139.22304959888837" angle="-5.785251273839534"/>
+                    <iidm:bus id="B107" name="Bus 7" v="139.72754862462756" angle="-9.308791305685117"/>
+                    <iidm:bus id="B109" name="Bus 9" v="138.23588862714277" angle="-10.262648950969103"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B104-L1" loadType="UNDEFINED" p0="47.8" q0="-3.9" bus="B104" connectableBus="B104" p="47.8" q="-3.9">
                     <iidm:alias type="CGMES.Terminal1">B104-L1_EC_T_1</iidm:alias>
@@ -73,12 +76,12 @@
                 <iidm:load id="B109-L1" loadType="UNDEFINED" p0="29.5" q0="16.6" bus="B109" connectableBus="B109" p="29.5" q="16.6">
                     <iidm:alias type="CGMES.Terminal1">B109-L1_EC_T_1</iidm:alias>
                 </iidm:load>
-                <iidm:shuntCompensator id="B109-SH-1" sectionCount="1" solvedSectionCount="1" voltageRegulatorOn="false" bus="B109" connectableBus="B109" p="0.0" q="-19.059917363048566">
+                <iidm:shuntCompensator id="B109-SH-1" sectionCount="1" solvedSectionCount="1" voltageRegulatorOn="false" bus="B109" connectableBus="B109" p="0.0" q="-19.065010354241785">
                     <iidm:alias type="CGMES.Terminal1">B109-SH-1_SC_T_1</iidm:alias>
                     <iidm:shuntLinearModel bPerSection="9.976895610165932E-4" gPerSection="0.0" maximumSectionCount="1"/>
                 </iidm:shuntCompensator>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-104-107-1" r="0.0" x="79.6496256" ratedU1="138.0" ratedU2="138.0" ratedS="50.0" voltageLevelId1="VL104" bus1="B104" connectableBus1="B104" voltageLevelId2="VL104" bus2="B107" connectableBus2="B107" p1="15.28193883233356" q1="5.161956315068002" p2="-15.281938832333564" q2="-4.13905961586564" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-104-107-1" r="0.0" x="79.6496256" ratedU1="138.0" ratedU2="138.0" ratedS="50.0" voltageLevelId1="VL104" bus1="B104" connectableBus1="B104" voltageLevelId2="VL104" bus2="B107" connectableBus2="B107" p1="15.348056417110856" q1="5.167772341273211" p2="-15.34805641711085" q2="-4.136945690832737" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.RatioTapChanger1">T-104-107-1_PT_RTC_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal1">T-104-107-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-104-107-1_TW2</iidm:alias>
@@ -88,13 +91,13 @@
                     <iidm:step g="-4.3515999999999995" b="-4.3515999999999995" rho="1.0224948875255624"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="418.0"/>
+                    <iidm:currentLimits permanentLimit="209.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="418.0"/>
+                    <iidm:currentLimits permanentLimit="209.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
-            <iidm:twoWindingsTransformer id="T-104-109-1" r="0.0" x="211.8378384" ratedU1="138.0" ratedU2="138.0" ratedS="50.0" voltageLevelId1="VL104" bus1="B104" connectableBus1="B104" voltageLevelId2="VL104" bus2="B109" connectableBus2="B109" p1="7.287693353208032" q1="3.973519818022174" p2="-7.287693353208033" q2="-3.266296159989824" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-104-109-1" r="0.0" x="211.8378384" ratedU1="138.0" ratedU2="138.0" ratedS="50.0" voltageLevelId1="VL104" bus1="B104" connectableBus1="B104" voltageLevelId2="VL104" bus2="B109" connectableBus2="B109" p1="7.319232919560764" q1="3.9765362119049597" p2="-7.319232919560764" q2="-3.264522747817416" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.Terminal1">T-104-109-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal2">T-104-109-1_PT_T_2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-104-109-1_TW2</iidm:alias>
@@ -104,10 +107,10 @@
                     <iidm:step g="-6.1039000000000065" b="-6.1039000000000065" rho="1.0319917440660475"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="418.0"/>
+                    <iidm:currentLimits permanentLimit="209.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="418.0"/>
+                    <iidm:currentLimits permanentLimit="209.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
         </iidm:substation>
@@ -117,15 +120,18 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL105" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B105" name="Bus 5" v="139.72578901976954" angle="-5.0058359542590285"/>
-                    <iidm:bus id="B106" name="Bus 6" v="140.76" angle="-7.16895961554134"/>
+                    <iidm:bus id="B105" name="Bus 5" v="139.74301044194314" angle="-4.518756151461682"/>
+                    <iidm:bus id="B106" name="Bus 6" v="140.76" angle="-6.668217556068044"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B106-G1" energySource="OTHER" minP="-10000.0" maxP="10000.0" ratedS="25.0" voltageRegulatorOn="true" targetP="0.0" targetV="140.76" targetQ="12.73" bus="B106" connectableBus="B106" p="-0.0" q="-1.3324995495031702">
+                <iidm:generator id="B106-G1" energySource="OTHER" minP="0.0" maxP="0.0" ratedS="25.0" voltageRegulatorOn="true" targetP="0.0" targetV="140.76" targetQ="12.73" bus="B106" connectableBus="B106" p="-0.0" q="-1.2918464041732345">
                     <iidm:alias type="CGMES.Terminal1">B106-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B106-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B106-G1_RC"/>
                     <iidm:regulatingTerminal id="B106-L1"/>
                     <iidm:minMaxReactiveLimits minQ="-1.5" maxQ="6.0"/>
+                </iidm:generator>
+                <iidm:generator id="PV-B106-1" energySource="SOLAR" minP="0.0" maxP="30.0" ratedS="31.578947368421055" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B106" connectableBus="B106" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-9.860523155365897" maxQ="9.860523155365897"/>
                 </iidm:generator>
                 <iidm:battery id="BAT-B106-1" targetP="0.0" targetQ="0.0" minP="-10.0" maxP="10.0" bus="B106" connectableBus="B106" p="-0.0" q="-0.0">
                     <iidm:minMaxReactiveLimits minQ="-10.0" maxQ="10.0"/>
@@ -137,7 +143,7 @@
                     <iidm:alias type="CGMES.Terminal1">B106-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-105-106-1" r="0.0" x="47.994688800000006" ratedU1="138.0" ratedU2="138.0" ratedS="100.0" voltageLevelId1="VL105" bus1="B105" connectableBus1="B105" voltageLevelId2="VL105" bus2="B106" connectableBus2="B106" p1="16.595956114957627" q1="28.92745660514615" p2="-16.595956114957627" q2="-26.552454864600772" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-105-106-1" r="0.0" x="47.994688800000006" ratedU1="138.0" ratedU2="138.0" ratedS="100.0" voltageLevelId1="VL105" bus1="B105" connectableBus1="B105" voltageLevelId2="VL105" bus2="B106" connectableBus2="B106" p1="16.493218203995447" q1="28.984802986912744" p2="-16.493218203995454" q2="-26.61055407025878" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.TransformerEnd2">T-105-106-1_TW2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-105-106-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.RatioTapChanger1">T-105-106-1_PT_RTC_1</iidm:alias>
@@ -160,9 +166,9 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL108" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B108" name="Bus 8" v="141.13586088318758" angle="-9.83024465841954"/>
+                    <iidm:bus id="B108" name="Bus 8" v="141.15349002702092" angle="-9.308791305685117"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B108-G1" energySource="OTHER" minP="-10000.0" maxP="10000.0" ratedS="25.0" voltageRegulatorOn="true" targetP="0.0" targetV="143.52" targetQ="17.623" bus="B108" connectableBus="B108" p="-0.0" q="-6.0">
+                <iidm:generator id="B108-G1" energySource="OTHER" minP="0.0" maxP="0.0" ratedS="25.0" voltageRegulatorOn="true" targetP="0.0" targetV="143.52" targetQ="17.623" bus="B108" connectableBus="B108" p="-0.0" q="-6.0">
                     <iidm:alias type="CGMES.Terminal1">B108-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B108-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B108-G1_RC"/>
@@ -176,7 +182,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL110" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B110" name="Bus 10" v="137.48319259152976" angle="-10.46061709056516"/>
+                    <iidm:bus id="B110" name="Bus 10" v="137.49930610239886" angle="-9.946046769127218"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B110-L1" loadType="UNDEFINED" p0="9.0" q0="5.8" bus="B110" connectableBus="B110" p="9.0" q="5.8">
                     <iidm:alias type="CGMES.Terminal1">B110-L1_EC_T_1</iidm:alias>
@@ -189,7 +195,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL111" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B111" name="Bus 11" v="138.48177841266138" angle="-8.974644712353568"/>
+                    <iidm:bus id="B111" name="Bus 11" v="138.49090539478973" angle="-8.467030267222665"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B111-L1" loadType="UNDEFINED" p0="3.5" q0="1.8" bus="B111" connectableBus="B111" p="3.5" q="1.8">
                     <iidm:alias type="CGMES.Terminal1">B111-L1_EC_T_1</iidm:alias>
@@ -202,7 +208,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL112" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B112" name="Bus 12" v="138.74588597310188" angle="-6.885795264937581"/>
+                    <iidm:bus id="B112" name="Bus 12" v="138.74512574215146" angle="-6.383618115597396"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B112-L1" loadType="UNDEFINED" p0="6.1" q0="1.6" bus="B112" connectableBus="B112" p="6.1" q="1.6">
                     <iidm:alias type="CGMES.Terminal1">B112-L1_EC_T_1</iidm:alias>
@@ -215,12 +221,12 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL113" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B113" name="Bus 13" v="139.38" angle="-5.791170961782235"/>
+                    <iidm:bus id="B113" name="Bus 13" v="139.38" angle="-5.287461156458152"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B113-L1" loadType="UNDEFINED" p0="13.5" q0="5.8" bus="B113" connectableBus="B113" p="13.5" q="5.8">
                     <iidm:alias type="CGMES.Terminal1">B113-L1_EC_T_1</iidm:alias>
                 </iidm:load>
-                <iidm:vscConverterStation id="VSC_Station_113" voltageRegulatorOn="true" lossFactor="0.0" voltageSetpoint="139.38" bus="B113" connectableBus="B113" p="-49.981689453125" q="12.92755616578994">
+                <iidm:vscConverterStation id="VSC_Station_113" voltageRegulatorOn="true" lossFactor="0.0" voltageSetpoint="139.38" bus="B113" connectableBus="B113" p="-49.981689453125" q="12.955534405952667">
                     <iidm:alias type="CGMES.Terminal1">VSC_Station_113_DCCS_T_1</iidm:alias>
                     <iidm:alias type="CGMES.ACDCConverterDCTerminal">HVDC_Link_16_113_DCLS_ACDCCDCT_2</iidm:alias>
                     <iidm:minMaxReactiveLimits minQ="-25.0" maxQ="25.0"/>
@@ -233,189 +239,189 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL114" nominalV="138.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B114" name="Bus 14" v="135.92918110576247" angle="-9.69956599489099"/>
+                    <iidm:bus id="B114" name="Bus 14" v="135.94068539897145" angle="-9.188054723012648"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B114-L1" loadType="UNDEFINED" p0="14.9" q0="5.0" bus="B114" connectableBus="B114" p="14.9" q="5.0">
                     <iidm:alias type="CGMES.Terminal1">B114-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
         </iidm:substation>
-        <iidm:line id="L-101-102-1" r="3.6907272" x="11.2683348" b1="1.3862633900441084E-4" b2="1.3862633900441084E-4" voltageLevelId1="VL101" bus1="B101" connectableBus1="B101" voltageLevelId2="VL102" bus2="B102" connectableBus2="B102" p1="70.45858403529783" q1="-6.302407698072365" p2="-69.60039609280454" q2="3.047117271405088" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-101-102-1" r="3.6907272" x="11.2683348" b1="1.3862633900441084E-4" b2="1.3862633900441084E-4" voltageLevelId1="VL101" bus1="B101" connectableBus1="B101" voltageLevelId2="VL102" bus2="B102" connectableBus2="B102" p1="50.158878193095866" q1="-0.830052461115514" p2="-49.724143081556285" q2="-3.719541087399616" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-101-102-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-101-102-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="600.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="600.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-101-102-2" r="3.6907272" x="11.2683348" b1="1.3862633900441084E-4" b2="1.3862633900441084E-4" voltageLevelId1="VL101" bus1="B101" connectableBus1="B101" voltageLevelId2="VL102" bus2="B102" connectableBus2="B102" p1="70.45858403529783" q1="-6.302407698072365" p2="-69.60039609280454" q2="3.047117271405088" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-101-102-2" r="3.6907272" x="11.2683348" b1="1.3862633900441084E-4" b2="1.3862633900441084E-4" voltageLevelId1="VL101" bus1="B101" connectableBus1="B101" voltageLevelId2="VL102" bus2="B102" connectableBus2="B102" p1="50.158878193095866" q1="-0.830052461115514" p2="-49.724143081556285" q2="-3.719541087399616" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="600.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="600.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-101-105-1" r="10.2894732" x="42.475737599999995" b1="1.2917454316320101E-4" b2="1.2917454316320101E-4" voltageLevelId1="VL101" bus1="B101" connectableBus1="B101" voltageLevelId2="VL105" bus2="B105" connectableBus2="B105" p1="45.24507177648981" q1="10.682690648923602" p2="-44.17373731776377" q2="-11.5461083736745" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-101-105-1" r="10.2894732" x="42.475737599999995" b1="1.2917454316320101E-4" b2="1.2917454316320101E-4" voltageLevelId1="VL101" bus1="B101" connectableBus1="B101" voltageLevelId2="VL105" bus2="B105" connectableBus2="B105" p1="41.30763839807165" q1="11.237767116919896" p2="-40.392854121150386" q2="-12.748057743350149" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-101-105-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-101-105-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-102-103-1" r="8.9487756" x="37.7014068" b1="1.1499684940138626E-4" b2="1.1499684940138626E-4" voltageLevelId1="VL102" bus1="B102" connectableBus1="B102" voltageLevelId2="VL103" bus2="B103" connectableBus2="B103" p1="68.58059257748415" q1="12.379365969952334" p2="-66.48168246055629" q2="-8.134249337141647" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-102-103-1" r="8.9487756" x="37.7014068" b1="1.1499684940138626E-4" b2="1.1499684940138626E-4" voltageLevelId1="VL102" bus1="B102" connectableBus1="B102" voltageLevelId2="VL103" bus2="B103" connectableBus2="B103" p1="69.23205850801621" q1="12.318956173829463" p2="-67.09666586680858" q2="-7.922402017969402" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-102-103-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-102-103-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-102-104-1" r="11.066468400000002" x="33.578380800000005" b1="8.926696072253729E-5" b2="8.926696072253729E-5" voltageLevelId1="VL102" bus1="B102" connectableBus1="B102" voltageLevelId2="VL104" bus2="B104" connectableBus2="B104" p1="46.83746433861296" q1="8.672936823618386" p2="-45.62197079139943" q2="-8.587971097633469" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-102-104-1" r="11.066468400000002" x="33.578380800000005" b1="8.926696072253729E-5" b2="8.926696072253729E-5" voltageLevelId1="VL102" bus1="B102" connectableBus1="B102" voltageLevelId2="VL104" bus2="B104" connectableBus2="B104" p1="48.21089781761938" q1="8.40874904198242" p2="-46.93008977982804" q2="-8.126979785378644" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-102-104-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-102-104-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-102-105-1" r="10.845557999999999" x="33.1137072" b1="9.084226002940558E-5" b2="9.084226002940558E-5" voltageLevelId1="VL102" bus1="B102" connectableBus1="B102" voltageLevelId2="VL105" bus2="B105" connectableBus2="B105" p1="34.07999992703601" q1="10.153741367635439" p2="-33.404586110427914" q2="-11.771487090264435" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-102-105-1" r="10.845557999999999" x="33.1137072" b1="9.084226002940558E-5" b2="9.084226002940558E-5" voltageLevelId1="VL102" bus1="B102" connectableBus1="B102" voltageLevelId2="VL105" bus2="B105" connectableBus2="B105" p1="35.94343586973563" q1="9.731205027980554" p2="-35.20611495715625" q2="-11.1613160042194" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-102-105-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-102-105-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-103-104-1" r="12.761384399999999" x="32.5709532" b1="3.3606385213190505E-5" b2="3.3606385213190505E-5" voltageLevelId1="VL103" bus1="B103" connectableBus1="B103" voltageLevelId2="VL104" bus2="B104" connectableBus2="B104" p1="-27.71830433355939" q1="5.134247411331538" p2="28.256861511947008" q2="-5.049262073879445" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-103-104-1" r="12.761384399999999" x="32.5709532" b1="3.3606385213190505E-5" b2="3.3606385213190505E-5" voltageLevelId1="VL103" bus1="B103" connectableBus1="B103" voltageLevelId2="VL104" bus2="B104" connectableBus2="B104" p1="-27.103331519253803" q1="4.922415977094666" p2="27.617376284822328" q2="-4.900476010094377" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-103-104-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-103-104-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-104-105-1" r="2.542374" x="8.0194284" voltageLevelId1="VL104" bus1="B104" connectableBus1="B104" voltageLevelId2="VL105" bus2="B105" connectableBus2="B105" p1="-53.00451450635002" q1="8.401754998310958" p2="53.38237618723083" q2="-7.209863209404873" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-104-105-1" r="2.542374" x="8.0194284" voltageLevelId1="VL104" bus1="B104" connectableBus1="B104" voltageLevelId2="VL105" bus2="B105" connectableBus2="B105" p1="-51.15457508311169" q1="7.7831470973067" p2="51.50575139270395" q2="-6.675429164952543" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-104-105-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-104-105-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="418.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-106-111-1" r="18.087991199999998" x="37.878516" voltageLevelId1="VL105" bus1="B106" connectableBus1="B106" voltageLevelId2="VL111" bus2="B111" connectableBus2="B111" p1="16.595791768346018" q1="0.7966851745445228" p2="-16.34377614925813" q2="-0.26893294632185744" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-106-111-1" r="18.087991199999998" x="37.878516" voltageLevelId1="VL105" bus1="B106" connectableBus1="B106" voltageLevelId2="VL111" bus2="B111" connectableBus2="B111" p1="16.532482847694983" q1="0.7910756129743639" p2="-16.282390036766426" q2="-0.26734998554022493" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-106-111-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-106-111-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-106-112-1" r="23.406980400000002" x="48.7164564" voltageLevelId1="VL105" bus1="B106" connectableBus1="B106" voltageLevelId2="VL112" bus2="B112" connectableBus2="B112" p1="0.6639600259375826" q1="5.505406540640053" p2="-0.6276324135523068" q2="-5.429798644421018" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-106-112-1" r="23.406980400000002" x="48.7164564" voltageLevelId1="VL105" bus1="B106" connectableBus1="B106" voltageLevelId2="VL112" bus2="B112" connectableBus2="B112" p1="0.6566880530247046" q1="5.511146846528752" p2="-0.6202970781135214" q2="-5.435407075216217" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-106-112-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-106-112-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-106-113-1" r="12.597606" x="24.808618800000005" voltageLevelId1="VL105" bus1="B106" connectableBus1="B106" voltageLevelId2="VL113" bus2="B113" connectableBus2="B113" p1="-11.863794505786384" q1="14.082862698919365" p2="12.079383893135818" q2="-13.65829989483735" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-106-113-1" r="12.597606" x="24.808618800000005" voltageLevelId1="VL105" bus1="B106" connectableBus1="B106" voltageLevelId2="VL113" bus2="B113" connectableBus2="B113" p1="-11.895952072132419" q1="14.100178014928897" p2="12.112337531803695" q2="-13.674047495935953" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-106-113-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-106-113-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-107-108-1" r="0.0" x="33.546006000000006" voltageLevelId1="VL104" bus1="B107" connectableBus1="B107" voltageLevelId2="VL108" bus2="B108" connectableBus2="B108" p1="0.0" q1="-5.939372598115418" p2="0.0" q2="5.999999944479266" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-107-108-1" r="0.0" x="33.546006000000006" voltageLevelId1="VL104" bus1="B107" connectableBus1="B107" voltageLevelId2="VL108" bus2="B108" connectableBus2="B108" p1="0.0" q1="-5.939404429808607" p2="0.0" q2="6.0000169773369025" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-107-108-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-107-108-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-107-109-1" r="0.0" x="20.9503044" voltageLevelId1="VL104" bus1="B107" connectableBus1="B107" voltageLevelId2="VL104" bus2="B109" connectableBus2="B109" p1="15.281938993484099" q1="10.078432209357686" p2="-15.2819389934841" q2="-9.718742921002892" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-107-109-1" r="0.0" x="20.9503044" voltageLevelId1="VL104" bus1="B107" connectableBus1="B107" voltageLevelId2="VL104" bus2="B109" connectableBus2="B109" p1="15.348056254434367" q1="10.076350122662964" p2="-15.348056254434367" q2="-9.714624375628523" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-107-109-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-107-109-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="209.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-109-110-1" r="6.0578964" x="16.092180000000003" voltageLevelId1="VL104" bus1="B109" connectableBus1="B109" voltageLevelId2="VL110" bus2="B110" connectableBus2="B110" p1="-3.684292358291471" q1="7.711709683032835" p2="3.707454762545584" q2="-7.650181133536242" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-109-110-1" r="6.0578964" x="16.092180000000003" voltageLevelId1="VL104" bus1="B109" connectableBus1="B109" voltageLevelId2="VL110" bus2="B110" connectableBus2="B110" p1="-3.6243567823447176" q1="7.7098504545246636" p2="3.6473650415610326" q2="-7.64873137549959" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-109-110-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-109-110-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-109-114-1" r="24.2068284" x="51.4911672" voltageLevelId1="VL104" bus1="B109" connectableBus1="B109" voltageLevelId2="VL114" bus2="B114" connectableBus2="B114" p1="-3.2460753720879394" q1="7.733246990720217" p2="3.335203621443611" q2="-7.543659263076551" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-109-114-1" r="24.2068284" x="51.4911672" voltageLevelId1="VL104" bus1="B109" connectableBus1="B109" voltageLevelId2="VL114" bus2="B114" connectableBus2="B114" p1="-3.208354320256168" q1="7.734307854314704" p2="3.297171129631699" q2="-7.5453826012350556" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-109-114-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-109-114-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-110-111-1" r="15.625601999999999" x="36.577810799999995" voltageLevelId1="VL110" bus1="B110" connectableBus1="B110" voltageLevelId2="VL111" bus2="B111" connectableBus2="B111" p1="-12.70745462900949" q1="1.8501811433803663" p2="12.843776322965429" q2="-1.531067093921267" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-110-111-1" r="15.625601999999999" x="36.577810799999995" voltageLevelId1="VL110" bus1="B110" connectableBus1="B110" voltageLevelId2="VL111" bus2="B111" connectableBus2="B111" p1="-12.647364467012043" q1="1.8487313504245821" p2="12.782390565393955" q2="-1.53265014730185" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-110-111-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-110-111-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-112-113-1" r="42.0720048" x="38.0651472" voltageLevelId1="VL112" bus1="B112" connectableBus1="B112" voltageLevelId2="VL113" bus2="B113" connectableBus2="B113" p1="-5.472367586063269" q1="3.8297986449196157" p2="5.569872329562835" q2="-3.7415800674675337" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-112-113-1" r="42.0720048" x="38.0651472" voltageLevelId1="VL112" bus1="B112" connectableBus1="B112" voltageLevelId2="VL113" bus2="B113" connectableBus2="B113" p1="-5.479702920418619" q1="3.835407077120028" p2="5.577478267650841" q2="-3.7469436677194055" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-112-113-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-112-113-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-113-114-1" r="32.5519092" x="66.2769288" voltageLevelId1="VL113" bus1="B113" connectableBus1="B113" voltageLevelId2="VL114" bus2="B114" connectableBus2="B114" p1="18.832433357891542" q1="-1.3276762034850527" p2="-18.23520338446653" q2="2.5436592102794697" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-113-114-1" r="32.5519092" x="66.2769288" voltageLevelId1="VL113" bus1="B113" connectableBus1="B113" voltageLevelId2="VL114" bus2="B114" connectableBus2="B114" p1="18.79187390040136" q1="-1.3345432422973071" p2="-18.197170326208234" q2="2.5453824038878263" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-113-114-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-113-114-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="400.0"/>
+                <iidm:currentLimits permanentLimit="84.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
         <iidm:extension id="S101">
@@ -484,7 +490,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL1" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B1" name="1" v="359.10944358949143" angle="-7.934502549760533"/>
+                    <iidm:bus id="B1" name="1" v="358.23468012619134" angle="-10.225536749470054"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B1-L1" loadType="UNDEFINED" p0="97.6" q0="44.2" bus="B1" connectableBus="B1" p="97.6" q="44.2">
                     <iidm:alias type="CGMES.Terminal1">B1-L1_EC_T_1</iidm:alias>
@@ -497,10 +503,10 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL10" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B10" name="10" v="358.54625954083394" angle="-3.4408304400480594"/>
-                    <iidm:bus id="B32" name="32" v="339.16949999999997" angle="3.616327699400647"/>
+                    <iidm:bus id="B10" name="10" v="358.2973147133993" angle="-3.985768322618397"/>
+                    <iidm:bus id="B32" name="32" v="339.16949999999997" angle="3.060693163612406"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B32-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="650.0" targetV="339.16949999999997" targetQ="1.533" bus="B32" connectableBus="B32" p="-659.8893109119629" q="-106.08106611547927">
+                <iidm:generator id="B32-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="667.6" targetV="339.16949999999997" targetQ="1.533" bus="B32" connectableBus="B32" p="-658.4366761661672" q="-109.65903717722121">
                     <iidm:alias type="CGMES.Terminal1">B32-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B32-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B32-G1_RC"/>
@@ -510,7 +516,7 @@
                     <iidm:alias type="CGMES.Terminal1">B10-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-10-32-1" r="0.0" x="21.16" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL10" bus1="B10" connectableBus1="B10" voltageLevelId2="VL10" bus2="B32" connectableBus2="B32" p1="-659.8893104022761" q1="-23.91264708390271" p2="659.8893104022761" q2="106.08106611547927" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-10-32-1" r="0.0" x="21.16" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL10" bus1="B10" connectableBus1="B10" voltageLevelId2="VL10" bus2="B32" connectableBus2="B32" p1="-658.436675220081" q1="-27.70088922815404" p2="658.436675220081" q2="109.65903717722121" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.TransformerEnd1">T-10-32-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal1">T-10-32-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal2">T-10-32-1_PT_T_2</iidm:alias>
@@ -520,10 +526,10 @@
                     <iidm:step g="14.490000000000002" b="14.490000000000002" rho="0.9345794392523364"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1841.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1841.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
         </iidm:substation>
@@ -533,9 +539,9 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL11" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B11" name="11" v="358.0140764452807" angle="-4.259288562162009"/>
-                    <iidm:bus id="B12" name="12" v="356.166430434251" angle="-4.230492316688309"/>
-                    <iidm:bus id="B13" name="13" v="357.81039295052864" angle="-4.123542047599855"/>
+                    <iidm:bus id="B11" name="11" v="357.7139873485594" angle="-4.818987251743174"/>
+                    <iidm:bus id="B12" name="12" v="355.8861890504184" angle="-4.774526931168411"/>
+                    <iidm:bus id="B13" name="13" v="357.5596959666015" angle="-4.651793408777965"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B11-L1" loadType="UNDEFINED" p0="0.0" q0="0.0" bus="B11" connectableBus="B11" p="0.0" q="0.0">
                     <iidm:alias type="CGMES.Terminal1">B11-L1_EC_T_1</iidm:alias>
@@ -547,7 +553,7 @@
                     <iidm:alias type="CGMES.Terminal1">B13-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-12-11-1" r="0.685584" x="31.07896013518013" ratedU1="345.0" ratedU2="345.0" ratedS="500.0" voltageLevelId1="VL11" bus1="B12" connectableBus1="B12" voltageLevelId2="VL11" bus2="B11" connectableBus2="B11" p1="1.0511385498277894" q1="-45.269353479434976" p2="-1.039923703178378" q2="45.77774599142307" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-12-11-1" r="0.685584" x="31.07896013518013" ratedU1="345.0" ratedU2="345.0" ratedS="500.0" voltageLevelId1="VL11" bus1="B12" connectableBus1="B12" voltageLevelId2="VL11" bus2="B11" connectableBus2="B11" p1="2.166648605401188" q1="-45.012702264472615" p2="-2.155523360254415" q2="45.51703295247977" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.TransformerEnd2">T-12-11-1_TW2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-12-11-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.RatioTapChanger1">T-12-11-1_PT_RTC_1</iidm:alias>
@@ -563,7 +569,7 @@
                     <iidm:currentLimits permanentLimit="837.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
-            <iidm:twoWindingsTransformer id="T-12-13-1" r="0.685584" x="31.07896013518013" ratedU1="345.0" ratedU2="345.0" ratedS="500.0" voltageLevelId1="VL11" bus1="B12" connectableBus1="B12" voltageLevelId2="VL11" bus2="B13" connectableBus2="B13" p1="-8.551138475595947" q1="-42.73064550655972" p2="8.561525293097374" q2="43.20150172120642" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-12-13-1" r="0.685584" x="31.07896013518013" ratedU1="345.0" ratedU2="345.0" ratedS="500.0" voltageLevelId1="VL11" bus1="B12" connectableBus1="B12" voltageLevelId2="VL11" bus2="B13" connectableBus2="B13" p1="-9.666648499298036" q1="-42.98729647562341" p2="9.67728352632089" q2="43.46940454826145" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.RatioTapChanger1">T-12-13-1_PT_RTC_1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-12-13-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-12-13-1_TW2</iidm:alias>
@@ -586,8 +592,11 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL14" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B14" name="14" v="357.35081707226766" angle="-5.701391370786633"/>
+                    <iidm:bus id="B14" name="14" v="357.0980527308704" angle="-6.184417577071773"/>
                 </iidm:busBreakerTopology>
+                <iidm:generator id="WF-B14-1" energySource="WIND" minP="0.0" maxP="400.0" ratedS="421.0526315789474" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B14" connectableBus="B14" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-131.47364207154527" maxQ="131.47364207154527"/>
+                </iidm:generator>
                 <iidm:load id="B14-L1" loadType="UNDEFINED" p0="0.0" q0="0.0" bus="B14" connectableBus="B14" p="0.0" q="0.0">
                     <iidm:alias type="CGMES.Terminal1">B14-L1_EC_T_1</iidm:alias>
                 </iidm:load>
@@ -599,8 +608,11 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL15" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B15" name="15" v="355.3459187861121" angle="-5.882851076358855"/>
+                    <iidm:bus id="B15" name="15" v="355.14212585428663" angle="-6.262807972908468"/>
                 </iidm:busBreakerTopology>
+                <iidm:generator id="WF-B15-1" energySource="WIND" minP="0.0" maxP="300.0" ratedS="315.7894736842105" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B15" connectableBus="B15" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-98.60523155365897" maxQ="98.60523155365897"/>
+                </iidm:generator>
                 <iidm:load id="B15-L1" loadType="UNDEFINED" p0="320.0" q0="153.0" bus="B15" connectableBus="B15" p="320.0" q="153.0">
                     <iidm:alias type="CGMES.Terminal1">B15-L1_EC_T_1</iidm:alias>
                 </iidm:load>
@@ -612,7 +624,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL16" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B16" name="16" v="359.47447704928345" angle="-4.413080477881014"/>
+                    <iidm:bus id="B16" name="16" v="359.3061212735109" angle="-4.747027808322879"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B16-L1" loadType="UNDEFINED" p0="329.0" q0="32.3" bus="B16" connectableBus="B16" p="329.0" q="32.3">
                     <iidm:alias type="CGMES.Terminal1">B16-L1_EC_T_1</iidm:alias>
@@ -630,7 +642,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL17" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B17" name="17" v="360.14369068050974" angle="-5.512545011586495"/>
+                    <iidm:bus id="B17" name="17" v="360.0220489078001" angle="-5.888603952639407"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B17-L1" loadType="UNDEFINED" p0="0.0" q0="0.0" bus="B17" connectableBus="B17" p="0.0" q="0.0">
                     <iidm:alias type="CGMES.Terminal1">B17-L1_EC_T_1</iidm:alias>
@@ -643,7 +655,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL18" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B18" name="18" v="359.71696989702735" angle="-6.437989378794841"/>
+                    <iidm:bus id="B18" name="18" v="359.58752768596787" angle="-6.766039445068805"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B18-L1" loadType="UNDEFINED" p0="158.0" q0="30.0" bus="B18" connectableBus="B18" p="158.0" q="30.0">
                     <iidm:alias type="CGMES.Terminal1">B18-L1_EC_T_1</iidm:alias>
@@ -656,18 +668,18 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL19" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B19" name="19" v="365.79754878217835" angle="0.8532019510781078"/>
-                    <iidm:bus id="B20" name="20" v="348.41367971695195" angle="-0.16024907951607992"/>
-                    <iidm:bus id="B33" name="33" v="344.034" angle="5.540170363659773"/>
-                    <iidm:bus id="B34" name="34" v="349.2435" angle="1.5809811911045653"/>
+                    <iidm:bus id="B19" name="19" v="365.8035017706699" angle="0.18557228058474243"/>
+                    <iidm:bus id="B20" name="20" v="348.4089793392469" angle="-0.9560365830910061"/>
+                    <iidm:bus id="B33" name="33" v="344.034" angle="4.738392438226166"/>
+                    <iidm:bus id="B34" name="34" v="349.2435" angle="0.7352549639697816"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B33-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="632.0" targetV="344.034" targetQ="69.667" bus="B33" connectableBus="B33" p="-641.6154530713239" q="-47.67852411243124">
+                <iidm:generator id="B33-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="632.0" targetV="344.034" targetQ="69.667" bus="B33" connectableBus="B33" p="-623.3253135665334" q="-46.87683687111861">
                     <iidm:alias type="CGMES.Terminal1">B33-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B33-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B33-G1_RC"/>
                     <iidm:minMaxReactiveLimits minQ="-250.5" maxQ="584.5"/>
                 </iidm:generator>
-                <iidm:generator id="B34-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="508.0" targetV="349.2435" targetQ="148.79" bus="B34" connectableBus="B34" p="-515.728876835811" q="-191.54984037406285">
+                <iidm:generator id="B34-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="508.0" targetV="349.2435" targetQ="148.79" bus="B34" connectableBus="B34" p="-501.027309006011" q="-191.58173384887306">
                     <iidm:alias type="CGMES.Terminal1">B34-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B34-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B34-G1_RC"/>
@@ -680,7 +692,7 @@
                     <iidm:alias type="CGMES.Terminal1">B20-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-19-20-1" r="1.0286111111111111" x="18.244988772093233" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL19" bus1="B19" connectableBus1="B19" voltageLevelId2="VL19" bus2="B20" connectableBus2="B20" p1="112.71633491918031" q1="-68.15070302263962" p2="-112.56648100717143" q2="70.80873666871796" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-19-20-1" r="1.0286111111111111" x="18.244988772093233" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL19" bus1="B19" connectableBus1="B19" voltageLevelId2="VL19" bus2="B20" connectableBus2="B20" p1="127.43427426973308" q1="-68.50915667983438" p2="-127.25347416681613" q2="71.71609836273656" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.TransformerEnd2">T-19-20-1_TW2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-19-20-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.RatioTapChanger1">T-19-20-1_PT_RTC_1</iidm:alias>
@@ -696,7 +708,7 @@
                     <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
-            <iidm:twoWindingsTransformer id="T-19-33-1" r="0.6583111111111112" x="15.027424765693127" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL19" bus1="B19" connectableBus1="B19" voltageLevelId2="VL19" bus2="B33" connectableBus2="B33" p1="-639.3131111053922" q1="4.877564534576789" p2="641.6154521686358" q2="47.67852411243124" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-19-33-1" r="0.6583111111111112" x="15.027424765693127" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL19" bus1="B19" connectableBus1="B19" voltageLevelId2="VL19" bus2="B33" connectableBus2="B33" p1="-621.152074241385" q1="2.7321871018657387" p2="623.3253123179019" q2="46.87683687111861" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.Terminal1">T-19-33-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal2">T-19-33-1_PT_T_2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-19-33-1_TW2</iidm:alias>
@@ -706,13 +718,13 @@
                     <iidm:step g="14.490000000000002" b="14.490000000000002" rho="0.9345794392523364"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1841.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1841.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
-            <iidm:twoWindingsTransformer id="T-20-34-1" r="0.119025" x="7.149429556247517" ratedU1="345.0" ratedU2="345.0" ratedS="1800.0" voltageLevelId1="VL19" bus1="B20" connectableBus1="B20" voltageLevelId2="VL19" bus2="B34" connectableBus2="B34" p1="-515.4335195159939" q1="-173.80873469334333" p2="515.7288766612066" q2="191.54984037406285" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-20-34-1" r="0.119025" x="7.149429556247517" ratedU1="345.0" ratedU2="345.0" ratedS="1800.0" voltageLevelId1="VL19" bus1="B20" connectableBus1="B20" voltageLevelId2="VL19" bus2="B34" connectableBus2="B34" p1="-500.7465265629877" q1="-174.71609568900675" p2="501.0273087661237" q2="191.58173384887306" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.TransformerEnd1">T-20-34-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-20-34-1_TW2</iidm:alias>
                 <iidm:alias type="CGMES.RatioTapChanger1">T-20-34-1_PT_RTC_1</iidm:alias>
@@ -722,10 +734,10 @@
                     <iidm:step g="1.8080999999999792" b="1.8080999999999792" rho="0.9910802775024778"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1506.0"/>
+                    <iidm:currentLimits permanentLimit="3012.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1506.0"/>
+                    <iidm:currentLimits permanentLimit="3012.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
         </iidm:substation>
@@ -735,10 +747,10 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL2" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B2" name="2" v="363.07335464320073" angle="-4.21407105956784"/>
-                    <iidm:bus id="B30" name="30" v="361.38750000000005" angle="-1.493787565442114"/>
+                    <iidm:bus id="B2" name="2" v="363.1131917564542" angle="-4.209504257085507"/>
+                    <iidm:bus id="B30" name="30" v="361.38750000000005" angle="0.558011227539371"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B30-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="590.0" voltageRegulatorOn="true" targetP="250.0" targetV="361.38750000000005" targetQ="83.211" bus="B30" connectableBus="B30" p="-253.80358111998572" q="-114.26755669676456">
+                <iidm:generator id="B30-G1" energySource="OTHER" minP="0.0" maxP="560.5" ratedS="590.0" voltageRegulatorOn="true" targetP="450.7" targetV="361.38750000000005" targetQ="83.211" bus="B30" connectableBus="B30" p="-444.5137956082857" q="-126.15904742752903">
                     <iidm:alias type="CGMES.Terminal1">B30-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B30-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B30-G1_RC"/>
@@ -748,7 +760,7 @@
                     <iidm:alias type="CGMES.Terminal1">B2-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-2-30-1" r="0.0" x="23.937250000000002" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL2" bus1="B2" connectableBus1="B2" voltageLevelId2="VL2" bus2="B30" connectableBus2="B30" p1="-253.80358043416948" q1="-100.06782179356372" p2="253.80358043416948" q2="114.26755669676456" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-2-30-1" r="0.0" x="23.937250000000002" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL2" bus1="B2" connectableBus1="B2" voltageLevelId2="VL2" bus2="B30" connectableBus2="B30" p1="-444.5137934994821" q1="-87.02602324156963" p2="444.5137934994822" q2="126.15904742752903" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.Terminal2">T-2-30-1_PT_T_2</iidm:alias>
                 <iidm:alias type="CGMES.Terminal1">T-2-30-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-2-30-1_TW2</iidm:alias>
@@ -771,8 +783,11 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL21" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B21" name="21" v="358.3477516291968" angle="-1.9525865506581204"/>
+                    <iidm:bus id="B21" name="21" v="358.06768853081996" angle="-2.078273346851921"/>
                 </iidm:busBreakerTopology>
+                <iidm:generator id="PV-B21-1" energySource="SOLAR" minP="0.0" maxP="200.0" ratedS="210.5263157894737" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B21" connectableBus="B21" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-65.73682103577264" maxQ="65.73682103577264"/>
+                </iidm:generator>
                 <iidm:load id="B21-L1" loadType="UNDEFINED" p0="274.0" q0="115.0" bus="B21" connectableBus="B21" p="274.0" q="115.0">
                     <iidm:alias type="CGMES.Terminal1">B21-L1_EC_T_1</iidm:alias>
                 </iidm:load>
@@ -784,10 +799,10 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL22" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B22" name="22" v="363.40246137661927" angle="2.546938068672046"/>
-                    <iidm:bus id="B35" name="35" v="362.00849999999997" angle="7.008342733825728"/>
+                    <iidm:bus id="B22" name="22" v="363.17984924174016" angle="2.6384628654161206"/>
+                    <iidm:bus id="B35" name="35" v="362.00849999999997" angle="7.222472578815858"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B35-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="650.0" targetV="362.00849999999997" targetQ="167.043" bus="B35" connectableBus="B35" p="-659.8893109119629" q="-204.4311969351401">
+                <iidm:generator id="B35-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="687.0" targetV="362.00849999999997" targetQ="167.043" bus="B35" connectableBus="B35" p="-677.5703962345069" q="-211.04264123528523">
                     <iidm:alias type="CGMES.Terminal1">B35-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B35-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B35-G1_RC"/>
@@ -797,7 +812,7 @@
                     <iidm:alias type="CGMES.Terminal1">B22-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-22-35-1" r="0.0" x="15.1294" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL22" bus1="B22" connectableBus1="B22" voltageLevelId2="VL22" bus2="B35" connectableBus2="B35" p1="-659.8893096384074" q1="-149.33438370114482" p2="659.8893096384076" q2="204.4311969351401" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-22-35-1" r="0.0" x="15.1294" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL22" bus1="B22" connectableBus1="B22" voltageLevelId2="VL22" bus2="B35" connectableBus2="B35" p1="-677.5703942033579" q1="-152.89863762852508" p2="677.5703942033579" q2="211.04264123528523" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.RatioTapChanger1">T-22-35-1_PT_RTC_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal1">T-22-35-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal2">T-22-35-1_PT_T_2</iidm:alias>
@@ -820,10 +835,10 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL23" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B23" name="23" v="360.9701997052988" angle="2.3649360374748927"/>
-                    <iidm:bus id="B36" name="36" v="362.25" angle="8.644034283628914"/>
+                    <iidm:bus id="B23" name="23" v="360.71503085203017" angle="2.5120182408961216"/>
+                    <iidm:bus id="B36" name="36" v="362.25" angle="9.162377168047254"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B36-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="560.0" targetV="362.25" targetQ="75.449" bus="B36" connectableBus="B36" p="-568.5200217087679" q="-41.43345802863113">
+                <iidm:generator id="B36-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="610.0" targetV="362.25" targetQ="75.449" bus="B36" connectableBus="B36" p="-601.6272804993439" q="-48.39444967784473">
                     <iidm:alias type="CGMES.Terminal1">B36-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B36-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B36-G1_RC"/>
@@ -833,16 +848,16 @@
                     <iidm:alias type="CGMES.Terminal1">B23-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-23-36-1" r="0.3600138888888889" x="25.182085125004317" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL23" bus1="B23" connectableBus1="B23" voltageLevelId2="VL23" bus2="B36" connectableBus2="B36" p1="-567.6285753445987" q1="20.920933040300252" p2="568.5200204614982" q2="41.43345802863113" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-23-36-1" r="0.3600138888888889" x="25.182085125004317" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL23" bus1="B23" connectableBus1="B23" voltageLevelId2="VL23" bus2="B36" connectableBus2="B36" p1="-600.6278342339696" q1="21.514210193441283" p2="601.6272784174971" q2="48.39444967784473" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.Terminal1">T-23-36-1_PT_T_1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal2">T-23-36-1_PT_T_2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-23-36-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-23-36-1_TW2</iidm:alias>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1673.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="1673.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
         </iidm:substation>
@@ -852,7 +867,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL24" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B24" name="24" v="360.93361272261495" angle="-4.269422680316834"/>
+                    <iidm:bus id="B24" name="24" v="360.7033565910634" angle="-4.535456814049211"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B24-L1" loadType="UNDEFINED" p0="308.6" q0="-92.2" bus="B24" connectableBus="B24" p="308.6" q="-92.2">
                     <iidm:alias type="CGMES.Terminal1">B24-L1_EC_T_1</iidm:alias>
@@ -865,10 +880,10 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL25" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B25" name="25" v="366.16461845072" angle="-2.7045018304378807"/>
-                    <iidm:bus id="B37" name="37" v="354.591" angle="2.63529365250727"/>
+                    <iidm:bus id="B25" name="25" v="365.59636768483955" angle="-3.0085556216780938"/>
+                    <iidm:bus id="B37" name="37" v="354.591" angle="2.04381376533832"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B37-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="540.0" targetV="354.591" targetQ="-35.347" bus="B37" connectableBus="B37" p="-548.2157352191691" q="29.060405133660534">
+                <iidm:generator id="B37-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="525.3" targetV="354.591" targetQ="-35.347" bus="B37" connectableBus="B37" p="-518.0898531906644" q="22.017480939647186">
                     <iidm:alias type="CGMES.Terminal1">B37-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B37-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B37-G1_RC"/>
@@ -878,7 +893,7 @@
                     <iidm:alias type="CGMES.Terminal1">B25-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-25-37-1" r="0.43201666666666666" x="21.480237192938223" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL25" bus1="B25" connectableBus1="B25" voltageLevelId2="VL25" bus2="B37" connectableBus2="B37" p1="-547.1801955153707" q1="80.5483181303843" p2="548.2157351300724" q2="-29.060405133660534" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-25-37-1" r="0.43201666666666666" x="21.480237192938223" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL25" bus1="B25" connectableBus1="B25" voltageLevelId2="VL25" bus2="B37" connectableBus2="B37" p1="-517.1659233554565" q1="67.95605077658752" p2="518.0898529952522" q2="-22.017480939647186" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.Terminal2">T-25-37-1_PT_T_2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-25-37-1_TW1</iidm:alias>
                 <iidm:alias type="CGMES.Terminal1">T-25-37-1_PT_T_1</iidm:alias>
@@ -901,7 +916,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL26" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B26" name="26" v="364.7807999610136" angle="-3.698567355247062"/>
+                    <iidm:bus id="B26" name="26" v="364.8357659001723" angle="-4.4102077569121265"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B26-L1" loadType="UNDEFINED" p0="139.0" q0="17.0" bus="B26" connectableBus="B26" p="139.0" q="17.0">
                     <iidm:alias type="CGMES.Terminal1">B26-L1_EC_T_1</iidm:alias>
@@ -914,7 +929,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL27" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B27" name="27" v="360.66410435119036" angle="-5.67212146170862"/>
+                    <iidm:bus id="B27" name="27" v="360.66352359594663" angle="-6.2302227645987305"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B27-L1" loadType="UNDEFINED" p0="281.0" q0="75.5" bus="B27" connectableBus="B27" p="281.0" q="75.5">
                     <iidm:alias type="CGMES.Terminal1">B27-L1_EC_T_1</iidm:alias>
@@ -927,7 +942,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL28" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B28" name="28" v="363.13170586794496" angle="-0.048163226428786426"/>
+                    <iidm:bus id="B28" name="28" v="363.50210631797154" angle="-1.308769849978325"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B28-L1" loadType="UNDEFINED" p0="206.0" q0="27.6" bus="B28" connectableBus="B28" p="206.0" q="27.6">
                     <iidm:alias type="CGMES.Terminal1">B28-L1_EC_T_1</iidm:alias>
@@ -940,10 +955,10 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL29" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B29" name="29" v="362.7799475032047" angle="2.7533500453080637"/>
-                    <iidm:bus id="B38" name="38" v="354.1425" angle="9.918062438398582"/>
+                    <iidm:bus id="B29" name="29" v="363.1243984187659" angle="1.3130421600636988"/>
+                    <iidm:bus id="B38" name="38" v="354.1425" angle="8.090464830511426"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B38-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="911.0" voltageRegulatorOn="true" targetP="830.0" targetV="354.1425" targetQ="-0.473" bus="B38" connectableBus="B38" p="-842.6278893183527" q="-13.519451546400187">
+                <iidm:generator id="B38-G1" energySource="OTHER" minP="0.0" maxP="865.45" ratedS="911.0" voltageRegulatorOn="true" targetP="808.7" targetV="354.1425" targetQ="-0.473" bus="B38" connectableBus="B38" p="-797.5999700652776" q="-3.9259587600920445">
                     <iidm:alias type="CGMES.Terminal1">B38-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B38-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B38-G1_RC"/>
@@ -953,7 +968,7 @@
                     <iidm:alias type="CGMES.Terminal1">B29-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-29-38-1" r="0.9522" x="18.567900772518012" ratedU1="345.0" ratedU2="345.0" ratedS="1000.0" voltageLevelId1="VL29" bus1="B29" connectableBus1="B29" voltageLevelId2="VL29" bus2="B38" connectableBus2="B38" p1="-837.2358172881595" q1="91.62591716998553" p2="842.6278872544063" q2="13.519451546400187" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-29-38-1" r="0.9522" x="18.567900772518012" ratedU1="345.0" ratedU2="345.0" ratedS="1000.0" voltageLevelId1="VL29" bus1="B29" connectableBus1="B29" voltageLevelId2="VL29" bus2="B38" connectableBus2="B38" p1="-792.7699039237392" q1="90.26028700339118" p2="797.5999676080913" q2="3.9259587600920445" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.TransformerEnd2">T-29-38-1_TW2</iidm:alias>
                 <iidm:alias type="CGMES.Terminal2">T-29-38-1_PT_T_2</iidm:alias>
                 <iidm:alias type="CGMES.Terminal1">T-29-38-1_PT_T_1</iidm:alias>
@@ -963,10 +978,10 @@
                     <iidm:step g="5.062499999999992" b="5.062499999999992" rho="0.9756097560975611"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="2343.0"/>
+                    <iidm:currentLimits permanentLimit="1673.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="2343.0"/>
+                    <iidm:currentLimits permanentLimit="1673.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
         </iidm:substation>
@@ -976,8 +991,11 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL3" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B3" name="3" v="360.2032711663333" angle="-6.8390997273518686"/>
+                    <iidm:bus id="B3" name="3" v="360.05001686957684" angle="-7.088597573437883"/>
                 </iidm:busBreakerTopology>
+                <iidm:generator id="WF-B3-1" energySource="WIND" minP="0.0" maxP="200.0" ratedS="210.5263157894737" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B3" connectableBus="B3" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-65.73682103577264" maxQ="65.73682103577264"/>
+                </iidm:generator>
                 <iidm:load id="B3-L1" loadType="UNDEFINED" p0="322.0" q0="2.4" bus="B3" connectableBus="B3" p="322.0" q="2.4">
                     <iidm:alias type="CGMES.Terminal1">B3-L1_EC_T_1</iidm:alias>
                 </iidm:load>
@@ -989,9 +1007,9 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL39" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B39" name="39" v="355.35" angle="-8.928103553461217"/>
+                    <iidm:bus id="B39" name="39" v="355.35" angle="-12.631802753783742"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B39-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="911.0" voltageRegulatorOn="true" targetP="1000.0" targetV="355.35" targetQ="-36.487" bus="B39" connectableBus="B39" p="-1015.2143244799429" q="-62.219758914772825">
+                <iidm:generator id="B39-G1" energySource="OTHER" minP="0.0" maxP="819.9" ratedS="911.0" voltageRegulatorOn="true" targetP="826.1" targetV="355.35" targetQ="-36.487" bus="B39" connectableBus="B39" p="-826.1000000000001" q="-89.80916407903766">
                     <iidm:alias type="CGMES.Terminal1">B39-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B39-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B39-G1_RC"/>
@@ -1009,12 +1027,12 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL4" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B4" name="4" v="357.08823007736356" angle="-7.591119512805978"/>
+                    <iidm:bus id="B4" name="4" v="356.79267804058645" angle="-8.077682776653164"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B4-L1" loadType="UNDEFINED" p0="500.0" q0="184.0" bus="B4" connectableBus="B4" p="500.0" q="184.0">
                     <iidm:alias type="CGMES.Terminal1">B4-L1_EC_T_1</iidm:alias>
                 </iidm:load>
-                <iidm:shuntCompensator id="B4-SH-1" sectionCount="1" solvedSectionCount="1" voltageRegulatorOn="false" bus="B4" connectableBus="B4" p="0.0" q="-107.13043819347543">
+                <iidm:shuntCompensator id="B4-SH-1" sectionCount="1" solvedSectionCount="1" voltageRegulatorOn="false" bus="B4" connectableBus="B4" p="0.0" q="-106.95317378985386">
                     <iidm:alias type="CGMES.Terminal1">B4-SH-1_SC_T_1</iidm:alias>
                     <iidm:shuntLinearModel bPerSection="8.401596303297626E-4" gPerSection="0.0" maximumSectionCount="1"/>
                 </iidm:shuntCompensator>
@@ -1026,12 +1044,12 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL5" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B5" name="5" v="358.70362159806814" angle="-6.52620484118514"/>
+                    <iidm:bus id="B5" name="5" v="358.289890420299" angle="-7.15396411408468"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B5-L1" loadType="UNDEFINED" p0="0.0" q0="0.0" bus="B5" connectableBus="B5" p="0.0" q="0.0">
                     <iidm:alias type="CGMES.Terminal1">B5-L1_EC_T_1</iidm:alias>
                 </iidm:load>
-                <iidm:shuntCompensator id="B5-SH-1" sectionCount="1" solvedSectionCount="1" voltageRegulatorOn="false" bus="B5" connectableBus="B5" p="0.0" q="-216.20380281045166">
+                <iidm:shuntCompensator id="B5-SH-1" sectionCount="1" solvedSectionCount="1" voltageRegulatorOn="false" bus="B5" connectableBus="B5" p="0.0" q="-215.70534858624637">
                     <iidm:alias type="CGMES.Terminal1">B5-SH-1_SC_T_1</iidm:alias>
                     <iidm:shuntLinearModel bPerSection="0.0016803192606595252" gPerSection="0.0" maximumSectionCount="1"/>
                 </iidm:shuntCompensator>
@@ -1044,14 +1062,17 @@
             <iidm:voltageLevel id="VL6" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
                     <iidm:bus id="B31" name="31" v="338.79" angle="0.0"/>
-                    <iidm:bus id="B6" name="6" v="358.21460122614815" angle="-5.83903525449254"/>
+                    <iidm:bus id="B6" name="6" v="357.8181381775532" angle="-6.432489467118017"/>
                 </iidm:busBreakerTopology>
-                <iidm:generator id="B31-G1" energySource="OTHER" minP="0.0" maxP="9999.9" ratedS="835.0" voltageRegulatorOn="true" targetP="571.285" targetV="338.79" targetQ="363.936" bus="B31" connectableBus="B31" p="-579.976715360524" q="-100.91694828703312">
+                <iidm:generator id="B31-G1" energySource="OTHER" minP="0.0" maxP="751.5" ratedS="835.0" voltageRegulatorOn="true" targetP="646.0" targetV="338.79" targetQ="363.936" bus="B31" connectableBus="B31" p="-637.1331527911084" q="-113.29931581750606">
                     <iidm:alias type="CGMES.Terminal1">B31-G1_SM_T_1</iidm:alias>
                     <iidm:property name="CGMES.GeneratingUnit" value="B31-G1_GU"/>
                     <iidm:property name="CGMES.RegulatingControl" value="B31-G1_RC"/>
                     <iidm:regulatingTerminal id="B31-L1"/>
                     <iidm:minMaxReactiveLimits minQ="-250.5" maxQ="584.5"/>
+                </iidm:generator>
+                <iidm:generator id="PV-B6-1" energySource="SOLAR" minP="0.0" maxP="400.0" ratedS="421.0526315789474" voltageRegulatorOn="false" targetP="0.0" targetQ="0.0" bus="B6" connectableBus="B6" p="-0.0" q="-0.0">
+                    <iidm:minMaxReactiveLimits minQ="-131.47364207154527" maxQ="131.47364207154527"/>
                 </iidm:generator>
                 <iidm:battery id="BAT-B6-1" targetP="0.0" targetQ="0.0" minP="-100.0" maxP="100.0" bus="B6" connectableBus="B6" p="-0.0" q="-0.0">
                     <iidm:minMaxReactiveLimits minQ="-100.0" maxQ="100.0"/>
@@ -1063,7 +1084,7 @@
                     <iidm:alias type="CGMES.Terminal1">B6-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
-            <iidm:twoWindingsTransformer id="T-31-6-1" r="0.0" x="23.143749999999997" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL6" bus1="B31" connectableBus1="B31" voltageLevelId2="VL6" bus2="B6" connectableBus2="B6" p1="570.8084267397209" q1="96.31694828703313" p2="-570.8084267397207" q2="-37.29977313804639" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+            <iidm:twoWindingsTransformer id="T-31-6-1" r="0.0" x="23.143749999999997" ratedU1="345.0" ratedU2="345.0" ratedS="900.0" voltageLevelId1="VL6" bus1="B31" connectableBus1="B31" voltageLevelId2="VL6" bus2="B6" connectableBus2="B6" p1="627.8945783669935" q1="108.69931581750605" p2="-627.8945783669934" q2="-37.183374724841386" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
                 <iidm:alias type="CGMES.RatioTapChanger1">T-31-6-1_PT_RTC_1</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd2">T-31-6-1_TW2</iidm:alias>
                 <iidm:alias type="CGMES.TransformerEnd1">T-31-6-1_TW1</iidm:alias>
@@ -1073,10 +1094,10 @@
                     <iidm:step rho="1.07"/>
                 </iidm:ratioTapChanger>
                 <iidm:operationalLimitsGroup1 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="3012.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup1>
                 <iidm:operationalLimitsGroup2 id="DEFAULT">
-                    <iidm:currentLimits permanentLimit="3012.0"/>
+                    <iidm:currentLimits permanentLimit="1506.0"/>
                 </iidm:operationalLimitsGroup2>
             </iidm:twoWindingsTransformer>
         </iidm:substation>
@@ -1086,7 +1107,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL7" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B7" name="7" v="354.4793992295333" angle="-7.973154880871919"/>
+                    <iidm:bus id="B7" name="7" v="353.9846132181945" angle="-8.772660282865713"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B7-L1" loadType="UNDEFINED" p0="233.8" q0="84.0" bus="B7" connectableBus="B7" p="233.8" q="84.0">
                     <iidm:alias type="CGMES.Terminal1">B7-L1_EC_T_1</iidm:alias>
@@ -1099,7 +1120,7 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL8" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B8" name="8" v="354.0587416979747" angle="-8.479597101437726"/>
+                    <iidm:bus id="B8" name="8" v="353.53462063157974" angle="-9.382127348249847"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B8-L1" loadType="UNDEFINED" p0="522.0" q0="176.0" bus="B8" connectableBus="B8" p="522.0" q="176.0">
                     <iidm:alias type="CGMES.Terminal1">B8-L1_EC_T_1</iidm:alias>
@@ -1112,14 +1133,14 @@
             <iidm:property name="CGMES.subRegionId" value="default-region_SGR"/>
             <iidm:voltageLevel id="VL9" nominalV="345.0" topologyKind="BUS_BREAKER">
                 <iidm:busBreakerTopology>
-                    <iidm:bus id="B9" name="9" v="359.00579340581857" angle="-8.780478506209157"/>
+                    <iidm:bus id="B9" name="9" v="358.55456535879745" angle="-11.346898501623425"/>
                 </iidm:busBreakerTopology>
                 <iidm:load id="B9-L1" loadType="UNDEFINED" p0="0.0" q0="0.0" bus="B9" connectableBus="B9" p="0.0" q="0.0">
                     <iidm:alias type="CGMES.Terminal1">B9-L1_EC_T_1</iidm:alias>
                 </iidm:load>
             </iidm:voltageLevel>
         </iidm:substation>
-        <iidm:line id="L-1-2-1" r="4.165875000000001" x="48.91927499999999" b1="2.935097668557026E-4" b2="2.935097668557026E-4" voltageLevelId1="VL1" bus1="B1" connectableBus1="B1" voltageLevelId2="VL2" bus2="B2" connectableBus2="B2" p1="-173.68455413799546" q1="-46.541809834881334" p2="174.66147869656646" q2="-18.528325604680965" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-1-2-1" r="4.165875000000001" x="48.91927499999999" b1="2.935097668557026E-4" b2="2.935097668557026E-4" voltageLevelId1="VL1" bus1="B1" connectableBus1="B1" voltageLevelId2="VL2" bus2="B2" connectableBus2="B2" p1="-278.4641866355798" q1="-35.03391099279073" p2="280.98156501693825" q2="-11.771207000246443" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-1-2-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-1-2-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1129,7 +1150,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-1-39-1" r="1.19025" x="29.75625" b1="3.15059861373661E-4" b2="3.15059861373661E-4" voltageLevelId1="VL1" bus1="B1" connectableBus1="B1" voltageLevelId2="VL39" bus2="B39" connectableBus2="B39" p1="76.08455459032302" q1="2.3418102828270606" p2="-76.01408230865991" q2="-80.99374456927855" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-1-39-1" r="1.19025" x="29.75625" b1="3.15059861373661E-4" b2="3.15059861373661E-4" voltageLevelId1="VL1" bus1="B1" connectableBus1="B1" voltageLevelId2="VL39" bus2="B39" connectableBus2="B39" p1="180.86419047428416" q1="-9.166078525721336" p2="-180.55172889998684" q2="-63.23842135601436" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-1-39-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-1-39-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1139,7 +1160,7 @@
                 <iidm:currentLimits permanentLimit="1673.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-10-11-1" r="0.47609999999999997" x="5.118075" b1="3.062381852551985E-5" b2="3.062381852551985E-5" voltageLevelId1="VL10" bus1="B10" connectableBus1="B10" voltageLevelId2="VL11" bus2="B11" connectableBus2="B11" p1="358.86029437766473" q1="2.521699733263821" p2="-358.3832055401559" q2="-5.255032322553877" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-10-11-1" r="0.47609999999999997" x="5.118075" b1="3.062381852551985E-5" b2="3.062381852551985E-5" voltageLevelId1="VL10" bus1="B10" connectableBus1="B10" voltageLevelId2="VL11" bus2="B11" connectableBus2="B11" p1="365.0476842154457" q1="5.5951932556468" p2="-364.5531390696664" q2="-8.128828122095957" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-10-11-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-10-11-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1149,7 +1170,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-10-13-1" r="0.47609999999999997" x="5.118075" b1="3.062381852551985E-5" b2="3.062381852551985E-5" voltageLevelId1="VL10" bus1="B10" connectableBus1="B10" voltageLevelId2="VL11" bus2="B13" connectableBus2="B13" p1="301.02901706898285" q1="21.39095672505682" p2="-300.6910393286596" q2="-25.615268606475922" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-10-13-1" r="0.47609999999999997" x="5.118075" b1="3.062381852551985E-5" b2="3.062381852551985E-5" voltageLevelId1="VL10" bus1="B10" connectableBus1="B10" voltageLevelId2="VL11" bus2="B13" connectableBus2="B13" p1="293.38899219421484" q1="22.10570825985996" p2="-293.0672516841178" q2="-26.493613297964373" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-10-13-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-10-13-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1159,7 +1180,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-13-14-1" r="1.071225" x="12.021525" b1="7.237975215290905E-5" b2="7.237975215290905E-5" voltageLevelId1="VL11" bus1="B13" connectableBus1="B13" voltageLevelId2="VL14" bus2="B14" connectableBus2="B14" p1="292.12951545566546" q1="-17.586224351518275" p2="-291.4148911737572" q2="7.0963760029427085" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-13-14-1" r="1.071225" x="12.021525" b1="7.237975215290905E-5" b2="7.237975215290905E-5" voltageLevelId1="VL11" bus1="B13" connectableBus1="B13" voltageLevelId2="VL14" bus2="B14" connectableBus2="B14" p1="283.38997011490017" q1="-16.975780762916788" p2="-282.7165673730897" q2="6.049386653742934" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-13-14-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-13-14-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1169,7 +1190,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-14-15-1" r="2.14245" x="25.828425000000003" b1="1.5374921235034657E-4" b2="1.5374921235034657E-4" voltageLevelId1="VL14" bus1="B14" connectableBus1="B14" voltageLevelId2="VL15" bus2="B15" connectableBus2="B15" p1="17.751416088748783" q1="6.657372755059292" p2="-17.73453255745154" q2="-45.50157036663678" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-14-15-1" r="2.14245" x="25.828425000000003" b1="1.5374921235034657E-4" b2="1.5374921235034657E-4" voltageLevelId1="VL14" bus1="B14" connectableBus1="B14" voltageLevelId2="VL15" bus2="B15" connectableBus2="B15" p1="8.900149270832134" q1="6.70259505924846" p2="-8.88718976571429" q2="-45.54407212311957" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-14-15-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-14-15-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1179,7 +1200,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-15-16-1" r="1.071225" x="11.188350000000002" b1="7.183364839319471E-5" b2="7.183364839319471E-5" voltageLevelId1="VL15" bus1="B15" connectableBus1="B15" voltageLevelId2="VL16" bus2="B16" connectableBus2="B16" p1="-302.2654602177417" q1="-107.49839415555793" p2="303.12274464020356" q2="98.09928652853303" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-15-16-1" r="1.071225" x="11.188350000000002" b1="7.183364839319471E-5" b2="7.183364839319471E-5" voltageLevelId1="VL15" bus1="B15" connectableBus1="B15" voltageLevelId2="VL16" bus2="B16" connectableBus2="B16" p1="-311.11280106740503" q1="-107.455881963442" p2="312.0171071127059" q2="98.56698268513526" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-15-16-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-15-16-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1189,7 +1210,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-16-17-1" r="0.833175" x="10.593224999999999" b1="5.637471119512708E-5" b2="5.637471119512708E-5" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL17" bus2="B17" connectableBus2="B17" p1="231.46157269365352" q1="-45.94900049458248" p2="-231.10650572908847" q2="35.86657994720417" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-16-17-1" r="0.833175" x="10.593224999999999" b1="5.637471119512708E-5" b2="5.637471119512708E-5" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL17" bus2="B17" connectableBus2="B17" p1="240.08262056463977" q1="-48.02036936479907" p2="-239.6999202792978" q2="38.30104725641871" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-16-17-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-16-17-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1199,7 +1220,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-16-19-1" r="1.9043999999999999" x="23.209875" b1="1.2770426381012392E-4" b2="1.2770426381012392E-4" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL19" bus2="B19" connectableBus2="B19" p1="-522.5581727211642" q1="-47.642725841608744" p2="526.5967732953444" q2="63.273150222287164" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-16-19-1" r="1.9043999999999999" x="23.209875" b1="1.2770426381012392E-4" b2="1.2770426381012392E-4" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL19" bus2="B19" connectableBus2="B19" p1="-490.1509445114464" q1="-55.88110886008435" p2="493.71779573596154" q2="65.77698546595778" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-16-19-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-16-19-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1209,7 +1230,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-16-21-1" r="0.9521999999999999" x="16.068375" b1="1.0703633690401178E-4" b2="1.0703633690401178E-4" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL21" bus2="B21" connectableBus2="B21" p1="-341.03589072966884" q1="38.97569408678343" p2="341.91346160357983" q2="-51.74299339817851" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-16-21-1" r="0.9521999999999999" x="16.068375" b1="1.0703633690401178E-4" b2="1.0703633690401178E-4" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL21" bus2="B21" connectableBus2="B21" p1="-369.3565787991122" q1="44.44602576757985" p2="370.3878318525108" q2="-54.58550980621064" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-16-21-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-16-21-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1219,7 +1240,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-16-24-1" r="0.357075" x="7.022475" b1="2.8565427431211934E-5" b2="2.8565427431211934E-5" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL24" bus2="B24" connectableBus2="B24" p1="-49.99025259199817" q1="-75.78323134624013" p2="50.01151947783513" q2="68.78889529691945" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-16-24-1" r="0.357075" x="7.022475" b1="2.8565427431211934E-5" b2="2.8565427431211934E-5" voltageLevelId1="VL16" bus1="B16" connectableBus1="B16" voltageLevelId2="VL24" bus2="B24" connectableBus2="B24" p1="-71.59220302213886" q1="-71.41149862678263" p2="71.61906488941679" q2="64.53540040917336" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-16-24-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-16-24-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1229,7 +1250,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-17-18-1" r="0.833175" x="9.76005" b1="5.540852762024785E-5" b2="5.540852762024785E-5" voltageLevelId1="VL17" bus1="B17" connectableBus1="B17" voltageLevelId2="VL18" bus2="B18" connectableBus2="B18" p1="214.31473930721668" q1="-8.004523885947586" p2="-214.01968971856297" q2="-2.895518048034538" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-17-18-1" r="0.833175" x="9.76005" b1="5.540852762024785E-5" b2="5.540852762024785E-5" voltageLevelId1="VL17" bus1="B17" connectableBus1="B17" voltageLevelId2="VL18" bus2="B18" connectableBus2="B18" p1="203.14281799643842" q1="-6.93961258508968" p2="-202.87755199278484" q2="-4.2993098647911125" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-17-18-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-17-18-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1239,7 +1260,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-17-27-1" r="1.5473249999999998" x="20.591325" b1="1.3509766855702583E-4" b2="1.3509766855702583E-4" voltageLevelId1="VL17" bus1="B17" connectableBus1="B17" voltageLevelId2="VL27" bus2="B27" connectableBus2="B27" p1="16.791766661756853" q1="-27.86205179157889" p2="-16.787127591853864" q2="-7.172165437962505" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-17-27-1" r="1.5473249999999998" x="20.591325" b1="1.3509766855702583E-4" b2="1.3509766855702583E-4" voltageLevelId1="VL17" bus1="B17" connectableBus1="B17" voltageLevelId2="VL27" bus2="B27" connectableBus2="B27" p1="36.557102500863344" q1="-31.361428388611834" p2="-36.53885845990249" q2="-3.4798466198195537" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-17-27-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-17-27-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1249,7 +1270,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-2-25-1" r="8.331750000000001" x="10.23615" b1="6.133165301407268E-5" b2="6.133165301407268E-5" voltageLevelId1="VL2" bus1="B2" connectableBus1="B2" voltageLevelId2="VL25" bus2="B25" connectableBus2="B25" p1="-257.2757971642742" q1="96.18694185935645" p2="262.14654797016635" q2="-106.51088882632112" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-2-25-1" r="8.331750000000001" x="10.23615" b1="6.133165301407268E-5" b2="6.133165301407268E-5" voltageLevelId1="VL2" bus1="B2" connectableBus1="B2" voltageLevelId2="VL25" bus2="B25" connectableBus2="B25" p1="-205.2290696017094" q1="73.72187123224803" p2="208.31350208297823" q2="-86.21670897196002" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-2-25-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-2-25-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1259,7 +1280,7 @@
                 <iidm:currentLimits permanentLimit="837.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-2-3-1" r="1.5473249999999998" x="17.972775000000002" b1="1.0804452846040747E-4" b2="1.0804452846040747E-4" voltageLevelId1="VL2" bus1="B2" connectableBus1="B2" voltageLevelId2="VL3" bus2="B3" connectableBus2="B3" p1="336.4178978819386" q1="22.40921315182911" p2="-335.07366194410156" q2="-35.0564579700017" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-2-3-1" r="1.5473249999999998" x="17.972775000000002" b1="1.0804452846040747E-4" b2="1.0804452846040747E-4" voltageLevelId1="VL2" bus1="B2" connectableBus1="B2" voltageLevelId2="VL3" bus2="B3" connectableBus2="B3" p1="368.7612953114053" q1="25.075374883790435" p2="-367.147314972529" q2="-34.580634213654044" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-2-3-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-2-3-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1269,7 +1290,7 @@
                 <iidm:currentLimits permanentLimit="837.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-21-22-1" r="0.9521999999999999" x="16.663500000000003" b1="1.0775047258979206E-4" b2="1.0775047258979206E-4" voltageLevelId1="VL21" bus1="B21" connectableBus1="B21" voltageLevelId2="VL22" bus2="B22" connectableBus2="B22" p1="-615.9134620039932" q1="-63.25700177654612" p2="618.7444978821568" q2="84.73388347835491" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-21-22-1" r="0.9521999999999999" x="16.663500000000003" b1="1.0775047258979206E-4" b2="1.0775047258979206E-4" voltageLevelId1="VL21" bus1="B21" connectableBus1="B21" voltageLevelId2="VL22" bus2="B22" connectableBus2="B22" p1="-644.387832438369" q1="-60.414482670805114" p2="647.4878049455585" q2="86.63680281219087" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-21-22-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-21-22-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1279,7 +1300,7 @@
                 <iidm:currentLimits permanentLimit="1506.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-22-23-1" r="0.71415" x="11.4264" b1="7.754673387943708E-5" b2="7.754673387943708E-5" voltageLevelId1="VL22" bus1="B22" connectableBus1="B22" voltageLevelId2="VL23" bus2="B23" connectableBus2="B23" p1="41.144809942794645" q1="64.60050463403672" p2="-41.10536534623893" q2="-84.31461686449822" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-22-23-1" r="0.71415" x="11.4264" b1="7.754673387943708E-5" b2="7.754673387943708E-5" voltageLevelId1="VL22" bus1="B22" connectableBus1="B22" voltageLevelId2="VL23" bus2="B23" connectableBus2="B23" p1="30.082586350322693" q1="66.26184162497488" p2="-30.046008568043593" q2="-85.99499965223161" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-22-23-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-22-23-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1289,7 +1310,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-23-24-1" r="2.6185500000000004" x="41.658750000000005" b1="1.5164881327452216E-4" b2="1.5164881327452216E-4" voltageLevelId1="VL23" bus1="B23" connectableBus1="B23" voltageLevelId2="VL24" bus2="B24" connectableBus2="B24" p1="361.2339392348753" q1="-21.206310874069896" p2="-358.61151934667714" q2="23.411108104593453" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-23-24-1" r="2.6185500000000004" x="41.658750000000005" b1="1.5164881327452216E-4" b2="1.5164881327452216E-4" voltageLevelId1="VL23" bus1="B23" connectableBus1="B23" voltageLevelId2="VL24" bus2="B24" connectableBus2="B24" p1="383.17384044592575" q1="-20.119202104582914" p2="-380.21906460593124" q2="27.664604926468716" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-23-24-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-23-24-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1299,7 +1320,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-25-26-1" r="3.8087999999999997" x="38.445075" b1="2.1550094517958413E-4" b2="2.1550094517958413E-4" voltageLevelId1="VL25" bus1="B25" connectableBus1="B25" voltageLevelId2="VL26" bus2="B26" connectableBus2="B26" p1="61.03364852958434" q1="-21.237423020988537" p2="-60.92616180828158" q2="-35.246891524973066" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-25-26-1" r="3.8087999999999997" x="38.445075" b1="2.1550094517958413E-4" b2="2.1550094517958413E-4" voltageLevelId1="VL25" bus1="B25" connectableBus1="B25" voltageLevelId2="VL26" bus2="B26" connectableBus2="B26" p1="84.85242233402009" q1="-28.93933238229937" p2="-84.64725225845176" q2="-26.478022860157918" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-25-26-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-25-26-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1309,7 +1330,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-26-27-1" r="1.66635" x="17.496675" b1="1.0065112371350557E-4" b2="1.0065112371350557E-4" voltageLevelId1="VL26" bus1="B26" connectableBus1="B26" voltageLevelId2="VL27" bus2="B27" connectableBus2="B27" p1="265.14622513245985" q1="51.64233501642717" p2="-264.2128723183495" q2="-68.3278323434082" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-26-27-1" r="1.66635" x="17.496675" b1="1.0065112371350557E-4" b2="1.0065112371350557E-4" voltageLevelId1="VL26" bus1="B26" connectableBus1="B26" voltageLevelId2="VL27" bus2="B27" connectableBus2="B27" p1="245.27118913758957" q1="54.03595380796828" p2="-244.46114163327314" q2="-72.02015124221518" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-26-27-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-26-27-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1319,7 +1340,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-26-28-1" r="5.118075" x="56.417849999999994" b1="3.2774627179164037E-4" b2="3.2774627179164037E-4" voltageLevelId1="VL26" bus1="B26" connectableBus1="B26" voltageLevelId2="VL28" bus2="B28" connectableBus2="B28" p1="-146.87904012991845" q1="-14.860908928682544" p2="147.74061246544343" q2="-62.4714697318166" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-26-28-1" r="5.118075" x="56.417849999999994" b1="3.2774627179164037E-4" b2="3.2774627179164037E-4" voltageLevelId1="VL26" bus1="B26" connectableBus1="B26" voltageLevelId2="VL28" bus2="B28" connectableBus2="B28" p1="-125.05534767305788" q1="-20.212723177675986" p2="125.67775852751895" q2="-59.85734905676495" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-26-28-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-26-28-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1329,7 +1350,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-26-29-1" r="6.784425000000001" x="74.390625" b1="4.3226212980466283E-4" b2="4.3226212980466283E-4" voltageLevelId1="VL26" bus1="B26" connectableBus1="B26" voltageLevelId2="VL29" bus2="B29" connectableBus2="B29" p1="-196.3410211869585" q1="-18.534526246175442" p2="198.3840003363259" q2="-73.47307286495166" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-26-29-1" r="6.784425000000001" x="74.390625" b1="4.3226212980466283E-4" b2="4.3226212980466283E-4" voltageLevelId1="VL26" bus1="B26" connectableBus1="B26" voltageLevelId2="VL29" bus2="B29" connectableBus2="B29" p1="-174.56858669869" q1="-24.345196783938828" p2="176.17802067186662" q2="-72.54160475860733" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-26-29-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-26-29-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1339,7 +1360,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-28-29-1" r="1.66635" x="17.972775000000002" b1="1.0459987397605545E-4" b2="1.0459987397605545E-4" voltageLevelId1="VL28" bus1="B28" connectableBus1="B28" voltageLevelId2="VL29" bus2="B29" connectableBus2="B29" p1="-353.74061235229976" q1="34.87147322501997" p2="355.35181549054744" q2="-45.05283598745027" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-28-29-1" r="1.66635" x="17.972775000000002" b1="1.0459987397605545E-4" b2="1.0459987397605545E-4" voltageLevelId1="VL28" bus1="B28" connectableBus1="B28" voltageLevelId2="VL29" bus2="B29" connectableBus2="B29" p1="-331.6777584073142" q1="32.25735352699306" p2="333.0918815273976" q2="-44.618671628070175" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-28-29-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-28-29-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1349,7 +1370,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-3-18-1" r="1.3092750000000002" x="15.830324999999998" b1="8.981306448225163E-5" b2="8.981306448225163E-5" voltageLevelId1="VL3" bus1="B3" connectableBus1="B3" voltageLevelId2="VL18" bus2="B18" connectableBus2="B18" p1="-55.98551148847968" q1="4.243331578441769" p2="56.01969050263301" q2="-27.104475800812374" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-3-18-1" r="1.3092750000000002" x="15.830324999999998" b1="8.981306448225163E-5" b2="8.981306448225163E-5" voltageLevelId1="VL3" bus1="B3" connectableBus1="B3" voltageLevelId2="VL18" bus2="B18" connectableBus2="B18" p1="-44.8551505029556" q1="2.7154235130950455" p2="44.87755297450449" q2="-25.700680756242537" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-3-18-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-3-18-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1359,7 +1380,7 @@
                 <iidm:currentLimits permanentLimit="837.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-3-4-1" r="1.5473249999999998" x="25.352325" b1="9.300567107750473E-5" b2="9.300567107750473E-5" voltageLevelId1="VL3" bus1="B3" connectableBus1="B3" voltageLevelId2="VL4" bus2="B4" connectableBus2="B4" p1="69.05917953240845" q1="28.413159764476763" p2="-68.98276130934599" q2="-51.087566761089874" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-3-4-1" r="1.5473249999999998" x="25.352325" b1="9.300567107750473E-5" b2="9.300567107750473E-5" voltageLevelId1="VL3" bus1="B3" connectableBus1="B3" voltageLevelId2="VL4" bus2="B4" connectableBus2="B4" p1="90.00247274094875" q1="29.465249084445894" p2="-89.885207912417" q2="-51.44051084748329" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-3-4-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-3-4-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1369,7 +1390,7 @@
                 <iidm:currentLimits permanentLimit="837.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-4-14-1" r="0.9521999999999999" x="15.354225" b1="5.8055030455786594E-5" b2="5.8055030455786594E-5" voltageLevelId1="VL4" bus1="B4" connectableBus1="B4" voltageLevelId2="VL14" bus2="B14" connectableBus2="B14" p1="-273.10474748265096" q1="7.946989913202292" p2="273.66348180874854" q2="-13.753716726411424" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-4-14-1" r="0.9521999999999999" x="15.354225" b1="5.8055030455786594E-5" b2="5.8055030455786594E-5" voltageLevelId1="VL4" bus1="B4" connectableBus1="B4" voltageLevelId2="VL14" bus2="B14" connectableBus2="B14" p1="-273.2563625351037" q1="6.98939284547649" p2="273.8164268496408" q2="-12.7519406295214" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-4-14-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-4-14-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1379,7 +1400,7 @@
                 <iidm:currentLimits permanentLimit="837.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-4-5-1" r="0.9521999999999999" x="15.235199999999999" b1="5.637471119512708E-5" b2="5.637471119512708E-5" voltageLevelId1="VL4" bus1="B4" connectableBus1="B4" voltageLevelId2="VL5" bus2="B5" connectableBus2="B5" p1="-157.91248046919952" q1="-33.728935606842434" p2="158.10395358678616" q2="22.3504155011539" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-4-5-1" r="0.9521999999999999" x="15.235199999999999" b1="5.637471119512708E-5" b2="5.637471119512708E-5" voltageLevelId1="VL4" bus1="B4" connectableBus1="B4" voltageLevelId2="VL5" bus2="B5" connectableBus2="B5" p1="-136.85841594972405" q1="-32.595649165870704" p2="137.0033493296496" q2="20.50111083831361" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-4-5-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-4-5-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1389,7 +1410,7 @@
                 <iidm:currentLimits permanentLimit="1004.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-5-6-1" r="0.23804999999999998" x="3.0946499999999997" b1="1.823146397815585E-5" b2="1.823146397815585E-5" voltageLevelId1="VL5" bus1="B5" connectableBus1="B5" voltageLevelId2="VL6" bus2="B6" connectableBus2="B6" p1="-490.47238883612226" q1="95.05179090218104" p2="490.9350068916183" q2="-93.72298697621338" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-5-6-1" r="0.23804999999999998" x="3.0946499999999997" b1="1.823146397815585E-5" b2="1.823146397815585E-5" voltageLevelId1="VL5" bus1="B5" connectableBus1="B5" voltageLevelId2="VL6" bus2="B6" connectableBus2="B6" p1="-514.145419796346" q1="95.11172307553413" p2="514.6532281216848" q2="-93.1848618557695" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-5-6-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-5-6-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1399,7 +1420,7 @@
                 <iidm:currentLimits permanentLimit="2008.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-5-8-1" r="0.9521999999999999" x="13.3308" b1="6.200378071833649E-5" b2="6.200378071833649E-5" voltageLevelId1="VL5" bus1="B5" connectableBus1="B5" voltageLevelId2="VL8" bus2="B8" connectableBus2="B8" p1="332.36843983281466" q1="98.80162680058339" p2="-331.46654523228153" q2="-101.92566739808207" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-5-8-1" r="0.9521999999999999" x="13.3308" b1="6.200378071833649E-5" b2="6.200378071833649E-5" voltageLevelId1="VL5" bus1="B5" connectableBus1="B5" voltageLevelId2="VL8" bus2="B8" connectableBus2="B8" p1="377.14207673593313" q1="100.09255001180031" p2="-376.0004349659662" q2="-99.81874226977952" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-5-8-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-5-8-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1409,17 +1430,17 @@
                 <iidm:currentLimits permanentLimit="1506.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-6-11-1" r="0.833175" x="9.76005" b1="5.8349086326402014E-5" b2="5.8349086326402014E-5" voltageLevelId1="VL6" bus1="B6" connectableBus1="B6" voltageLevelId2="VL11" bus2="B11" connectableBus2="B11" p1="-358.57628817705415" q1="35.476808293121756" p2="359.4231321259422" q2="-40.52269730242547" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-6-11-1" r="0.833175" x="9.76005" b1="5.8349086326402014E-5" b2="5.8349086326402014E-5" voltageLevelId1="VL6" bus1="B6" connectableBus1="B6" voltageLevelId2="VL11" bus2="B11" connectableBus2="B11" p1="-365.8272345243898" q1="32.77656134946113" p2="366.708666143144" q2="-37.38818399819023" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-6-11-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-6-11-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="1004.0"/>
+                <iidm:currentLimits permanentLimit="803.0"/>
             </iidm:operationalLimitsGroup1>
             <iidm:operationalLimitsGroup2 id="DEFAULT">
-                <iidm:currentLimits permanentLimit="1004.0"/>
+                <iidm:currentLimits permanentLimit="803.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-6-7-1" r="0.71415" x="10.9503" b1="4.746901911363159E-5" b2="4.746901911363159E-5" voltageLevelId1="VL6" bus1="B6" connectableBus1="B6" voltageLevelId2="VL7" bus2="B7" connectableBus2="B7" p1="438.4497277149541" q1="95.54616754838399" p2="-437.3223372491804" q2="-90.31537930848147" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-6-7-1" r="0.71415" x="10.9503" b1="4.746901911363159E-5" b2="4.746901911363159E-5" voltageLevelId1="VL6" bus1="B6" connectableBus1="B6" voltageLevelId2="VL7" bus2="B7" connectableBus2="B7" p1="479.06860885318656" q1="97.59189642316856" p2="-477.7285139556999" q2="-89.06952500140054" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-6-7-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-6-7-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1429,7 +1450,7 @@
                 <iidm:currentLimits permanentLimit="1506.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-7-8-1" r="0.47609999999999997" x="5.47515" b1="3.2766225582860745E-5" b2="3.2766225582860745E-5" voltageLevelId1="VL7" bus1="B7" connectableBus1="B7" voltageLevelId2="VL8" bus2="B8" connectableBus2="B8" p1="203.52233732991328" q1="6.315382279396749" p2="-203.36498252379087" q2="-12.73055835848695" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-7-8-1" r="0.47609999999999997" x="5.47515" b1="3.2766225582860745E-5" b2="3.2766225582860745E-5" voltageLevelId1="VL7" bus1="B7" connectableBus1="B7" voltageLevelId2="VL8" bus2="B8" connectableBus2="B8" p1="243.9285139563059" q1="5.069526623770283" p2="-243.70211804121152" q2="-10.66709230703529" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-7-8-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-7-8-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1439,7 +1460,7 @@
                 <iidm:currentLimits permanentLimit="1506.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-8-9-1" r="2.737575" x="43.206075" b1="1.5979836168872086E-4" b2="1.5979836168872086E-4" voltageLevelId1="VL8" bus1="B8" connectableBus1="B8" voltageLevelId2="VL9" bus2="B9" connectableBus2="B9" p1="12.831528908255502" q1="-61.343756721874755" p2="-12.790662904798374" q2="21.361153579143114" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-8-9-1" r="2.737575" x="43.206075" b1="1.5979836168872086E-4" b2="1.5979836168872086E-4" voltageLevelId1="VL8" bus1="B8" connectableBus1="B8" voltageLevelId2="VL9" bus2="B9" connectableBus2="B9" p1="97.70255308184139" q1="-65.5141591215361" p2="-97.44804512317948" q2="29.01438696264519" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal2">L-8-9-1_ACLS_T_2</iidm:alias>
             <iidm:alias type="CGMES.Terminal1">L-8-9-1_ACLS_T_1</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1449,7 +1470,7 @@
                 <iidm:currentLimits permanentLimit="1506.0"/>
             </iidm:operationalLimitsGroup2>
         </iidm:line>
-        <iidm:line id="L-9-39-1" r="1.19025" x="29.75625" b1="5.040957781978576E-4" b2="5.040957781978576E-4" voltageLevelId1="VL9" bus1="B9" connectableBus1="B9" voltageLevelId2="VL39" bus2="B39" connectableBus2="B39" p1="12.79066541506188" q1="-21.36112657269022" p2="-12.77159174354359" q2="-106.78649651594863" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
+        <iidm:line id="L-9-39-1" r="1.19025" x="29.75625" b1="5.040957781978576E-4" b2="5.040957781978576E-4" voltageLevelId1="VL9" bus1="B9" connectableBus1="B9" voltageLevelId2="VL39" bus2="B39" connectableBus2="B39" p1="97.44804622002101" q1="-29.014377378724294" p2="-97.34826801568313" q2="-96.95241456494799" selectedOperationalLimitsGroupIds1="DEFAULT" selectedOperationalLimitsGroupIds2="DEFAULT">
             <iidm:alias type="CGMES.Terminal1">L-9-39-1_ACLS_T_1</iidm:alias>
             <iidm:alias type="CGMES.Terminal2">L-9-39-1_ACLS_T_2</iidm:alias>
             <iidm:operationalLimitsGroup1 id="DEFAULT">
@@ -1603,7 +1624,7 @@
             <slt:slackTerminal id="B31-G1"/>
         </iidm:extension>
     </iidm:network>
-    <iidm:hvdcLine id="HVDC_Link_16_113" r="0.75" nominalV="320.0" convertersMode="SIDE_1_RECTIFIER_SIDE_2_INVERTER" activePowerSetpoint="50.0" maxP="60.0" converterStation1="VSC_Station_16" converterStation2="VSC_Station_113">
+    <iidm:hvdcLine id="HVDC_Link_16_113" r="0.75" nominalV="320.0" convertersMode="SIDE_1_RECTIFIER_SIDE_2_INVERTER" activePowerSetpoint="50.0" maxP="50.0" converterStation1="VSC_Station_16" converterStation2="VSC_Station_113">
         <iidm:alias type="CGMES.DCNode2">HVDC_Link_16_113_DCLS_DCNODE_2</iidm:alias>
         <iidm:alias type="CGMES.DCTerminal1">HVDC_Link_16_113_DCLS_T_1</iidm:alias>
         <iidm:alias type="CGMES.DCNode1">HVDC_Link_16_113_DCLS_DCNODE_1</iidm:alias>

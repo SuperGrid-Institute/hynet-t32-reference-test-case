@@ -13,7 +13,7 @@ a shared, citable dataset.
 ## The test case
 
 `tx-full` is the IEEE 39-bus system (345 kV) and the IEEE 14-bus system (138 kV),
-joined by a 60 MW VSC HVDC link. It comes with:
+joined by a 50 MW VSC HVDC link. It comes with:
 
 - two network cases: `base`, and `reinforced` with a second circuit parallel to line
   L-26-27;

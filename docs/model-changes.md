@@ -57,20 +57,28 @@ thermal stress cannot be assessed.
 
 **Correction.** Every line and two-winding transformer gets a permanent current limit,
 the same on both sides, declared in `data/inputs/network/tx-full_thermal_limits.csv`
-(67 branches) with the basis of each value:
+(67 branches) with the basis of each value. The limits are the ratings of the
+PowerFactory model:
 
-| Branches                          | Count | Basis                                                                 |
-|-----------------------------------|-------|-----------------------------------------------------------------------|
-| IEEE 39 lines and transformers    | 41    | Rating `rateA` of the MATPOWER `case39` data set, converted at 345 kV |
-| IEEE 39 line L-6-11               | 1     | `rateA` 480 MVA raised to 600 MVA: at 480 MVA, S1 would overload it   |
-| IEEE 39 step-up transformers T-10-32, T-19-33, T-23-36, T-29-38 | 4 | Sized for their unit: P / 0.9, rounded up to the next 100 MVA. The units of this test case are larger than in the original data set, so its ratings (900–1200 MVA) are below the units' output. |
-| IEEE 14 lines                     | 18    | 138 kV conductor classes of 400 or 600 A, the smallest keeping S1 at or below 80 %; `L-101-102-2` (MC-8) as `L-101-102-1` |
-| IEEE 14 transformers              | 3     | 100 MVA at 138 kV                                                     |
+| Branches                                                  | Count | Rating                                                                       |
+|-----------------------------------------------------------|-------|------------------------------------------------------------------------------|
+| IEEE 39 lines                                             | 34    | 500–1200 MVA, equal to `rateA` of the MATPOWER `case39` data set (L-6-11 480 MVA) |
+| IEEE 39 step-up transformers                              | 9     | 900 MVA; `T-29-38` 1000 MVA; `T-20-34` 2 × 900 MVA (two units)               |
+| IEEE 39 transformers `T-19-20`, `T-12-11`, `T-12-13`      | 3     | 900, 500 and 500 MVA                                                         |
+| IEEE 14 lines 1-2 (two circuits), 1-5, 2-3, 2-4, 2-5, 4-5 | 7     | 100 MVA per circuit                                                          |
+| IEEE 14 lines 3-4, 6-11, 6-13, 7-8, 7-9                   | 5     | 50 MVA                                                                       |
+| IEEE 14 lines 6-12, 9-10, 9-14, 10-11, 12-13, 13-14       | 6     | 20 MVA                                                                       |
+| IEEE 14 transformers `T-104-107`, `T-104-109`, `T-105-106` | 3    | 50, 50 and 100 MVA                                                           |
+
+PowerFactory gives the IEEE 14 ratings at 220 and 132 kV; they are converted at the
+nominal voltage of the IIDM model (138 kV), so that limits in p.u. are the same in
+both models. The IEEE 39 ratings are converted at 345 kV.
 
 MVA ratings are converted as I = S / (√3 · U_nominal).
 
 **Effect.** Load-flow results are unchanged; limits only allow loadings to be
-assessed. See [test-case.md](test-case.md#branch-loadings) for the resulting
+assessed. The small IEEE 14 ratings make the 20 MVA line L-113-114, which carries part
+of the HVDC infeed towards bus 114, the most loaded branch of S1 and S2. See [test-case.md](test-case.md#branch-loadings) for the resulting
 loadings.
 
 ### MC-3 — Batteries added
@@ -134,7 +142,7 @@ substation is missing, unknown or listed twice, or if a coordinate is out of ran
 profile and the PowerFactory model is shipped as received, so neither holds the
 coordinates; `testcase/tx-full/network/bus_coordinates.csv` gives them for every bus.
 
-### Alignment with the PowerFactory model (MC-6 to MC-10)
+### Alignment with the PowerFactory model (MC-6 to MC-11)
 
 The XIIDM source and UCY's PowerFactory model (`TestCase.pfd`, the master model used
 by Tool#9) describe the same system but differ in element data. The PowerFactory model
@@ -145,19 +153,36 @@ are compared on 100 MVA and the nominal voltage of each model.
 
 ### MC-6 — Generator data from the PowerFactory model
 
-**Finding.** The source generators have placeholder ratings (no rated power), wide
-reactive limits (−500…800 Mvar for most IEEE 39 units) and four voltage set points
+**Finding.** The source generators have placeholder ratings (no rated power, active
+power ranges of 0…9999.9 MW or ±10 000 MW), wide reactive limits (−500…800 Mvar for most IEEE 39 units) and four voltage set points
 that differ from the PowerFactory model (B36 1.0635 instead of 1.05, B102 1.045
 instead of 1.05, B106 1.07 instead of 1.02, B108 1.09 instead of 1.04). B101-G1 does
 not regulate voltage (reactive range 0…0 Mvar), whereas PowerFactory holds its
-terminal at 1.06 p.u.
+terminal at 1.06 p.u. B103-G1, B106-G1 and B108-G1 are synchronous condensers in
+PowerFactory (rated power factor 10⁻⁶), but produce active power in the source.
 
 **Correction.** `data/inputs/network/tx-full_generator_data.csv` sets, for all 15
-units, the rated power S_n of the PowerFactory machine type, the reactive limits of
-the PowerFactory machine (converted from p.u. of S_n to Mvar) and its voltage set
-point. B101-G1 regulates its voltage at 1.06 p.u. within −179…336 Mvar.
+units:
 
-**Effect.** S1 voltages now lie within 0.98–1.06 p.u. (up to 1.09 before). The small
+- the rated power S_n of the PowerFactory machine type;
+- an active power range from 0 to S_n · cos φ_n, the rated active power (for example
+  751.5 MW for the 835 MVA units at cos φ 0.9), and from 0 to 0 MW for the three
+  condensers;
+- the reactive limits of the PowerFactory machine, converted from p.u. of S_n to Mvar;
+- its voltage set point; B101-G1 regulates its voltage at 1.06 p.u. within
+  −179…336 Mvar;
+- the active power set point of the base case: the PowerFactory value (`pgini`),
+  0 MW for the condensers.
+
+IIDM marks a synchronous condenser with a flag that pypowsybl can set only when it
+creates a generator, so the condensers stay ordinary generators limited to 0 MW. Their
+type is `CONDENSER` in `scenarios/generators.csv`.
+
+**Effect.** No scenario dispatches a unit above its rated active power any more: earlier
+versions ran six IEEE 39 units at up to 183 % of it. Voltages lie within
+0.98–1.06 p.u. in S1 (up to 1.09 before). The base case reproduces the PowerFactory
+dispatch, in which B39-G1 runs at 826.1 MW, above its 819.9 MW rating (see the remarks
+below). The small
 reactive ranges of the IEEE 14 units (B103-G1 0…16 Mvar, B106-G1 and B108-G1
 −1.5…6 Mvar) make them reach their limits in several states.
 
@@ -222,16 +247,90 @@ controls its AC voltage at 1.01 p.u.
 runs at 0 Mvar; `VSC_Station_113` regulates bus 113 at 1.01 p.u. Since the converter
 transformers are not modelled, the set point applies at bus 113 rather than at the
 converter terminal. The PowerFactory export has no converter reactive limits: both
-stations get ±25 Mvar, i.e. ±0.5 p.u. of a 50 MW rating. The maximum active power
-stays 60 MW.
+stations get ±25 Mvar, i.e. ±0.5 p.u. of the 50 MW rating. The maximum active power
+is 50 MW, a rating chosen for this test case and sized for IEEE 14 (181–280 MW of
+load): the source has 60 MW and PowerFactory 500 MW, which IEEE 14 could not absorb.
 
 **Effect.** HVDC losses fall to 0.02 MW at 50 MW. Bus 16 is no longer held at 1.0 p.u.
-by the converter.
+by the converter. The converter at bus 113 reaches its reactive limit in S2.
+
+### MC-11 — Wind and solar units added
+
+**Finding.** Once the units are typed as in PowerFactory (MC-6), the model has no
+wind or solar unit: PowerFactory models every unit as a synchronous machine, and the
+source units the test case used as wind and solar (B30, B31, B103, B106) are hydro,
+nuclear and condensers there. The scenarios need renewable units whose output varies.
+
+**Correction.** `data/inputs/network/tx-full_res_units.csv` adds seven inverter-based
+units as IIDM generators with energy source `WIND` or `SOLAR`. Each has a rating of
+P_max / 0.95 and a reactive range of ±0.33 P_max (power factor 0.95 at full output). It
+runs at unity power factor without voltage control in every state and is idle in the
+base case.
+
+| Unit        | Bus  | Zone | Type  | P_max  | Site (illustrative)                 |
+|-------------|------|------|-------|--------|-------------------------------------|
+| `WF-B14-1`  | B14  | Z3   | WIND  | 400 MW | Offshore, off the Zeeland coast     |
+| `PV-B6-1`   | B6   | Z3   | SOLAR | 400 MW | Next to battery `BAT-B6-1`          |
+| `WF-B15-1`  | B15  | Z1   | WIND  | 300 MW | Offshore, off Dunkirk               |
+| `PV-B21-1`  | B21  | Z1   | SOLAR | 200 MW | Northern France                     |
+| `WF-B3-1`   | B3   | Z2   | WIND  | 200 MW | Onshore, Antwerp area               |
+| `WF-B101-1` | B101 | Z0   | WIND  | 50 MW  | Offshore, landing at Shoreham       |
+| `PV-B106-1` | B106 | Z0   | SOLAR | 30 MW  | Next to battery `BAT-B106-1`        |
+
+IEEE 39 gets 1500 MW (900 MW wind, 600 MW solar), IEEE 14 80 MW. Wind at bus 114 was
+rejected: its 20 MVA lines would be overloaded in S2.
+
+**Effect.** The scenarios dispatch wind and solar at a share of their rating. The
+PowerFactory model does not contain the units (see
+[test-case.md](test-case.md#powerfactory)).
+
+## Deliberate additions
+
+Elements of the XIIDM and CGMES models that the PowerFactory model does not have:
+
+- the shunts `B4-SH-1` and `B5-SH-1` (100 and 200 Mvar at nominal voltage, IEEE 39
+  buses 4 and 5), present in the XIIDM source but neither in PowerFactory nor in the
+  original IEEE 39 data set, and kept for this test case;
+- the two batteries (MC-3);
+- the seven wind and solar units (MC-11).
+
+## Differences kept with the PowerFactory model
+
+Simplifications of the XIIDM source that the build keeps, since they do not change
+per-unit load-flow results or cannot be represented without restructuring the model:
+
+- **Voltage levels.** PowerFactory places IEEE 14 buses 1–5 at 220 kV and 6–14 at
+  132 kV, IEEE 39 bus 12 at 138 kV, bus 20 at 230 kV and buses 30–38 at 16.5 kV. The
+  XIIDM model has 138 kV for IEEE 14 and 345 kV for all of IEEE 39 (MC-1): its step-up
+  transformers lie inside a single voltage level. Per-unit values are identical; kV,
+  A and Ω differ at these buses.
+- **Generator transformers.** PowerFactory connects each unit through a zero-impedance
+  transformer to a terminal of its own; the XIIDM units connect directly to the bus.
+- **HVDC.** The converter transformers, the DC chopper and the converter controls of
+  PowerFactory are not represented, nor are converter no-load losses.
+- **Protection and controllers.** Relays, instrument transformers, voltage regulators,
+  governors and stabilisers exist only in PowerFactory.
+- **Event loads.** Two loads disconnected by open switches in PowerFactory (40 MW at
+  bus 14, 25 MW at bus 13), used for dynamic events, are not modelled.
+- **Frequency.** The PowerFactory model is at 60 Hz; IIDM does not hold a frequency.
+- **Reference machine.** PowerFactory takes G 05 (B34) as its reference machine; the
+  load flows of the test case use a distributed slack.
 
 ## Remarks passed on to the model provider
 
-Not corrected, as they are modelling choices rather than errors:
+Observations on the PowerFactory model, passed on to UCY:
 
-- The shunts `B4-SH-1` and `B5-SH-1` (100 and 200 Mvar at nominal voltage, IEEE 39
-  buses 4 and 5) are not part of the original IEEE 39 data set.
-- Generator `B31-G1` regulates the voltage of load `B31-L1` remotely.
+- The IEEE 39 transformer types have ratings of 900, 500 or 1000 MVA, but their
+  short-circuit voltages and copper losses do not reproduce the IEEE 39 impedances on
+  any of these bases (reactances 40 % lower to 11 % higher). The test case follows
+  PowerFactory (MC-7).
+- The active power set points (`pgini`) do not balance the exported data: with the
+  HVDC link at 50 MW, IEEE 39 has 74.6 MW in excess and IEEE 14 lacks 7.5 MW. G 01
+  (B39) runs at 826.1 MW, above its rated 819.9 MW. Was the model exported after a
+  converged load flow?
+- The converter no-load losses (`Pnold`, 1500 per converter) have no unit in the
+  export; in kW they would add 3 MW in total. They are not modelled (MC-10).
+- G 01, Gen_0001 and Gen_0002 have the category "Others". The test case types them
+  as nuclear (B39, B101) and gas (B102); the category could be set accordingly.
+- The shunts at buses 4 and 5 of the XIIDM model are absent from PowerFactory.
+- Generator `B31-G1` regulates the voltage of load `B31-L1` remotely, at the same bus.
