@@ -1,6 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this test case, please cite it as below."
 type: dataset
+version: 0.2.0
+date-released: 2026-10-30
 title: "HYNET Task 3.2 reference test case"
 abstract: >-
   Common reference test case of HYNET Task 3.2: IEEE-derived transmission

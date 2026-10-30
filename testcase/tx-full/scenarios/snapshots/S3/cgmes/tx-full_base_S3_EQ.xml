@@ -183,6 +183,16 @@
         <cim:Terminal.ConductingEquipment rdf:resource="#_f3999c55-6d12-5325-a836-661ead1948fa"/>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
+    <cim:Terminal rdf:ID="_4a51f17d-68dc-55ab-8c5d-486b1279fdef">
+        <cim:IdentifiedObject.name>7b8d5ec5-186f-5a62-9252-5b28e33f</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_7b8d5ec5-186f-5a62-9252-5b28e33fe762"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_e32feb67-cc4a-5bdb-90a5-817d794b1174">
+        <cim:IdentifiedObject.name>8ae70482-1677-53b2-89de-cd101a7c</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_8ae70482-1677-53b2-89de-cd101a7c18ae"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
     <cim:Terminal rdf:ID="_253d53fb-b624-5b25-84f9-64178327ffec">
         <cim:IdentifiedObject.name>fef5e8d3-e3f1-5a17-bc2e-60c2d160</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_fef5e8d3-e3f1-5a17-bc2e-60c2d160f0b4"/>
@@ -358,6 +368,11 @@
         <cim:Terminal.ConductingEquipment rdf:resource="#_8b397a52-a48b-522e-9ccd-38d9211bc93c"/>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
+    <cim:Terminal rdf:ID="_0b50cea8-cfc2-52fa-a92d-3aff4958cc82">
+        <cim:IdentifiedObject.name>cb3131af-dd22-5024-bae2-6ab957ba</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_cb3131af-dd22-5024-bae2-6ab957ba6d03"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
     <cim:Terminal rdf:ID="_88fabeec-9557-5bb0-8dba-04b38ed2945f">
         <cim:IdentifiedObject.name>7a21c9e9-ab84-51f4-9406-a7746073</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_7a21c9e9-ab84-51f4-9406-a7746073c5eb"/>
@@ -513,10 +528,25 @@
         <cim:Terminal.ConductingEquipment rdf:resource="#_1cf886ba-320e-5647-bc85-62234c267777"/>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
+    <cim:Terminal rdf:ID="_9158b8bf-2753-5e58-871e-48d14ee27482">
+        <cim:IdentifiedObject.name>46877883-79f9-5821-9323-d46a9019</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_46877883-79f9-5821-9323-d46a90191e92"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
     <cim:Terminal rdf:ID="_b9e8326d-8395-5bb5-bc77-24b2557bf1f3">
         <cim:IdentifiedObject.name>03c6c9be-9af1-5661-96a4-f37fc769</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_03c6c9be-9af1-5661-96a4-f37fc769f8fe"/>
         <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_6071bf1d-8504-5b25-be93-57f809809c1a">
+        <cim:IdentifiedObject.name>9863cb98-0244-5aac-a13f-1774109b</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_9863cb98-0244-5aac-a13f-1774109b2df3"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_4118f0db-c25b-574a-a91f-cc82386d791f">
+        <cim:IdentifiedObject.name>9863cb98-0244-5aac-a13f-1774109b</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_9863cb98-0244-5aac-a13f-1774109b2df3"/>
+        <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
     <cim:Terminal rdf:ID="_abc54ff9-c887-5f0c-9fd1-1f38040a4205">
         <cim:IdentifiedObject.name>b3684a44-9e61-5b7a-9aa7-6eebc012</cim:IdentifiedObject.name>
@@ -648,6 +678,11 @@
         <cim:Terminal.ConductingEquipment rdf:resource="#_4ec5e2ee-6576-5e26-9b13-08ccaeb40f40"/>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
+    <cim:Terminal rdf:ID="_fbf55922-c1ba-51eb-a75f-9587ee613879">
+        <cim:IdentifiedObject.name>515b2fc9-6f86-5188-96d0-eaacbf86</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_515b2fc9-6f86-5188-96d0-eaacbf86b1c3"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
     <cim:Terminal rdf:ID="_82533747-a76b-502a-9e16-30fb9034a204">
         <cim:IdentifiedObject.name>3a93b8d5-5255-5555-a5f2-85ce3cb0</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_3a93b8d5-5255-5555-a5f2-85ce3cb01715"/>
@@ -657,6 +692,11 @@
         <cim:IdentifiedObject.name>3a93b8d5-5255-5555-a5f2-85ce3cb0</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_3a93b8d5-5255-5555-a5f2-85ce3cb01715"/>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_9cc02085-65d8-50ed-bbf0-766acd8c9317">
+        <cim:IdentifiedObject.name>866742f8-9bab-5354-87f6-711873a8</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_866742f8-9bab-5354-87f6-711873a8288e"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
     <cim:Terminal rdf:ID="_c7e4ad2e-e38e-56bf-80df-2327c9d6563d">
         <cim:IdentifiedObject.name>c3e5a4fa-d3f5-5e04-8062-c7d9c3c0</cim:IdentifiedObject.name>
@@ -737,6 +777,11 @@
         <cim:IdentifiedObject.name>76fb3c33-1082-5e66-b93d-843ffdbe</cim:IdentifiedObject.name>
         <cim:Terminal.ConductingEquipment rdf:resource="#_76fb3c33-1082-5e66-b93d-843ffdbe4498"/>
         <cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+    </cim:Terminal>
+    <cim:Terminal rdf:ID="_6398adb2-16df-5908-9be9-c53a6f9b0a56">
+        <cim:IdentifiedObject.name>eb6d2406-d154-5bdd-aa6e-56e5acfb</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_eb6d2406-d154-5bdd-aa6e-56e5acfbdf1c"/>
+        <cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
     </cim:Terminal>
     <cim:Terminal rdf:ID="_f5d1d321-e2e3-5035-8d12-25550532d1e3">
         <cim:IdentifiedObject.name>54451aa3-e228-5772-b12d-fda42cc3</cim:IdentifiedObject.name>
@@ -1513,20 +1558,26 @@
         <cim:IdentifiedObject.name>B39-L1</cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_9724e54e-8e99-50f4-87cb-88535ea062dd"/>
     </cim:EnergyConsumer>
+    <cim:RegulatingControl rdf:ID="_f78d3fdc-a71c-54c0-834a-d34ad22d0d3a">
+        <cim:IdentifiedObject.name>RC_B101-G1</cim:IdentifiedObject.name>
+        <cim:RegulatingControl.Terminal rdf:resource="#_ba76913e-9354-54df-9451-75e7457bfb41"/>
+        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
+    </cim:RegulatingControl>
     <cim:SynchronousMachine rdf:ID="_ea78a1c8-992b-5915-ac60-7e55e45d202c">
         <cim:IdentifiedObject.name>B101-G1</cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_e07f56ca-e719-5856-b55e-48f658a5bb32"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_e7e9e06b-4145-55c7-b70c-f37683840269"/>
-        <cim:SynchronousMachine.minQ>0</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>0</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
-        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrMotor"/>
+        <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_f78d3fdc-a71c-54c0-834a-d34ad22d0d3a"/>
+        <cim:SynchronousMachine.minQ>-179.2</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>336</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>448</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_e7e9e06b-4145-55c7-b70c-f37683840269">
         <cim:IdentifiedObject.name>GU_B101-G1</cim:IdentifiedObject.name>
-        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>219.22</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>380.8</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>207.7</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_e0c2c7c1-e33a-52ab-9b07-8a8a22aa5053"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_82b7945a-0fd5-5554-902d-2056ffc32f9e">
@@ -1539,16 +1590,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_581ef154-a97b-5709-8a03-ca9ddf10ef80"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_c2c3d3ef-415b-5992-873a-cbffc1e31a02"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_82b7945a-0fd5-5554-902d-2056ffc32f9e"/>
-        <cim:SynchronousMachine.minQ>-6</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>24</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
-        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrMotor"/>
+        <cim:SynchronousMachine.minQ>-1.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>6</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>25</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_c2c3d3ef-415b-5992-873a-cbffc1e31a02">
         <cim:IdentifiedObject.name>GU_B108-G1</cim:IdentifiedObject.name>
-        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>2.5</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>0</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_e803b5c4-193d-5d47-a980-1d5620a43b4f"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_3382b397-60b1-5bf6-b171-779e83b27af9">
@@ -1561,16 +1612,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_0bbc533f-5e42-5ab6-acb3-27ac5197ac49"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_c97ba9ed-c303-5876-9a64-d21d36df329a"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_3382b397-60b1-5bf6-b171-779e83b27af9"/>
-        <cim:SynchronousMachine.minQ>-6</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>24</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
-        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrMotor"/>
+        <cim:SynchronousMachine.minQ>-1.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>6</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>25</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_c97ba9ed-c303-5876-9a64-d21d36df329a">
         <cim:IdentifiedObject.name>GU_B106-G1</cim:IdentifiedObject.name>
-        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>3</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>0</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_11087473-7932-5f43-addb-fb650fd9e7a9"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_7ff4674f-cc9c-5bfc-8424-d972caef21ea">
@@ -1585,14 +1636,14 @@
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_7ff4674f-cc9c-5bfc-8424-d972caef21ea"/>
         <cim:SynchronousMachine.minQ>-40</cim:SynchronousMachine.minQ>
         <cim:SynchronousMachine.maxQ>50</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
-        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrMotor"/>
+        <cim:RotatingMachine.ratedS>100</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_c42f2b0d-4d76-5d44-a5ff-84016ee6212b">
         <cim:IdentifiedObject.name>GU_B102-G1</cim:IdentifiedObject.name>
-        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>80</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>24</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_a6e93153-bffb-56a4-8986-0f93a4fe0a53"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_33880060-3b53-51b3-afd7-5274c1137789">
@@ -1606,15 +1657,15 @@
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_a47ad8b3-9638-5d13-bd3b-c6764123f130"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_33880060-3b53-51b3-afd7-5274c1137789"/>
         <cim:SynchronousMachine.minQ>0</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>40</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>10000</cim:RotatingMachine.ratedS>
-        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generatorOrMotor"/>
+        <cim:SynchronousMachine.maxQ>16</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>40</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_a47ad8b3-9638-5d13-bd3b-c6764123f130">
         <cim:IdentifiedObject.name>GU_B103-G1</cim:IdentifiedObject.name>
-        <cim:GeneratingUnit.minOperatingP>-10000</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>10000</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>5</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>0</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>0</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_870bfabb-fa03-517c-bd74-700e62ab31d0"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_abd70792-9d08-5728-b91d-b6e96501bca4">
@@ -1627,16 +1678,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_1cf70980-722b-54cb-973f-c89b1b27e1b6"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_d9d710b9-fc25-51c9-b5c5-69474f6d2c9b"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_abd70792-9d08-5728-b91d-b6e96501bca4"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-295</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>354</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>590</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_d9d710b9-fc25-51c9-b5c5-69474f6d2c9b">
         <cim:IdentifiedObject.name>GU_B30-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>25</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>560.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>560.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_73e719b7-c220-5229-960c-391289c988ed"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_0939d309-4ddb-5b56-b30b-33b7da439ff7">
@@ -1649,16 +1700,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_6b53782b-7d5c-58da-b00a-a9905fe3d640"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_c94c6db3-d920-5c5f-b24d-ec0750d4f82a"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_0939d309-4ddb-5b56-b30b-33b7da439ff7"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_c94c6db3-d920-5c5f-b24d-ec0750d4f82a">
         <cim:IdentifiedObject.name>GU_B31-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>57</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>751.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_e3087aa2-00ad-5ed6-8a54-4e7c7685af73"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_1325bb99-fb0c-5633-8d7a-4ccfe65584b1">
@@ -1671,16 +1722,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_8687aae7-e853-5d02-bc98-ba896ff188dd"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_4d71d9f4-cc79-5fb6-8ad6-4e3f1a1f56c3"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_1325bb99-fb0c-5633-8d7a-4ccfe65584b1"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_4d71d9f4-cc79-5fb6-8ad6-4e3f1a1f56c3">
         <cim:IdentifiedObject.name>GU_B32-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>975</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>751.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_4497adc5-8ba4-5a45-a524-35fa5a796506"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_b014e081-8673-57af-8ce2-ec2166f61f8b">
@@ -1693,16 +1744,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_865544a9-01a4-5f82-9698-b0f9cd0ce046"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_90f91ca0-181a-58b0-9f0b-8ddf29124681"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_b014e081-8673-57af-8ce2-ec2166f61f8b"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_90f91ca0-181a-58b0-9f0b-8ddf29124681">
         <cim:IdentifiedObject.name>GU_B33-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>950</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>751.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_0af00a7e-13f4-5902-8a74-ae2c6d59a16e"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_417360b0-8d9f-5bda-99e4-33ff47a60c0b">
@@ -1715,16 +1766,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_865544a9-01a4-5f82-9698-b0f9cd0ce046"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_23120774-ef2c-5bba-ad69-b860c4c901f1"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_417360b0-8d9f-5bda-99e4-33ff47a60c0b"/>
-        <cim:SynchronousMachine.minQ>-300</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_23120774-ef2c-5bba-ad69-b860c4c901f1">
         <cim:IdentifiedObject.name>GU_B34-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>762</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>351.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_0af00a7e-13f4-5902-8a74-ae2c6d59a16e"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_a24c2919-3982-5e2d-9505-3fc71d7ad2d1">
@@ -1737,16 +1788,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_fb006532-2fab-57fb-9e0e-7165ec3646be"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_b2ce319a-7f0c-5d46-a001-f5ff59ba8c12"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_a24c2919-3982-5e2d-9505-3fc71d7ad2d1"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_b2ce319a-7f0c-5d46-a001-f5ff59ba8c12">
         <cim:IdentifiedObject.name>GU_B35-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>65</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>751.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_3cd85405-3c2b-5cfe-90d1-519ca6afbe7f"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_5f3e7178-8c90-5aa1-8a4e-dcbc4bf6ec67">
@@ -1759,16 +1810,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_06ba05d0-08d8-5278-b48a-87dd3da9a9fe"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_8d80f732-c445-5ed4-8bcf-96c89e25ebd3"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_5f3e7178-8c90-5aa1-8a4e-dcbc4bf6ec67"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_8d80f732-c445-5ed4-8bcf-96c89e25ebd3">
         <cim:IdentifiedObject.name>GU_B36-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>840</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>225.4</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_cbd1d296-cf4b-50a2-9a38-70073506a930"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_e37a0780-5dce-5363-b972-550081db0f5c">
@@ -1781,16 +1832,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_a88fe4cf-e592-5e34-8b0b-d30d984d3d69"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_7f9ddd6e-3272-5e00-8cb4-4e938c16ca34"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_e37a0780-5dce-5363-b972-550081db0f5c"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-250.5</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>584.5</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>835</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_7f9ddd6e-3272-5e00-8cb4-4e938c16ca34">
         <cim:IdentifiedObject.name>GU_B37-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>272.46</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>751.5</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>751.5</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_ef48fcc6-db2d-53a2-96ca-7fbc5b6721db"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_f1eb23be-274a-5b7b-a5aa-87037905ff19">
@@ -1803,16 +1854,16 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_93479685-02d3-590e-849b-dbb495629211"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_7831fb61-b7f2-532c-9541-2b474b792eac"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_f1eb23be-274a-5b7b-a5aa-87037905ff19"/>
-        <cim:SynchronousMachine.minQ>-500</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>800</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-273.3</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>637.7</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>911</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_7831fb61-b7f2-532c-9541-2b474b792eac">
         <cim:IdentifiedObject.name>GU_B38-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>1245</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>865.45</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>865.4</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_b04f12d0-3a12-510d-9c88-71ffb49d566b"/>
     </cim:GeneratingUnit>
     <cim:RegulatingControl rdf:ID="_432ceb0c-be0a-5805-888e-c5b81bb52596">
@@ -1825,18 +1876,134 @@
         <cim:Equipment.EquipmentContainer rdf:resource="#_9724e54e-8e99-50f4-87cb-88535ea062dd"/>
         <cim:RotatingMachine.GeneratingUnit rdf:resource="#_df7939ba-b547-596b-98e6-ffebdad73755"/>
         <cim:RegulatingCondEq.RegulatingControl rdf:resource="#_432ceb0c-be0a-5805-888e-c5b81bb52596"/>
-        <cim:SynchronousMachine.minQ>-1000</cim:SynchronousMachine.minQ>
-        <cim:SynchronousMachine.maxQ>1500</cim:SynchronousMachine.maxQ>
-        <cim:RotatingMachine.ratedS>9999.9</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.minQ>-273.3</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>637.7</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>911</cim:RotatingMachine.ratedS>
         <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
     </cim:SynchronousMachine>
     <cim:GeneratingUnit rdf:ID="_df7939ba-b547-596b-98e6-ffebdad73755">
         <cim:IdentifiedObject.name>GU_B39-G1</cim:IdentifiedObject.name>
         <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
-        <cim:GeneratingUnit.maxOperatingP>9999.9</cim:GeneratingUnit.maxOperatingP>
-        <cim:GeneratingUnit.initialP>1500</cim:GeneratingUnit.initialP>
+        <cim:GeneratingUnit.maxOperatingP>819.9</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>819.9</cim:GeneratingUnit.initialP>
         <cim:Equipment.EquipmentContainer rdf:resource="#_b7a4a41a-bffe-5c17-be2a-90402947f854"/>
     </cim:GeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_46877883-79f9-5821-9323-d46a90191e92">
+        <cim:IdentifiedObject.name>WF-B14-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_4172c85b-db2a-5085-9618-ae7bb78e1e8f"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_1d12464b-a744-51c8-af99-e344209e67d3"/>
+        <cim:SynchronousMachine.minQ>-131.47364207154527</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>131.47364207154527</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>421.0526315789474</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:WindGeneratingUnit rdf:ID="_1d12464b-a744-51c8-af99-e344209e67d3">
+        <cim:IdentifiedObject.name>GU_WF-B14-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>400</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>40</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_9c455d04-d4f3-5f5e-b0e1-61b56de4908a"/>
+        <cim:WindGeneratingUnit.windGenUnitType rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindGenUnitKind.onshore"/>
+    </cim:WindGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_866742f8-9bab-5354-87f6-711873a8288e">
+        <cim:IdentifiedObject.name>PV-B6-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_6b53782b-7d5c-58da-b00a-a9905fe3d640"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_97ca3c4f-c272-551a-a5b6-682deb4281ae"/>
+        <cim:SynchronousMachine.minQ>-131.47364207154527</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>131.47364207154527</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>421.0526315789474</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SolarGeneratingUnit rdf:ID="_97ca3c4f-c272-551a-a5b6-682deb4281ae">
+        <cim:IdentifiedObject.name>GU_PV-B6-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>400</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>40</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_e3087aa2-00ad-5ed6-8a54-4e7c7685af73"/>
+    </cim:SolarGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_515b2fc9-6f86-5188-96d0-eaacbf86b1c3">
+        <cim:IdentifiedObject.name>WF-B15-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_d8ba6883-492d-5ea5-9b3f-b089d1fb2eea"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_3fb0a8ac-3a29-5814-a35f-ed4cb94a37e2"/>
+        <cim:SynchronousMachine.minQ>-98.60523155365897</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>98.60523155365897</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>315.7894736842105</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:WindGeneratingUnit rdf:ID="_3fb0a8ac-3a29-5814-a35f-ed4cb94a37e2">
+        <cim:IdentifiedObject.name>GU_WF-B15-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>300</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>30</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_f653fb93-486f-56eb-ad8d-5865c06c9a6e"/>
+        <cim:WindGeneratingUnit.windGenUnitType rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindGenUnitKind.onshore"/>
+    </cim:WindGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_cb3131af-dd22-5024-bae2-6ab957ba6d03">
+        <cim:IdentifiedObject.name>PV-B21-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_22c9e9db-83c3-50ab-aa18-f9ed9736b72f"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_6e72298a-b849-563d-8a7f-dc7c5cecba22"/>
+        <cim:SynchronousMachine.minQ>-65.73682103577264</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>65.73682103577264</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>210.5263157894737</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SolarGeneratingUnit rdf:ID="_6e72298a-b849-563d-8a7f-dc7c5cecba22">
+        <cim:IdentifiedObject.name>GU_PV-B21-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>200</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>20</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_29de36c5-0833-545f-9bd4-ce4c72dd696b"/>
+    </cim:SolarGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_eb6d2406-d154-5bdd-aa6e-56e5acfbdf1c">
+        <cim:IdentifiedObject.name>WF-B3-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_ae7b55f5-ac07-5e5a-806b-578437c95413"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_71c6987c-99d0-5fd2-a860-794156e30aab"/>
+        <cim:SynchronousMachine.minQ>-65.73682103577264</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>65.73682103577264</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>210.5263157894737</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:WindGeneratingUnit rdf:ID="_71c6987c-99d0-5fd2-a860-794156e30aab">
+        <cim:IdentifiedObject.name>GU_WF-B3-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>200</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>20</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_8668aa3a-7c13-5868-85a0-a903df9494f5"/>
+        <cim:WindGeneratingUnit.windGenUnitType rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindGenUnitKind.onshore"/>
+    </cim:WindGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_7b8d5ec5-186f-5a62-9252-5b28e33fe762">
+        <cim:IdentifiedObject.name>WF-B101-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_e07f56ca-e719-5856-b55e-48f658a5bb32"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_b7180e75-207a-58ba-b71d-d9d7e3c82b00"/>
+        <cim:SynchronousMachine.minQ>-16.43420525894316</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>16.43420525894316</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>52.63157894736842</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:WindGeneratingUnit rdf:ID="_b7180e75-207a-58ba-b71d-d9d7e3c82b00">
+        <cim:IdentifiedObject.name>GU_WF-B101-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>50</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>5</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_e0c2c7c1-e33a-52ab-9b07-8a8a22aa5053"/>
+        <cim:WindGeneratingUnit.windGenUnitType rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindGenUnitKind.onshore"/>
+    </cim:WindGeneratingUnit>
+    <cim:SynchronousMachine rdf:ID="_8ae70482-1677-53b2-89de-cd101a7c18ae">
+        <cim:IdentifiedObject.name>PV-B106-1</cim:IdentifiedObject.name>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_0bbc533f-5e42-5ab6-acb3-27ac5197ac49"/>
+        <cim:RotatingMachine.GeneratingUnit rdf:resource="#_e02c7574-3db0-5263-bc08-f41245dc40fa"/>
+        <cim:SynchronousMachine.minQ>-9.8605231553659</cim:SynchronousMachine.minQ>
+        <cim:SynchronousMachine.maxQ>9.8605231553659</cim:SynchronousMachine.maxQ>
+        <cim:RotatingMachine.ratedS>31.57894736842105</cim:RotatingMachine.ratedS>
+        <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+    </cim:SynchronousMachine>
+    <cim:SolarGeneratingUnit rdf:ID="_e02c7574-3db0-5263-bc08-f41245dc40fa">
+        <cim:IdentifiedObject.name>GU_PV-B106-1</cim:IdentifiedObject.name>
+        <cim:GeneratingUnit.minOperatingP>0</cim:GeneratingUnit.minOperatingP>
+        <cim:GeneratingUnit.maxOperatingP>30</cim:GeneratingUnit.maxOperatingP>
+        <cim:GeneratingUnit.initialP>3</cim:GeneratingUnit.initialP>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_11087473-7932-5f43-addb-fb650fd9e7a9"/>
+    </cim:SolarGeneratingUnit>
     <cim:SynchronousMachine rdf:ID="_5018d056-6fd6-55b6-8294-ff254749c79c">
         <cim:IdentifiedObject.name>BAT-B6-1</cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_6b53782b-7d5c-58da-b00a-a9905fe3d640"/>
@@ -1914,7 +2081,7 @@
     </cim:OperationalLimitType>
     <cim:CurrentLimit rdf:ID="_609cde55-f678-56f4-92c4-4ff720df577b">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_18abd762-04d9-55ac-9828-d1884d9a4d28"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -1924,7 +2091,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_060e5410-14c9-5e0a-a331-cdd4e6d4349a">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_80b71a1e-54d6-52be-a5fa-c8fbfd44095a"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -1941,7 +2108,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_95473aa2-f5b7-5394-b301-f6fb78be0964">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_3d456593-29d3-5217-aea2-d37fcac5ba22"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -1951,7 +2118,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_8767785c-40af-5aa3-af61-abf02500428e">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_92a2d5b7-f1b7-5c9f-8af6-c5323c927c40"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -1968,7 +2135,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_09f5bcb2-39cc-5a7f-8259-73be2b1fb695">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7d91184a-721b-5b2e-bd42-d1e78e7a944d"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -1978,7 +2145,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_f0b6c559-b56c-5032-b1db-f231eda58e5d">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_3044f1da-7368-5802-b90f-4dc20a38bd76"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -1995,7 +2162,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_e2196c6c-19c7-5746-a46c-5c88468de209">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5948ddbd-e4fe-5649-a3f8-fc33ee89207f"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2005,7 +2172,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_3c1a8e4f-434a-5012-9c2a-509ad55a926e">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_49b0236c-fced-5d7e-b2c1-ca557658a0ee"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2022,7 +2189,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_32aed03d-6b2e-5bc9-ab93-27f80ad743d0">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a235877a-7e31-57e5-9a4b-0a7d5afab251"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2032,7 +2199,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_5d63fa9c-2d2b-559b-bbcb-c69744342139">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_92223650-c8ef-5727-8024-414c782f876b"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2049,7 +2216,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_fa13c247-2c25-562d-9107-1e9cf063e49d">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1ca1e92c-6639-5192-94ad-a26fda4739df"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2059,7 +2226,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_0bc07957-3ea3-5e75-be9f-05d163e6046a">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6ee3d0b4-7934-5799-ad45-f78b7b72fc27"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2076,7 +2243,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_42e2567e-87ff-543c-976c-b268b031dfc4">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>600</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_8b785a4a-d08e-54e0-b6af-485a472ca446"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2086,7 +2253,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_5a475383-615d-5eb1-a18d-902d1f896736">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>600</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_8e65dc98-5819-5448-a8c2-af669bf00ce4"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2103,7 +2270,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_804df966-6256-55dc-afed-8a058f41f4eb">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ce3264a6-3de5-5666-8811-14a537ad69a0"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2113,7 +2280,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_67c82e9a-959e-56a4-a3f0-2ef982368f54">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_313db75d-544a-5d88-b3b6-776082522249"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2130,7 +2297,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_355ab73a-b09f-58f7-91ef-e50b0290c77d">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_98096579-de5c-5013-87c7-00feac2e283e"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2140,7 +2307,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_67a80192-30d9-54d6-90c9-804704d91581">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6dd2fd8d-a9aa-5ae6-b7ad-549c5307753a"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2157,7 +2324,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_b07f5097-b701-5492-92f5-b27f6cefdd6b">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_be2cda60-e6dd-5fe4-ba7b-c15c3731acf3"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2167,7 +2334,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_ba400903-2779-5f54-a9c6-73bc41bba044">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_cb5e648e-9dc8-50f3-86b7-4a369d5fd1b6"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2184,7 +2351,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_b93f7406-4d1a-5c8a-ab5c-23b6fde1287e">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_329d282c-ec2c-5cc5-9261-7d456473d021"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2194,7 +2361,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_cc318622-60fd-528e-8a9f-c01095f2b9f4">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_8bc08c97-e4fc-53d1-a806-a6113e96e123"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2211,7 +2378,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_9a69a62a-0921-543b-8653-c87caaa5a138">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ed6bf365-8e6c-5215-b171-dc76fae9af31"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2221,7 +2388,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_f0ee8bb2-f38b-570f-9d1b-aaffbd2300e3">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_88e18969-d36e-512d-a860-5f507f2fed92"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2238,7 +2405,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_100fe593-2fda-5a09-9bdd-9bc09eb5efa4">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6f2d52f8-908d-5891-a836-add2c38cce80"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2248,7 +2415,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_ae22b01c-dedb-5767-862a-d09aea33ec8b">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_2bab9b11-e98a-568a-adfa-4c9d962672e0"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2265,7 +2432,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_49f7f87c-14eb-5dcf-a13e-df01bbe2fb2c">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b1245d43-7ba2-5bfa-9660-20dbf29b9112"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2275,7 +2442,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_dce0c1e1-efd6-5a84-945e-8c26f2d8edf5">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4dc0d963-6178-51db-b0ed-acf8176894b0"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2292,7 +2459,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_a04aff1e-f7e5-5ca1-b099-1b44115be144">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_6a3d70e6-87b6-5f68-900f-089c8a9c0813"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2302,7 +2469,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_9f30739f-48c6-5d3f-9861-70d04901cc50">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_94848eea-424c-5be0-8eca-51d5c60c21ac"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2319,7 +2486,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_16f190c7-c44d-5946-81f3-e4e44f1eb161">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_137fe780-0001-5803-a91f-e2a0379ec6a3"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2329,7 +2496,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_f3901c62-58a0-53a6-bd71-d01b0baf6403">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_0b99b518-995c-5648-8271-72e8906dc8dd"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2346,7 +2513,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_c56f8de3-e21a-5acc-8364-322dda9103b8">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_22ab9a6b-9425-5e6e-9e99-b48bb634c961"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2356,7 +2523,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_34a50ffd-c5f0-5e25-beab-d74088124fbe">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>400</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>84</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7a5548aa-bd73-5937-915c-b8f7369c1910"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2400,7 +2567,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_6a4f681f-c8d4-525f-b2af-e91f993dedcb">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>803</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_aaa855e9-2382-54a0-846b-85d963038aec"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -2410,7 +2577,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_450c5167-3856-5503-b9a1-35d51edd8445">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1004</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>803</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_62c25334-0f78-53b8-9341-1fd5283d210b"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3278,6 +3445,33 @@
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_f7097989-7fbe-5dca-befd-1d83ea4e72ed"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
+    <cim:ACLineSegment rdf:ID="_9863cb98-0244-5aac-a13f-1774109b2df3">
+        <cim:IdentifiedObject.name>L-101-102-2</cim:IdentifiedObject.name>
+        <cim:ACLineSegment.r>3.6907272</cim:ACLineSegment.r>
+        <cim:ACLineSegment.x>11.2683348</cim:ACLineSegment.x>
+        <cim:ACLineSegment.bch>0.00027725267801</cim:ACLineSegment.bch>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_138_BV"/>
+    </cim:ACLineSegment>
+    <cim:OperationalLimitSet rdf:ID="_e511239e-5bd3-59ce-8aa3-089404d7a326">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_6071bf1d-8504-5b25-be93-57f809809c1a"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_37edfe59-69e9-5cda-82cc-fd76ab984565">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e511239e-5bd3-59ce-8aa3-089404d7a326"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
+    <cim:OperationalLimitSet rdf:ID="_b692e2d4-dce2-53dc-9a1d-233d117b4393">
+        <cim:IdentifiedObject.name>DEFAULT</cim:IdentifiedObject.name>
+        <cim:OperationalLimitSet.Terminal rdf:resource="#_4118f0db-c25b-574a-a91f-cc82386d791f"/>
+    </cim:OperationalLimitSet>
+    <cim:CurrentLimit rdf:ID="_f79052ed-25c8-5a1a-aac2-9b798359e37e">
+        <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b692e2d4-dce2-53dc-9a1d-233d117b4393"/>
+        <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
+    </cim:CurrentLimit>
     <cim:PowerTransformer rdf:ID="_b7bf0a91-5336-54f0-97b4-2b6f91c73b6e">
         <cim:IdentifiedObject.name>T-104-107-1</cim:IdentifiedObject.name>
         <cim:Equipment.EquipmentContainer rdf:resource="#_03112813-a65c-5b19-9713-dad2530ca576"/>
@@ -3286,10 +3480,10 @@
         <cim:IdentifiedObject.name>T-104-107-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>39.8248128</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>79.6496256</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>50</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_b7bf0a91-5336-54f0-97b4-2b6f91c73b6e"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_27b608e1-fe1f-54e7-95b6-bcf449812ec4"/>
@@ -3302,7 +3496,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>50</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_b7bf0a91-5336-54f0-97b4-2b6f91c73b6e"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_bf9fa1e1-b77a-5f99-9394-f48c7cea11ec"/>
@@ -3339,7 +3533,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_c3cb1580-b3c8-5cb7-b884-92d1a9bfd066">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_107d96e0-c0eb-58ae-8177-6192285ee138"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3349,7 +3543,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_1ccc5ce7-deeb-538f-b597-2923a8e6f1d8">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_8886c2a8-0acc-5fb9-bc87-c7eda846b97a"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3361,10 +3555,10 @@
         <cim:IdentifiedObject.name>T-104-109-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>105.9189192</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>211.8378384</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>50</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_f9260114-662b-5106-9acd-b978601f2f88"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_7e6986c2-a352-546a-aed7-3ac09b69edb0"/>
@@ -3377,7 +3571,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>50</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>138</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_f9260114-662b-5106-9acd-b978601f2f88"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_92c09825-2c1d-51de-adc6-5408f3537b73"/>
@@ -3414,7 +3608,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_d1edcaba-9798-5f90-873b-43cdeb7b88f7">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_8677815f-3625-535f-aa5a-f5f225507e62"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3424,7 +3618,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_d7619e1a-7b9c-59fc-a751-2a0cc3a6697a">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>418</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>209</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e481e77b-5be3-5c95-86d8-8dd25a43dfb5"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3511,10 +3705,10 @@
         <cim:IdentifiedObject.name>T-2-30-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>21.543525</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>23.93725</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_ef9bdab2-9195-5050-bb58-3d017dd98d3c"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_f0f99856-4e2d-573d-ada1-3dff351fc941"/>
@@ -3527,7 +3721,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_ef9bdab2-9195-5050-bb58-3d017dd98d3c"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_9e716535-6fa4-5def-9959-99b58c659112"/>
@@ -3586,10 +3780,10 @@
         <cim:IdentifiedObject.name>T-31-6-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>29.75625</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>23.14375</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_c3c756b9-8389-53f9-8e1c-9bf473232567"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_0e40718f-1a66-57eb-a69f-9c8e3e62d824"/>
@@ -3602,30 +3796,24 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_c3c756b9-8389-53f9-8e1c-9bf473232567"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_baf6381f-b4c4-562c-a986-10c9aa962a26"/>
         <cim:TransformerEnd.BaseVoltage rdf:resource="#_96867acd-a5fe-5508-b662-b4a4c68c0add"/>
     </cim:PowerTransformerEnd>
-    <cim:TapChangerControl rdf:ID="_44633688-9d7b-507d-a576-8e7dfdeb017e">
-        <cim:IdentifiedObject.name>T-31-6-1_RTC_RC</cim:IdentifiedObject.name>
-        <cim:RegulatingControl.mode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingControlModeKind.voltage"/>
-        <cim:RegulatingControl.Terminal rdf:resource="#_c4a47855-6e55-5ecf-95a8-9f2b7f4060c0"/>
-    </cim:TapChangerControl>
     <cim:RatioTapChanger rdf:ID="_4b960f32-7ae0-5815-9e56-d066573071df">
         <cim:IdentifiedObject.name>T-31-6-1_RTC</cim:IdentifiedObject.name>
         <cim:RatioTapChanger.TransformerEnd rdf:resource="#_49156690-f143-5410-8c36-df5d9f143bad"/>
-        <cim:RatioTapChanger.stepVoltageIncrement>5.71428571428571</cim:RatioTapChanger.stepVoltageIncrement>
+        <cim:RatioTapChanger.stepVoltageIncrement>100</cim:RatioTapChanger.stepVoltageIncrement>
         <cim:TapChanger.lowStep>0</cim:TapChanger.lowStep>
-        <cim:TapChanger.highStep>7</cim:TapChanger.highStep>
-        <cim:TapChanger.normalStep>4</cim:TapChanger.normalStep>
-        <cim:TapChanger.neutralStep>4</cim:TapChanger.neutralStep>
+        <cim:TapChanger.highStep>0</cim:TapChanger.highStep>
+        <cim:TapChanger.normalStep>0</cim:TapChanger.normalStep>
+        <cim:TapChanger.neutralStep>0</cim:TapChanger.neutralStep>
         <cim:TapChanger.neutralU>345</cim:TapChanger.neutralU>
         <cim:TapChanger.ltcFlag>false</cim:TapChanger.ltcFlag>
         <cim:RatioTapChanger.tculControlMode rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerControlMode.volt"/>
         <cim:RatioTapChanger.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-        <cim:TapChanger.TapChangerControl rdf:resource="#_44633688-9d7b-507d-a576-8e7dfdeb017e"/>
     </cim:RatioTapChanger>
     <cim:RatioTapChangerTable rdf:ID="_21f53881-b21d-554f-b3a7-953daebf54ab">
         <cim:IdentifiedObject.name>T-31-6-1_TABLE</cim:IdentifiedObject.name>
@@ -3633,73 +3821,10 @@
     <cim:RatioTapChangerTablePoint rdf:ID="_28e17684-7c2b-536c-9959-f7d2dfc81c60">
         <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
         <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>-35.99999999999999</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>-35.99999999999999</cim:TapChangerTablePoint.b>
+        <cim:TapChangerTablePoint.g>0</cim:TapChangerTablePoint.g>
+        <cim:TapChangerTablePoint.b>0</cim:TapChangerTablePoint.b>
         <cim:TapChangerTablePoint.step>0</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>0.8</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_c94fa186-5496-5a75-8d32-b9a8eb45657b">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>-26.53061224489795</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>-26.53061224489795</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>1</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>0.85714285714286</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_fe6d9018-5893-5d61-abd8-970d3f1d0ee9">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>-16.40816326530613</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>-16.40816326530613</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>2</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>0.91428571428571</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_8a42c3a2-d4d1-5895-91f4-22fa6d8a0979">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>-5.63265306122449</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>-5.63265306122449</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>3</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>0.97142857142857</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_8bbb99db-6fd5-5314-8cb9-3d4f9ddd7867">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>5.79591836734692</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>5.79591836734692</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>4</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>1.02857142857143</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_40b9ca26-0e93-571a-bac3-6c471fc49b80">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>17.87755102040816</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>17.87755102040816</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>5</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>1.08571428571429</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_c0ad2fd8-e8d8-5e97-8e0e-156b34990d5a">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>30.61224489795917</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>30.61224489795917</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>6</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>1.14285714285714</cim:TapChangerTablePoint.ratio>
-        <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
-    </cim:RatioTapChangerTablePoint>
-    <cim:RatioTapChangerTablePoint rdf:ID="_c76454d5-1ed8-5433-87c9-375c64d84cb6">
-        <cim:TapChangerTablePoint.r>0</cim:TapChangerTablePoint.r>
-        <cim:TapChangerTablePoint.x>0</cim:TapChangerTablePoint.x>
-        <cim:TapChangerTablePoint.g>43.99999999999999</cim:TapChangerTablePoint.g>
-        <cim:TapChangerTablePoint.b>43.99999999999999</cim:TapChangerTablePoint.b>
-        <cim:TapChangerTablePoint.step>7</cim:TapChangerTablePoint.step>
-        <cim:TapChangerTablePoint.ratio>1.2</cim:TapChangerTablePoint.ratio>
+        <cim:TapChangerTablePoint.ratio>0.93457943925234</cim:TapChangerTablePoint.ratio>
         <cim:RatioTapChangerTablePoint.RatioTapChangerTable rdf:resource="#_21f53881-b21d-554f-b3a7-953daebf54ab"/>
     </cim:RatioTapChangerTablePoint>
     <cim:OperationalLimitSet rdf:ID="_81e59722-2f40-5b20-a1a9-c072c8e81490">
@@ -3708,7 +3833,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_68803623-bfb3-54e6-bf2f-295ae375229e">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>3012</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_81e59722-2f40-5b20-a1a9-c072c8e81490"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3718,7 +3843,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_85dda0ec-d1e7-5064-910c-a9c493903b2c">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>3012</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_41093f8a-6dbf-5060-966e-582cdb75552d"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3729,11 +3854,11 @@
     <cim:PowerTransformerEnd rdf:ID="_29c1d49e-0b13-5be9-a01a-7c690c386332">
         <cim:IdentifiedObject.name>T-12-11-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>1.9044</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>51.775875</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>0.685584</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>31.07896013518013</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>500</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_4529f2e8-864d-547a-bd4b-e2af8d7b6021"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_0db7afad-26ad-5126-bb23-d07b9a20c9be"/>
@@ -3746,7 +3871,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>500</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_4529f2e8-864d-547a-bd4b-e2af8d7b6021"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_dc1ebf10-4b8d-50fd-aac9-3c17d45b2223"/>
@@ -3804,11 +3929,11 @@
     <cim:PowerTransformerEnd rdf:ID="_ff36ae4b-b3f7-5195-9c41-69755d0d9aba">
         <cim:IdentifiedObject.name>T-12-13-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>1.9044</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>51.775875</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>0.685584</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>31.07896013518013</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>500</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_6b8e41a9-a608-55d0-9588-c04f25ff1b13"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_896a7f86-b341-5a7d-8d86-357cf8e6988b"/>
@@ -3821,7 +3946,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>500</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_6b8e41a9-a608-55d0-9588-c04f25ff1b13"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_9d38a8f6-57aa-5719-98e9-2b424181cf5c"/>
@@ -3880,10 +4005,10 @@
         <cim:IdentifiedObject.name>T-10-32-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>23.805</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>21.16</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_9ed69510-3bba-5eef-914e-10039a8f306c"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_52b86bb3-5b7c-5406-bd3b-ee0c272bd6d6"/>
@@ -3896,7 +4021,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_9ed69510-3bba-5eef-914e-10039a8f306c"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_9a76c4ec-b8e9-5205-944a-c970e6235f3f"/>
@@ -3933,7 +4058,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_80b6e451-7615-5178-9652-bdb946facd6e">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_3dae40a3-1455-5f75-8623-8842d0ec93d1"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3943,7 +4068,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_70e849b6-e9a3-5506-a9a3-38c063573cfd">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9e518fa0-d0a5-574e-be7b-e852f61292fc"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -3954,11 +4079,11 @@
     <cim:PowerTransformerEnd rdf:ID="_fcd96fbd-28f4-5a7a-91c9-ba39efc1e044">
         <cim:IdentifiedObject.name>T-19-20-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>0.833175</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>16.42545</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>1.02861111111111</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>18.24498877209323</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_d3f7ec18-c255-58fa-8d67-67994894b11e"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_0d196bf4-3eb9-59c5-ac8c-bcf673437c77"/>
@@ -3971,7 +4096,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_d3f7ec18-c255-58fa-8d67-67994894b11e"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_8e27e892-c779-5a6e-b7a3-77f5f49b73e5"/>
@@ -4029,11 +4154,11 @@
     <cim:PowerTransformerEnd rdf:ID="_6db0eec7-a8c0-55cb-90fb-d43f2c008b9d">
         <cim:IdentifiedObject.name>T-19-33-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>0.833175</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>16.90155</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>0.65831111111111</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>15.02742476569313</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_ba09eed9-772b-54be-9b21-486f87cd0b9e"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_0bf74893-78ad-59ef-a21b-1e24a5ae030e"/>
@@ -4046,7 +4171,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_ba09eed9-772b-54be-9b21-486f87cd0b9e"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_9e9d0e85-702f-5ccd-b409-8e9da4d3b4cc"/>
@@ -4083,7 +4208,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_c2bc2d6a-4860-51a0-8791-eff8dbfdc0bc">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4d49d2d6-b6d1-5639-9c81-f2343baac0a1"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4093,7 +4218,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_5973c7bc-7cc5-5f6f-9460-bf38fb24e9ed">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1841</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1d90d6be-f207-5d29-9c5c-42063254c0b0"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4104,11 +4229,11 @@
     <cim:PowerTransformerEnd rdf:ID="_f2c41fe9-73da-52e6-a1c6-1e239f5c3be0">
         <cim:IdentifiedObject.name>T-20-34-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>1.071225</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>21.4245</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>0.119025</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>7.14942955624752</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>1800</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_c115fdf6-adcf-520a-864a-f1217f9bd121"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_931e0183-2c9f-5a45-a83b-8249bfdaf39f"/>
@@ -4121,7 +4246,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>1800</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_c115fdf6-adcf-520a-864a-f1217f9bd121"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_fee83eeb-19f5-5ebd-9081-6f6b38cafb92"/>
@@ -4158,7 +4283,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_74cdf30f-9213-5586-887f-866364629edb">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>3012</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_38e5287a-240a-5437-8b20-3b31df6b52a5"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4168,7 +4293,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_6a60f823-767b-5bc3-9989-78d016981386">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>3012</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e057c5a4-5468-5606-99bc-f6475cf8150d"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4180,10 +4305,10 @@
         <cim:IdentifiedObject.name>T-22-35-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>17.020575</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>15.1294</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_02a6fbab-1db7-55c9-b058-017ab1005a86"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_df18cae1-ef25-5ef9-a2a0-151e56517108"/>
@@ -4196,7 +4321,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_02a6fbab-1db7-55c9-b058-017ab1005a86"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_b45be647-f490-5fff-97c9-c33418a31e15"/>
@@ -4254,11 +4379,11 @@
     <cim:PowerTransformerEnd rdf:ID="_a81cee45-bc88-5612-a138-f40890e08896">
         <cim:IdentifiedObject.name>T-23-36-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>0.595125</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>32.3748</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>0.36001388888889</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>25.18208512500432</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_93e16985-9a55-58dc-b205-f8d4487286c4"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_1280ebac-96ba-5f6f-a0a8-bc94600a71cb"/>
@@ -4271,7 +4396,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_93e16985-9a55-58dc-b205-f8d4487286c4"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_32ca6a6f-4a64-5271-9e6b-d1447e689c54"/>
@@ -4283,7 +4408,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_639353aa-a67e-5698-b74b-3a0c5287da2c">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a93dcc5d-8346-5fc1-83d8-34655804f64b"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4293,7 +4418,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_603dc811-0ddb-51a6-87f3-712a7d909b30">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1506</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_4ebea9d7-2d1c-51b3-b87a-7b01f3a0881d"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4304,11 +4429,11 @@
     <cim:PowerTransformerEnd rdf:ID="_570d58b7-d5a5-5ebd-9c21-4c294522d03c">
         <cim:IdentifiedObject.name>T-25-37-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
-        <cim:PowerTransformerEnd.r>0.71415</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>27.6138</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.r>0.43201666666667</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.x>21.48023719293822</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_a23c70b6-5806-594a-ae20-bddd79d06e5c"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_c102df02-b6ef-5a0b-a80e-d4abf7499781"/>
@@ -4321,7 +4446,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>900</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_a23c70b6-5806-594a-ae20-bddd79d06e5c"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_96cd6cdb-924a-56b0-a3bc-43c576392ce9"/>
@@ -4380,10 +4505,10 @@
         <cim:IdentifiedObject.name>T-29-38-1_1</cim:IdentifiedObject.name>
         <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
         <cim:PowerTransformerEnd.r>0.9522</cim:PowerTransformerEnd.r>
-        <cim:PowerTransformerEnd.x>18.5679</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x>18.56790077251801</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>1000</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_afb5e2ac-0d5e-5976-aa5d-d856d37d7919"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_28a1eef6-d230-5f80-afb2-ea1673d44bdf"/>
@@ -4396,7 +4521,7 @@
         <cim:PowerTransformerEnd.x>0</cim:PowerTransformerEnd.x>
         <cim:PowerTransformerEnd.g>0</cim:PowerTransformerEnd.g>
         <cim:PowerTransformerEnd.b>0</cim:PowerTransformerEnd.b>
-        <cim:PowerTransformerEnd.ratedS>100</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.ratedS>1000</cim:PowerTransformerEnd.ratedS>
         <cim:PowerTransformerEnd.ratedU>345</cim:PowerTransformerEnd.ratedU>
         <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_afb5e2ac-0d5e-5976-aa5d-d856d37d7919"/>
         <cim:TransformerEnd.Terminal rdf:resource="#_3a9b6e94-1a52-5239-8b42-2a725a408205"/>
@@ -4433,7 +4558,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_0c017834-82d4-5590-a745-d0a32b93aaff">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>2343</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_1b42a0d0-5e71-5685-8ce7-068563d2c321"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4443,7 +4568,7 @@
     </cim:OperationalLimitSet>
     <cim:CurrentLimit rdf:ID="_99f3e541-8c9c-5f02-a9ab-29ed1e4c1a29">
         <cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
-        <cim:CurrentLimit.value>2343</cim:CurrentLimit.value>
+        <cim:CurrentLimit.value>1673</cim:CurrentLimit.value>
         <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_769b7a1e-56ee-5fae-a6d6-98e8cc670ff0"/>
         <cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd515ec4-b15d-55c5-b870-6a2a89be96dc"/>
     </cim:CurrentLimit>
@@ -4531,11 +4656,11 @@
     </cim:ACDCConverterDCTerminal>
     <cim:DCLineSegment rdf:ID="_ca9f9d3d-a225-5316-8588-c0634eaa7cab">
         <cim:IdentifiedObject.name>HVDC_Link_16_113</cim:IdentifiedObject.name>
-        <cim:DCLineSegment.resistance>5</cim:DCLineSegment.resistance>
+        <cim:DCLineSegment.resistance>0.75</cim:DCLineSegment.resistance>
     </cim:DCLineSegment>
     <cim:VsConverter rdf:ID="_721717dd-6168-5cad-99c5-67b014b4a61a">
         <cim:IdentifiedObject.name>VSC_Station_16</cim:IdentifiedObject.name>
-        <cim:ACDCConverter.ratedUdc>150</cim:ACDCConverter.ratedUdc>
+        <cim:ACDCConverter.ratedUdc>320</cim:ACDCConverter.ratedUdc>
         <cim:ACDCConverter.idleLoss>0</cim:ACDCConverter.idleLoss>
         <cim:ACDCConverter.switchingLoss>0</cim:ACDCConverter.switchingLoss>
         <cim:ACDCConverter.resistiveLoss>0</cim:ACDCConverter.resistiveLoss>
@@ -4544,7 +4669,7 @@
     </cim:VsConverter>
     <cim:VsConverter rdf:ID="_cbe1e26d-e5e1-5aeb-a531-bb19849a0ef6">
         <cim:IdentifiedObject.name>VSC_Station_113</cim:IdentifiedObject.name>
-        <cim:ACDCConverter.ratedUdc>150</cim:ACDCConverter.ratedUdc>
+        <cim:ACDCConverter.ratedUdc>320</cim:ACDCConverter.ratedUdc>
         <cim:ACDCConverter.idleLoss>0</cim:ACDCConverter.idleLoss>
         <cim:ACDCConverter.switchingLoss>0</cim:ACDCConverter.switchingLoss>
         <cim:ACDCConverter.resistiveLoss>0</cim:ACDCConverter.resistiveLoss>

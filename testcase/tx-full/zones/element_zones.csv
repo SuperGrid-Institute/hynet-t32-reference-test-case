@@ -14,6 +14,13 @@ generator,B36-G1,B36,Z1
 generator,B37-G1,B37,Z2
 generator,B38-G1,B38,Z2
 generator,B39-G1,B39,Z3
+generator,PV-B106-1,B106,Z0
+generator,PV-B21-1,B21,Z1
+generator,PV-B6-1,B6,Z3
+generator,WF-B101-1,B101,Z0
+generator,WF-B14-1,B14,Z3
+generator,WF-B15-1,B15,Z1
+generator,WF-B3-1,B3,Z2
 load,B1-L1,B1,Z2
 load,B10-L1,B10,Z3
 load,B102-L1,B102,Z0

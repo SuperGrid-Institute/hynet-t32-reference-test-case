@@ -2,4 +2,4 @@
 # Installs the package from the development commit this branch was published from;
 # its dependencies are pinned in requirements.txt.
 set -euo pipefail
-pip install --no-deps "https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/archive/82c6cc830d20427c9041c314d7e74fd9d3dd820e.tar.gz"
+pip install --no-deps "https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/archive/f81a503d774c71b7ce79da19522bc6be761bcb62.tar.gz"

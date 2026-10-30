@@ -90,6 +90,13 @@ generator,B36-G1,78e42ae6-68b8-593e-b610-e547d2ce96e2
 generator,B37-G1,789fa14d-e833-5610-b973-a6ea685fffc0
 generator,B38-G1,dfe6967f-9399-5c72-bff1-f36385d34f7b
 generator,B39-G1,afbb0ffd-63d2-5a22-b540-c89b71494c33
+generator,WF-B14-1,46877883-79f9-5821-9323-d46a90191e92
+generator,PV-B6-1,866742f8-9bab-5354-87f6-711873a8288e
+generator,WF-B15-1,515b2fc9-6f86-5188-96d0-eaacbf86b1c3
+generator,PV-B21-1,cb3131af-dd22-5024-bae2-6ab957ba6d03
+generator,WF-B3-1,eb6d2406-d154-5bdd-aa6e-56e5acfbdf1c
+generator,WF-B101-1,7b8d5ec5-186f-5a62-9252-5b28e33fe762
+generator,PV-B106-1,8ae70482-1677-53b2-89de-cd101a7c18ae
 load,B113-L1,3150ad94-ca3b-5ad2-ad32-ac53e2096be5
 load,B114-L1,28668797-4716-5642-91a7-e2f209e26a3b
 load,B104-L1,c6ec711d-3ef6-5428-b543-f8d709ac95bc
@@ -183,6 +190,7 @@ line,L-16-17-1,c72c140f-8658-599f-bd25-3307307c8734
 line,L-4-5-1,c9da6ad1-95c1-56e3-b7a3-9f7db3ffa04f
 line,L-26-29-1,369b3d2f-d47e-5e96-b8c4-cdc7416571c6
 line,L-7-8-1,057f4736-ae3f-5f76-9246-e12c09477fc1
+line,L-101-102-2,9863cb98-0244-5aac-a13f-1774109b2df3
 two_windings_transformer,T-104-107-1,b7bf0a91-5336-54f0-97b4-2b6f91c73b6e
 two_windings_transformer,T-104-109-1,f9260114-662b-5106-9acd-b978601f2f88
 two_windings_transformer,T-105-106-1,64118431-c722-558d-ac3e-daac2aec7634

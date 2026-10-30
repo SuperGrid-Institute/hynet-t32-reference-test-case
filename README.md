@@ -13,7 +13,7 @@ a shared, citable dataset.
 ## The test case
 
 `tx-full` is the IEEE 39-bus system (345 kV) and the IEEE 14-bus system (138 kV),
-joined by a 60 MW VSC HVDC link. It comes with:
+joined by a 50 MW VSC HVDC link. It comes with:
 
 - two network cases: `base`, and `reinforced` with a second circuit parallel to line
   L-26-27;
@@ -55,10 +55,10 @@ the operating points; they are not results of any HYNET tool.
 ## How it is built
 
 This branch is generated; it is not edited by hand. It was published from commit
-[`82c6cc8`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/82c6cc830d20427c9041c314d7e74fd9d3dd820e) of the `dev` branch, which holds the
+[`f81a503`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/f81a503d774c71b7ce79da19522bc6be761bcb62) of the `dev` branch, which holds the
 source models, the hand-edited inputs and the code that builds `testcase/`. The
 corrections applied to the source models are listed in
-[`docs/model-changes.md`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/82c6cc830d20427c9041c314d7e74fd9d3dd820e/docs/model-changes.md).
+[`docs/model-changes.md`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md).
 
 ## Licences
 
