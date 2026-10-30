@@ -57,14 +57,14 @@ thermal stress cannot be assessed.
 
 **Correction.** Every line and two-winding transformer gets a permanent current limit,
 the same on both sides, declared in `data/inputs/network/tx-full_thermal_limits.csv`
-(66 branches) with the basis of each value:
+(67 branches) with the basis of each value:
 
 | Branches                          | Count | Basis                                                                 |
 |-----------------------------------|-------|-----------------------------------------------------------------------|
 | IEEE 39 lines and transformers    | 41    | Rating `rateA` of the MATPOWER `case39` data set, converted at 345 kV |
 | IEEE 39 line L-6-11               | 1     | `rateA` 480 MVA raised to 600 MVA: at 480 MVA, S1 would overload it   |
 | IEEE 39 step-up transformers T-10-32, T-19-33, T-23-36, T-29-38 | 4 | Sized for their unit: P / 0.9, rounded up to the next 100 MVA. The units of this test case are larger than in the original data set, so its ratings (900–1200 MVA) are below the units' output. |
-| IEEE 14 lines                     | 17    | 138 kV conductor classes of 400 or 600 A, the smallest keeping S1 at or below 80 % |
+| IEEE 14 lines                     | 18    | 138 kV conductor classes of 400 or 600 A, the smallest keeping S1 at or below 80 %; `L-101-102-2` (MC-8) as `L-101-102-1` |
 | IEEE 14 transformers              | 3     | 100 MVA at 138 kV                                                     |
 
 MVA ratings are converted as I = S / (√3 · U_nominal).
@@ -134,12 +134,104 @@ substation is missing, unknown or listed twice, or if a coordinate is out of ran
 profile and the PowerFactory model is shipped as received, so neither holds the
 coordinates; `testcase/tx-full/network/bus_coordinates.csv` gives them for every bus.
 
+### Alignment with the PowerFactory model (MC-6 to MC-10)
+
+The XIIDM source and UCY's PowerFactory model (`TestCase.pfd`, the master model used
+by Tool#9) describe the same system but differ in element data. The PowerFactory model
+is the reference: MC-6 to MC-10 bring the XIIDM data in line with it, as read from its
+DGS export `data/sources/tx-full/TestCase.dgs`. Ids are kept; each value is declared
+in `data/inputs/network/` with the PowerFactory element it comes from. Per-unit values
+are compared on 100 MVA and the nominal voltage of each model.
+
+### MC-6 — Generator data from the PowerFactory model
+
+**Finding.** The source generators have placeholder ratings (no rated power), wide
+reactive limits (−500…800 Mvar for most IEEE 39 units) and four voltage set points
+that differ from the PowerFactory model (B36 1.0635 instead of 1.05, B102 1.045
+instead of 1.05, B106 1.07 instead of 1.02, B108 1.09 instead of 1.04). B101-G1 does
+not regulate voltage (reactive range 0…0 Mvar), whereas PowerFactory holds its
+terminal at 1.06 p.u.
+
+**Correction.** `data/inputs/network/tx-full_generator_data.csv` sets, for all 15
+units, the rated power S_n of the PowerFactory machine type, the reactive limits of
+the PowerFactory machine (converted from p.u. of S_n to Mvar) and its voltage set
+point. B101-G1 regulates its voltage at 1.06 p.u. within −179…336 Mvar.
+
+**Effect.** S1 voltages now lie within 0.98–1.06 p.u. (up to 1.09 before). The small
+reactive ranges of the IEEE 14 units (B103-G1 0…16 Mvar, B106-G1 and B108-G1
+−1.5…6 Mvar) make them reach their limits in several states.
+
+### MC-7 — Transformer impedances and ratio from the PowerFactory model
+
+**Finding.** The IEEE 39 transformers of the source carry the impedances of the IEEE 39
+data set. The PowerFactory transformer types give other values: their ratings are
+900, 500 or 1000 MVA, and their short-circuit voltage and copper losses lead to
+reactances 40 % lower to 11 % higher. `T-20-34-1` is two units in parallel in
+PowerFactory. The IEEE 14 transformers `T-104-107-1` and `T-104-109-1` have twice the
+source reactance (short-circuit voltage given on 50 MVA). `T-31-6-1` has an 8-step
+tap changer fixed at ρ = 1.1667, where both IEEE 39 and PowerFactory use 1.07.
+
+**Correction.** `data/inputs/network/tx-full_transformer_data.csv` gives the
+nameplate data of every transformer (rating, short-circuit voltage, copper losses,
+units in parallel), from which the build derives r and x as PowerFactory does, and
+sets the rating. In `tx-full_corrections.yaml`, `tap_ratios` replaces the tap changer
+of `T-31-6-1` by a fixed ratio of 1.07.
+
+**Effect.** The IEEE 39 transformer impedances differ from the IEEE 39 data set, as in
+the PowerFactory model. The lower ratio of `T-31-6-1` lowers the reactive power
+injected towards bus 6.
+
+### MC-8 — Second circuit of IEEE 14 line 1-2
+
+**Finding.** IEEE 14 line 1-2 is a double circuit in the PowerFactory model, each
+circuit with the impedance of the source line `L-101-102-1`.
+
+**Correction.** `parallel_lines` in `tx-full_corrections.yaml` adds `L-101-102-2`, a
+copy of `L-101-102-1`. A second line, rather than one line with halved impedance,
+keeps one IIDM line per PowerFactory line. Its current limit is declared with the
+others (MC-2).
+
+**Effect.** The impedance between buses 101 and 102 is halved and the line is no
+longer the most loaded IEEE 14 branch.
+
+### MC-9 — Loads at buses 1, 16 and 20 from the PowerFactory model
+
+**Finding.** Three loads differ: bus 1 is empty in the source and has 97.6 MW /
+44.2 Mvar in PowerFactory, bus 16 has 329.4 MW instead of 329.0 MW and bus 20 680 MW
+instead of 628 MW. Both models mix two versions of the IEEE 39 data set. In total,
+IEEE 39 consumes 45.2 MW more in PowerFactory.
+
+**Correction.** `data/inputs/network/tx-full_load_data.csv` sets the three loads of
+the base case to the PowerFactory values. The scenario loads of
+`data/inputs/scenarios/load_scenarios.csv` apply the scenario factors to them.
+
+**Effect.** IEEE 39 consumption rises by 45.2 MW, in zones Z1 and Z2.
+
+### MC-10 — HVDC data and converter control from the PowerFactory model
+
+**Finding.** The source HVDC line has a nominal voltage of 150 kV and a resistance of
+5 Ω, i.e. 0.56 MW of losses at 50 MW. PowerFactory models a symmetric monopole at
+±320 kV with 2 × 150 km of cable at 0.01 Ω/km (3.0 Ω loop). Both source converter
+stations regulate their AC voltage with unlimited reactive power: `VSC_Station_16`
+absorbs up to 666 Mvar to hold bus 16 at 1.0 p.u. In PowerFactory, converter 1
+(bus 16) controls the DC voltage at zero reactive power and converter 2 (bus 113)
+controls its AC voltage at 1.01 p.u.
+
+**Correction.** `hvdc` in `tx-full_corrections.yaml` sets the line to 320 kV and
+0.75 Ω (the 3.0 Ω loop seen from one pole). `VSC_Station_16` stops regulating and
+runs at 0 Mvar; `VSC_Station_113` regulates bus 113 at 1.01 p.u. Since the converter
+transformers are not modelled, the set point applies at bus 113 rather than at the
+converter terminal. The PowerFactory export has no converter reactive limits: both
+stations get ±25 Mvar, i.e. ±0.5 p.u. of a 50 MW rating. The maximum active power
+stays 60 MW.
+
+**Effect.** HVDC losses fall to 0.02 MW at 50 MW. Bus 16 is no longer held at 1.0 p.u.
+by the converter.
+
 ## Remarks passed on to the model provider
 
 Not corrected, as they are modelling choices rather than errors:
 
 - The shunts `B4-SH-1` and `B5-SH-1` (100 and 200 Mvar at nominal voltage, IEEE 39
   buses 4 and 5) are not part of the original IEEE 39 data set.
-- The two VSC converter stations have no reactive power limits. `VSC_Station_16`
-  regulates its bus voltage and supplies 326–666 Mvar in S1–S3.
 - Generator `B31-G1` regulates the voltage of load `B31-L1` remotely.

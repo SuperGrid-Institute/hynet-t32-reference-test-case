@@ -72,6 +72,19 @@ scenario or file, PATCH for corrected values.
   `"B101-G1 "` becomes `B101-G1`, `"B4-SH 1"` becomes `B4-SH-1`. Every id in the
   network models and CSVs changes accordingly, as do the CGMES UUIDs derived from
   them; values and load-flow results are unchanged.
+- `tx-full` element data aligned with UCY's PowerFactory model, read from its DGS
+  export (MC-6 to MC-10 in `docs/model-changes.md`): generator ratings, reactive
+  limits and voltage set points, with B101-G1 now regulating at 1.06 p.u.;
+  transformer impedances from their nameplate data, `T-20-34-1` as two units in
+  parallel and `T-31-6-1` at a fixed ratio of 1.07; a second circuit of IEEE 14 line
+  1-2 (`L-101-102-2`); the loads at buses 1, 16 and 20 (+45.2 MW in IEEE 39, also in
+  every scenario); HVDC line at 320 kV and 0.75 Ω, `VSC_Station_16` at 0 Mvar instead
+  of regulating bus 16, `VSC_Station_113` regulating bus 113 at 1.01 p.u., both within
+  ±25 Mvar. Scenario voltages, loadings and post-contingency results change
+  accordingly; every scenario check still passes.
+- `L-26-27-2` of the `reinforced` case is 58.3 km long, the length of line 26-27 in
+  the PowerFactory model (47 km estimated before): investment 70.0 M EUR, annuity
+  4.08 M EUR/year.
 - The repository is split into two branches. `main` holds only the test case, its user
   documentation and the presentation notebook with its Binder configuration; it is
   generated from `dev` by the new `hynet-testcase publish` command, and its Binder

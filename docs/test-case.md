@@ -64,6 +64,11 @@ effects in [model-changes.md](model-changes.md)):
   `"B101-G1 "` and `B4-SH-1` for `"B4-SH 1"`.
 - **MC-5.** Every substation gets geographical coordinates (see
   [Geography](#geography)).
+- **MC-6 to MC-10.** Element data are aligned with UCY's PowerFactory model, the
+  reference: generator ratings, reactive limits and voltage set points (MC-6),
+  transformer impedances and the ratio of `T-31-6-1` (MC-7), the second circuit of
+  IEEE 14 line 1-2, `L-101-102-2` (MC-8), the loads at buses 1, 16 and 20 (MC-9), and
+  the HVDC data and converter control (MC-10).
 
 None of them applies to the PowerFactory model, shipped as received (see
 [PowerFactory](#powerfactory)).
@@ -128,8 +133,8 @@ set point.
 | S2 | `high_res_low_demand` | 2025-01-01T01:00:00Z | × 0.70 / × 0.70 | 100 % of nominal | 60 MW |
 | S3 | `low_res_high_demand` | 2025-01-01T02:00:00Z | × 1.08 / × 1.50 | 10 % of nominal  | 50 MW |
 
-Load factors apply to the active (P) and reactive (Q) power of the loads of the source
-model. S3 raises reactive demand more than active demand, as at a low power factor
+Load factors apply to the active (P) and reactive (Q) power of the loads of the base
+case. S3 raises reactive demand more than active demand, as at a low power factor
 peak, so that it shows a voltage drop: the IEEE 39 units have large reactive reserves,
 while the small units of IEEE 14 reach their limits. RES are the wind, solar and hydro
 units. The other units are dispatched in merit order (ties in file order) within each
@@ -164,19 +169,19 @@ bus against S1.
 
 | Scenario | Rules                                                                   | Value at the current state |
 |----------|-------------------------------------------------------------------------|----------------------------|
-| S1       | No branch above 100 %; every voltage within 0.90–1.10 p.u.              | 92 %; 0.98–1.09 p.u.       |
-| S2       | HVDC at its maximum; some bus at least 0.015 p.u. above S1              | 60 MW; +0.021 p.u.         |
-| S3       | At least one branch above 100 %; some bus at least 0.03 p.u. below S1   | 4 overloads; −0.070 p.u.   |
+| S1       | No branch above 100 %; every voltage within 0.90–1.10 p.u.              | 93 %; 0.98–1.06 p.u.       |
+| S2       | HVDC at its maximum; some bus at least 0.015 p.u. above S1              | 60 MW; +0.025 p.u.         |
+| S3       | At least one branch above 100 %; some bus at least 0.03 p.u. below S1   | 3 overloads; −0.036 p.u.   |
 
-The S1 band is wider than the usual 0.95–1.05 p.u. because the IEEE 14 generator set
-points reach 1.09 p.u.
+The S1 band is wider than the usual 0.95–1.05 p.u. because generator set points reach
+1.06 p.u.
 
 The base case keeps the operating point of the source model. Each scenario snapshot
 is the base case with the scenario's generation, loads and HVDC set point applied.
 These load flows validate the data; they are not results of any HYNET tool.
 
-Voltages at the solved states range from about 0.94 to 1.09 p.u.: IEEE 14 generator
-set points reach 1.09 p.u., and S3 drops the lowest IEEE 14 voltage to 0.94 p.u.
+Voltages at the solved states range from about 0.96 to 1.06 p.u.: generator set
+points reach 1.06 p.u., and S3 drops the lowest IEEE 14 voltage to 0.96 p.u.
 Voltage control (for example with a reactive optimal power flow) is left to the tools.
 
 ### Branch loadings
@@ -187,10 +192,10 @@ the limit:
 
 | State | Highest loading         | Overloaded branches                                         |
 |-------|-------------------------|-------------------------------------------------------------|
-| base  | 88 % (L-101-102)        | —                                                           |
-| S1    | 92 % (T-10-32)          | —                                                           |
+| base  | 84 % (L-16-19)          | —                                                           |
+| S1    | 93 % (T-10-32)          | —                                                           |
 | S2    | 95 % (L-28-29)          | —                                                           |
-| S3    | 162 % (L-16-19)         | L-16-19 162 %, L-101-102 118 %, L-6-11 106 %, L-10-11 103 % |
+| S3    | 172 % (L-16-19)         | L-16-19 172 %, L-6-11 108 %, L-10-11 104 %                  |
 
 S3 is meant to stress thermal limits. L-16-19 is the only connection of buses 19, 20,
 33 and 34 to the rest of the system, so it carries the output of units B33 and B34
@@ -239,14 +244,14 @@ proportion to their output:
 
 | Contingency    | S1    | S2    | S3    |
 |----------------|-------|-------|-------|
-| `N1-L-26-27`   | 121 % | 134 % | 163 % |
-| `N1-L-26-29`   | 165 % | 186 % | 163 % |
-| `N1-L-6-11`    | 161 % | 95 %  | 180 % |
-| `N1-L-21-22`   | 145 % | 106 % | 162 % |
-| `N1-L-16-17`   | 92 %  | 94 %  | 162 % |
-| `N1-L-104-105` | 92 %  | 95 %  | 162 % |
-| `N1-B38-G1`    | 117 % | 141 % | 228 % |
-| `N1-T-104-107` | 92 %  | 95 %  | 162 % |
+| `N1-L-26-27`   | 111 % | 134 % | 176 % |
+| `N1-L-26-29`   | 165 % | 185 % | 175 % |
+| `N1-L-6-11`    | 162 % | 95 %  | 187 % |
+| `N1-L-21-22`   | 145 % | 106 % | 178 % |
+| `N1-L-16-17`   | 93 %  | 95 %  | 173 % |
+| `N1-L-104-105` | 93 %  | 95 %  | 172 % |
+| `N1-B38-G1`    | 119 % | 143 % | 244 % |
+| `N1-T-104-107` | 93 %  | 95 %  | 172 % |
 
 The build reports these post-contingency overloads; it does not enforce them. IEEE 39
 is not N-1 secure, even in S1.
@@ -260,18 +265,17 @@ the scenario set points of `scenarios/` to it.
 
 | New line    | Length  | Investment  | Annuity (5 %, 40 years) |
 |-------------|---------|-------------|-------------------------|
-| `L-26-27-2` | 47 km   | 56.4 M EUR  | 3.29 M EUR/year         |
+| `L-26-27-2` | 58.3 km | 70.0 M EUR  | 4.08 M EUR/year         |
 
-The length is estimated from the reactance of L-26-27 (17.5 Ω) at 0.37 Ω/km, typical
-of a single-circuit 345 kV overhead line; the cost uses the 1.2 M EUR/km of the economic
+The length is that of line 26-27 in the PowerFactory model; the cost uses the 1.2 M EUR/km of the economic
 assumptions. The build compares both cases on every scenario and reports, without
 enforcing it, how violations change:
 
 | Scenario | Overloads with all lines in service | Post-contingency overloads | Outage of L-26-27 (highest loading) |
 |----------|-------------------------------------|----------------------------|-------------------------------------|
-| S1       | 0 → 0                               | 13 → 13                    | 121 % → 92 %                        |
-| S2       | 0 → 0                               | 10 → 7                     | 134 % → 95 %                        |
-| S3       | 4 → 4                               | 44 → 43                    | 163 % → 162 %                       |
+| S1       | 0 → 0                               | 15 → 13                    | 111 % → 93 %                        |
+| S2       | 0 → 0                               | 10 → 6                     | 134 % → 95 %                        |
+| S3       | 3 → 3                               | 38 → 36                    | 176 % → 172 %                       |
 
 Post-contingency overloads count (contingency, overloaded branch) pairs. The
 reinforcement secures the L-26-27 corridor in S1 and S2; it does not relieve the S3
@@ -303,8 +307,9 @@ bottlenecks, which lie elsewhere.
 
 ### PowerFactory
 
-The `.pfd` file is UCY's model, used for dynamic studies. pypowsybl can neither
-read nor write it, so it holds none of the corrections in
+The `.pfd` file is UCY's model, used for dynamic studies, and the reference for
+element data: MC-6 to MC-10 align the other formats with it. pypowsybl can neither
+read nor write it, so it holds none of the other corrections in
 [model-changes.md](model-changes.md), none of the scenario states and no batteries.
 Its element names are those of the source model, before MC-4: applying the MC-4
 rule to them gives the ids of the other formats.

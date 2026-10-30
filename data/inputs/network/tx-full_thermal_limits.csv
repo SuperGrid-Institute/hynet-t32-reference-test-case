@@ -46,6 +46,7 @@ T-25-37-1,1506,MATPOWER case39 rateA 900 MVA at 345 kV
 T-29-38-1,2343,Step-up transformer sized for its unit: 1400 MVA (MATPOWER 1200 MVA)
 T-31-6-1,3012,MATPOWER case39 rateA 1800 MVA at 345 kV
 L-101-102-1,600,138 kV conductor class 600 A
+L-101-102-2,600,138 kV conductor class 600 A
 L-101-105-1,400,138 kV conductor class 400 A
 L-102-103-1,400,138 kV conductor class 400 A
 L-102-104-1,400,138 kV conductor class 400 A

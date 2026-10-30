@@ -17,3 +17,40 @@ voltage_rescale:
   target_nominal_kv: 345.0
   # Guards against the correction silently applying to more or fewer elements.
   expected_voltage_levels: 27
+
+# The source fixes the ratio of the step-up transformer of B31 at 1.1667, a step of an
+# 8-step changer; IEEE 39 and the PowerFactory model use 1.07. The changer is replaced
+# by a fixed ratio (side 2 over side 1 voltage at no load, in p.u. of rated voltages).
+tap_ratios:
+  T-31-6-1: 1.07
+
+# IEEE 14 line 1-2 is a double circuit in the PowerFactory model. The second circuit is
+# added as its own line, so that each IIDM line still matches one PowerFactory line.
+parallel_lines:
+  - id: L-101-102-2
+    parallel_to: L-101-102-1
+
+# HVDC data and converter control of the PowerFactory model. The link is a symmetric
+# monopole at +/-320 kV with 2 x 150 km of cable at 0.01 ohm/km: a 3.0 ohm loop, i.e.
+# 0.75 ohm at the 320 kV pole voltage IIDM uses.
+hvdc:
+  lines:
+    HVDC_Link_16_113:
+      nominal_v_kv: 320.0
+      r_ohm: 0.75
+      max_p_mw: 60.0
+  converter_stations:
+    # Converter 1 (IEEE 39 side) controls the DC voltage and runs at zero reactive power.
+    VSC_Station_16:
+      voltage_regulator_on: false
+      target_q_mvar: 0.0
+      min_q_mvar: -25.0
+      max_q_mvar: 25.0
+    # Converter 2 (IEEE 14 side) controls its AC voltage. The converter transformer is
+    # not modelled, so the set point applies at B113. The PowerFactory export has no
+    # converter Q limits; +/-0.5 p.u. of the 50 MW link rating is assumed.
+    VSC_Station_113:
+      voltage_regulator_on: true
+      target_v_pu: 1.01
+      min_q_mvar: -25.0
+      max_q_mvar: 25.0

@@ -54,8 +54,8 @@
         <cim:EnergyConsumer.q>5.8</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_9f1424d4-46e9-50d6-887b-e7229587ab96">
-        <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
-        <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
+        <cim:EnergyConsumer.p>97.6</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.q>44.2</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_54451aa3-e228-5772-b12d-fda42cc33997">
         <cim:EnergyConsumer.p>0</cim:EnergyConsumer.p>
@@ -122,7 +122,7 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_4090e1f2-56a6-54e4-9c0e-1b4eb7713c7a">
-        <cim:EnergyConsumer.p>329.4</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.p>329</cim:EnergyConsumer.p>
         <cim:EnergyConsumer.q>32.3</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_eb0bb96c-8c65-56f0-b840-27a8279a9801">
@@ -130,7 +130,7 @@
         <cim:EnergyConsumer.q>0</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_685aeb4b-a535-589f-af62-1b8490236089">
-        <cim:EnergyConsumer.p>680</cim:EnergyConsumer.p>
+        <cim:EnergyConsumer.p>628</cim:EnergyConsumer.p>
         <cim:EnergyConsumer.q>103</cim:EnergyConsumer.q>
     </cim:EnergyConsumer>
     <cim:EnergyConsumer rdf:about="#_d5f61e57-8aa3-5db5-ae74-09a7ea69d5c2">
@@ -195,7 +195,7 @@
     </cim:RatioTapChanger>
     <cim:RatioTapChanger rdf:about="#_4b960f32-7ae0-5815-9e56-d066573071df">
         <cim:TapChanger.controlEnabled>false</cim:TapChanger.controlEnabled>
-        <cim:TapChanger.step>1</cim:TapChanger.step>
+        <cim:TapChanger.step>0</cim:TapChanger.step>
     </cim:RatioTapChanger>
     <cim:RatioTapChanger rdf:about="#_1b80fa25-0d4f-522c-b6a7-c7c1835f539b">
         <cim:TapChanger.controlEnabled>false</cim:TapChanger.controlEnabled>
@@ -234,7 +234,7 @@
         <cim:TapChanger.step>0</cim:TapChanger.step>
     </cim:RatioTapChanger>
     <cim:SynchronousMachine rdf:about="#_ea78a1c8-992b-5915-ac60-7e55e45d202c">
-        <cim:RegulatingCondEq.controlEnabled>false</cim:RegulatingCondEq.controlEnabled>
+        <cim:RegulatingCondEq.controlEnabled>true</cim:RegulatingCondEq.controlEnabled>
         <cim:RotatingMachine.p>-232.392</cim:RotatingMachine.p>
         <cim:RotatingMachine.q>16.549</cim:RotatingMachine.q>
         <cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
@@ -410,23 +410,16 @@
         <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetDeadband>0</cim:RegulatingControl.targetDeadband>
-        <cim:RegulatingControl.targetValue>150.42000000000002</cim:RegulatingControl.targetValue>
+        <cim:RegulatingControl.targetValue>143.52</cim:RegulatingControl.targetValue>
         <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#UnitMultiplier.k"/>
     </cim:RegulatingControl>
     <cim:RegulatingControl rdf:about="#_3382b397-60b1-5bf6-b171-779e83b27af9">
         <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetDeadband>0</cim:RegulatingControl.targetDeadband>
-        <cim:RegulatingControl.targetValue>147.66</cim:RegulatingControl.targetValue>
+        <cim:RegulatingControl.targetValue>140.76</cim:RegulatingControl.targetValue>
         <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#UnitMultiplier.k"/>
     </cim:RegulatingControl>
-    <cim:TapChangerControl rdf:about="#_44633688-9d7b-507d-a576-8e7dfdeb017e">
-        <cim:RegulatingControl.discrete>true</cim:RegulatingControl.discrete>
-        <cim:RegulatingControl.enabled>false</cim:RegulatingControl.enabled>
-        <cim:RegulatingControl.targetDeadband>0.19</cim:RegulatingControl.targetDeadband>
-        <cim:RegulatingControl.targetValue>370.875</cim:RegulatingControl.targetValue>
-        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#UnitMultiplier.k"/>
-    </cim:TapChangerControl>
     <cim:RegulatingControl rdf:about="#_0939d309-4ddb-5b56-b30b-33b7da439ff7">
         <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
@@ -452,7 +445,7 @@
         <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetDeadband>0</cim:RegulatingControl.targetDeadband>
-        <cim:RegulatingControl.targetValue>144.20999999999998</cim:RegulatingControl.targetValue>
+        <cim:RegulatingControl.targetValue>144.9</cim:RegulatingControl.targetValue>
         <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#UnitMultiplier.k"/>
     </cim:RegulatingControl>
     <cim:RegulatingControl rdf:about="#_e37a0780-5dce-5363-b972-550081db0f5c">
@@ -466,19 +459,26 @@
         <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
         <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
         <cim:RegulatingControl.targetDeadband>0</cim:RegulatingControl.targetDeadband>
-        <cim:RegulatingControl.targetValue>366.90749999999997</cim:RegulatingControl.targetValue>
+        <cim:RegulatingControl.targetValue>362.25</cim:RegulatingControl.targetValue>
+        <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#UnitMultiplier.k"/>
+    </cim:RegulatingControl>
+    <cim:RegulatingControl rdf:about="#_f78d3fdc-a71c-54c0-834a-d34ad22d0d3a">
+        <cim:RegulatingControl.discrete>false</cim:RegulatingControl.discrete>
+        <cim:RegulatingControl.enabled>true</cim:RegulatingControl.enabled>
+        <cim:RegulatingControl.targetDeadband>0</cim:RegulatingControl.targetDeadband>
+        <cim:RegulatingControl.targetValue>146.28</cim:RegulatingControl.targetValue>
         <cim:RegulatingControl.targetValueUnitMultiplier rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#UnitMultiplier.k"/>
     </cim:RegulatingControl>
     <cim:VsConverter rdf:about="#_cbe1e26d-e5e1-5aeb-a531-bb19849a0ef6">
         <cim:ACDCConverter.targetPpcc>0</cim:ACDCConverter.targetPpcc>
-        <cim:ACDCConverter.targetUdc>148.33333333333334</cim:ACDCConverter.targetUdc>
-        <cim:ACDCConverter.p>-49.44444444444444</cim:ACDCConverter.p>
-        <cim:ACDCConverter.q>39.5737735114832</cim:ACDCConverter.q>
+        <cim:ACDCConverter.targetUdc>319.8828125</cim:ACDCConverter.targetUdc>
+        <cim:ACDCConverter.p>-49.981689453125</cim:ACDCConverter.p>
+        <cim:ACDCConverter.q>12.92755616578994</cim:ACDCConverter.q>
         <cim:VsConverter.droop>0</cim:VsConverter.droop>
         <cim:VsConverter.droopCompensation>0</cim:VsConverter.droopCompensation>
         <cim:VsConverter.qShare>0</cim:VsConverter.qShare>
         <cim:VsConverter.targetQpcc>0</cim:VsConverter.targetQpcc>
-        <cim:VsConverter.targetUpcc>138</cim:VsConverter.targetUpcc>
+        <cim:VsConverter.targetUpcc>139.38</cim:VsConverter.targetUpcc>
         <cim:VsConverter.pPccControl rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsPpccControlKind.udc"/>
         <cim:VsConverter.qPccControl rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsQpccControlKind.voltagePcc"/>
     </cim:VsConverter>
@@ -486,14 +486,14 @@
         <cim:ACDCConverter.targetPpcc>50</cim:ACDCConverter.targetPpcc>
         <cim:ACDCConverter.targetUdc>0</cim:ACDCConverter.targetUdc>
         <cim:ACDCConverter.p>50</cim:ACDCConverter.p>
-        <cim:ACDCConverter.q>536.3500986234599</cim:ACDCConverter.q>
+        <cim:ACDCConverter.q>-0</cim:ACDCConverter.q>
         <cim:VsConverter.droop>0</cim:VsConverter.droop>
         <cim:VsConverter.droopCompensation>0</cim:VsConverter.droopCompensation>
         <cim:VsConverter.qShare>0</cim:VsConverter.qShare>
         <cim:VsConverter.targetQpcc>0</cim:VsConverter.targetQpcc>
         <cim:VsConverter.targetUpcc>345</cim:VsConverter.targetUpcc>
         <cim:VsConverter.pPccControl rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsPpccControlKind.pPcc"/>
-        <cim:VsConverter.qPccControl rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsQpccControlKind.voltagePcc"/>
+        <cim:VsConverter.qPccControl rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#VsQpccControlKind.reactivePcc"/>
     </cim:VsConverter>
     <cim:ACDCConverterDCTerminal rdf:about="#_d718aa23-e3fa-5a83-9ce2-e0bff25a6642">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
@@ -823,6 +823,12 @@
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_b9e8326d-8395-5bb5-bc77-24b2557bf1f3">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
+    <cim:Terminal rdf:about="#_6071bf1d-8504-5b25-be93-57f809809c1a">
+        <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
+    </cim:Terminal>
+    <cim:Terminal rdf:about="#_4118f0db-c25b-574a-a91f-cc82386d791f">
         <cim:ACDCTerminal.connected>true</cim:ACDCTerminal.connected>
     </cim:Terminal>
     <cim:Terminal rdf:about="#_abc54ff9-c887-5f0c-9fd1-1f38040a4205">

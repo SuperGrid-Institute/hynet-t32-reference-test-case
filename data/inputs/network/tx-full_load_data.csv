@@ -1,0 +1,4 @@
+load_id,p_mw,q_mvar,basis
+B1-L1,97.6,44.2,PowerFactory Load 01
+B16-L1,329.0,32.3,PowerFactory Load 16
+B20-L1,628.0,103.0,PowerFactory Load 20

@@ -10,7 +10,7 @@ timestamp,scenario,load_id,p_mw,q_mvar
 2025-01-01T00:00:00Z,baseline,B111-L1,3.5,1.8
 2025-01-01T00:00:00Z,baseline,B112-L1,6.1,1.6
 2025-01-01T00:00:00Z,baseline,B110-L1,9.0,5.8
-2025-01-01T00:00:00Z,baseline,B1-L1,0.0,0.0
+2025-01-01T00:00:00Z,baseline,B1-L1,97.6,44.2
 2025-01-01T00:00:00Z,baseline,B2-L1,0.0,0.0
 2025-01-01T00:00:00Z,baseline,B3-L1,322.0,2.4
 2025-01-01T00:00:00Z,baseline,B4-L1,500.0,184.0
@@ -27,9 +27,9 @@ timestamp,scenario,load_id,p_mw,q_mvar
 2025-01-01T00:00:00Z,baseline,B15-L1,320.0,153.0
 2025-01-01T00:00:00Z,baseline,B14-L1,0.0,0.0
 2025-01-01T00:00:00Z,baseline,B17-L1,0.0,0.0
-2025-01-01T00:00:00Z,baseline,B16-L1,329.4,32.3
+2025-01-01T00:00:00Z,baseline,B16-L1,329.0,32.3
 2025-01-01T00:00:00Z,baseline,B19-L1,0.0,0.0
-2025-01-01T00:00:00Z,baseline,B20-L1,680.0,103.0
+2025-01-01T00:00:00Z,baseline,B20-L1,628.0,103.0
 2025-01-01T00:00:00Z,baseline,B18-L1,158.0,30.0
 2025-01-01T00:00:00Z,baseline,B22-L1,0.0,0.0
 2025-01-01T00:00:00Z,baseline,B21-L1,274.0,115.0
@@ -52,7 +52,7 @@ timestamp,scenario,load_id,p_mw,q_mvar
 2025-01-01T01:00:00Z,high_res_low_demand,B111-L1,2.4499999999999997,1.26
 2025-01-01T01:00:00Z,high_res_low_demand,B112-L1,4.27,1.1199999999999999
 2025-01-01T01:00:00Z,high_res_low_demand,B110-L1,6.3,4.06
-2025-01-01T01:00:00Z,high_res_low_demand,B1-L1,0.0,0.0
+2025-01-01T01:00:00Z,high_res_low_demand,B1-L1,68.32,30.94
 2025-01-01T01:00:00Z,high_res_low_demand,B2-L1,0.0,0.0
 2025-01-01T01:00:00Z,high_res_low_demand,B3-L1,225.39999999999998,1.68
 2025-01-01T01:00:00Z,high_res_low_demand,B4-L1,350.0,128.79999999999998
@@ -69,9 +69,9 @@ timestamp,scenario,load_id,p_mw,q_mvar
 2025-01-01T01:00:00Z,high_res_low_demand,B15-L1,224.0,107.1
 2025-01-01T01:00:00Z,high_res_low_demand,B14-L1,0.0,0.0
 2025-01-01T01:00:00Z,high_res_low_demand,B17-L1,0.0,0.0
-2025-01-01T01:00:00Z,high_res_low_demand,B16-L1,230.57999999999996,22.609999999999996
+2025-01-01T01:00:00Z,high_res_low_demand,B16-L1,230.3,22.609999999999996
 2025-01-01T01:00:00Z,high_res_low_demand,B19-L1,0.0,0.0
-2025-01-01T01:00:00Z,high_res_low_demand,B20-L1,475.99999999999994,72.1
+2025-01-01T01:00:00Z,high_res_low_demand,B20-L1,439.6,72.1
 2025-01-01T01:00:00Z,high_res_low_demand,B18-L1,110.6,21.0
 2025-01-01T01:00:00Z,high_res_low_demand,B22-L1,0.0,0.0
 2025-01-01T01:00:00Z,high_res_low_demand,B21-L1,191.79999999999998,80.5
@@ -94,7 +94,7 @@ timestamp,scenario,load_id,p_mw,q_mvar
 2025-01-01T02:00:00Z,low_res_high_demand,B111-L1,3.78,2.7
 2025-01-01T02:00:00Z,low_res_high_demand,B112-L1,6.588,2.4
 2025-01-01T02:00:00Z,low_res_high_demand,B110-L1,9.72,8.7
-2025-01-01T02:00:00Z,low_res_high_demand,B1-L1,0.0,0.0
+2025-01-01T02:00:00Z,low_res_high_demand,B1-L1,105.408,66.3
 2025-01-01T02:00:00Z,low_res_high_demand,B2-L1,0.0,0.0
 2025-01-01T02:00:00Z,low_res_high_demand,B3-L1,347.76,3.6
 2025-01-01T02:00:00Z,low_res_high_demand,B4-L1,540.0,276.0
@@ -111,9 +111,9 @@ timestamp,scenario,load_id,p_mw,q_mvar
 2025-01-01T02:00:00Z,low_res_high_demand,B15-L1,345.6,229.5
 2025-01-01T02:00:00Z,low_res_high_demand,B14-L1,0.0,0.0
 2025-01-01T02:00:00Z,low_res_high_demand,B17-L1,0.0,0.0
-2025-01-01T02:00:00Z,low_res_high_demand,B16-L1,355.752,48.45
+2025-01-01T02:00:00Z,low_res_high_demand,B16-L1,355.32,48.45
 2025-01-01T02:00:00Z,low_res_high_demand,B19-L1,0.0,0.0
-2025-01-01T02:00:00Z,low_res_high_demand,B20-L1,734.4,154.5
+2025-01-01T02:00:00Z,low_res_high_demand,B20-L1,678.24,154.5
 2025-01-01T02:00:00Z,low_res_high_demand,B18-L1,170.64,45.0
 2025-01-01T02:00:00Z,low_res_high_demand,B22-L1,0.0,0.0
 2025-01-01T02:00:00Z,low_res_high_demand,B21-L1,295.92,172.5
