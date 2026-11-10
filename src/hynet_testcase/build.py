@@ -29,8 +29,12 @@ from hynet_testcase.scenarios.inputs import ScenarioInputs
 from hynet_testcase.scenarios.report import StateReport
 from hynet_testcase.scenarios.validation import ScenarioValidation
 from hynet_testcase.storage.batteries import Batteries
+from hynet_testcase.viz.diagrams import Basemap, network_map
 
 logger = logging.getLogger(__name__)
+
+BASEMAP_FILE = "ne_10m_admin_0_countries_clipped.geojson"
+"""Land drawn under the network maps, in `data/sources/basemap/`."""
 
 
 @dataclass(frozen=True)
@@ -165,6 +169,8 @@ def _export_states(network: Network, states: list[SolvedState], output: Path) ->
 def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport]:
     """Builds one variant into `testcase/<variant>/`, replacing its previous content.
 
+    Also draws its network map into `docs/assets/<variant>_map.svg`.
+
     All states are computed in memory first; files are written only once every state
     has converged, so a failed build never leaves a partial output behind.
 
@@ -199,7 +205,18 @@ def build_variant(builder: VariantBuilder, paths: RepoPaths) -> list[StateReport
     for writer in CSV_WRITERS:
         writer.write(data, output)
     logger.info("wrote %s", output.relative_to(paths.root))
+    _write_network_map(network, builder.variant, data, paths)
     return [state.report for state in states]
+
+
+def _write_network_map(network: Network, variant: VariantId, data: VariantData,
+                       paths: RepoPaths) -> None:
+    """Draws the network map of a variant into `docs/assets/<variant>_map.svg`."""
+    basemap = Basemap.load(paths.sources / "basemap" / BASEMAP_FILE)
+    path = paths.doc_assets / f"{variant}_map.svg"
+    path.write_text(network_map(network, data.zones.bus_zones, basemap), encoding="utf-8",
+                    newline="\n")
+    logger.info("wrote %s", path.relative_to(paths.root))
 
 
 def build(paths: RepoPaths) -> None:

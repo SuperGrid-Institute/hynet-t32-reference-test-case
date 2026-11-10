@@ -50,6 +50,11 @@ pypowsybl uses for geographical diagrams and the network map. The CGMES files do
 hold them, nor does the PowerFactory model; `network/bus_coordinates.csv` gives them
 for every bus.
 
+![tx-full on the map: buses coloured by zone, HVDC link dashed](assets/tx-full_map.svg)
+
+Buses are coloured by zone and the HVDC link is dashed. Basemap:
+[Natural Earth](https://www.naturalearthdata.com/) (public domain).
+
 ### Changes to the source model
 
 The build corrects the source model from UCY before shipping it. In short (reasons and

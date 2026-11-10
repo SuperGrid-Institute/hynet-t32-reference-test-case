@@ -1,7 +1,7 @@
 # Provenance of the source models
 
-Files in `data/sources/` are kept exactly as received, except `TestCase.dgs`
-(see below). The build never modifies them; every correction it applies is
+Files in `data/sources/` are kept exactly as received, except `TestCase.dgs` and the
+clipped basemap (see below). The build never modifies them; every correction it applies is
 declared in `data/inputs/` and described in
 [docs/model-changes.md](../../docs/model-changes.md).
 
@@ -45,6 +45,26 @@ Known characteristics of the source, handled by the build:
 - Generator, load, line and transformer ids end with a space (for example
   `"B101-G1 "`), and a few ids contain one (for example `"B4-SH 1"`). The build
   removes this whitespace (MC-4 in `docs/model-changes.md`).
+
+## `basemap/` — country outlines under the network map
+
+- **Source**: [Natural Earth](https://www.naturalearthdata.com/) 1:10m Cultural
+  Vectors, Admin 0 – Countries, version 5.1.2
+  (`geojson/ne_10m_admin_0_countries.geojson` of
+  [nvkelso/natural-earth-vector](https://github.com/nvkelso/natural-earth-vector),
+  tag `v5.1.2`), downloaded 2026-11-10.
+- **Licence**: public domain; credited as "Basemap: Natural Earth" on the map.
+- **Role in the build**: land drawn under the network map
+  `docs/assets/tx-full_map.svg`; not part of the network models.
+- **Derived, not as received**: to keep the file small, only the polygons whose outer
+  ring overlaps longitudes −4° to 9° E and latitudes 48° to 55° N are kept (BEL, DEU,
+  DNK, FRA, GBR, GGY, JEY, LUX, NLD), coordinates are rounded to 0.001° with
+  repeated points dropped, and the properties are reduced to `ADMIN` and `ADM0_A3`.
+
+| File                                         | SHA-256                                                            |
+|----------------------------------------------|--------------------------------------------------------------------|
+| `ne_10m_admin_0_countries.geojson` (source)  | `239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255` |
+| `ne_10m_admin_0_countries_clipped.geojson`   | `92a73f35c9ca75aa331a7e26462b7ba41cb014f050197f952870536344d12748` |
 
 ## Scenario inputs (`data/inputs/scenarios/`)
 

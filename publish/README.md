@@ -64,6 +64,8 @@ corrections applied to the source models are listed in
 
 - Notebook and Binder configuration (`notebooks/`, `binder/`): [MIT](LICENSE).
 - Data and documentation (`testcase/` and `docs/`): [CC-BY-4.0](LICENSE-DATA).
+- The basemap of the network map (`docs/assets/tx-full_map.svg`) is derived from
+  [Natural Earth](https://www.naturalearthdata.com/), in the public domain.
 
 When you reuse the dataset, credit it as "HYNET Task 3.2 reference test case" and
 cite the tagged version you used (see [CITATION.cff](CITATION.cff)).

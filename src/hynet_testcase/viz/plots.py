@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-"""Charts and diagram styling for the presentation notebook.
+"""Charts for the presentation notebook.
 
 Requires the `notebooks` dependency group (matplotlib).
 """
@@ -7,51 +7,15 @@ Requires the `notebooks` dependency group (matplotlib).
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.figure import Figure
-from pypowsybl.network import NadLayoutType, NadParameters, NadProfile, Network
 
-# Zone colours, also used in the network-area diagram.
-ZONE_COLORS = {"Z0": "#7b3294", "Z1": "#1b7837", "Z2": "#2166ac", "Z3": "#d6604d"}
+from hynet_testcase.viz.diagrams import ZONE_COLORS
+
 # Generator types in merit order, from the cheapest.
 TYPE_COLORS = {
     "SOLAR": "#f6c141", "WIND": "#7fb8da", "HYDRO": "#2b83ba", "NUCLEAR": "#b15928",
     "COAL": "#595959", "GAS": "#e7864f",
 }
 SCENARIO_COLORS = {"S1": "#4d4d4d", "S2": "#1a9850", "S3": "#d73027"}
-
-
-def zone_diagram_profile(network: Network, bus_zones: pd.DataFrame) -> NadProfile:
-    """Network-area diagram profile colouring each bus by its zone.
-
-    Args:
-        network: Network the diagram is drawn from.
-        bus_zones: `bus_zones.csv` of the test case (`bus_id`, `zone_id`).
-    """
-    zones = bus_zones.set_index("bus_id")["zone_id"]
-    # The diagram addresses buses by their bus-view id.
-    buses = network.get_bus_breaker_view_buses()[["bus_id"]].join(zones)
-    buses = buses.dropna().drop_duplicates("bus_id")
-    styles = pd.DataFrame({
-        "fill": [ZONE_COLORS[zone] for zone in buses["zone_id"]],
-        "edge": "#333333",
-        "edge-width": "1",
-    }, index=pd.Index(buses["bus_id"], name="id"))
-    return NadProfile(bus_node_styles=styles)
-
-
-def zone_diagram_parameters(
-        layout_type: NadLayoutType = NadLayoutType.FORCE_LAYOUT) -> NadParameters:
-    """Diagram parameters showing active power flows without injections.
-
-    Args:
-        layout_type: Bus placement; `GEOGRAPHICAL` places them at the substation
-            coordinates of the network.
-    """
-    # At the default scale, buses a few kilometres apart sit so far from each other
-    # that the labels vanish when the map is fitted to the page.
-    scaling = 40000 if layout_type == NadLayoutType.GEOGRAPHICAL else 150000
-    return NadParameters(injections_added=False, edge_info_along_edge=True,
-                         power_value_precision=0, voltage_level_details=False,
-                         layout_type=layout_type, scaling_factor=scaling)
 
 
 def plot_dispatch(generation: pd.DataFrame, generators: pd.DataFrame) -> Figure:

@@ -1,2 +1,2 @@
 # SPDX-License-Identifier: MIT
-"""Plotting helpers for the notebooks."""
+"""Diagrams and charts: diagrams are drawn by the build, charts by the notebooks."""

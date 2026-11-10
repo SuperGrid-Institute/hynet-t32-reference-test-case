@@ -31,6 +31,11 @@ uv sync
 uv run hynet-testcase build
 ```
 
+The build also draws the network map `docs/assets/tx-full_map.svg`: the geographical
+network-area diagram of the `base` case, buses coloured by zone and no labels, over the
+country outlines of `data/sources/basemap/`. It stops if pypowsybl places a substation
+elsewhere than the projection used for the outlines (spherical Web Mercator).
+
 ## Presentation notebook
 
 The notebook is committed with its outputs. To re-execute it:
