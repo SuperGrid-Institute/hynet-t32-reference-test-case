@@ -55,15 +55,17 @@ the operating points; they are not results of any HYNET tool.
 ## How it is built
 
 This branch is generated; it is not edited by hand. It was published from commit
-[`f81a503`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/f81a503d774c71b7ce79da19522bc6be761bcb62) of the `dev` branch, which holds the
+[`066f6a4`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/tree/066f6a445bb0a32391e640e26d6aa58b2ac66eac) of the `dev` branch, which holds the
 source models, the hand-edited inputs and the code that builds `testcase/`. The
 corrections applied to the source models are listed in
-[`docs/model-changes.md`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md).
+[`docs/model-changes.md`](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md).
 
 ## Licences
 
 - Notebook and Binder configuration (`notebooks/`, `binder/`): [MIT](LICENSE).
 - Data and documentation (`testcase/` and `docs/`): [CC-BY-4.0](LICENSE-DATA).
+- The basemap of the network map (`docs/assets/tx-full_map.svg`) is derived from
+  [Natural Earth](https://www.naturalearthdata.com/), in the public domain.
 
 When you reuse the dataset, credit it as "HYNET Task 3.2 reference test case" and
 cite the tagged version you used (see [CITATION.cff](CITATION.cff)).

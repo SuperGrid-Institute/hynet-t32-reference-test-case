@@ -5,7 +5,7 @@ row and LF line endings. Timestamps are ISO 8601 in UTC (`YYYY-MM-DDTHH:MM:SSZ`)
 Units follow IIDM: MW, Mvar, kV, A, Ω; energy in MWh; prices in EUR/MWh.
 
 Ids are IIDM ids of the network. They contain no whitespace (MC-4 in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md)) and should be read as text.
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md)) and should be read as text.
 
 ## `testcase/<variant>/scenarios/`
 

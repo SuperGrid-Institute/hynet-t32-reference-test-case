@@ -4,8 +4,8 @@ Common reference test case of HYNET Task 3.2, used to validate tool behaviour be
 the demonstrations, to compare similar tools and to investigate tool complementarity.
 This page describes what `testcase/` contains and how it is produced. File schemas
 are in [data-dictionary.md](data-dictionary.md), corrections to the source models in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md) and the build and its inputs in
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/build.md).
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md) and the build and its inputs in
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/build.md).
 
 ## Content
 
@@ -50,10 +50,15 @@ pypowsybl uses for geographical diagrams and the network map. The CGMES files do
 hold them, nor does the PowerFactory model; `network/bus_coordinates.csv` gives them
 for every bus.
 
+![tx-full on the map: buses coloured by zone, HVDC link dashed](assets/tx-full_map.svg)
+
+Buses are coloured by zone and the HVDC link is dashed. Basemap:
+[Natural Earth](https://www.naturalearthdata.com/) (public domain).
+
 ### Changes to the source model
 
 The build corrects the source model from UCY before shipping it. In short (reasons and
-effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md)):
+effects in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md)):
 
 - **MC-1.** The IEEE 39 part is rescaled from a 1 kV base to 345 kV, its nominal
   voltage. Per-unit results are unchanged; values in kV, A and Ω become physical.
@@ -132,7 +137,7 @@ set point.
 
 The synchronous units are those of the PowerFactory model, with its ratings and its
 types; three of them are synchronous condensers. Seven inverter-based wind and solar
-units are added (MC-11 in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md)).
+units are added (MC-11 in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md)).
 
 | Type      | Units                                        | Rated P (MW) | Price (EUR/MWh) |
 |-----------|----------------------------------------------|--------------|-----------------|
@@ -213,7 +218,7 @@ state, and checks that each scenario exhibits the phenomena it is designed for.
 ### Scenario checks
 
 The rules are an input of the build (see
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/build.md#scenariosvalidationyaml)). The build stops, without
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/build.md#scenariosvalidationyaml)). The build stops, without
 writing anything, if a scenario breaks one. Voltage rises and drops are measured bus by
 bus against S1.
 
@@ -228,7 +233,7 @@ The S1 band is wider than the usual 0.95–1.05 p.u. because generator set point
 
 The base case is the operating point of the PowerFactory model: its unit set points,
 the HVDC link at 50 MW, wind, solar and batteries idle. Its set points are not
-balanced (see [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md#remarks-passed-on-to-the-model-provider)),
+balanced (see [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md#remarks-passed-on-to-the-model-provider)),
 so the slack takes up more than the losses. Each scenario snapshot is the base case
 with the scenario's generation, loads and HVDC set point applied.
 These load flows validate the data; they are not results of any HYNET tool.
@@ -243,7 +248,7 @@ to the tools.
 ### Branch loadings
 
 Every line and transformer has a permanent current limit (see
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md), MC-2). Loadings at the solved states, in % of
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md), MC-2). Loadings at the solved states, in % of
 the limit:
 
 | State | Highest loading         | Overloaded branches                                         |
@@ -370,14 +375,14 @@ IEEE 14 bottleneck L-113-114, which lies elsewhere.
 The `.pfd` file is UCY's model, used for dynamic studies, and the reference for
 element data: MC-6 to MC-10 align the other formats with it. pypowsybl can neither
 read nor write it, so it holds none of the other corrections in
-[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md) and none of the scenario states. Its element names
+[model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md) and none of the scenario states. Its element names
 are those of the source model, before MC-4: applying the MC-4 rule to them gives the
 ids of the other formats.
 
 What the `.pfd` does not hold, for anyone reproducing a snapshot in PowerFactory:
 
 - the seven wind and solar units (MC-11): bus, rating, reactive range in
-  [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md#mc-11--wind-and-solar-units-added) and active
+  [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md#mc-11--wind-and-solar-units-added) and active
   power of each snapshot in `scenarios/generation.csv`; they can be added as static
   generators (`ElmGenstat`);
 - the two batteries, idle in every snapshot;
@@ -388,7 +393,7 @@ What the `.pfd` does not hold, for anyone reproducing a snapshot in PowerFactory
   0 MW, and the loads (`scenarios/loads.csv`).
 
 The differences the test case keeps with the PowerFactory model, and the remarks
-passed on to UCY, are listed in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/model-changes.md).
+passed on to UCY, are listed in [model-changes.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/model-changes.md).
 
 ## Layout of `testcase/`
 
@@ -425,7 +430,7 @@ byte. The build stops, without writing anything, if an input file is malformed, 
 id does not resolve in the network, if a network element is not covered by every
 scenario, if a scheduled generator output lies outside the unit's range, if a load
 flow does not converge or moves a battery, or if a scenario check fails.
-[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/f81a503d774c71b7ce79da19522bc6be761bcb62/docs/build.md) describes the build and its inputs.
+[build.md](https://github.com/SuperGrid-Institute/hynet-t32-reference-test-case/blob/066f6a445bb0a32391e640e26d6aa58b2ac66eac/docs/build.md) describes the build and its inputs.
 
 ## Presentation notebook
 
