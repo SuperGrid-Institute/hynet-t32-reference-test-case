@@ -18,6 +18,9 @@ scenario or file, PATCH for corrected values.
 
 - Presentation notebook: "On the map" shows the network map instead of the
   geographical diagram with flow values.
+- Presentation notebook: the voltage-profile axis is centred on 1.00 p.u. with the band
+  limits (0.95 and 1.05 p.u.) among its ticks, and the zone-balance axis is centred on
+  zero.
 
 ## [0.2.0] - 2026-10-30
 

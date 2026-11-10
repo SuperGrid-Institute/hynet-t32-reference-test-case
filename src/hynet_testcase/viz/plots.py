@@ -6,6 +6,7 @@ Requires the `notebooks` dependency group (matplotlib).
 
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.axes import Axes
 from matplotlib.figure import Figure
 
 from hynet_testcase.viz.diagrams import ZONE_COLORS
@@ -48,6 +49,7 @@ def plot_zone_balance(zone_balance: pd.DataFrame) -> Figure:
     table = zone_balance.pivot_table(index="zone_id", columns="scenario_id", values="balance_mw")
     fig, ax = plt.subplots(figsize=(8, 4))
     table.plot.bar(ax=ax, color=[SCENARIO_COLORS[s] for s in table.columns], rot=0)
+    _centre_y_axis(ax, 0.0)
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_xlabel("")
     ax.set_ylabel("Balance (MW, > 0 exporting)")
@@ -55,6 +57,32 @@ def plot_zone_balance(zone_balance: pd.DataFrame) -> Figure:
     ax.legend(title="Scenario")
     fig.tight_layout()
     return fig
+
+
+def _centre_y_axis(ax: Axes, centre: float) -> None:
+    """Widens the y limits of `ax` to be symmetric about `centre`.
+
+    Deviations above and below the reference (exports and imports, over- and
+    undervoltages) then compare at a glance.
+    """
+    bottom, top = ax.get_ylim()
+    half = max(centre - bottom, top - centre)
+    ax.set_ylim(centre - half, centre + half)
+
+
+def _add_y_ticks(ax: Axes, values: tuple[float, ...]) -> None:
+    """Adds `values` to the automatic y ticks of `ax`, keeping its limits.
+
+    An automatic tick closer than 3/4 of a tick step to an added value is dropped, so
+    labels do not crowd; the margin over half a step absorbs float rounding.
+    """
+    bottom, top = ax.get_ylim()
+    automatic = ax.get_yticks()
+    spacing = 0.75 * (automatic[1] - automatic[0])
+    ticks = [tick for tick in automatic if bottom <= tick <= top
+             and all(abs(tick - value) >= spacing for value in values)]
+    ax.set_yticks(sorted([*ticks, *values]))
+    ax.set_ylim(bottom, top)
 
 
 def plot_voltage_profiles(voltages: dict[str, pd.DataFrame], bus_zones: pd.DataFrame,
@@ -75,6 +103,8 @@ def plot_voltage_profiles(voltages: dict[str, pd.DataFrame], bus_zones: pd.DataF
                 color=SCENARIO_COLORS.get(scenario, "grey"), label=scenario)
     for limit in band:
         ax.axhline(limit, color="grey", linestyle="--", linewidth=0.8)
+    _centre_y_axis(ax, sum(band) / 2)
+    _add_y_ticks(ax, band)
     start = 0
     for zone in sorted(set(zones)):
         count = int((zones == zone).sum())
